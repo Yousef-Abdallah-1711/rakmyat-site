@@ -1,3 +1,4 @@
+import { noteroProject } from "@/content/projects";
 import Link from "next/link";
 
 export function SingleProjectSourceSections() {
@@ -18,8 +19,8 @@ function SingleProjectSingleProjectPt50Section1() {
             <div className={"col-lg-4"}>
               <div className={"section-head style-5"}>
                 <h2 className={""}>
-                  {" Our "}
-                  <br /> <span>{" Challenge "}</span>{" "}
+                  {noteroProject.challenge.headingLead}
+                  <br /> <span>{noteroProject.challenge.headingAccent}</span>{" "}
                 </h2>
               </div>
             </div>
@@ -27,30 +28,30 @@ function SingleProjectSingleProjectPt50Section1() {
               <div className={"inf"}>
                 <div className={"text color-666 mb-20"}>
                   {
-                    '\n                                Create an unconventional yet user-friendly website – innovative, with a clean & simple design that communicates and showcases multi-media content. Site that spreads the message: "It’s stories your love.”\n                            '
+                    noteroProject.challenge.description
                   }
                 </div>
                 <ul className={"color-000"}>
                   <li className={"d-flex mb-10"}>
                     <i className={"bi bi-dot fs-6 me-2"}></i>
                     {
-                      "\n                                    Develop easy-to-find and easy-to-navigate mobile friendly website\n                                "
+                      noteroProject.challenge.bullets[0]
                     }
                   </li>
                   <li className={"d-flex mb-10"}>
                     <i className={"bi bi-dot fs-6 me-2"}></i>
                     {
-                      "\n                                    Showcase each type of content: interactive books, animated stories and picture books, audio stories. "
+                      noteroProject.challenge.bullets[1]
                     }
                     <br />
                     {
-                      " Create an experience people want to share with others\n                                "
+                      noteroProject.challenge.followUp
                     }
                   </li>
                   <li className={"d-flex mb-10"}>
                     <i className={"bi bi-dot fs-6 me-2"}></i>
                     {
-                      "\n                                    Persuade to download app and subscribe\n                                "
+                      noteroProject.challenge.bullets[2]
                     }
                   </li>
                 </ul>
@@ -65,12 +66,12 @@ function SingleProjectSingleProjectPt50Section1() {
                     "img img-cover rounded-3 overflow-hidden mb-30 mb-lg-0"
                   }
                 >
-                  <img src={"/assets/img/single_project/ch_1.png"} alt={""} />
+                  <img src={noteroProject.assets.challenge[0]} alt={""} />
                 </div>
               </div>
               <div className={"col-lg-6"}>
                 <div className={"img img-cover rounded-3 overflow-hidden"}>
-                  <img src={"/assets/img/single_project/ch_2.png"} alt={""} />
+                  <img src={noteroProject.assets.challenge[1]} alt={""} />
                 </div>
               </div>
             </div>
@@ -79,8 +80,8 @@ function SingleProjectSingleProjectPt50Section1() {
             <div className={"col-lg-4"}>
               <div className={"section-head style-5"}>
                 <h2 className={""}>
-                  {" Solution & "}
-                  <br /> <span>{" Result "}</span>{" "}
+                  {noteroProject.solution.headingLead}
+                  <br /> <span>{noteroProject.solution.headingAccent}</span>{" "}
                 </h2>
               </div>
             </div>
@@ -88,12 +89,12 @@ function SingleProjectSingleProjectPt50Section1() {
               <div className={"inf"}>
                 <div className={"text color-666 mb-10"}>
                   {
-                    "\n                                Our approach was to present the site as a visual editorial platform with quarterly features based on events and occasions the brand was focused on. Each quarterly focus would be marked by the hero and custom tags that filter content.                            \n                            "
+                    noteroProject.solution.description
                   }
                 </div>
                 <div className={"text color-666 mb-20"}>
                   {
-                    "\n                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.\n                            "
+                    noteroProject.solution.resultDescription
                   }
                 </div>
                 <div className={"color-000 mt-50"}>
@@ -108,7 +109,7 @@ function SingleProjectSingleProjectPt50Section1() {
                           <i className={"bi bi-check"}></i>
                         </div>
                         {
-                          "\n                                            Create & Save your notes with multi-media\n                                        "
+                          noteroProject.solution.highlights[0]
                         }
                       </div>
                     </div>
@@ -122,7 +123,7 @@ function SingleProjectSingleProjectPt50Section1() {
                           <i className={"bi bi-check"}></i>
                         </div>
                         {
-                          "\n                                            Complete note editor with rich text options\n                                        "
+                          noteroProject.solution.highlights[1]
                         }
                       </div>
                     </div>
@@ -136,7 +137,7 @@ function SingleProjectSingleProjectPt50Section1() {
                           <i className={"bi bi-check"}></i>
                         </div>
                         {
-                          "\n                                            Web Clipper Extension\n                                        "
+                          noteroProject.solution.highlights[2]
                         }
                       </div>
                     </div>
@@ -150,7 +151,7 @@ function SingleProjectSingleProjectPt50Section1() {
                           <i className={"bi bi-check"}></i>
                         </div>
                         {
-                          "\n                                            Automatically sync in real time\n                                        "
+                          noteroProject.solution.highlights[3]
                         }
                       </div>
                     </div>
@@ -167,34 +168,34 @@ function SingleProjectSingleProjectPt50Section1() {
             <div className={"swiper-wrapper"}>
               <div className={"swiper-slide"}>
                 <div className={"img"}>
-                  <img src={"/assets/img/screenshots/1.png"} alt={""} />
+                  <img src={noteroProject.assets.screenshots[0]} alt={""} />
                 </div>
               </div>
               <div className={"swiper-slide"}>
                 <div className={"img"}>
-                  <img src={"/assets/img/screenshots/2.png"} alt={""} />
+                  <img src={noteroProject.assets.screenshots[1]} alt={""} />
                 </div>
               </div>
               <div className={"swiper-slide"}>
                 <div className={"img"}>
-                  <img src={"/assets/img/screenshots/3.jpg"} alt={""} />
+                  <img src={noteroProject.assets.screenshots[2]} alt={""} />
                 </div>
               </div>
               <div className={"swiper-slide"}>
                 <div className={"img"}>
-                  <img src={"/assets/img/screenshots/4.png"} alt={""} />
+                  <img src={noteroProject.assets.screenshots[3]} alt={""} />
                 </div>
               </div>
               <div className={"swiper-slide"}>
                 <div className={"img"}>
-                  <img src={"/assets/img/screenshots/5.png"} alt={""} />
+                  <img src={noteroProject.assets.screenshots[4]} alt={""} />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <img
-          src={"/assets/img/screenshots/hand.png"}
+          src={noteroProject.assets.screenshotsHand}
           alt={""}
           className={"mob-hand"}
         />
@@ -210,22 +211,22 @@ function SingleProjectAboutAppStyle5Section2() {
     <section className={"about-app style-5"}>
       <div className={"container"}>
         <div className={"content text-center"}>
-          <h1 className={"color-000 mb-50"}>{"Notero - Easy Notes App"}</h1>
+          <h1 className={"color-000 mb-50"}>{noteroProject.title}</h1>
           <div className={"about-cards border-bottom brd-gray"}>
             <div className={"row"}>
               <div className={"col-lg-3 col-sm-6"}>
                 <div className={"about-card mb-30 mb-lg-0"}>
                   <small className={"d-block"}>
                     {
-                      "\n                                        client\n                                    "
+                      noteroProject.metadata.clientLabel
                     }
                   </small>
                   <h6>
                     {
-                      "\n                                        Micosoft Holding Ltd, "
+                      noteroProject.metadata.client
                     }
                     <br />
-                    {" Australia Area\n                                    "}
+                    {noteroProject.metadata.location}
                   </h6>
                 </div>
               </div>
@@ -233,26 +234,12 @@ function SingleProjectAboutAppStyle5Section2() {
                 <div className={"about-card mb-30 mb-lg-0"}>
                   <small className={"d-block"}>
                     {
-                      "\n                                        services\n                                    "
+                      noteroProject.metadata.servicesLabel
                     }
                   </small>
                   <h6>
                     {
-                      "\n                                        IT Consultation, UI/UX Design, Cloud Service\n                                    "
-                    }
-                  </h6>
-                </div>
-              </div>
-              <div className={"col-lg-3 col-sm-6"}>
-                <div className={"about-card mb-30 mb-lg-0"}>
-                  <small className={"d-block"}>
-                    {
-                      "\n                                        date\n                                    "
-                    }
-                  </small>
-                  <h6>
-                    {
-                      "\n                                        Feburary 25th, 2023\n                                    "
+                      noteroProject.metadata.services
                     }
                   </h6>
                 </div>
@@ -261,16 +248,30 @@ function SingleProjectAboutAppStyle5Section2() {
                 <div className={"about-card mb-30 mb-lg-0"}>
                   <small className={"d-block"}>
                     {
-                      "\n                                        team\n                                    "
+                      noteroProject.metadata.dateLabel
                     }
                   </small>
                   <h6>
                     {
-                      "\n                                        Logan Cee - Designer "
+                      noteroProject.metadata.date
+                    }
+                  </h6>
+                </div>
+              </div>
+              <div className={"col-lg-3 col-sm-6"}>
+                <div className={"about-card mb-30 mb-lg-0"}>
+                  <small className={"d-block"}>
+                    {
+                      noteroProject.metadata.teamLabel
+                    }
+                  </small>
+                  <h6>
+                    {
+                      noteroProject.metadata.team[0]
                     }
                     <br />
                     {
-                      " Martin Moussa - iOS Developer\n                                    "
+                      noteroProject.metadata.team[1]
                     }
                   </h6>
                 </div>
@@ -286,17 +287,17 @@ function SingleProjectAboutAppStyle5Section2() {
               <div className={"col-lg-7"}>
                 <div className={"img text-center"}>
                   <img
-                    src={"/assets/img/single_project/2mobs.png"}
+                    src={noteroProject.assets.product[0]}
                     alt={""}
                     className={"main-img"}
                   />
                   <img
-                    src={"/assets/img/single_project/bubbls.png"}
+                    src={noteroProject.assets.product[1]}
                     alt={""}
                     className={"bubbls"}
                   />
                   <img
-                    src={"/assets/img/single_project/circle.png"}
+                    src={noteroProject.assets.product[2]}
                     alt={""}
                     className={"circle"}
                   />
@@ -304,11 +305,11 @@ function SingleProjectAboutAppStyle5Section2() {
                 <div className={"info mt-30"}>
                   <h5 className={"lh-4"}>
                     {
-                      "\n                                        Stay focused and productive with a clean and clutter-free note space. The flexible ways to organize your notes: hashtags, nested notebooks, pinning notes to the top of the note list, etc\n                                    "
+                      noteroProject.summary
                     }
                   </h5>
                   <a href={"#"} className={"color-blue5 mt-60"}>
-                    {"https://example.domain"}
+                    {noteroProject.productUrl}
                   </a>
                 </div>
               </div>
@@ -330,12 +331,12 @@ function SingleProjectAboutAppStyle5Section3() {
               <div className={"col-lg-6"}>
                 <div className={"info mt-30"}>
                   <h5 className={"lh-4"}>
-                    {"\n                                        “The team at "}
+                    {noteroProject.testimonial.quoteLead}
                     <a href={"#"} className={"color-blue5"}>
-                      {"@iteck"}
+                      {noteroProject.testimonial.brand}
                     </a>
                     {
-                      " is incredibly dedicated, knowledgeable, and helpful. The finished product was beautiful, and worth every penny. I would absolutely recommend Moonex Labs.”\n                                    "
+                      noteroProject.testimonial.quoteTail
                     }
                   </h5>
                   <a
@@ -343,28 +344,28 @@ function SingleProjectAboutAppStyle5Section3() {
                     className={"mt-60 color-666 fs-12px text-uppercase"}
                   >
                     {"- "}
-                    <strong className={"color-000"}>{"Jhon henry "}</strong>
-                    {" , ceo at notero jsc - "}
+                    <strong className={"color-000"}>{noteroProject.testimonial.author}</strong>
+                    {noteroProject.testimonial.role}
                   </a>
                   <div className={"share mt-100"}>
                     <span
                       className={"color-999 fs-12px text-uppercase d-block"}
                     >
-                      {" share this project  "}
+                      {noteroProject.shareLabel}
                     </span>
-                    <a href={"#"} className={"social-icon"}>
+                    <a href={"#"} className={"social-icon"} aria-label={"Share on Twitter"}>
                       <i className={"fab fa-twitter"}></i>
                     </a>
-                    <a href={"#"} className={"social-icon"}>
+                    <a href={"#"} className={"social-icon"} aria-label={"Share on Facebook"}>
                       <i className={"fab fa-facebook-f"}></i>
                     </a>
-                    <a href={"#"} className={"social-icon"}>
+                    <a href={"#"} className={"social-icon"} aria-label={"Share on Pinterest"}>
                       <i className={"fab fa-pinterest"}></i>
                     </a>
-                    <a href={"#"} className={"social-icon"}>
+                    <a href={"#"} className={"social-icon"} aria-label={"Share on Goodreads"}>
                       <i className={"fab fa-goodreads-g"}></i>
                     </a>
-                    <a href={"#"} className={"social-icon"}>
+                    <a href={"#"} className={"social-icon"} aria-label={"Share on LinkedIn"}>
                       <i className={"fab fa-linkedin-in"}></i>
                     </a>
                   </div>
@@ -374,10 +375,10 @@ function SingleProjectAboutAppStyle5Section3() {
           </div>
           <div className={"next-prog section-padding"}>
             <h5 className={"color-999 text-uppercase fw-light"}>
-              {"next project"}
+              {noteroProject.nextProjectLabel}
             </h5>
             <a href={"#"} className={"color-000 fs-1 fw-bold mt-20"}>
-              {"Criftocy Landing Page"}
+              {noteroProject.nextProject}
             </a>
           </div>
         </div>
@@ -393,12 +394,12 @@ function SingleProjectProjectsStyle6Section4() {
         <div className={"container"}>
           <div className={"section-head text-center mb-60 style-5"}>
             <h2 className={"mb-20"}>
-              {" Related "}
-              <span>{" Projects "}</span>{" "}
+              {noteroProject.related.headingLead}
+              <span>{noteroProject.related.headingAccent}</span>{" "}
             </h2>
             <p>
               {
-                "We have an experienced team of production and inspection personnel to ensure quality."
+                noteroProject.related.description
               }
             </p>
           </div>
@@ -408,28 +409,28 @@ function SingleProjectProjectsStyle6Section4() {
                 <div className={"swiper-slide"}>
                   <div className={"project-card style-6"}>
                     <div className={"img"}>
-                      <img src={"/assets/img/projects/4.png"} alt={""} />
+                      <img src={noteroProject.assets.related[0]} alt={""} />
                     </div>
                     <div className={"info"}>
                       <h3 className={"title"}>
                         <Link href={"/projects/notero"}>
-                          {"Okpay E-Wallet Optimized"}
+                          {noteroProject.related.cards[0].title}
                         </Link>
                       </h3>
                       <small className={"color-blue6"}>
-                        <a href={"#"}>{"SEO analysis"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[0].type}</a>
                       </small>
                       <div className={"text"}>
                         {
-                          "\n                                                Trust our top minds to eliminate workflow pain points, implement new\n                                                tech & app.\n                                            "
+                          noteroProject.related.cardDescription
                         }
                       </div>
                       <div className={"tags"}>
                         <span>
-                          <a href={"#"}>{"SEO Analysis"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[0].tags[0]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"Content Strategy"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[0].tags[1]}</a>
                         </span>
                       </div>
                     </div>
@@ -438,34 +439,34 @@ function SingleProjectProjectsStyle6Section4() {
                 <div className={"swiper-slide"}>
                   <div className={"project-card style-6"}>
                     <div className={"img"}>
-                      <img src={"/assets/img/projects/5.png"} alt={""} />
+                      <img src={noteroProject.assets.related[1]} alt={""} />
                     </div>
                     <div className={"info"}>
                       <h3 className={"title"}>
-                        <a href={"#"}>{"e-Commerce Dashboard"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].title}</a>
                       </h3>
                       <small className={"color-blue6"}>
-                        <a href={"#"}>{"website design"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].type}</a>
                         {" & "}
-                        <a href={"#"}>{"develoment"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].typeTail}</a>
                       </small>
                       <div className={"text"}>
                         {
-                          "\n                                                Trust our top minds to eliminate workflow pain points, implement new\n                                                tech & app.\n                                            "
+                          noteroProject.related.cardDescription
                         }
                       </div>
                       <div className={"tags"}>
                         <span>
-                          <a href={"#"}>{"WordPress"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[0]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"PHP"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[1]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"HTML/CSS"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[2]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"Figma"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[3]}</a>
                         </span>
                       </div>
                     </div>
@@ -474,29 +475,29 @@ function SingleProjectProjectsStyle6Section4() {
                 <div className={"swiper-slide"}>
                   <div className={"project-card style-6"}>
                     <div className={"img"}>
-                      <img src={"/assets/img/projects/7.png"} alt={""} />
+                      <img src={noteroProject.assets.related[2]} alt={""} />
                     </div>
                     <div className={"info"}>
                       <h3 className={"title"}>
-                        <a href={"#"}>{"MLB Store Instagram"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[2].title}</a>
                       </h3>
                       <small className={"color-blue6"}>
-                        <a href={"#"}>{"social media"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[2].type}</a>
                       </small>
                       <div className={"text"}>
                         {
-                          "\n                                                Trust our top minds to eliminate workflow pain points, implement new\n                                                tech & app.\n                                            "
+                          noteroProject.related.cardDescription
                         }
                       </div>
                       <div className={"tags"}>
                         <span>
-                          <a href={"#"}>{"Social"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[2].tags[0]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"Instagram"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[2].tags[1]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"Followers"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[2].tags[2]}</a>
                         </span>
                       </div>
                     </div>
@@ -505,34 +506,34 @@ function SingleProjectProjectsStyle6Section4() {
                 <div className={"swiper-slide"}>
                   <div className={"project-card style-6"}>
                     <div className={"img"}>
-                      <img src={"/assets/img/projects/5.png"} alt={""} />
+                      <img src={noteroProject.assets.related[1]} alt={""} />
                     </div>
                     <div className={"info"}>
                       <h3 className={"title"}>
-                        <a href={"#"}>{"e-Commerce Dashboard"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].title}</a>
                       </h3>
                       <small className={"color-blue6"}>
-                        <a href={"#"}>{"website design"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].type}</a>
                         {" & "}
-                        <a href={"#"}>{"develoment"}</a>
+                        <a href={"#"}>{noteroProject.related.cards[1].typeTail}</a>
                       </small>
                       <div className={"text"}>
                         {
-                          "\n                                                Trust our top minds to eliminate workflow pain points, implement new\n                                                tech & app.\n                                            "
+                          noteroProject.related.cardDescription
                         }
                       </div>
                       <div className={"tags"}>
                         <span>
-                          <a href={"#"}>{"WordPress"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[0]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"PHP"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[1]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"HTML/CSS"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[2]}</a>
                         </span>
                         <span>
-                          <a href={"#"}>{"Figma"}</a>
+                          <a href={"#"}>{noteroProject.related.cards[1].tags[3]}</a>
                         </span>
                       </div>
                     </div>

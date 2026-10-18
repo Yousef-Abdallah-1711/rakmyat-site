@@ -2,29 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { portfolioProjects } from "@/content/portfolio";
-
-const filters = [
-  ["all", "All"],
-  ["consultation", "IT Consultation"],
-  ["security", "Data Security"],
-  ["website", "Website Development"],
-  ["design", "UI/UX Design"],
-  ["cloud", "Cloud Service"],
-  ["development", "Game Development"],
-];
+import { portfolioPageContent, portfolioProjects } from "@/content/portfolio";
 
 export function PortfolioProjects() {
   const [filter, setFilter] = useState("all");
   return (
     <>
-      <div className="controls" aria-label="Filter projects">
-        {filters.map(([id, label]) => (
+      <div className="controls" role="group" aria-label="Filter projects">
+        {portfolioPageContent.filters.map(({ id, label }) => (
           <button
             type="button"
             key={id}
             className={`control${filter === id ? " control-active" : ""}`}
-            data-filter={id === "all" ? "all" : `.${id}`}
+          data-filter={id === "all" ? "all" : `.${id}`}
             aria-pressed={filter === id}
             onClick={() => setFilter(id)}
           >
@@ -56,8 +46,7 @@ export function PortfolioProjects() {
                         {project.type}
                       </small>
                       <div className="text">
-                        Trust our top minds to eliminate workflow pain points,
-                        implement new tech &amp; app.
+                        {portfolioPageContent.cardDescription}
                       </div>
                       <div className="tags">
                         {project.tags.map((tag) => (

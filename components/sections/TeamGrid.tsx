@@ -12,7 +12,11 @@ export function TeamGrid() {
               <img src={member.image} alt="" />
               <div className="social-icons">
                 {teamSocialLinks.map((network) => (
-                  <a href="#" key={network}>
+                  <a
+                    href="#"
+                    key={network}
+                    aria-label={`${network[0].toUpperCase()}${network.slice(1)} profile for ${member.name}`}
+                  >
                     <i className={`fab fa-${network}`} />
                   </a>
                 ))}

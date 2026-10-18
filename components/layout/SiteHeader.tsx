@@ -1,10 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { TopPromotion } from "@/components/layout/SiteChrome";
-import { homeMenu, mainNavigation, pageMenu } from "@/content/site";
+import {
+  homeMenu,
+  mainNavigation,
+  pageMenu,
+  siteSettings,
+} from "@/content/site";
 
 type SiteHeaderProps = {
   activePage?:
@@ -18,27 +23,56 @@ export function SiteHeader({
 }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdown, setDropdown] = useState<string | null>(null);
+  const navRef = useRef<HTMLElement>(null);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
+  const dropdownTriggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   useEffect(() => {
     setMenuOpen(false);
     setDropdown(null);
   }, [pathname]);
+  useEffect(() => {
+    const onPointerDown = (event: PointerEvent) => {
+      if (event.target instanceof Node && !navRef.current?.contains(event.target)) {
+        setDropdown(null);
+        setMenuOpen(false);
+      }
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        const wasOpen = menuOpen || dropdown !== null;
+        setMenuOpen(false);
+        setDropdown(null);
+        if (wasOpen) {
+          (dropdown !== null ? dropdownTriggerRef.current : menuToggleRef.current)?.focus();
+        }
+      }
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [dropdown, menuOpen]);
   const isHome = activePage === "home";
   const navbarClass = `navbar navbar-expand-lg navbar-light${transparent ? " bg-transparent" : ""} style-5`;
 
-  function toggleDropdown(name: string) {
+  function toggleDropdown(name: string, trigger: HTMLButtonElement) {
+    dropdownTriggerRef.current = trigger;
     setDropdown((current) => (current === name ? null : name));
   }
 
   return (
     <>
       <TopPromotion />
-      <nav className={navbarClass}>
+      <nav ref={navRef} className={navbarClass} aria-label="Main navigation">
         <div className="container-fluid">
           <Link className="navbar-brand" href="/">
-            <img src="/assets/img/logo_home5.png" alt="Iteck" />
+            <img src={siteSettings.headerLogo} alt={siteSettings.name} />
           </Link>
           <button
+            ref={menuToggleRef}
             className="navbar-toggler"
             type="button"
             aria-controls="navbarSupportedContent"
@@ -58,7 +92,7 @@ export function SiteHeader({
                   className={`nav-link dropdown-toggle${isHome ? " active" : ""}`}
                   type="button"
                   aria-expanded={dropdown === "homes"}
-                  onClick={() => toggleDropdown("homes")}
+                  onClick={(event) => toggleDropdown("homes", event.currentTarget)}
                 >
                   Homes
                 </button>
@@ -81,7 +115,7 @@ export function SiteHeader({
                   className="nav-link dropdown-toggle"
                   type="button"
                   aria-expanded={dropdown === "pages"}
-                  onClick={() => toggleDropdown("pages")}
+                  onClick={(event) => toggleDropdown("pages", event.currentTarget)}
                 >
                   pages
                 </button>

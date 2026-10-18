@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/forms/ContactForm";
+import { contactPageContent as content } from "@/content/contact";
 
 export function ContactSourceSections() {
   return (
@@ -11,12 +12,12 @@ export function ContactSourceSections() {
 function ContactContactPageStyle5Section1() {
   return (
     <main className={"contact-page style-5"}>
+      <h1 className="visually-hidden">Contact Us</h1>
       <ContactContactSectionPaddingSection2 />
       <div className={"map"}>
         <iframe
-          src={
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24219.60999175365!2d-73.9764341314902!3d40.64198229194528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b400c94a227%3A0x18e2a4d3fb21f0ec!2sFlatbush%2C%20Brooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1651361759450!5m2!1sen!2seg"
-          }
+          src={content.mapEmbedUrl}
+          title="Map location in Brooklyn, New York"
           height={"500"}
           style={{ border: "0" }}
           allowFullScreen={true}
@@ -34,10 +35,10 @@ function ContactContactSectionPaddingSection2() {
       <div className={"container"}>
         <div className={"section-head text-center mb-100 style-5"}>
           <h2 className={"mb-20"}>
-            {" Get In "}
-            <span>{" Touch "}</span>{" "}
+            {content.heading.lead}
+            <span>{content.heading.emphasis}</span>{" "}
           </h2>
-          <p>{"We will contact again after receive your request in 24h"}</p>
+          <p>{content.introduction}</p>
         </div>
         <div className={"text-center mb-100"}>
           <h2
@@ -45,13 +46,13 @@ function ContactContactSectionPaddingSection2() {
               "ltspc-20 text-uppercase fs-1 lh-1 mb-50 mt-30 color-blue5"
             }
           >
-            {"(+23) 5535 68 68"}
+            {content.phone}
           </h2>
           <h4 className={"fw-normal mb-20 color-000"}>
-            {"contact@Itecksolution.com"}
+            {content.email}
           </h4>
           <h4 className={"fw-normal mb-10 color-000"}>
-            {"58 Howard St, San Francisco, CA 941"}
+            {content.address}
           </h4>
         </div>
         <div className={"content"}>
@@ -59,7 +60,7 @@ function ContactContactSectionPaddingSection2() {
             <div className={"col-lg-8"}>
               <ContactForm className={"form"}>
                 <p className={"text-center text-danger fs-12px mb-30"}>
-                  {"The field is required mark as *"}
+                  {content.requiredHint}
                 </p>
                 <div className={"row"}>
                   <div className={"col-lg-6"}>
@@ -67,18 +68,20 @@ function ContactContactSectionPaddingSection2() {
                       <input
                         type={"text"}
                         name={"name"}
+                        aria-label={content.fields.name.label}
                         className={"form-control"}
-                        placeholder={"Name"}
+                        placeholder={content.fields.name.placeholder}
                       />
                     </div>
                   </div>
                   <div className={"col-lg-6"}>
                     <div className={"form-group mb-20"}>
                       <input
-                        type={"text"}
+                        type={"email"}
                         name={"email"}
+                        aria-label={content.fields.email.label}
                         className={"form-control"}
-                        placeholder={"Email Address *"}
+                        placeholder={content.fields.email.placeholder}
                         required={true}
                       />
                     </div>
@@ -88,8 +91,9 @@ function ContactContactSectionPaddingSection2() {
                       <input
                         type={"text"}
                         name={"phone"}
+                        aria-label={content.fields.phone.label}
                         className={"form-control"}
-                        placeholder={"Phone Number (option)"}
+                        placeholder={content.fields.phone.placeholder}
                       />
                     </div>
                   </div>
@@ -98,8 +102,9 @@ function ContactContactSectionPaddingSection2() {
                       <input
                         type={"text"}
                         name={"website"}
+                        aria-label={content.fields.website.label}
                         className={"form-control"}
-                        placeholder={"Your Website (option)"}
+                        placeholder={content.fields.website.placeholder}
                       />
                     </div>
                   </div>
@@ -107,14 +112,15 @@ function ContactContactSectionPaddingSection2() {
                     <div className={"form-group mb-20"}>
                       <select
                         name={"option"}
+                        aria-label={content.fields.help.label}
                         className={"form-select"}
-                        defaultValue={"how can we help"}
+                        defaultValue={content.helpOptions[0].value}
                       >
-                        <option value={"how can we help"}>
-                          {"How can we help you?"}
-                        </option>
-                        <option value={"option 1"}>{"option 1"}</option>
-                        <option value={"option 2"}>{"option 2"}</option>
+                        {content.helpOptions.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
+                          </option>
+                        ))}
                       </select>
                     </div>
                   </div>
@@ -123,8 +129,9 @@ function ContactContactSectionPaddingSection2() {
                       <textarea
                         rows={10}
                         name={"message"}
+                        aria-label={content.fields.message.label}
                         className={"form-control"}
-                        placeholder={"How can we help you?"}
+                        placeholder={content.fields.message.placeholder}
                       ></textarea>
                     </div>
                   </div>
@@ -140,11 +147,9 @@ function ContactContactSectionPaddingSection2() {
                         className={"form-check-label small"}
                         htmlFor={"flexCheckDefault"}
                       >
-                        {
-                          "\n                                                By submitting, i’m agreed to the "
-                        }
+                        {content.termsCopy}
                         <a href={"#"} className={"text-decoration-underline"}>
-                          {"Terms & Conditons"}
+                          {content.termsLabel}
                         </a>
                       </label>
                     </div>
@@ -152,7 +157,7 @@ function ContactContactSectionPaddingSection2() {
                   <div className={"col-lg-12 text-center"}>
                     <input
                       type={"submit"}
-                      value={"Send Your Request"}
+                      value={content.submitLabel}
                       className={
                         "btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold text-light"
                       }

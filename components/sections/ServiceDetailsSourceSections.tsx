@@ -1,3 +1,5 @@
+import { serviceDetailsContent as content } from "@/content/service-details";
+
 export function ServiceDetailsSourceSections() {
   return (
     <>
@@ -13,10 +15,10 @@ function ServiceDetailsInnerHeaderStyle5Section1() {
       <div className={"container"}>
         <div className={"content"}>
           <div className={"links"}>
-            <a href={"#"}>{" Home "}</a>
-            <a href={"#"}>{" Service Details "}</a>
+            <a href={"#"}>{content.breadcrumbs[0]}</a>
+            <a href={"#"}>{content.breadcrumbs[1]}</a>
           </div>
-          <h2>{" Email Marketing "}</h2>
+          <h2>{` ${content.title} `}</h2>
           <img
             src={"/assets/img/header/head7_rock.png"}
             alt={""}
@@ -31,6 +33,7 @@ function ServiceDetailsInnerHeaderStyle5Section1() {
 function ServiceDetailsServicesDetailsPageStyle5Section2() {
   return (
     <main className={"services-details-page style-5"}>
+      <h1 className="visually-hidden">{content.title}</h1>
       <ServiceDetailsSerDetailsSectionPaddingSection3 />
       <ServiceDetailsContactStyle5Section4 />
     </main>
@@ -49,18 +52,10 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                   <img src={"/assets/img/services/services2.png"} alt={""} />
                 </div>
                 <h3 className={"text-capitalize mb-20"}>
-                  {" Service Overview "}
+                  {` ${content.overviewHeading} `}
                 </h3>
-                <p className={"mb-10"}>
-                  {
-                    "\n                                    the Best SMM Panel in the market. Perfect for agencies and resellers, Boost your brand quickly. Quick Response. Quick Boost In Sales. Real-Time Monitoring. Highlights: Live Customer  Support Available, Quick Help Available, Providing High Quality Services.\n                                "
-                  }
-                </p>
-                <p className={"pb-50"}>
-                  {
-                    " \n                                    What is an SMM panel? SMM panel is an SMM service online store where people can buy likes, follow views, website traffic, etc — the list of such services goes on and on. People choose SMM panels because of great prices and fast delivery. This is why this business is so popular, it's always with an demand. Though selling SMM services via panels is definitely not illegal, buying such services for your accounts is against the Terms of Service on various social media platforms.    \n                                "
-                  }
-                </p>
+                <p className={"mb-10"}>{content.overview[0]}</p>
+                <p className={"pb-50"}>{content.overview[1]}</p>
                 <div
                   className={
                     "imgs-items border-1 border-bottom border-top brd-gray"
@@ -78,13 +73,9 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                       </div>
                       <div className={"col-lg-10"}>
                         <h5 className={"fw-bold mb-2"}>
-                          {" Our Work Process "}
+                          {` ${content.process[0].heading} `}
                         </h5>
-                        <p>
-                          {
-                            " SMM service online store where people can buy likes, follow views, website traffic, etc — the list of such services goes on and on. "
-                          }
-                        </p>
+                        <p>{` ${content.process[0].description} `}</p>
                       </div>
                     </div>
                   </div>
@@ -100,29 +91,23 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                       </div>
                       <div className={"col-lg-10"}>
                         <h5 className={"fw-bold mb-2"}>
-                          {" Troubleshooting Process "}
+                          {` ${content.process[1].heading} `}
                         </h5>
-                        <p>
-                          {
-                            " SMM service online store where people can buy likes, follow views, website traffic, etc — the list of such services goes on and on. "
-                          }
-                        </p>
+                        <p>{` ${content.process[1].description} `}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h4 className={"mt-5 mb-4"}>{" Going Beyond the Usual "}</h4>
+                <h4 className={"mt-5 mb-4"}>{` ${content.benefitsHeading} `}</h4>
                 <p className={"mt-10"}>
                   {" "}
                   <i
                     className={"fas fa-check-circle color-blue5 me-2"}
                   ></i>{" "}
                   <strong className={"color-000"}>
-                    {" Product Quality: "}
+                    {` ${content.benefits[0].label} `}
                   </strong>
-                  {
-                    " Automatically syncs across all your devices. You can also access... "
-                  }
+                  {` ${content.benefits[0].description} `}
                 </p>
                 <p className={"mt-10"}>
                   {" "}
@@ -130,9 +115,9 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                     className={"fas fa-check-circle color-blue5 me-2"}
                   ></i>{" "}
                   <strong className={"color-000"}>
-                    {" On Demand Design: "}
+                    {` ${content.benefits[1].label} `}
                   </strong>
-                  {" Images, videos, PDFs and audio files are supported. "}
+                  {` ${content.benefits[1].description} `}
                 </p>
                 <p className={"mt-10"}>
                   {" "}
@@ -140,9 +125,9 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                     className={"fas fa-check-circle color-blue5 me-2"}
                   ></i>{" "}
                   <strong className={"color-000"}>
-                    {" Choice of Service: "}
+                    {` ${content.benefits[2].label} `}
                   </strong>
-                  {" Whatever your business needs, you can choose a service. "}
+                  {` ${content.benefits[2].description} `}
                 </p>
                 <div className={"testi-card mt-60"}>
                   <div className={"icon"}>
@@ -150,11 +135,11 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                   </div>
                   <div className={"text"}>
                     {
-                      "\n                                        “ Collecting customer feedback shows you value opinion. "
+                      content.testimonial.quoteLead
                     }
                     <br />
                     {
-                      " By asking your clients for feedback you communicate that their opinion is important to you. ”\n                                    "
+                      content.testimonial.quoteTail
                     }
                   </div>
                   <div className={"author"}>
@@ -169,8 +154,8 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                       />
                     </div>
                     <div className={"inf"}>
-                      <p>{" Head Of Idea "}</p>
-                      <h6>{" Alonso D.Dowson "}</h6>
+                      <p>{` ${content.testimonial.role} `}</p>
+                      <h6>{` ${content.testimonial.author} `}</h6>
                     </div>
                   </div>
                 </div>
@@ -180,12 +165,12 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
                   }
                 >
                   <a href={"#"} className={"item"}>
-                    <p>{" Prev Service "}</p>
-                    <h5 className={"fw-bold"}>{" Product Design "}</h5>
+                    <p>{content.previousLabel}</p>
+                    <h5 className={"fw-bold"}>{` ${content.previousService} `}</h5>
                   </a>
                   <a href={"#"} className={"item text-end"}>
-                    <p>{" Next Service "}</p>
-                    <h5 className={"fw-bold"}>{" Web Development "}</h5>
+                    <p>{content.nextLabel}</p>
+                    <h5 className={"fw-bold"}>{` ${content.nextService} `}</h5>
                   </a>
                 </div>
               </div>
@@ -193,63 +178,63 @@ function ServiceDetailsSerDetailsSectionPaddingSection3() {
             <div className={"col-lg-4"}>
               <div className={"side-links mt-5 mt-lg-0"}>
                 <div className={"links-card mb-40"}>
-                  <h5>{" Service Category "}</h5>
+                  <h5>{` ${content.categoryHeading} `}</h5>
                   <ul>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Social Media Marketing "}
+                        {` ${content.categories[0]} `}
                       </a>
                     </li>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Search Engine Optimization "}
+                        {` ${content.categories[1]} `}
                       </a>
                     </li>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Product Design "}
+                        {` ${content.previousService} `}
                       </a>
                     </li>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Email Marketing "}
+                        {` ${content.title} `}
                       </a>
                     </li>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Web Development "}
+                        {` ${content.nextService} `}
                       </a>
                     </li>
                     <li>
                       <a href={"#"}>
                         {" "}
                         <i className={"far fa-angle-right icon"}></i>
-                        {" Game Design & Develop "}
+                        {` ${content.categories[5]} `}
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className={"banner1"}>
                   <div className={"title"}>
-                    <h6>{" Call To Action "}</h6>
-                    <h3>{" Make An Custom Request "}</h3>
+                    <h6>{` ${content.callout.eyebrow} `}</h6>
+                    <h3>{` ${content.callout.heading} `}</h3>
                   </div>
                   <a
                     href={"#"}
                     className={"butn bg-white rounded-pill hover-blue5"}
                   >
                     <span>
-                      {" Get A Quote "}
+                      {` ${content.callout.link} `}
                       <i className={"far fa-long-arrow-right ms-2"}></i>{" "}
                     </span>
                   </a>
@@ -274,12 +259,12 @@ function ServiceDetailsContactStyle5Section4() {
       <div className={"container"}>
         <div className={"section-head text-center mb-80 style-5"}>
           <h2>
-            {" Get In  "}
-            <span>{" Touch "}</span>{" "}
+            {` ${content.contact.headingLead} `}
+            <span>{` ${content.contact.headingAccent} `}</span>{" "}
           </h2>
           <p>
             {
-              "\n                        More than 15,000 companies trust and choose Itech\n                    "
+              content.contact.description
             }
           </p>
         </div>
@@ -289,8 +274,9 @@ function ServiceDetailsContactStyle5Section4() {
               <div className={"form-group"}>
                 <input
                   type={"text"}
+                  aria-label={content.contact.fields.name}
                   className={"form-control"}
-                  placeholder={"Full name"}
+                  placeholder={content.contact.fields.name}
                 />
                 <span className={"icon"}>
                   {" "}
@@ -302,8 +288,9 @@ function ServiceDetailsContactStyle5Section4() {
               <div className={"form-group"}>
                 <input
                   type={"text"}
+                  aria-label={content.contact.fields.phone}
                   className={"form-control"}
-                  placeholder={"Phone number"}
+                  placeholder={content.contact.fields.phone}
                 />
                 <span className={"icon"}>
                   {" "}
@@ -314,9 +301,10 @@ function ServiceDetailsContactStyle5Section4() {
             <div className={"col-lg-4"}>
               <div className={"form-group"}>
                 <input
-                  type={"text"}
+                  type={"email"}
+                  aria-label={content.contact.fields.email}
                   className={"form-control"}
-                  placeholder={"Email address"}
+                  placeholder={content.contact.fields.email}
                 />
                 <span className={"icon"}>
                   {" "}
@@ -328,7 +316,8 @@ function ServiceDetailsContactStyle5Section4() {
               <div className={"form-group"}>
                 <textarea
                   rows={6}
-                  placeholder={"Message"}
+                  aria-label={content.contact.fields.message}
+                  placeholder={content.contact.fields.message}
                   className={"form-control"}
                 ></textarea>
                 <span className={"icon"}>
@@ -344,7 +333,7 @@ function ServiceDetailsContactStyle5Section4() {
               className={"butn bg-blue5 rounded-3 mt-20 py-3 text-white"}
             >
               <span>
-                {" Make A Request "}
+                {` ${content.contact.button} `}
                 <i className={"far fa-long-arrow-right ms-2"}></i>{" "}
               </span>
             </a>

@@ -1,16 +1,29 @@
 ﻿"use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 type MediaState =
   | { kind: "image"; images: { src: string; alt: string }[]; index: number }
-  | { kind: "video"; src: string }
+  | { kind: "video"; src: string; externalHref: string }
   | null;
 
 export function MediaLightbox() {
   const [media, setMedia] = useState<MediaState>(null);
+  const [videoFailed, setVideoFailed] = useState(false);
   const pathname = usePathname();
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const openerRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    if (media) {
+      closeButtonRef.current?.focus();
+      return;
+    }
+    openerRef.current?.focus();
+    openerRef.current = null;
+  }, [Boolean(media)]);
 
   useEffect(() => {
     const openMedia = (event: MouseEvent) => {
@@ -19,6 +32,8 @@ export function MediaLightbox() {
       const videoLink = target.closest<HTMLAnchorElement>("a[data-lity]");
       if (videoLink) {
         event.preventDefault();
+        openerRef.current = videoLink;
+        setVideoFailed(false);
         const url = new URL(videoLink.href);
         const id = url.pathname.split("/").filter(Boolean).pop();
         const start = url.searchParams.get("t");
@@ -26,6 +41,7 @@ export function MediaLightbox() {
           setMedia({
             kind: "video",
             src: `https://www.youtube.com/embed/${id}?autoplay=1${start ? `&start=${Number.parseInt(start, 10) || 0}` : ""}`,
+            externalHref: videoLink.href,
           });
         return;
       }
@@ -34,6 +50,7 @@ export function MediaLightbox() {
       );
       if (!imageLink) return;
       event.preventDefault();
+      openerRef.current = imageLink;
       const links = [
         ...document.querySelectorAll<HTMLAnchorElement>(
           'a[data-fancybox="gallery"]',
@@ -43,13 +60,16 @@ export function MediaLightbox() {
         kind: "image",
         images: links.map((link) => ({
           src: link.href,
-          alt: link.querySelector("img")?.alt ?? "",
+          alt:
+            link.querySelector("img")?.alt ||
+            link.getAttribute("aria-label") ||
+            "Gallery image",
         })),
         index: links.indexOf(imageLink),
       });
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMedia(null);
+      if (event.key === "Escape" && media) setMedia(null);
       if (
         media?.kind === "image" &&
         (event.key === "ArrowLeft" || event.key === "ArrowRight")
@@ -75,16 +95,46 @@ export function MediaLightbox() {
     };
   }, [media, pathname]);
 
+  useEffect(() => {
+    if (!media) return;
+    const dialog = dialogRef.current;
+    const onTab = (event: KeyboardEvent) => {
+      if (event.key !== "Tab" || !dialog) return;
+      const controls = [...dialog.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), a[href], iframe, [tabindex]:not([tabindex="-1"])',
+      )].filter((element) => element.offsetParent !== null);
+      if (!controls.length) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && (document.activeElement === first || !dialog.contains(document.activeElement))) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || !dialog.contains(document.activeElement))) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+    document.addEventListener("keydown", onTab);
+    return () => document.removeEventListener("keydown", onTab);
+  }, [Boolean(media)]);
+
   if (!media) return null;
   return (
     <div
+      ref={dialogRef}
       className="media-lightbox"
       role="dialog"
       aria-modal="true"
       aria-label={media.kind === "image" ? "Image gallery" : "Video player"}
+      tabIndex={-1}
       onClick={() => setMedia(null)}
     >
       <button
+        ref={closeButtonRef}
         className="media-lightbox__close"
         type="button"
         aria-label="Close media"
@@ -131,14 +181,28 @@ export function MediaLightbox() {
           </button>
         </>
       ) : (
-        <iframe
-          className="media-lightbox__video"
-          src={media.src}
-          title="Iteck introduction video"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowFullScreen
-          onClick={(event) => event.stopPropagation()}
-        />
+        <>
+          <iframe
+            className="media-lightbox__video"
+            src={media.src}
+            title="Iteck introduction video"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+            onError={() => setVideoFailed(true)}
+            onClick={(event) => event.stopPropagation()}
+          />
+          <p className="media-lightbox__fallback" role="status">
+            {videoFailed ? "Video could not be loaded." : "If the video does not play:"}{" "}
+            <a
+              href={media.externalHref}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(event) => event.stopPropagation()}
+            >
+              Open on YouTube
+            </a>
+          </p>
+        </>
       )}
     </div>
   );

@@ -71,3 +71,28 @@ export const portfolioProjects: PortfolioProject[] = [
     tags: ["AI", "Machine Learning"],
   },
 ];
+
+
+export const portfolioPageContent = {
+  heading: "Our",
+  headingAccent: "Projects",
+  description: "We have an experienced team of production and inspection personnel to ensure quality.",
+  cardDescription: "Trust our top minds to eliminate workflow pain points, implement new tech & app.",
+  download: {
+    headingLead: "Access your business potentials today & find opportunity for",
+    headingAccent: "bigger success",
+    actions: [
+      { label: "Start A Project Now", href: "/contact" },
+      { label: "See Pricing & Plan", href: "/about" },
+    ],
+  },
+  filters: [
+    { id: "all", label: "All" },
+    { id: "consultation", label: "IT Consultation" },
+    { id: "security", label: "Data Security" },
+    { id: "website", label: "Website Development" },
+    { id: "design", label: "UI/UX Design" },
+    { id: "cloud", label: "Cloud Service" },
+    { id: "development", label: "Game Development" },
+  ],
+} as const;

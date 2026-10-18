@@ -1,3 +1,6 @@
+import { ProductReasonsSection } from "@/components/sections/ProductReasonsSection";
+import { aboutPageContent as content } from "@/content/about";
+import { ClientLogosSection } from "@/components/sections/ClientLogosSection";
 import { TeamGrid } from "@/components/sections/TeamGrid";
 import { ContactForm } from "@/components/forms/ContactForm";
 import Link from "next/link";
@@ -34,15 +37,11 @@ function AboutAboutPageSecStyle5Section2() {
           <div className={"col-lg-8"}>
             <div className={"info"}>
               <h1>
-                {"We provide perfect "}
+                {content.hero.headingLead}
                 <br />
-                {
-                  " IT Solutions & Technology for any\n                                "
-                }
+                {content.hero.headingLine}
                 <span>
-                  {
-                    "\n                                    Startups\n                                    "
-                  }
+                  {content.hero.headingAccent}
                   <img
                     src={"/assets/img/header/head5_line.png"}
                     alt={""}
@@ -56,13 +55,9 @@ function AboutAboutPageSecStyle5Section2() {
                 </span>
               </h1>
               <p>
-                {
-                  "\n                                Iteck helps you unify your brand identity by collecting, storing and distributing "
-                }
+                {content.hero.descriptionLead}
                 <br />
-                {
-                  " design\n                                tokens and assets — automatically.\n                            "
-                }
+                {content.hero.descriptionTail}
               </p>
             </div>
           </div>
@@ -73,6 +68,7 @@ function AboutAboutPageSecStyle5Section2() {
                 href={"https://youtu.be/pGbIOC83-So?t=21"}
                 data-lity={""}
                 className={"play-icon"}
+                aria-label={"Play Iteck introduction video"}
               >
                 <i className={"fas fa-play"}></i>
               </a>
@@ -105,45 +101,7 @@ function AboutAboutPageSecStyle5Section2() {
 }
 
 function AboutCommunityPt40Section3() {
-  return (
-    <section className={"community pt-40 style-5"}>
-      <div className={"container"}>
-        <div className={"section-head text-center mb-40 style-5"}>
-          <h2 className={"mb-20"}>
-            {" Top "}
-            <span>{" Reasons "}</span>{" "}
-          </h2>
-          <p>{"Unify your business data in one simple ecommerce dashboard"}</p>
-        </div>
-        <div className={"content rounded-pill"}>
-          <div className={"commun-card"}>
-            <div className={"icon"}>
-              <img src={"/assets/img/icons/code3d.png"} alt={""} />
-            </div>
-            <div className={"inf"}>
-              <h5>{"Front-End Friendly"}</h5>
-            </div>
-          </div>
-          <div className={"commun-card"}>
-            <div className={"icon"}>
-              <img src={"/assets/img/icons/price3d.png"} alt={""} />
-            </div>
-            <div className={"inf"}>
-              <h5>{"Affordable Price"}</h5>
-            </div>
-          </div>
-          <div className={"commun-card"}>
-            <div className={"icon"}>
-              <img src={"/assets/img/icons/message3d.png"} alt={""} />
-            </div>
-            <div className={"inf"}>
-              <h5>{"Affordable Price"}</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return <ProductReasonsSection />;
 }
 
 function AboutAboutSectionPaddingSection4() {
@@ -155,19 +113,17 @@ function AboutAboutSectionPaddingSection4() {
             <div className={"col-lg-4 order-2 order-lg-0"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {" Iteck’s "}
-                  <span>{" Philosophy "}</span>{" "}
+                  {` ${content.philosophy.heading} `}
+                  <span>{` ${content.philosophy.headingAccent} `}</span>{" "}
                 </h2>
               </div>
               <p>
-                {
-                  "\n                                Like any great agency, we are only as good as the result we deliver of our recent work. Our developers are committed to maintaining the highest web standards so that your site. \n                            "
-                }
+                {content.philosophy.description}
               </p>
               <div className={"line-links"}>
-                <a href={"#"}>{"Become 1st in the IT industrial"}</a>
-                <a href={"#"}>{"Competitive Price"}</a>
-                <a href={"#"}>{"Enhance the quality of life"}</a>
+                {content.philosophy.links.map((label) => (
+                  <a href="#" key={label}>{label}</a>
+                ))}
               </div>
             </div>
             <div className={"col-lg-6"}>
@@ -201,55 +157,23 @@ function AboutChooseUsStyle6Section5() {
             <div className={"info"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {" Our "}
-                  <span>{" Services "}</span>{" "}
+                  {` ${content.services.heading} `}
+                  <span>{` ${content.services.headingAccent} `}</span>{" "}
                 </h2>
               </div>
-              <div className={"text mb-50 fs-12px color-666"}>
-                {
-                  "\n                                With Iteck Marketplace, choose from hundreds of payment gateways for your customers. \n                            "
-                }
-              </div>
+              <div className={"text mb-50 fs-12px color-666"}>{content.services.description}</div>
               <ul>
-                <li className={"d-flex mb-40"}>
-                  <small className={"icon-50 me-4 flex-shrink-0"}>
-                    <img src={"/assets/img/icons/serv_icons/1.png"} alt={""} />
-                  </small>
-                  <div className={"inf"}>
-                    <h5>{"IT Consultation"}</h5>
-                    <p className={"fs-12px color-666 mt-2"}>
-                      {
-                        "\n                                            Nanotechnology immersion along the information high will close the loop on focusing solely\n                                        "
-                      }
-                    </p>
-                  </div>
-                </li>
-                <li className={"d-flex mb-40"}>
-                  <small className={"icon-50 me-4 flex-shrink-0"}>
-                    <img src={"/assets/img/icons/serv_icons/3.png"} alt={""} />
-                  </small>
-                  <div className={"inf"}>
-                    <h5>{"Software Design & Development"}</h5>
-                    <p className={"fs-12px color-666 mt-2"}>
-                      {
-                        "\n                                            Our top-notch Experts with much years of experience certail will give best solutions for your business\n                                        "
-                      }
-                    </p>
-                  </div>
-                </li>
-                <li className={"d-flex"}>
-                  <small className={"icon-50 me-4 flex-shrink-0"}>
-                    <img src={"/assets/img/icons/serv_icons/5.png"} alt={""} />
-                  </small>
-                  <div className={"inf"}>
-                    <h5>{"Cloud Services"}</h5>
-                    <p className={"fs-12px color-666 mt-2"}>
-                      {
-                        "\n                                            Customer support is always our number one priority.\n                                        "
-                      }
-                    </p>
-                  </div>
-                </li>
+                {content.services.items.map((service, index) => (
+                  <li className={index < 2 ? "d-flex mb-40" : "d-flex"} key={service.title}>
+                    <small className={"icon-50 me-4 flex-shrink-0"}>
+                      <img src={service.icon} alt={""} />
+                    </small>
+                    <div className={"inf"}>
+                      <h5>{service.title}</h5>
+                      <p className={"fs-12px color-666 mt-2"}>{service.description}</p>
+                    </div>
+                  </li>
+                ))}
               </ul>
               <Link
                 href={"/services"}
@@ -257,7 +181,7 @@ function AboutChooseUsStyle6Section5() {
                   "btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-60 px-5"
                 }
               >
-                <span>{"See More "}</span>
+                <span>{content.services.cta}{" "}</span>
               </Link>
             </div>
           </div>
@@ -274,89 +198,7 @@ function AboutChooseUsStyle6Section5() {
 
 function AboutClientsSectionPaddingSection6() {
   return (
-    <section className={"clients section-padding style-5"}>
-      <div className={"section-head text-center mb-40 style-5"}>
-        <h2 className={"mb-20"}>
-          {" Trusted By Thoudsands "}
-          <span>{" Business "}</span>{" "}
-        </h2>
-        <p>{"More than 15,000 companies trust and choose Iteck"}</p>
-      </div>
-      <div className={"content"}>
-        <div className={"clients-slider5"}>
-          <div className={"swiper-container"}>
-            <div className={"swiper-wrapper"}>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/7.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/8.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/9.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/10.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/11.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/12.png"} alt={""} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={"clients-slider5"} dir={"rtl"}>
-          <div className={"swiper-container"}>
-            <div className={"swiper-wrapper"}>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/13.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/14.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/15.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/16.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/17.png"} alt={""} />
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a href={"#"} className={"img"}>
-                  <img src={"/assets/img/logos/9.png"} alt={""} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ClientLogosSection variant="about" />
   );
 }
 
@@ -366,45 +208,19 @@ function AboutNumbersStyle6Section7() {
       <div className={"container"}>
         <div className={"content pb-100 border-1 border-bottom brd-gray"}>
           <div className={"row"}>
-            <div className={"col-lg-4"}>
-              <div className={"number-card style-6"}>
-                <h2 className={"me-4 color-blue5"}>
-                  <span className={"counter"}>{"12"}</span>
-                  {" +\n                                "}
-                </h2>
-                <div className={"text"}>
-                  {"\n                                    Years "}
-                  <br />
-                  {" of Experience\n                                "}
+            {content.statistics.map((stat, index) => (
+              <div className={"col-lg-4"} key={stat.value}>
+                <div className={`number-card style-6${index === 2 ? " border-0" : ""}`}>
+                  <h2 className={"me-4 color-blue5"}>
+                    <span className={"counter"}>{stat.value}</span>
+                    {index === 0 ? " +" : null}
+                  </h2>
+                  <div className={"text"}>
+                    {stat.firstLine}<br />{stat.secondLine}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={"col-lg-4"}>
-              <div className={"number-card style-6"}>
-                <h2 className={"me-4 color-blue5"}>
-                  <span className={"counter"}>{"1565"}</span>
-                </h2>
-                <div className={"text"}>
-                  {"\n                                    Projects "}
-                  <br />
-                  {" completed\n                                "}
-                </div>
-              </div>
-            </div>
-            <div className={"col-lg-4"}>
-              <div className={"number-card style-6 border-0"}>
-                <h2 className={"me-4 color-blue5"}>
-                  <span className={"counter"}>{"265"}</span>
-                </h2>
-                <div className={"text"}>
-                  {
-                    "\n                                    Satisfied clients on "
-                  }
-                  <br />
-                  {" 24 countries\n                                "}
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -417,65 +233,28 @@ function AboutCultureSectionPaddingSection8() {
     <section className={"culture section-padding style-5"}>
       <div className={"section-head text-center mb-70 style-5"}>
         <h2 className={"mb-20"}>
-          {" Discovery Our "}
-          <span>{" Culture "}</span>{" "}
+          {` ${content.culture.heading} `}
+          <span>{` ${content.culture.headingAccent} `}</span>{" "}
         </h2>
-        <p>{"Company’s culture is a part important of any business"}</p>
+        <p>{content.culture.description}</p>
       </div>
       <div className={"content"}>
         <div className={"culture-slider position-relative pb-80 style-5"}>
           <div className={"swiper-container"}>
             <div className={"swiper-wrapper"}>
-              <div className={"swiper-slide"}>
-                <a
-                  href={"/assets/img/about/cl1.png"}
-                  className={"culture-card d-block"}
-                  data-fancybox={"gallery"}
-                >
-                  <img src={"/assets/img/about/cl1.png"} alt={""} />
-                  <span className={"overlay"}></span>
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a
-                  href={"/assets/img/about/cl2.png"}
-                  className={"culture-card d-block"}
-                  data-fancybox={"gallery"}
-                >
-                  <img src={"/assets/img/about/cl2.png"} alt={""} />
-                  <span className={"overlay"}></span>
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a
-                  href={"/assets/img/about/cl3.png"}
-                  className={"culture-card d-block"}
-                  data-fancybox={"gallery"}
-                >
-                  <img src={"/assets/img/about/cl3.png"} alt={""} />
-                  <span className={"overlay"}></span>
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a
-                  href={"/assets/img/about/cl1.png"}
-                  className={"culture-card d-block"}
-                  data-fancybox={"gallery"}
-                >
-                  <img src={"/assets/img/about/cl1.png"} alt={""} />
-                  <span className={"overlay"}></span>
-                </a>
-              </div>
-              <div className={"swiper-slide"}>
-                <a
-                  href={"/assets/img/about/cl2.png"}
-                  className={"culture-card d-block"}
-                  data-fancybox={"gallery"}
-                >
-                  <img src={"/assets/img/about/cl2.png"} alt={""} />
-                  <span className={"overlay"}></span>
-                </a>
-              </div>
+              {content.culture.images.map((image, index) => (
+                <div className={"swiper-slide"} key={`${image}-${index}`}>
+                  <a
+                    href={image}
+                    className={"culture-card d-block"}
+                    data-fancybox={"gallery"}
+                    aria-label={`Open culture photo ${index + 1}`}
+                  >
+                    <img src={image} alt={""} />
+                    <span className={"overlay"}></span>
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
           <div className={"swiper-pagination"}></div>
@@ -492,10 +271,10 @@ function AboutTeamSectionPaddingSection9() {
         <div className={"container"}>
           <div className={"section-head text-center mb-70 style-5"}>
             <h2 className={"mb-20"}>
-              {" Our "}
-              <span>{" Leaders "}</span>{" "}
+              {` ${content.team.heading} `}
+              <span>{` ${content.team.headingAccent} `}</span>{" "}
             </h2>
-            <p>{"Profressional & Friendly is our slogan. Meet our leaders"}</p>
+            <p>{content.team.description}</p>
           </div>
           <TeamGrid />
         </div>
@@ -514,10 +293,10 @@ function AboutContactSectionPaddingSection10() {
       <div className={"container"}>
         <div className={"section-head text-center mb-70 style-5"}>
           <h2 className={"mb-20"}>
-            {" Ready To Start A "}
-            <span>{" Projects "}</span>{" "}
+            {` ${content.cta.heading} `}
+            <span>{` ${content.cta.headingAccent} `}</span>{" "}
           </h2>
-          <p>{"We will contact again after receive your request in 24h"}</p>
+          <p>{content.cta.description}</p>
         </div>
         <div className={"content"}>
           <div className={"row justify-content-center"}>
@@ -532,6 +311,7 @@ function AboutContactSectionPaddingSection10() {
                       <input
                         type={"text"}
                         name={"name"}
+                        aria-label={"Name"}
                         className={"form-control"}
                         placeholder={"Name"}
                       />
@@ -540,8 +320,9 @@ function AboutContactSectionPaddingSection10() {
                   <div className={"col-lg-6"}>
                     <div className={"form-group mb-20"}>
                       <input
-                        type={"text"}
+                        type={"email"}
                         name={"email"}
+                        aria-label={"Email Address"}
                         className={"form-control"}
                         placeholder={"Email Address *"}
                       />
@@ -552,6 +333,7 @@ function AboutContactSectionPaddingSection10() {
                       <input
                         type={"text"}
                         name={"phone"}
+                        aria-label={"Phone Number"}
                         className={"form-control"}
                         placeholder={"Phone Number (option)"}
                       />
@@ -562,6 +344,7 @@ function AboutContactSectionPaddingSection10() {
                       <input
                         type={"text"}
                         name={"website"}
+                        aria-label={"Your Website"}
                         className={"form-control"}
                         placeholder={"Your Website (option)"}
                       />
@@ -572,6 +355,7 @@ function AboutContactSectionPaddingSection10() {
                       <select
                         className={"form-select"}
                         name={"option"}
+                        aria-label={"How can we help you?"}
                         defaultValue={"How can we help you?"}
                       >
                         <option value={"How can we help you?"}>
@@ -586,6 +370,7 @@ function AboutContactSectionPaddingSection10() {
                     <div className={"form-group"}>
                       <textarea
                         name={"message"}
+                        aria-label={"How can we help you?"}
                         rows={10}
                         className={"form-control"}
                         placeholder={"How can we help you?"}

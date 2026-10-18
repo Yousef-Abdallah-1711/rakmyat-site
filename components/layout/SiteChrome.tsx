@@ -1,43 +1,40 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import {
+  footerContent,
+  promotionContent,
+  siteSettings,
+} from "@/content/site";
 
 export function TopPromotion() {
   return (
-    <div className={"top-navbar style-5"}>
-      {"\n        "}
-      <div className={"container"}>
-        {"\n            "}
-        <div className={"content text-white"}>
-          {"\n                "}
-          <span className={"btn sm-butn bg-white py-0 px-2 me-2 fs-10px"}>
-            {"\n                    "}
-            <small className={"fs-10px"}>{"Special"}</small>
-            {"\n                "}
+    <div className="top-navbar style-5">
+      <div className="container">
+        <div className="content text-white">
+          <span className="btn sm-butn bg-white py-0 px-2 me-2 fs-10px">
+            <small className="fs-10px">{promotionContent.badge}</small>
           </span>
-          {"\n                "}
+          {"  "}
           <img
-            src={"/assets/img/icons/nav_icon/imoj_heart.png"}
-            alt={""}
-            className={"icon-15"}
+            src="/assets/img/icons/nav_icon/imoj_heart.png"
+            alt=""
+            className="icon-15"
           />
-          {"\n                "}
-          <span className={"fs-10px op-6"}>{"Get "}</span>
-          {"\n                "}
-          <small className={"op-10 fs-10px"}>{"20% Discount"}</small>
-          {"\n                "}
-          <span className={"fs-10px op-6"}>{"Get for New Account"}</span>
-          {"\n                "}
+          {" "}
+          <span className="fs-10px op-6">{promotionContent.lead}</span>
+          {" "}
+          <small className="op-10 fs-10px">{promotionContent.discount}</small>
+          {" "}
+          <span className="fs-10px op-6">{promotionContent.audience}</span>
+          {" "}
           <Link
-            href={"/contact"}
-            className={"fs-10px text-decoration-underline ms-2"}
+            href={promotionContent.cta.href}
+            className="fs-10px text-decoration-underline ms-2"
           >
-            {"Register Now"}
+            {promotionContent.cta.label}
           </Link>
-          {"\n            "}
         </div>
-        {"\n        "}
       </div>
-      {"\n    "}
     </div>
   );
 }
@@ -58,249 +55,91 @@ export function SiteFooter({
 
 export function FooterContent() {
   return (
-    <div className={"container"}>
-      {"\n            "}
-      <div className={"row gx-0 justify-content-between"}>
-        {"\n                "}
-        <div className={"col-lg-3 col-sm-6"}>
-          {"\n                    "}
-          <div className={"items"}>
-            {"\n                        "}
-            <div className={"title"}>
-              {
-                "\n                            Iteck - 1st eCommerce Dashboard\n                        "
-              }
-            </div>
-            {"\n                        "}
-            <small className={"text"}>
-              {
-                "\n                            Over 25 years working in IT services developing software applications and mobile apps for\n                            clients all over the world. For your very specific industry, "
-              }
-              <br />
-              {
-                " we have highly-tailored IT\n                            solutions.\n                        "
-              }
+    <div className="container">
+      <div className="row gx-0 justify-content-between">
+        <div className="col-lg-3 col-sm-6">
+          <div className="items">
+            <div className="title">{footerContent.brandTitle}</div>
+            <small className="text">
+              {footerContent.descriptionLead}
+              <br /> {footerContent.descriptionTail}
             </small>
-            {"\n                        "}
-            <div className={"socail-icons"}>
-              {"\n                            "}
-              <a
-                href={"https://twitter.com/"}
-                className={
-                  "icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray me-2"
-                }
-                target={"_blank"}
-              >
-                {"\n                                "}
-                <i className={"fab fa-twitter"}></i>
-                {"\n                            "}
-              </a>
-              {"\n                            "}
-              <a
-                href={"https://facebook.com/"}
-                className={
-                  "icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray me-2"
-                }
-                target={"_blank"}
-              >
-                {"\n                                "}
-                <i className={"fab fa-facebook-f"}></i>
-                {"\n                            "}
-              </a>
-              {"\n                            "}
-              <a
-                href={"https://instagram.com/"}
-                className={
-                  "icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray"
-                }
-                target={"_blank"}
-              >
-                {"\n                                "}
-                <i className={"fab fa-instagram"}></i>
-                {"\n                            "}
-              </a>
-              {"\n                        "}
+            <div className="socail-icons">
+              {footerContent.socialLinks.map((social, index) => (
+                <a
+                  href={social.href}
+                  className={`icon-35 rounded-circle bg-gray overflow-hidden d-inline-flex align-items-center justify-content-center text-gray${index < footerContent.socialLinks.length - 1 ? " me-2" : ""}`}
+                  target="_blank"
+                  aria-label={social.label}
+                  key={social.label}
+                >
+                  <i className={`fab fa-${social.icon}`}></i>
+                </a>
+              ))}
             </div>
-            {"\n                    "}
+            {"\n \n "}
           </div>
-          {"\n                "}
         </div>
-        {"\n                "}
-        <div className={"col-lg-3 col-sm-6"}>
-          {"\n                    "}
-          <div className={"items"}>
-            {"\n                        "}
-            <div className={"title"}>
-              {
-                "\n                            Information\n                        "
-              }
-            </div>
-            {"\n                        "}
-            <small className={"text mb-10 d-block"}>
-              {"\n                            223 Thatcher Road St, Brookly, "}
-              <br />
-              {" Manhattan, NY 10463, US\n                        "}
+        <div className="col-lg-3 col-sm-6">
+          <div className="items">
+            <div className="title">{footerContent.informationTitle}</div>
+            <small className="text mb-10 d-block">
+              {siteSettings.addressLines[0]}
+              <br /> {siteSettings.addressLines[1]}
             </small>
-            {"\n                        "}
-            <small className={"text mb-10 d-block"}>
-              {
-                "\n                            +031 5689 89 98\n                        "
-              }
-            </small>
-            {"\n                        "}
-            <small className={"text d-block"}>
-              {
-                "\n                            contact@Itecksolution.co\n                        "
-              }
-            </small>
-            {"\n                    "}
+            <small className="text mb-10 d-block">{siteSettings.phone}</small>
+            <small className="text d-block">{siteSettings.email}</small>
           </div>
-          {"\n                "}
         </div>
-        {"\n                "}
-        <div className={"col-lg-2"}>
-          {"\n                    "}
-          <div className={"items"}>
-            {"\n                        "}
-            <div className={"title"}>
-              {
-                "\n                            Useful Links\n                        "
-              }
-            </div>
-            {"\n                        "}
+        <div className="col-lg-2">
+          <div className="items">
+            <div className="title">{footerContent.usefulLinksTitle}</div>
             <ul>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/"}>{" Home "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/about"}>{" About Iteck "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/portfolio"}>{" Projects "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/services/details"}>{" product "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/portfolio"}>{" Blog "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <Link href={"/contact"}>{" Contact "}</Link>
-                {"\n                            "}
-              </li>
-              {"\n                        "}
+              {footerContent.usefulLinks.map(({ href, label }) => (
+                <li key={label}>
+                  <Link href={href}>{` ${label} `}</Link>
+                </li>
+              ))}
             </ul>
-            {"\n                    "}
           </div>
-          {"\n                "}
         </div>
-        {"\n                "}
-        <div className={"col-lg-2"}>
-          {"\n                    "}
-          <div className={"items"}>
-            {"\n                        "}
-            <div className={"title"}>
-              {
-                "\n                            Resource\n                        "
-              }
-            </div>
-            {"\n                        "}
+        <div className="col-lg-2">
+          <div className="items">
+            <div className="title">{footerContent.resourceLinksTitle}</div>
             <ul>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <a href={"#"}>{" Online Documentation "}</a>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <a href={"#"}>{" Roadmap "}</a>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <a href={"#"}>{" Intergrations "}</a>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <a href={"#"}>{" FAQs "}</a>
-                {"\n                            "}
-              </li>
-              {"\n                            "}
-              <li>
-                {"\n                                "}
-                <a href={"#"}>{" Help Center "}</a>
-                {"\n                            "}
-              </li>
-              {"\n                        "}
+              {footerContent.resourceLinks.map(({ href, label }) => (
+                <li key={label}>
+                  <a href={href}>{` ${label} `}</a>
+                </li>
+              ))}
             </ul>
-            {"\n                    "}
           </div>
-          {"\n                "}
         </div>
-        {"\n            "}
       </div>
-      {"\n            "}
-      <div className={"foot"}>
-        {"\n                "}
-        <div className={"row"}>
-          {"\n                    "}
-          <div className={"col-lg-3 col-sm-6"}>
-            {"\n                        "}
-            <div className={"logo"}>
-              {"\n                            "}
-              <img src={"/assets/img/logo_foot_home5.png"} alt={""} />
-              {"\n                        "}
+      <div className="foot">
+        <div className="row">
+          <div className="col-lg-3 col-sm-6">
+            <div className="logo">
+              <img src={siteSettings.footerLogo} alt="" />
             </div>
-            {"\n                    "}
           </div>
-          {"\n                    "}
-          <div className={"col-lg-6"}>
-            {"\n                        "}
-            <small className={"small"}>
-              {"\n                            © 2023 Copyrights by "}
-              <a href={"#"} className={"fw-bold text-decoration-underline"}>
-                {"Iteck Co."}
+          <div className="col-lg-6">
+            <small className="small">
+              {footerContent.copyrightLabel}{" "}
+              <a href="#" className="fw-bold text-decoration-underline">
+                {footerContent.copyrightCompany}
               </a>
-              {
-                " All\n                            Rights Reserved. Designed by "
-              }
+              {" All Rights Reserved. Designed by "}
               <a
-                href={"https://themeforest.net/user/themescamp"}
-                className={"fw-bold text-decoration-underline"}
+                href={footerContent.designedBy.href}
+                className="fw-bold text-decoration-underline"
               >
-                {"ThemesCamp"}
+                {footerContent.designedBy.label}
               </a>
-              {"\n                        "}
             </small>
-            {"\n                    "}
           </div>
-          {"\n                "}
         </div>
-        {"\n            "}
       </div>
-      {"\n        "}
     </div>
   );
 }

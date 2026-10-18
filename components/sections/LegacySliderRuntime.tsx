@@ -22,6 +22,8 @@ declare global {
 }
 
 type SliderDefinition = { selector: string; options: Record<string, unknown> };
+const renderPaginationButton = (index: number, className: string) =>
+  `<button type="button" class="${className}" aria-label="Go to slide ${index + 1}"></button>`;
 const sliders: SliderDefinition[] = [
   {
     selector: ".clients-slider5 .swiper-container",
@@ -51,6 +53,7 @@ const sliders: SliderDefinition[] = [
       pagination: {
         el: ".testimonial-slider.style-5 .swiper-pagination",
         clickable: true,
+        renderBullet: renderPaginationButton,
       },
       navigation: false,
       mousewheel: false,
@@ -94,7 +97,11 @@ const sliders: SliderDefinition[] = [
       slidesPerView: 3,
       spaceBetween: 0,
       speed: 1000,
-      pagination: { el: ".slider-3items .swiper-pagination", clickable: true },
+      pagination: {
+        el: ".slider-3items .swiper-pagination",
+        clickable: true,
+        renderBullet: renderPaginationButton,
+      },
       navigation: {
         nextEl: ".slider-3items .swiper-button-next",
         prevEl: ".slider-3items .swiper-button-prev",
@@ -119,7 +126,11 @@ const sliders: SliderDefinition[] = [
       spaceBetween: 30,
       centeredSlides: true,
       speed: 1000,
-      pagination: { el: ".culture-slider .swiper-pagination", clickable: true },
+      pagination: {
+        el: ".culture-slider .swiper-pagination",
+        clickable: true,
+        renderBullet: renderPaginationButton,
+      },
       navigation: false,
       mousewheel: false,
       keyboard: true,
