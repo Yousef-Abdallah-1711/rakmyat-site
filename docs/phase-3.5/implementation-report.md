@@ -63,6 +63,7 @@ Machine-readable dimensions and interaction evidence: [responsive-qa.json](./res
 
 ## Preview and Git
 
-Local production preview: <http://127.0.0.1:5193/en/portfolio>.
+Local production preview: <http://127.0.0.1:5194/en/portfolio>.
 
-A reversible checkpoint tag `pre-rakmyat-phase3-5` marks the pre-change commit. The implementation commit hash will be recorded after commit.
+A reversible checkpoint tag `pre-rakmyat-phase3-5` marks the pre-change commit. Focused implementation and evidence commit: `1c19cef7720d5217e78e6ef086f282ee232b61f0`.
+
