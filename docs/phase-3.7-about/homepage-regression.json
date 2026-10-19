@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-19",
+  "baselineCommit": "323d4d1f1b4cbd91caf0236a6d1036f45445e22c",
+  "captureMethod": "Production builds; same Playwright browser; fonts ready; all images eager and decoded; full-page JPEG quality 84; CSS/Web Animations disabled.",
+  "comparisons": [
+    {"locale":"en","width":1440,"before":"screenshots/before/en-1440.jpg","after":"screenshots/after/en-1440.jpg","beforeHeight":11011,"afterHeight":11011,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"en","width":1280,"before":"screenshots/before/en-1280.jpg","after":"screenshots/after/en-1280.jpg","beforeHeight":10887,"afterHeight":10887,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"en","width":768,"before":"screenshots/before/en-768.jpg","after":"screenshots/after/en-768.jpg","beforeHeight":11864,"afterHeight":11864,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"en","width":390,"before":"screenshots/before/en-390.jpg","after":"screenshots/after/en-390.jpg","beforeHeight":15485,"afterHeight":15485,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"ar","width":1440,"before":"screenshots/before/ar-1440.jpg","after":"screenshots/after/ar-1440.jpg","beforeHeight":10913,"afterHeight":10913,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"ar","width":1280,"before":"screenshots/before/ar-1280.jpg","after":"screenshots/after/ar-1280.jpg","beforeHeight":10657,"afterHeight":10657,"meanAbsoluteRgbDelta":0.0},
+    {"locale":"ar","width":768,"before":"screenshots/before/ar-768.jpg","after":"screenshots/after/ar-768.jpg","beforeHeight":11472,"afterHeight":11472,"meanAbsoluteRgbDelta":0.001},
+    {"locale":"ar","width":390,"before":"screenshots/before/ar-390.jpg","after":"screenshots/after/ar-390.jpg","beforeHeight":14546,"afterHeight":14546,"meanAbsoluteRgbDelta":0.0}
+  ],
+  "homepageSourceChanges": 0,
+  "interpretation": "No visible homepage regression; the tiny 0.001 mean delta at Arabic 768px is isolated raster-level variance."
+}

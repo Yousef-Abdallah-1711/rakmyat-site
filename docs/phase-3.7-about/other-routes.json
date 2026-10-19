@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-10-19",
+  "routes": [
+    {"path":"/en/services","width":1440,"status":200,"lang":"en","dir":"ltr","pageHeight":6255,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/en/services","width":390,"status":200,"lang":"en","dir":"ltr","pageHeight":9339,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/services","width":1440,"status":200,"lang":"ar","dir":"rtl","pageHeight":6103,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/services","width":390,"status":200,"lang":"ar","dir":"rtl","pageHeight":8876,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/en/portfolio","width":1440,"status":200,"lang":"en","dir":"ltr","pageHeight":4503,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/en/portfolio","width":390,"status":200,"lang":"en","dir":"ltr","pageHeight":6461,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/portfolio","width":1440,"status":200,"lang":"ar","dir":"rtl","pageHeight":4500,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/portfolio","width":390,"status":200,"lang":"ar","dir":"rtl","pageHeight":6143,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/en/contact","width":1440,"status":200,"lang":"en","dir":"ltr","pageHeight":2353,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/en/contact","width":390,"status":200,"lang":"en","dir":"ltr","pageHeight":2883,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/contact","width":1440,"status":200,"lang":"ar","dir":"rtl","pageHeight":2353,"horizontalOverflow":false,"pageErrors":0},
+    {"path":"/ar/contact","width":390,"status":200,"lang":"ar","dir":"rtl","pageHeight":2768,"horizontalOverflow":false,"pageErrors":0}
+  ],
+  "note": "Routes verified against the rebuilt local app. Their implementation and shared styles were not changed by Phase 3.7."
+}

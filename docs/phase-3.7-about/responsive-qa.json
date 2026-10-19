@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-10-19",
+  "preview": "http://127.0.0.1:5197",
+  "viewports": [1440, 1280, 768, 390],
+  "aboutCaptures": [
+    {"path":"/en/about","width":1440,"status":200,"lang":"en","dir":"ltr","pageHeight":4432,"hero":{"width":1290,"height":370},"flowItem":{"width":361,"height":155.5,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":237.2,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/en/about","width":1280,"status":200,"lang":"en","dir":"ltr","pageHeight":4490,"hero":{"width":1140,"height":370},"flowItem":{"width":314.5,"height":154,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":207.2,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/en/about","width":768,"status":200,"lang":"en","dir":"ltr","pageHeight":5625,"hero":{"width":728,"height":340},"flowItem":{"width":201.5,"height":151,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":352,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/en/about","width":390,"status":200,"lang":"en","dir":"ltr","pageHeight":6474,"hero":{"width":350,"height":398.1},"flowItem":{"width":312.7,"height":94,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":350,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/ar/about","width":1440,"status":200,"lang":"ar","dir":"rtl","pageHeight":4118,"hero":{"width":1290,"height":370},"flowItem":{"width":361,"height":155.5,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":237.2,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/ar/about","width":1280,"status":200,"lang":"ar","dir":"rtl","pageHeight":4198,"hero":{"width":1140,"height":370},"flowItem":{"width":314.5,"height":154,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":207.2,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/ar/about","width":768,"status":200,"lang":"ar","dir":"rtl","pageHeight":5400,"hero":{"width":728,"height":340},"flowItem":{"width":201.5,"height":151,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":352,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false},
+    {"path":"/ar/about","width":390,"status":200,"lang":"ar","dir":"rtl","pageHeight":6046,"hero":{"width":350,"height":375.7},"flowItem":{"width":312.7,"height":94,"count":3},"focusItems":5,"uniqueFocusItems":5,"processItems":5,"processItemWidth":350,"brokenImages":0,"clippedHeadings":0,"horizontalOverflow":false,"pageErrors":0,"forms":0,"peopleAndPractice":false}
+  ],
+  "localizedLinks": [
+    {"locale":"en","href":"/en/services","passed":true},
+    {"locale":"en","href":"/en/contact","passed":true},
+    {"locale":"ar","href":"/ar/services","passed":true},
+    {"locale":"ar","href":"/ar/contact","passed":true}
+  ],
+  "otherRoutes": {"routes":6,"viewportsPerRoute":2,"http200":12,"pageErrors":0,"horizontalOverflow":0}
+}

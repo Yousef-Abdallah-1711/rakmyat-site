@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-10-19",
+  "preview": "http://127.0.0.1:5197",
+  "format": "JPEG, quality 84, full page",
+  "viewports": [1440, 1280, 768, 390],
+  "captures": [
+    {"route":"/en","width":1440,"before":"screenshots/before/en-1440.jpg","after":"screenshots/after/en-1440.jpg"},
+    {"route":"/en","width":1280,"before":"screenshots/before/en-1280.jpg","after":"screenshots/after/en-1280.jpg"},
+    {"route":"/en","width":768,"before":"screenshots/before/en-768.jpg","after":"screenshots/after/en-768.jpg"},
+    {"route":"/en","width":390,"before":"screenshots/before/en-390.jpg","after":"screenshots/after/en-390.jpg"},
+    {"route":"/ar","width":1440,"before":"screenshots/before/ar-1440.jpg","after":"screenshots/after/ar-1440.jpg"},
+    {"route":"/ar","width":1280,"before":"screenshots/before/ar-1280.jpg","after":"screenshots/after/ar-1280.jpg"},
+    {"route":"/ar","width":768,"before":"screenshots/before/ar-768.jpg","after":"screenshots/after/ar-768.jpg"},
+    {"route":"/ar","width":390,"before":"screenshots/before/ar-390.jpg","after":"screenshots/after/ar-390.jpg"},
+    {"route":"/en/about","width":1440,"before":"screenshots/before/en-about-1440.jpg","after":"screenshots/after/en-about-1440.jpg"},
+    {"route":"/en/about","width":1280,"before":"screenshots/before/en-about-1280.jpg","after":"screenshots/after/en-about-1280.jpg"},
+    {"route":"/en/about","width":768,"before":"screenshots/before/en-about-768.jpg","after":"screenshots/after/en-about-768.jpg"},
+    {"route":"/en/about","width":390,"before":"screenshots/before/en-about-390.jpg","after":"screenshots/after/en-about-390.jpg"},
+    {"route":"/ar/about","width":1440,"before":"screenshots/before/ar-about-1440.jpg","after":"screenshots/after/ar-about-1440.jpg"},
+    {"route":"/ar/about","width":1280,"before":"screenshots/before/ar-about-1280.jpg","after":"screenshots/after/ar-about-1280.jpg"},
+    {"route":"/ar/about","width":768,"before":"screenshots/before/ar-about-768.jpg","after":"screenshots/after/ar-about-768.jpg"},
+    {"route":"/ar/about","width":390,"before":"screenshots/before/ar-about-390.jpg","after":"screenshots/after/ar-about-390.jpg"}
+  ],
+  "captureCount": 32
+}
