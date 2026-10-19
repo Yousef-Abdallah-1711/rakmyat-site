@@ -1,0 +1,1167 @@
+{
+    "generatedAt":  "2026-10-19",
+    "viewportWidths":  [
+                           1440,
+                           1280,
+                           1024,
+                           768,
+                           390,
+                           360
+                       ],
+    "beforeCount":  60,
+    "afterCount":  84,
+    "captures":  [
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  1024,
+                         "path":  "before/ar-1024.jpg",
+                         "bytes":  438187,
+                         "sha256":  "3756741bd543086177357b64361f6f20bc022e6602cdaef64dce2b24e2927a8c"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  1280,
+                         "path":  "before/ar-1280.jpg",
+                         "bytes":  484848,
+                         "sha256":  "579ca41e90c4074183aca4f2b51893cee635f9c5654c5315e02b7fb35c3dce88"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  1440,
+                         "path":  "before/ar-1440.jpg",
+                         "bytes":  508508,
+                         "sha256":  "1762b4012c2b6a9220d0f75dedab8a238ab40a47c9cb8e0fee5ac3a0231d8054"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  360,
+                         "path":  "before/ar-360.jpg",
+                         "bytes":  306908,
+                         "sha256":  "2ce94f87233078bbec144f2617827ddaaf2992b0baea50464eb18c71d149b86e"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  390,
+                         "path":  "before/ar-390.jpg",
+                         "bytes":  317734,
+                         "sha256":  "15e408436de971226931a3589b8d60f3dbf345a29879f5b730d40dd57a5c33e9"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar",
+                         "viewportWidth":  768,
+                         "path":  "before/ar-768.jpg",
+                         "bytes":  385506,
+                         "sha256":  "456ba6662b9aebee210ce3c06680da03fe7e752b54712f827a057a50466fe8af"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1024,
+                         "path":  "before/ar-about-1024.jpg",
+                         "bytes":  189061,
+                         "sha256":  "5c11091b10ce13c9718a9cfcfd9b39fb5fc220e128cd576ed7ba4ba8110705d3"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1280,
+                         "path":  "before/ar-about-1280.jpg",
+                         "bytes":  203807,
+                         "sha256":  "7a05981d70f0f90245d98a5eef6cb0793f63a81ee790d17c03178b342c6fb799"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1440,
+                         "path":  "before/ar-about-1440.jpg",
+                         "bytes":  207128,
+                         "sha256":  "073cec706017eb797b846134a9b10184925337125d89d3cf0d121ef38c32fed8"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  360,
+                         "path":  "before/ar-about-360.jpg",
+                         "bytes":  141975,
+                         "sha256":  "a6248ddd5e9c168a3fb01a339b4958a33fc11dff90cd3ac018e49ca91d0fa27e"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  390,
+                         "path":  "before/ar-about-390.jpg",
+                         "bytes":  147703,
+                         "sha256":  "fe670b1790d1d617da22bfb786f70f575fc758de5b7c806f63d74f12f9181e24"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/about",
+                         "viewportWidth":  768,
+                         "path":  "before/ar-about-768.jpg",
+                         "bytes":  174561,
+                         "sha256":  "4aa7be85f9afccd1f54fc1b18e5ea00755866f5275dec0b5c307bb087652eede"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1024,
+                         "path":  "before/ar-contact-1024.jpg",
+                         "bytes":  43236,
+                         "sha256":  "4d6f921e9bd50bf6dc84a0f82507733227520ea92f245cafc094fbad05ba9259"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1280,
+                         "path":  "before/ar-contact-1280.jpg",
+                         "bytes":  49028,
+                         "sha256":  "ce091f83500da7a9a432a0e7db7d3ee4e01272ef5d4c41a185182920a63c917a"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1440,
+                         "path":  "before/ar-contact-1440.jpg",
+                         "bytes":  52263,
+                         "sha256":  "df1a65c5ef13a3f9f3d7f56f7df53da8c658569dc8cf6056e0871e15aab384f3"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  360,
+                         "path":  "before/ar-contact-360.jpg",
+                         "bytes":  32068,
+                         "sha256":  "009ea19f273ca6f16b34aef3ea8945a57875fd9ca3b3d312c9c5ce37c06ed9e2"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  390,
+                         "path":  "before/ar-contact-390.jpg",
+                         "bytes":  32659,
+                         "sha256":  "59fdf851193c0f41b73f71c5d8e8996920d93285f711ef281d0883eded69697e"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  768,
+                         "path":  "before/ar-contact-768.jpg",
+                         "bytes":  39177,
+                         "sha256":  "ed2a2f170889600b46139aa19db43466b52fcb4019f9f233f6ab51711914041f"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1024,
+                         "path":  "before/ar-portfolio-1024.jpg",
+                         "bytes":  230584,
+                         "sha256":  "d4554d65f44fcbe60fa8479bc29b046eb927b6057f58037ded60470e219cfb39"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1280,
+                         "path":  "before/ar-portfolio-1280.jpg",
+                         "bytes":  270716,
+                         "sha256":  "1b270968453d0eb99fc2e46fa2f6daf30ff832a8b18e9d5f056e9855e134dcb4"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1440,
+                         "path":  "before/ar-portfolio-1440.jpg",
+                         "bytes":  300585,
+                         "sha256":  "265270ea84265c20978ff99aa65729a3bfa07e6d0258d0abefe69d1324e24f2b"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  360,
+                         "path":  "before/ar-portfolio-360.jpg",
+                         "bytes":  168146,
+                         "sha256":  "3f6f25168876f4097ec80decb82f2325a521978ea3a19c0a4a06b3a825f78cf7"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  390,
+                         "path":  "before/ar-portfolio-390.jpg",
+                         "bytes":  180934,
+                         "sha256":  "cdca511c504464f18c1cac65b2fc554e41f319e50df8ea403b74a914b873df89"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  768,
+                         "path":  "before/ar-portfolio-768.jpg",
+                         "bytes":  168947,
+                         "sha256":  "2b6745d5a95764f93860e13277b4c4a1300fd629eda6b34fb21fd94890583e8c"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1024,
+                         "path":  "before/ar-services-1024.jpg",
+                         "bytes":  284484,
+                         "sha256":  "2cc53832a8da219c2089a6ff6b2b5aa7a4bcfc7dc9c392c167c1235862572b38"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1280,
+                         "path":  "before/ar-services-1280.jpg",
+                         "bytes":  317203,
+                         "sha256":  "5f6bbc2cfe360763c5d062b717ae8e8f9c0ae805100b74645d6babc7285ddd9d"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1440,
+                         "path":  "before/ar-services-1440.jpg",
+                         "bytes":  328928,
+                         "sha256":  "4b890f1da93ed092c5fcf61a0e7afffcd2c95531df8e6631edcb681606081643"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  360,
+                         "path":  "before/ar-services-360.jpg",
+                         "bytes":  176823,
+                         "sha256":  "fc46abdf352532edd5e7c516ce9aa2c288303604b57675ff9d64e931f9c201d6"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  390,
+                         "path":  "before/ar-services-390.jpg",
+                         "bytes":  186164,
+                         "sha256":  "8ebafd27f86cc5912ce3e48e1a98599bba848847fdece8f58f4bce2cf1f6ac09"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/ar/services",
+                         "viewportWidth":  768,
+                         "path":  "before/ar-services-768.jpg",
+                         "bytes":  249950,
+                         "sha256":  "5ea10e93521454ac501c5c56bdc75d38a465169721e2a214bbfd2a623fb870a2"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  1024,
+                         "path":  "before/en-1024.jpg",
+                         "bytes":  541254,
+                         "sha256":  "7529807b55f6f303a7bbdb8641c74b88d651d291ec746b48ec777c5d3acafe14"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  1280,
+                         "path":  "before/en-1280.jpg",
+                         "bytes":  581498,
+                         "sha256":  "e87744fca11704924f43feb2544fd949f0a2325f377b1230db03f41c3dc35bcc"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  1440,
+                         "path":  "before/en-1440.jpg",
+                         "bytes":  599143,
+                         "sha256":  "4829491030c1c8e9c61e3d269bbaf027b4ac6cc23844e6ece96075c3d9dbdb99"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  360,
+                         "path":  "before/en-360.jpg",
+                         "bytes":  386538,
+                         "sha256":  "3fe2342386872928d413b92eb453191e6d637860d3bef72ccd262551f7b29bdc"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  390,
+                         "path":  "before/en-390.jpg",
+                         "bytes":  399094,
+                         "sha256":  "ac3386bc4fedf8f310c4107654f9b4f309191107d7e41d849d4a32f74cccb6c7"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en",
+                         "viewportWidth":  768,
+                         "path":  "before/en-768.jpg",
+                         "bytes":  470225,
+                         "sha256":  "b14aa0b859c26cf899d988db4891fbaaaf7e5f8cf68a80552189783691ad352e"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  1024,
+                         "path":  "before/en-about-1024.jpg",
+                         "bytes":  239001,
+                         "sha256":  "11453bb545f3240d6a8659ce97f2b843e48fa792c2206326f642f751f64fddd5"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  1280,
+                         "path":  "before/en-about-1280.jpg",
+                         "bytes":  256127,
+                         "sha256":  "aa33ed0d082d7ea3e36a2c6e5ef8d988ee0ee56cea9338639f7265ad71e363bf"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  1440,
+                         "path":  "before/en-about-1440.jpg",
+                         "bytes":  262241,
+                         "sha256":  "6dea21e5d4b4f27fd9497854dd44427e4d4146e95ca69d08a67b0eac862ea94c"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  360,
+                         "path":  "before/en-about-360.jpg",
+                         "bytes":  190565,
+                         "sha256":  "16a36b22cd4af7724a908d12183f0b9a8d0d49674151a6c33d05bd5485b3f424"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  390,
+                         "path":  "before/en-about-390.jpg",
+                         "bytes":  193091,
+                         "sha256":  "3bd3e8388ae9501e4b5555ce0813ff86bee1d8b91f6d9b7e941367aff81956af"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/about",
+                         "viewportWidth":  768,
+                         "path":  "before/en-about-768.jpg",
+                         "bytes":  211150,
+                         "sha256":  "8f357541d79079badfbeeaf55671acea432c4316b8a4a657a020a1c6c1602148"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1024,
+                         "path":  "before/en-contact-1024.jpg",
+                         "bytes":  50758,
+                         "sha256":  "482c31e7e611b375e718e188924942dfc98dce7ceb50d0d8e083a4e54dfaaf45"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1280,
+                         "path":  "before/en-contact-1280.jpg",
+                         "bytes":  55328,
+                         "sha256":  "abfa6d2b007bb060c8360b444e4dee5a311862d2de32162a908a454df0017cb3"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1440,
+                         "path":  "before/en-contact-1440.jpg",
+                         "bytes":  58576,
+                         "sha256":  "f8b9d8e9c83ffef0a1f10101bcfb2d43641991da7980f07bc68cfebec2ba7eba"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  360,
+                         "path":  "before/en-contact-360.jpg",
+                         "bytes":  37823,
+                         "sha256":  "2245a4a5c1e34fa05fc1ead9054738f3755d44ef356e7518e36ac8633baa99ac"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  390,
+                         "path":  "before/en-contact-390.jpg",
+                         "bytes":  38780,
+                         "sha256":  "74836eb0a85ae8273bc94fa2e57e7444d9e1c43a19d25aabc9a243be0c864439"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/contact",
+                         "viewportWidth":  768,
+                         "path":  "before/en-contact-768.jpg",
+                         "bytes":  43740,
+                         "sha256":  "6d30f28d36c36ea7e6e86fd2c7faa467a538ce4dd08c4b37fa20438ce08247da"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1024,
+                         "path":  "before/en-portfolio-1024.jpg",
+                         "bytes":  250430,
+                         "sha256":  "ce78f9b59773ed66041ba95e0cc13260d422d64f891d7a5b7bd673db765d4084"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1280,
+                         "path":  "before/en-portfolio-1280.jpg",
+                         "bytes":  300758,
+                         "sha256":  "03a5dd83365f3a345bfa3b638453192887aa9bbcaaa7067fef38c4e9c705dd93"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1440,
+                         "path":  "before/en-portfolio-1440.jpg",
+                         "bytes":  329001,
+                         "sha256":  "a6225a6b52b389e9cdda38a975915b1bc7ff4b06fd5957db7cfab56aaa6ce9b8"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  360,
+                         "path":  "before/en-portfolio-360.jpg",
+                         "bytes":  198172,
+                         "sha256":  "68d9b854dceb863e466a46f37566a9fe1be0122581e3d57d91a8bf59f0faa3b6"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  390,
+                         "path":  "before/en-portfolio-390.jpg",
+                         "bytes":  215027,
+                         "sha256":  "0d317434a657648e9ccad3df0a4aa9f79033ef6242b545201688a2b8e70f1c96"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  768,
+                         "path":  "before/en-portfolio-768.jpg",
+                         "bytes":  194971,
+                         "sha256":  "c377e0bdba55a3b8d02d8ee74ddc434e477cc8b3646806905cfeeb1edf77936e"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  1024,
+                         "path":  "before/en-services-1024.jpg",
+                         "bytes":  355500,
+                         "sha256":  "fa5c8f3d67aa478b26b7eeec267e8f96988fadcc980defe522d8a4e4ec8c68c9"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  1280,
+                         "path":  "before/en-services-1280.jpg",
+                         "bytes":  385908,
+                         "sha256":  "75bcc1ecd35ec7327945f133af52309b387695ccb9363030aec507fda9909d94"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  1440,
+                         "path":  "before/en-services-1440.jpg",
+                         "bytes":  396141,
+                         "sha256":  "1a156c2c2e04525b3034c7e901179bff72da368f91658cef2d81a2a486e746c5"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  360,
+                         "path":  "before/en-services-360.jpg",
+                         "bytes":  211229,
+                         "sha256":  "ec8743e10756bb0d041a6d1b622b704cbfc7035ec6f59a02a359c6d5f1374032"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  390,
+                         "path":  "before/en-services-390.jpg",
+                         "bytes":  222071,
+                         "sha256":  "61e481dc6eca0478ac70683999b24b71220631a1b4090d1ec32f294576103c4a"
+                     },
+                     {
+                         "group":  "before",
+                         "route":  "/en/services",
+                         "viewportWidth":  768,
+                         "path":  "before/en-services-768.jpg",
+                         "bytes":  289854,
+                         "sha256":  "e3b9afc8e75d98af0f082328a76cc3984d53cdedf46aa5d252e539eca9cf78ce"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  1024,
+                         "path":  "after/admin-inquiries-1024.jpg",
+                         "bytes":  17234,
+                         "sha256":  "bf1dad9301bf64bed6b9673113db3da49f2a3556b4e1d8e2cf6d6335fab84f22"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  1280,
+                         "path":  "after/admin-inquiries-1280.jpg",
+                         "bytes":  19148,
+                         "sha256":  "4174b6b332a49bef57915d21c8e38ffa79ae355adf6c22e11c2656b69da46637"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  1440,
+                         "path":  "after/admin-inquiries-1440.jpg",
+                         "bytes":  20037,
+                         "sha256":  "c9cf202f6d7cd4b9a72d0e3fd17df2d9a2597c675bb4bdcc6003bd740ac9e879"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  360,
+                         "path":  "after/admin-inquiries-360.jpg",
+                         "bytes":  13773,
+                         "sha256":  "9fc2c64d962255598089292edb343dfcf66b8293dbd2a2cc3234ca0c016e4e74"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  390,
+                         "path":  "after/admin-inquiries-390.jpg",
+                         "bytes":  13979,
+                         "sha256":  "aad4830c16aba516bc2d9498b6e41916caff3fd0d20cf8c7d30ee5cfe4a0d682"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/inquiries",
+                         "viewportWidth":  768,
+                         "path":  "after/admin-inquiries-768.jpg",
+                         "bytes":  16268,
+                         "sha256":  "b8c14566ed6e2a2eed5a97eb06a969c906b23347c3d5ecb812ba54091c35246c"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  1024,
+                         "path":  "after/admin-login-1024.jpg",
+                         "bytes":  20333,
+                         "sha256":  "4de12aa3dc37e45d55f034d041001dc73bdac2b1df9813a7cb93c2a181b74ea2"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  1280,
+                         "path":  "after/admin-login-1280.jpg",
+                         "bytes":  22247,
+                         "sha256":  "bcbde5be984e7e7dca3c2f23e35a84a51a5ce513bdb99b23cbf83e91fe17e20a"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  1440,
+                         "path":  "after/admin-login-1440.jpg",
+                         "bytes":  23149,
+                         "sha256":  "7b63dce86054a648d1b7745c8a33c2f85c426e981c37b9a0d636e70f80d9f09d"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  360,
+                         "path":  "after/admin-login-360.jpg",
+                         "bytes":  16245,
+                         "sha256":  "e4554a5cb5d81929b979419dc3df19a92d696e4fa0eb6553a5eb77c7007f37ad"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  390,
+                         "path":  "after/admin-login-390.jpg",
+                         "bytes":  16661,
+                         "sha256":  "e8a08b69206db06542e88ddc4ebd6a6249e99ec6fafe48595a2afa2dcc7422d2"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/admin/login",
+                         "viewportWidth":  768,
+                         "path":  "after/admin-login-768.jpg",
+                         "bytes":  19367,
+                         "sha256":  "59681529446736e556c11f9f746d310e63b146873931f116495aaa48a790dfc4"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-1024.jpg",
+                         "bytes":  474842,
+                         "sha256":  "ed50b275eeaa00d4818c413e32ffef2ab9a86c591701fe8c5cbeb344d7da771b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-1280.jpg",
+                         "bytes":  523496,
+                         "sha256":  "915c040c7162751fd06f54a2ee04f603b644399e61fff7f4470f08d1d454c68f"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-1440.jpg",
+                         "bytes":  546577,
+                         "sha256":  "52689ecdf37eb9d9531b1168d0ec6c76fc7dcc3f8741178bdf521754db2b0fc9"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-360.jpg",
+                         "bytes":  326440,
+                         "sha256":  "c7214558e9738373e8a2b174b4af3a81570f0de1bb02a917155c1345455966b6"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-390.jpg",
+                         "bytes":  340049,
+                         "sha256":  "93b4429ffd4cbc07e2147d30700b90dc7cb56cf63d8968b090535f82e70ce93d"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-768.jpg",
+                         "bytes":  412270,
+                         "sha256":  "fd3b9e068d1ecdd53bae53858b3c25eda12bc37e45aec696a64e402987a4fbee"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-about-1024.jpg",
+                         "bytes":  228810,
+                         "sha256":  "3bec8d010859051d4ceabf80ef7d0b89f7e7b6a19dfd4ba6d4fd6541c83bff84"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-about-1280.jpg",
+                         "bytes":  246761,
+                         "sha256":  "f636ee0f749a539c1ab517f5dec0bd96b60b9c201bb6bee72bb879e290a355d1"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-about-1440.jpg",
+                         "bytes":  254012,
+                         "sha256":  "99871de9bdd0f55dd983eeebcf899c0a103930a97b00f17b757cbb1165ef810a"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-about-360.jpg",
+                         "bytes":  164192,
+                         "sha256":  "7c2c476cc89df60cf1508ee71652a9b1bd057efe9af1d8a19c0afe1efd8b82fd"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-about-390.jpg",
+                         "bytes":  170430,
+                         "sha256":  "f9870df7c6b7621783ad5d77027ae201c5942b8c5e769e6643b9a2513025e6ac"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/about",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-about-768.jpg",
+                         "bytes":  208551,
+                         "sha256":  "6262b2f0afac0fe17980dd2469e6a1ecbd2313cb12995b48de5300f53abb0310"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-contact-1024.jpg",
+                         "bytes":  74310,
+                         "sha256":  "d95f74436c5012b30cfe3fbe3fc7d4b83447fc8791423986da174ee1c62609b3"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-contact-1280.jpg",
+                         "bytes":  80195,
+                         "sha256":  "70085b9b6cb532472525ee6309ed295fcea40d8db324ea3fadf0c8495fc496de"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-contact-1440.jpg",
+                         "bytes":  84050,
+                         "sha256":  "929d17e85d1d49282cad9f006d83dcdd92f16c834c38e8a89458764f4d885bd5"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-contact-360.jpg",
+                         "bytes":  57591,
+                         "sha256":  "c9b619c6887d88878e6fa9d459200df2ee325f83c248e2879190db90eaa7eece"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-contact-390.jpg",
+                         "bytes":  59650,
+                         "sha256":  "fc48edcfc739310338ba3d3c7ffe04fa4c169c43d20ec345488c91fbf53e584f"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/contact",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-contact-768.jpg",
+                         "bytes":  64831,
+                         "sha256":  "9bd6c00886b6cfe36803a8c8772348156f43079d2935eb99336b2dd218beb186"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-portfolio-1024.jpg",
+                         "bytes":  282114,
+                         "sha256":  "f0912fde6a709120a9126c0e65fe9c2812ac434627b05607f5215d2e4e9d136e"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-portfolio-1280.jpg",
+                         "bytes":  325942,
+                         "sha256":  "831b9707c8c0c6749eead40b4c77f53dbecb2ddbec153e6e57ef81974b8c8b52"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-portfolio-1440.jpg",
+                         "bytes":  358871,
+                         "sha256":  "1df4f19e931992ba5136f243d3551c57d04778c99ac68175f5214124f504cc06"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-portfolio-360.jpg",
+                         "bytes":  185878,
+                         "sha256":  "e82c8d5a25cdde1fcf5c83119f18bbbd8040893fa375a2e2c645468957c4cbf4"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-portfolio-390.jpg",
+                         "bytes":  199677,
+                         "sha256":  "d360e4b10f25d445c6705dae51b16bacf27c69d8d181664b06529398a38a6646"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/portfolio",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-portfolio-768.jpg",
+                         "bytes":  210086,
+                         "sha256":  "3f9d5dbf758bc08950453b3f5a6e51a7edc9f0e90f2ce80ee0c77e58d6c9b04b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-services-1024.jpg",
+                         "bytes":  330902,
+                         "sha256":  "4896790f4569b383fc4613b38257ea9197be386a86a9f20c6ee624074faef984"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-services-1280.jpg",
+                         "bytes":  366121,
+                         "sha256":  "d507b177d524a56c1e3435bbf9ade45439c265f503d1ed3472a07c9dcac1ff62"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-services-1440.jpg",
+                         "bytes":  378397,
+                         "sha256":  "7d610fd3a8a5ae12f19606cce4774fb9a323843cbe1ed5991fb27815397359fe"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-services-360.jpg",
+                         "bytes":  190351,
+                         "sha256":  "da8a54fddb4f88d32c061f397fb4f79cefc5a5930a4f536d3036479dcd661a42"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-services-390.jpg",
+                         "bytes":  199960,
+                         "sha256":  "6a517238edb502a88246df6f744fb951289b4245c47053ff0c31026fa5939988"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-services-768.jpg",
+                         "bytes":  273957,
+                         "sha256":  "ceaeb3e12eee253c510321accdadbf4267bd9b222daaecae0d1c4f2c654c9f3d"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  1024,
+                         "path":  "after/ar-services-details-1024.jpg",
+                         "bytes":  145661,
+                         "sha256":  "abde79f0af7d4510d514aa5be459f09302eeb74b257a9144c32b5d041949b1ce"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  1280,
+                         "path":  "after/ar-services-details-1280.jpg",
+                         "bytes":  156802,
+                         "sha256":  "80a7029410080907efde7d99f42753fdaa64670c935fca3cdb50fedcdcedbcd7"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  1440,
+                         "path":  "after/ar-services-details-1440.jpg",
+                         "bytes":  166051,
+                         "sha256":  "e3892a3f9bc5aa1b653208ba127c737bffa7cec72351b7c80e0c76c25d56b421"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  360,
+                         "path":  "after/ar-services-details-360.jpg",
+                         "bytes":  114620,
+                         "sha256":  "f05b4ac8e7c3dd2089d5127b814501e85291e5ba60ba29e6ff6ba5f6eac3612a"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  390,
+                         "path":  "after/ar-services-details-390.jpg",
+                         "bytes":  117942,
+                         "sha256":  "21783e819c032d46d2b2af32f138ff5d313c53028f9554a14bb82c4f664d25b2"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/ar/services/details",
+                         "viewportWidth":  768,
+                         "path":  "after/ar-services-details-768.jpg",
+                         "bytes":  140745,
+                         "sha256":  "bef61a3a2ed7dbce689f1a62293372231642e89caa789a0d29f290d387d46496"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-1024.jpg",
+                         "bytes":  586336,
+                         "sha256":  "28d1cdb92503b7688e18ee2a7b698883dfc058c81071d90e5728a97e1a334dae"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-1280.jpg",
+                         "bytes":  630381,
+                         "sha256":  "12c56a30633aea6bea97aa33c752468780cfd1ad170d1c6853621696e41acb60"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-1440.jpg",
+                         "bytes":  649046,
+                         "sha256":  "ecdfc82f5131cd0e521effc1eda132afcf9caa8d6f976e360b80585083fed15b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  360,
+                         "path":  "after/en-360.jpg",
+                         "bytes":  412957,
+                         "sha256":  "a80dbf9d719824dffef17bd1ce5f9602e837d414fd4dc7b53d190253cc78a459"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  390,
+                         "path":  "after/en-390.jpg",
+                         "bytes":  428245,
+                         "sha256":  "16294d533edae9b0b0a8b58a4208ff5cd2de962c8cd74b0616bcc40cb94a11d4"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en",
+                         "viewportWidth":  768,
+                         "path":  "after/en-768.jpg",
+                         "bytes":  506210,
+                         "sha256":  "a7930aa2f3431feae0e49471a017c48f0ef63f8f87d19387598be11fe9554f0f"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-about-1024.jpg",
+                         "bytes":  293341,
+                         "sha256":  "b655aa9769c5adeb679a16eaafc25a379c05725afb7b81ce58a0a482f4038e7b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-about-1280.jpg",
+                         "bytes":  314637,
+                         "sha256":  "4166ceafe46e821ee78327e82d6aac5938e87964adee88bb431bdff57e93ddad"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-about-1440.jpg",
+                         "bytes":  322239,
+                         "sha256":  "78ef153f905e7b042012d2fbf8371993e3fe7678f754a0836b433350346001ea"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  360,
+                         "path":  "after/en-about-360.jpg",
+                         "bytes":  217477,
+                         "sha256":  "4e8b93976032ca7d20ebe91abc4b192d240a86f68521bf5e0a7f8377794920ee"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  390,
+                         "path":  "after/en-about-390.jpg",
+                         "bytes":  221307,
+                         "sha256":  "92306d4cffdeb31f664eee51e40dcf25db6a8b55d095854618e77eacb5ab692b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/about",
+                         "viewportWidth":  768,
+                         "path":  "after/en-about-768.jpg",
+                         "bytes":  257706,
+                         "sha256":  "ea6a3ac6d1da5a36ceec12fc28230984a88fdd98abe5eac07db1e621b35c1266"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-contact-1024.jpg",
+                         "bytes":  88528,
+                         "sha256":  "a582c401c498548182f6699cf1f5dc47b63fed3f68d756093d2f1ceabf41ec70"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-contact-1280.jpg",
+                         "bytes":  95683,
+                         "sha256":  "6f6eabac62a78e2cf126a25b37700f8924fc420d94ff37c340ca34c444a46573"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-contact-1440.jpg",
+                         "bytes":  98161,
+                         "sha256":  "e1796d7ebcdec100c38d92cf5d92589efdb4df50fd460c4d7176c196112abbed"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  360,
+                         "path":  "after/en-contact-360.jpg",
+                         "bytes":  69084,
+                         "sha256":  "c5fe7d918925673a09ad25c568c45654a5d42f2ee5fa8b9c35b0d5c92af634f7"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  390,
+                         "path":  "after/en-contact-390.jpg",
+                         "bytes":  70886,
+                         "sha256":  "c5a8f1b2e267e167cdb019900a6366f092420dda9a6026e86476bc7485c2689b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/contact",
+                         "viewportWidth":  768,
+                         "path":  "after/en-contact-768.jpg",
+                         "bytes":  77442,
+                         "sha256":  "1eacbfe1691a54df2871616ac6de29b3be686e399d1c01a3a04b501b7d15138d"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-portfolio-1024.jpg",
+                         "bytes":  310695,
+                         "sha256":  "2bc8a0329fd1d9c6d9ff1ef00496e57fd2c0ef2255b996f20b34cb156a45a082"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-portfolio-1280.jpg",
+                         "bytes":  337864,
+                         "sha256":  "73f7fda82ff9ad99f1942f5668fccadcfd5aeac454788f8081d9b67481eb6423"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-portfolio-1440.jpg",
+                         "bytes":  361516,
+                         "sha256":  "75a8e80dfe5e33cca809bb1a8e09b25f93a1f150e52a4816cd834ab4dafa63b3"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  360,
+                         "path":  "after/en-portfolio-360.jpg",
+                         "bytes":  219836,
+                         "sha256":  "6e350b68dbb63595ae90e77e5365a142a256fd58f6ecb3a91e45eb4f4124d45f"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  390,
+                         "path":  "after/en-portfolio-390.jpg",
+                         "bytes":  236758,
+                         "sha256":  "15ecb79321e7f1eb10b4bdeb612a02fffcd30fd4a3ba794a74775592a8112eae"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/portfolio",
+                         "viewportWidth":  768,
+                         "path":  "after/en-portfolio-768.jpg",
+                         "bytes":  239663,
+                         "sha256":  "adb0ac75e2dea68dfdc8b6ce1e11f49e9a5318fd7d1e9e332ac46ec557704aad"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-services-1024.jpg",
+                         "bytes":  404470,
+                         "sha256":  "cf7f223ddf04259cbf26ac12ac187023391fcbd910a1cbb956fddcb1a7f08527"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-services-1280.jpg",
+                         "bytes":  444045,
+                         "sha256":  "f9ef9e49c0a224a02f05cfa96838f92877160c9fd944dee585ed3c8fa19b4c00"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-services-1440.jpg",
+                         "bytes":  454450,
+                         "sha256":  "0498bfb609640ab1d3e45afc77a293e8def72e02c293136e68c64294a4e025f7"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  360,
+                         "path":  "after/en-services-360.jpg",
+                         "bytes":  229097,
+                         "sha256":  "235103592752f6a08a15622d207d81b6f1007aefbf7e1283ffc7c39a6ea6c568"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  390,
+                         "path":  "after/en-services-390.jpg",
+                         "bytes":  241731,
+                         "sha256":  "c9ab14158dcfe0ba5f7ba872b05d9c59049a462ee602d36456b6274b17e71bfb"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services",
+                         "viewportWidth":  768,
+                         "path":  "after/en-services-768.jpg",
+                         "bytes":  320602,
+                         "sha256":  "a453b18a64a28b929cac3a3ad5a9c6d1c5101ef4ab087cbe666cdad72de8d748"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  1024,
+                         "path":  "after/en-services-details-1024.jpg",
+                         "bytes":  179210,
+                         "sha256":  "be4d2bab3ae0dee315cfe9df5e90c614f251683b412da90b71146d291850b214"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  1280,
+                         "path":  "after/en-services-details-1280.jpg",
+                         "bytes":  188539,
+                         "sha256":  "db68653a60f87c816092cf141fee8c75a85a999c674c9b0f9c774fe489f51ab5"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  1440,
+                         "path":  "after/en-services-details-1440.jpg",
+                         "bytes":  198771,
+                         "sha256":  "186cc083ad488ff21391efb3c7434798e6aeb376ac1defb7e91cc9c87c4b07cf"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  360,
+                         "path":  "after/en-services-details-360.jpg",
+                         "bytes":  139811,
+                         "sha256":  "53f35d0be01ea5aeda37569bf69fdb41dcb154755b040e1ec271e92256c318c2"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  390,
+                         "path":  "after/en-services-details-390.jpg",
+                         "bytes":  141538,
+                         "sha256":  "b14a9a353df096f0cb1a5036f60e5529ed73c56abfb4431cc7499918402e0b4b"
+                     },
+                     {
+                         "group":  "after",
+                         "route":  "/en/services/details",
+                         "viewportWidth":  768,
+                         "path":  "after/en-services-details-768.jpg",
+                         "bytes":  164285,
+                         "sha256":  "7b0b604e928aaf73c8e537227760d5edfed31e23550c9a863a2b5654408b3a08"
+                     }
+                 ]
+}

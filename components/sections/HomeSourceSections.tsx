@@ -3,7 +3,6 @@ import { MarketplaceFeaturesSection } from "@/components/sections/MarketplaceFea
 import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader, PricingMobileTable } from "@/components/pricing/PricingTable";
-import { ContactForm } from "@/components/forms/ContactForm";
 import { getHomeContent } from "@/content/home";
 import type { Locale } from "@/content/i18n";
 import Link from "next/link";
@@ -46,29 +45,13 @@ function HomeStyle5Section1({ locale }: { locale: Locale }) {
                 <br />
                 {homePageContent.hero.descriptionTail}
               </p>
-              <ContactForm className={"form"} locale={locale}>
-                <div className={"form-group"}>
-                  <span className={"icon"}>
-                    <i className={"far fa-envelope"}></i>
-                  </span>
-                  <input
-                    type={"email"}
-                    aria-label={locale === "ar" ? "البريد الإلكتروني" : "Email address"}
-                    placeholder={homePageContent.hero.emailPlaceholder}
-                  />
-                  <Link
-                    href={homePageContent.hero.cta.href}
-                    className={
-                      "btn rounded-pill bg-blue5 hover-blue2 sm-butn fw-bold text-white"
-                    }
-                  >
-                    <span>
-                  {`${homePageContent.hero.cta.label} `}
-                      <i className={"bi bi-arrow-right ms-1"}></i>{" "}
-                    </span>
+              <div className="form">
+                <div className="form-group">
+                  <Link href={homePageContent.hero.cta.href} className="btn rounded-pill bg-blue5 hover-blue2 sm-butn fw-bold text-white">
+                    <span>{`${homePageContent.hero.cta.label} `}<i className="bi bi-arrow-right ms-1" aria-hidden="true" /></span>
                   </Link>
                 </div>
-              </ContactForm>
+              </div>
               <div className={"main-img"}>
                 <img
                   src={"/assets/img/header/header5_page.png"}

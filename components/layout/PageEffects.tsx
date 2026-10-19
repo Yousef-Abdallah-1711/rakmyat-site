@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -9,12 +9,6 @@ export function PageEffects() {
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    const loader = document.getElementById("preloader");
-    loader?.classList.remove("isdone");
-    const loaderTimer = window.setTimeout(
-      () => loader?.classList.add("isdone"),
-      reduceMotion ? 0 : 350,
-    );
 
     const updateScrollState = () => {
       const scrollTop = window.scrollY;
@@ -80,21 +74,11 @@ export function PageEffects() {
       .forEach((node) => counterObserver.observe(node));
 
     return () => {
-      window.clearTimeout(loaderTimer);
       window.removeEventListener("scroll", updateScrollState);
       revealObserver.disconnect();
       counterObserver.disconnect();
     };
   }, [pathname]);
 
-  return (
-    <div id="preloader" aria-hidden="true">
-      <div id="loading-wrapper" className="show">
-        <div id="loading-text">
-          <img src="/assets/img/logo_loading.png" alt="" />
-        </div>
-        <div id="loading-content" />
-      </div>
-    </div>
-  );
+  return null;
 }

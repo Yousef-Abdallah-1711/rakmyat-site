@@ -1,0 +1,331 @@
+{
+    "generatedAt":  "2026-10-19",
+    "productionPreview":  "http://127.0.0.1:5198",
+    "routeSummary":  [
+                         {
+                             "route":  "/admin/inquiries",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/admin/login",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar/about",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar/contact",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar/portfolio",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar/services",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/ar/services/details",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "rtl",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en/about",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en/contact",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en/portfolio",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en/services",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         },
+                         {
+                             "route":  "/en/services/details",
+                             "viewports":  [
+                                               1024,
+                                               1280,
+                                               1440,
+                                               360,
+                                               390,
+                                               768
+                                           ],
+                             "statuses":  [
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200,
+                                              200
+                                          ],
+                             "documentOverflow":  0,
+                             "direction":  "ltr",
+                             "preloaderPresent":  false
+                         }
+                     ],
+    "interactionChecks":  {
+                              "firstInvalidFieldFocused":  true,
+                              "requiredErrorsShown":  2,
+                              "valuesRetainedOnStorageFailure":  true,
+                              "successOnlyAfterPersistence":  true,
+                              "localeAndQueryPreserved":  true,
+                              "projectSlugAndQueryPreserved":  true,
+                              "mobileEscapeClosesMenu":  true,
+                              "focusRestored":  true,
+                              "adminUnauthenticatedApiStatus":  401,
+                              "contactApiBodyTooLargeStatus":  413,
+                              "contactApiWrongContentTypeStatus":  415,
+                              "contactApiInvalidFieldsStatus":  422,
+                              "contactApiUnavailableWithoutDatabaseStatus":  503
+                          },
+    "databaseAndEmailLiveDelivery":  "not testable: production credentials are not configured",
+    "browserPageErrors":  0
+}

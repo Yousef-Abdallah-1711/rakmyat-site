@@ -1,14 +1,11 @@
 import Link from "next/link";
-import { ContactForm } from "@/components/forms/ContactForm";
 import { getPageCopy } from "@/content/page-copy";
 import type { Locale } from "@/content/i18n";
 
 export function ServiceDetailsSourceSections({ locale = "en" }: { locale?: Locale }) {
   const copy = getPageCopy(locale).serviceDetails;
-  const contact = locale === "en"
-    ? { name: "Name", phone: "Phone number (optional)", email: "Email address", message: "Project details", send: "Send inquiry", note: "This form is not connected; no message will be sent." }
-    : { name: "الاسم", phone: "رقم الهاتف (اختياري)", email: "البريد الإلكتروني", message: "تفاصيل المشروع", send: "إرسال الاستفسار", note: "هذا النموذج غير متصل؛ لن يتم إرسال أي رسالة." };
   const related = copy.related;
+  const inquiryNote = locale === "en" ? "Share your project details through the inquiry form." : "شارك تفاصيل مشروعك عبر نموذج الاستفسار.";
   return <>
     <section className="inner-header style-5"><div className="container"><div className="content"><div className="links"><Link href={`/${locale}`}>{copy.breadcrumbHome}</Link><span>{copy.breadcrumbPage}</span></div><h2>{copy.title}</h2><img src="/assets/img/header/head7_rock.png" alt="" className="side-img slide_up_down" /></div></div></section>
     <main className="services-details-page style-5"><h1 className="visually-hidden">{copy.title}</h1>
@@ -23,10 +20,7 @@ export function ServiceDetailsSourceSections({ locale = "en" }: { locale?: Local
           <div className="banner1"><div className="title"><h6>{locale === "en" ? "Project" : "المشروع"}</h6><h3>{copy.calloutHeading}</h3></div><Link href={`/${locale}/contact`} className="butn bg-white rounded-pill hover-blue5"><span>{copy.cta}<i className="far fa-long-arrow-right ms-2" aria-hidden="true" /></span></Link><img src="/assets/img/mob1.png" alt="" className="mob" /></div>
         </div></div>
       </div></div></div></section>
-      <section className="contact style-5 section-padding"><div className="container"><div className="section-head text-center mb-80 style-5"><h2>{copy.contactHeading}</h2><p>{copy.formDisabled}</p></div><div className="contact-form"><p className="text-center mb-30">{contact.note}</p><ContactForm locale={locale}><div className="row">
-        {[contact.name, contact.phone, contact.email].map((label, index) => <div className="col-lg-4" key={label}><div className="form-group"><input type={index === 2 ? "email" : "text"} aria-label={label} className="form-control" placeholder={label} required={index === 2} /><span className="icon"><i className={index === 0 ? "fas fa-user" : index === 1 ? "fas fa-phone" : "fas fa-envelope"} aria-hidden="true" /></span></div></div>)}
-        <div className="col-lg-12"><div className="form-group"><textarea rows={6} aria-label={contact.message} placeholder={contact.message} className="form-control" /><span className="icon"><i className="fas fa-pen" aria-hidden="true" /></span></div></div>
-        </div><div className="text-center"><button type="submit" className="butn bg-blue5 rounded-3 mt-20 py-3 text-white"><span>{contact.send}<i className="far fa-long-arrow-right ms-2" aria-hidden="true" /></span></button></div></ContactForm></div></div></section>
+      <section className="contact style-5 section-padding"><div className="container"><div className="section-head text-center mb-60 style-5"><h2>{copy.contactHeading}</h2><p>{inquiryNote}</p><Link href={`/${locale}/contact`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-20"><span>{copy.cta}<i className="far fa-long-arrow-right ms-2" aria-hidden="true" /></span></Link></div></div></section>
     </main>
   </>;
 }

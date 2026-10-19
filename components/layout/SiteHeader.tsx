@@ -13,6 +13,7 @@ type SiteHeaderProps = {
 };
 
 const navigation = [
+  { key: "home", path: "" },
   { key: "about", path: "about" },
   { key: "services", path: "services" },
   { key: "portfolio", path: "portfolio" },
@@ -21,32 +22,27 @@ const navigation = [
 
 export function SiteHeader({ activePage, transparent = false, locale = "en" }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [searchSuffix, setSearchSuffix] = useState("");
   const navRef = useRef<HTMLElement>(null);
   const menuToggleRef = useRef<HTMLButtonElement>(null);
-  const dropdownTriggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const copy = localeCopy[locale];
 
   useEffect(() => {
     setMenuOpen(false);
-    setDropdownOpen(false);
+    setSearchSuffix(window.location.search);
     document.documentElement.lang = locale;
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
   }, [pathname, locale]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
-      if (event.target instanceof Node && !navRef.current?.contains(event.target)) {
-        setMenuOpen(false);
-        setDropdownOpen(false);
-      }
+      if (event.target instanceof Node && !navRef.current?.contains(event.target)) setMenuOpen(false);
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && (menuOpen || dropdownOpen)) {
+      if (event.key === "Escape" && menuOpen) {
         setMenuOpen(false);
-        setDropdownOpen(false);
-        (dropdownOpen ? dropdownTriggerRef.current : menuToggleRef.current)?.focus();
+        menuToggleRef.current?.focus();
       }
     };
     document.addEventListener("pointerdown", onPointerDown);
@@ -55,10 +51,14 @@ export function SiteHeader({ activePage, transparent = false, locale = "en" }: S
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [dropdownOpen, menuOpen]);
+  }, [menuOpen]);
 
   const navbarClass = `navbar navbar-expand-lg navbar-light${transparent ? " bg-transparent" : ""} style-5`;
   const languageTarget = locale === "en" ? "ar" : "en";
+  const languagePath = (["/en", "/ar", "/en/about", "/ar/about", "/en/services", "/ar/services", "/en/services/details", "/ar/services/details", "/en/portfolio", "/ar/portfolio", "/en/contact", "/ar/contact"].includes(pathname) || /^\/(en|ar)\/projects\/[a-z0-9-]+$/.test(pathname))
+    ? getLocalizedPath(languageTarget, pathname)
+    : getLocalizedPath(languageTarget, "/contact");
+  const localizedHref = `${languagePath}${searchSuffix}`;
 
   return (
     <>
@@ -94,25 +94,10 @@ export function SiteHeader({ activePage, transparent = false, locale = "en" }: S
                   </Link>
                 </li>
               ))}
-              <li className="nav-item dropdown">
-                <button
-                  ref={dropdownTriggerRef}
-                  className="nav-link dropdown-toggle"
-                  type="button"
-                  aria-expanded={dropdownOpen}
-                  onClick={() => setDropdownOpen((open) => !open)}
-                >
-                  {copy.morePages}
-                </button>
-                <ul className={`dropdown-menu${dropdownOpen ? " show" : ""}`}>
-                  <li><Link className="dropdown-item" href={getLocalizedPath(locale, "/services/details")}>{copy.serviceDetails}</Link></li>
-                  <li><Link className="dropdown-item" href={getLocalizedPath(locale, "/portfolio")}>{copy.portfolio}</Link></li>
-                </ul>
-              </li>
             </ul>
             <div className="nav-side">
               <div className="d-flex align-items-center">
-                <Link className="nav-link me-2" href={getLocalizedPath(languageTarget, pathname)} lang={languageTarget}>
+                <Link className="nav-link me-2" href={localizedHref} lang={languageTarget}>
                   {copy.language}
                 </Link>
                 <Link href={getLocalizedPath(locale, "/contact")} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold">
