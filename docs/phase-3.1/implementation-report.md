@@ -1,9 +1,9 @@
-﻿# Phase 3.1 Implementation Report
+# Phase 3.1 Implementation Report
 
-Date: 2026-10-19  
-Target branch at start: `phase-3/rakmyat-content-only`  
-Baseline: `75732a7179829e97ac4ab35ac3931c1a19405c88`  
-Implementation commit: recorded after validation below. No deployment performed.
+Date: 2026-10-19
+Target branch at start: `phase-3/rakmyat-content-only`
+Baseline: `75732a7179829e97ac4ab35ac3931c1a19405c88`
+Implementation commit: `5c599e509adb88ff69215f8f6a78b73cb70411d6`. No deployment performed.
 
 ## Implemented
 
@@ -47,4 +47,4 @@ Production build preview started locally at `http://127.0.0.1:5191`. This is not
 
 ## Commit
 
-Pending until the final diff review and commit; the commit hash will be filled after validation.
+Implementation commit: `5c599e509adb88ff69215f8f6a78b73cb70411d6`. The report-only follow-up records the hash without rewriting the implementation commit.

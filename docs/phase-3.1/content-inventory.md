@@ -1,7 +1,7 @@
-﻿# Phase 3.1 content and asset inventory
+# Phase 3.1 content and asset inventory
 
-Date: 2026-10-19  
-Target: `next-app/` on `phase-3/rakmyat-content-only`  
+Date: 2026-10-19
+Target: `next-app/` on `phase-3/rakmyat-content-only`
 Source: `C:\Users\yosea\Desktop\BDA\rakmyat-landing` (read only) and the separately supplied pilot brand reference (read only)
 
 ## Classification
