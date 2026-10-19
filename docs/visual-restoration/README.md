@@ -1,9 +1,11 @@
 # Rakmyat visual restoration report
 
-Date: 2026-10-19  
-Branch: `phase-3/rakmyat-content-only`  
-Restored source baseline: `5cb84e80f38fef7ca258c77fb92f6bff33128d7d` (completed Phase 3.6)  
-Reference comparison: `4a1c946` (completed Phase 3.4 tree after documentation cleanup)
+| Detail | Value |
+|---|---|
+| Date | 2026-10-19 |
+| Branch | `phase-3/rakmyat-content-only` |
+| Restored source baseline | `5cb84e80f38fef7ca258c77fb92f6bff33128d7d` (completed Phase 3.6) |
+| Reference comparison | `4a1c946` (completed Phase 3.4 tree after documentation cleanup) |
 
 ## Finding and cause
 
