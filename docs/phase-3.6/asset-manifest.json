@@ -1,0 +1,162 @@
+{
+  "generatedDate": "2026-10-19",
+  "method": "Eight separately generated icons with true alpha transparency.",
+  "canvas": "1024x1024 square",
+  "displaySize": "80x80 CSS pixels",
+  "presentation": "Visible content normalized to an approximately 88% maximum canvas dimension with aspect ratio preserved; high-quality transparent WebP. Scoped image shadow reduced to keep the original soft contact-shadow character.",
+  "icons": [
+    {
+      "name": "Business websites",
+      "path": "public/assets/img/icons/service-capabilities/business-websites.webp",
+      "generatedSource": "exec-7d4c0894-452a-456b-90f8-88c27416ccc0.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        67,
+        962,
+        957
+      ],
+      "bytes": 101196,
+      "sha256": "f8c41967eac368746ff5db446c75c05066f4f91a213c752addc4925700a70259",
+      "transparent": true
+    },
+    {
+      "name": "E-commerce",
+      "path": "public/assets/img/icons/service-capabilities/ecommerce.webp",
+      "generatedSource": "exec-a4906d61-a87e-4950-860c-186895746a27.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        92,
+        62,
+        931,
+        962
+      ],
+      "bytes": 95782,
+      "sha256": "0a03b1c4976b98588f69549d8e53a10fb3320bc64cf332fedf6a192f7b5d6dd3",
+      "transparent": true
+    },
+    {
+      "name": "Mobile applications",
+      "path": "public/assets/img/icons/service-capabilities/mobile-applications.webp",
+      "generatedSource": "exec-dd852e11-8a6e-4d48-aad5-4ca85d7ad5cf.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        248,
+        62,
+        776,
+        962
+      ],
+      "bytes": 77582,
+      "sha256": "ef13a84f0255735d8cfba1be88d1160f7ea987ad1117b239fa13adc21f48b359",
+      "transparent": true
+    },
+    {
+      "name": "Custom business systems",
+      "path": "public/assets/img/icons/service-capabilities/business-systems.webp",
+      "generatedSource": "exec-5535810e-e74c-4405-a02a-5588cc596a06.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        155,
+        962,
+        869
+      ],
+      "bytes": 115704,
+      "sha256": "6e394168237a47d6454096187943a37431f739852872289e9a376338ec336748",
+      "transparent": true
+    },
+    {
+      "name": "AI assistants",
+      "path": "public/assets/img/icons/service-capabilities/ai-assistants.webp",
+      "generatedSource": "exec-564867e2-b9d3-4b1b-8a57-03f00074789f.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        94,
+        962,
+        929
+      ],
+      "bytes": 73066,
+      "sha256": "14ba6c2b00ec01ffd0fc3d640315128f27206b9d770a786fdeda2415a3657904",
+      "transparent": true
+    },
+    {
+      "name": "Task automation",
+      "path": "public/assets/img/icons/service-capabilities/task-automation.webp",
+      "generatedSource": "exec-ec8d5bab-c0b6-495e-953e-582e3b77f9b9.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        88,
+        962,
+        936
+      ],
+      "bytes": 80392,
+      "sha256": "197c37f64a58ff4d02430259ab18acffbcc1c7f50dcff1297c5b4620bc0e0a67",
+      "transparent": true
+    },
+    {
+      "name": "APIs and integrations",
+      "path": "public/assets/img/icons/service-capabilities/api-integrations.webp",
+      "generatedSource": "exec-c972d566-3c5a-4136-9587-7895c1f86229.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        225,
+        962,
+        799
+      ],
+      "bytes": 88056,
+      "sha256": "bb19f8c9dc18b5a7ea3085b5fcefe5a32d976e37687b5129768a7605d5854954",
+      "transparent": true
+    },
+    {
+      "name": "Data workflows",
+      "path": "public/assets/img/icons/service-capabilities/data-workflows.webp",
+      "generatedSource": "exec-445aa781-cb75-442e-89a8-a337c5aa30fe.png",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "canvas": "1024x1024",
+      "contentBounds": [
+        62,
+        203,
+        962,
+        821
+      ],
+      "bytes": 88724,
+      "sha256": "d153bfd0114490fc9a2d90051533ca3d742fba10cd73ff3969c606924ae562da",
+      "transparent": true
+    }
+  ],
+  "contactSheet": "docs/phase-3.6/icons-contact-sheet.png"
+}

@@ -1,0 +1,3422 @@
+[
+  {
+    "page": "home",
+    "route": "/en",
+    "locale": "en",
+    "viewport": 1440,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 4.765625,
+      "width": 1440,
+      "height": 1022
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 273.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 313.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 273.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 313.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 273.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 313.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 300,
+        "height": 309,
+        "x": 1065,
+        "y": 273.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 313.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 612.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 652.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 612.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 652.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 612.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 652.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 612.265625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 652.265625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/en",
+    "locale": "en",
+    "viewport": 1024,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -86.625,
+      "width": 1024,
+      "height": 1204.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 226,
+        "height": 354,
+        "x": 15,
+        "y": 270.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 310.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 270.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 310.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 226,
+        "height": 331.5,
+        "x": 527,
+        "y": 270.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 310.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 226,
+        "height": 356,
+        "x": 783,
+        "y": 270.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 310.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 226,
+        "height": 329.5,
+        "x": 15,
+        "y": 656.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 696.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 656.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 696.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 226,
+        "height": 331.5,
+        "x": 527,
+        "y": 656.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 696.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 226,
+        "height": 307,
+        "x": 783,
+        "y": 656.375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 696.375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/en",
+    "locale": "en",
+    "viewport": 768,
+    "status": 200,
+    "columns": 2,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -257.96875,
+      "width": 768,
+      "height": 1545.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": -40.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": -0.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": -40.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": -0.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 274.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 314.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 274.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 314.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 588.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 628.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 588.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 628.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 903.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 943.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 903.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 943.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/en",
+    "locale": "en",
+    "viewport": 390,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -905.96875,
+      "width": 390,
+      "height": 2841
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": -620.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": -580.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": -306.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": -266.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 8.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 48.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 322.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 362.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 637.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 677.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 951.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 991.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1266.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1306.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1580.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1620.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/en",
+    "locale": "en",
+    "viewport": 360,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -939.15625,
+      "width": 360,
+      "height": 2908.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": -586.65625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": -546.65625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": -272.15625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": -232.15625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 42.34375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 82.34375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 356.84375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 396.84375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 671.34375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 711.34375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 985.84375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1025.84375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1300.34375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1340.34375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1614.84375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1654.84375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/ar",
+    "locale": "ar",
+    "viewport": 1440,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 16.96875,
+      "width": 1440,
+      "height": 997.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 285.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 325.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 285.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 325.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 285.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 325.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 285.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 325.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 599.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 639.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 599.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 639.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 599.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 639.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 599.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 639.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/ar",
+    "locale": "ar",
+    "viewport": 1024,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -29.359375,
+      "width": 1024,
+      "height": 1091.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 226,
+        "height": 284.5,
+        "x": 783,
+        "y": 239.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 279.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 226,
+        "height": 284.5,
+        "x": 527,
+        "y": 239.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 279.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 239.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 279.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 226,
+        "height": 331.5,
+        "x": 15,
+        "y": 239.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 279.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 226,
+        "height": 331.5,
+        "x": 783,
+        "y": 600.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 640.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 226,
+        "height": 284.5,
+        "x": 527,
+        "y": 600.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 640.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 226,
+        "height": 309,
+        "x": 271,
+        "y": 600.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 640.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 226,
+        "height": 307,
+        "x": 15,
+        "y": 600.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 640.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/ar",
+    "locale": "ar",
+    "viewport": 768,
+    "status": 200,
+    "columns": 2,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -246.359375,
+      "width": 768,
+      "height": 1523
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": -28.859375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 11.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 354,
+        "height": 262,
+        "x": 15,
+        "y": -28.859375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 11.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 285.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 325.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 285.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 325.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 600.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 640.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 600.140625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 640.140625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 354,
+        "height": 262,
+        "x": 399,
+        "y": 914.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 954.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 914.640625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 954.640625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/ar",
+    "locale": "ar",
+    "viewport": 390,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -862.46875,
+      "width": 390,
+      "height": 2754
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": -619.46875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": -579.46875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 360,
+        "height": 262,
+        "x": 15,
+        "y": -304.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": -264.96875,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": -12.96875,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 27.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 301.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 341.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 616.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 656.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 930.53125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 970.53125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 360,
+        "height": 262,
+        "x": 15,
+        "y": 1245.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1285.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1537.03125,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1577.03125,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "route": "/ar",
+    "locale": "ar",
+    "viewport": 360,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -873.40625,
+      "width": 360,
+      "height": 2776.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": -630.40625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": -590.40625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": -315.90625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": -275.90625,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": -1.40625,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 38.59375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 313.09375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 353.09375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 627.59375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 667.59375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 942.09375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 982.09375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 330,
+        "height": 262,
+        "x": 15,
+        "y": 1256.59375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1296.59375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1548.59375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1588.59375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/en/services",
+    "locale": "en",
+    "viewport": 1440,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 125.609375,
+      "width": 1440,
+      "height": 972
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 300,
+        "height": 309,
+        "x": 1065,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 683.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 723.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 683.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 723.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 683.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 723.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 683.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 723.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/en/services",
+    "locale": "en",
+    "viewport": 1024,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 108.609375,
+      "width": 1024,
+      "height": 1091.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 226,
+        "height": 354,
+        "x": 15,
+        "y": 352.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 392.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 352.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 392.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 226,
+        "height": 331.5,
+        "x": 527,
+        "y": 352.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 392.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 226,
+        "height": 356,
+        "x": 783,
+        "y": 352.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 392.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 226,
+        "height": 329.5,
+        "x": 15,
+        "y": 738.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 778.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 738.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 778.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 226,
+        "height": 331.5,
+        "x": 527,
+        "y": 738.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 778.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 226,
+        "height": 307,
+        "x": 783,
+        "y": 738.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 778.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/en/services",
+    "locale": "en",
+    "viewport": 768,
+    "status": 200,
+    "columns": 2,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 768,
+      "height": 1525.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 197.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 237.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 197.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 237.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 511.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 551.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 511.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 551.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 826.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 866.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 826.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 866.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 1140.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 1180.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 1140.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 1180.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/en/services",
+    "locale": "en",
+    "viewport": 390,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 390,
+      "height": 2821
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 264.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 304.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 579.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 619.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 893.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 933.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1208.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1248.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1522.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1562.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1837.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1877.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 2151.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 2191.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 2466.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 2506.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/en/services",
+    "locale": "en",
+    "viewport": 360,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 360,
+      "height": 2846.5
+    },
+    "cards": [
+      {
+        "title": "Business websites",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 290.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 330.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "E-commerce",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 604.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 644.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Mobile applications",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 919.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 959.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Custom business systems",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1233.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1273.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "AI assistants",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1548.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1588.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Task automation",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1862.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1902.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "APIs and integrations",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 2177.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 2217.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "Data workflows",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 2491.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 2531.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/ar/services",
+    "locale": "ar",
+    "viewport": 1440,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 125.609375,
+      "width": 1440,
+      "height": 947.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 300,
+        "height": 284.5,
+        "x": 1065,
+        "y": 658.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 1175,
+          "y": 698.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 300,
+        "height": 284.5,
+        "x": 735,
+        "y": 658.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 845,
+          "y": 698.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 300,
+        "height": 284.5,
+        "x": 405,
+        "y": 658.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 515,
+          "y": 698.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 300,
+        "height": 284.5,
+        "x": 75,
+        "y": 658.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 185,
+          "y": 698.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/ar/services",
+    "locale": "ar",
+    "viewport": 1024,
+    "status": 200,
+    "columns": 4,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": 125.609375,
+      "width": 1024,
+      "height": 1041.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 226,
+        "height": 284.5,
+        "x": 783,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 226,
+        "height": 284.5,
+        "x": 527,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 226,
+        "height": 307,
+        "x": 271,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 226,
+        "height": 331.5,
+        "x": 15,
+        "y": 344.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 384.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 226,
+        "height": 331.5,
+        "x": 783,
+        "y": 705.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 856,
+          "y": 745.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 226,
+        "height": 284.5,
+        "x": 527,
+        "y": 705.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 600,
+          "y": 745.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 226,
+        "height": 309,
+        "x": 271,
+        "y": 705.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 344,
+          "y": 745.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 226,
+        "height": 307,
+        "x": 15,
+        "y": 705.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 88,
+          "y": 745.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/ar/services",
+    "locale": "ar",
+    "viewport": 768,
+    "status": 200,
+    "columns": 2,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 768,
+      "height": 1503
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 197.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 237.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 354,
+        "height": 262,
+        "x": 15,
+        "y": 197.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 237.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 511.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 551.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 511.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 551.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 354,
+        "height": 284.5,
+        "x": 399,
+        "y": 826.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 866.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 826.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 866.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 354,
+        "height": 262,
+        "x": 399,
+        "y": 1140.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 536,
+          "y": 1180.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 354,
+        "height": 284.5,
+        "x": 15,
+        "y": 1140.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 152,
+          "y": 1180.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/ar/services",
+    "locale": "ar",
+    "viewport": 390,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 390,
+      "height": 2734
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 222.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 262.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 360,
+        "height": 262,
+        "x": 15,
+        "y": 537.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 577.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 829.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 869.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1143.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1183.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1458.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1498.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 1772.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 1812.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 360,
+        "height": 262,
+        "x": 15,
+        "y": 2087.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 2127.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 360,
+        "height": 284.5,
+        "x": 15,
+        "y": 2379.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 155,
+          "y": 2419.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  },
+  {
+    "page": "services",
+    "route": "/ar/services",
+    "locale": "ar",
+    "viewport": 360,
+    "status": 200,
+    "columns": 1,
+    "imagesLoaded": true,
+    "imagesCentered": true,
+    "horizontalOverflow": false,
+    "section": {
+      "x": 0,
+      "y": -0.390625,
+      "width": 360,
+      "height": 2756.5
+    },
+    "cards": [
+      {
+        "title": "مواقع الشركات",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 222.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-websites.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 262.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "التجارة الإلكترونية",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 537.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ecommerce.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 577.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "تطبيقات الجوال",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 851.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/mobile-applications.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 891.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أنظمة أعمال مخصصة",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1166.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/business-systems.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1206.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مساعدون بالذكاء الاصطناعي",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1480.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/ai-assistants.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1520.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "أتمتة المهام",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 1795.109375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/task-automation.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 1835.109375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "واجهات API والتكامل",
+        "width": 330,
+        "height": 262,
+        "x": 15,
+        "y": 2109.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/api-integrations.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 2149.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      },
+      {
+        "title": "مسارات البيانات",
+        "width": 330,
+        "height": 284.5,
+        "x": 15,
+        "y": 2401.609375,
+        "image": {
+          "src": "/assets/img/icons/service-capabilities/data-workflows.webp",
+          "width": 80,
+          "height": 80,
+          "x": 140,
+          "y": 2441.609375,
+          "objectFit": "contain",
+          "filter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 1024
+        }
+      }
+    ]
+  }
+]

@@ -604,3 +604,8 @@ html {
 @media (max-width: 575.98px) {
   .media-lightbox { padding: 20px; }
 }
+
+.features-card.style-5 .icon img {
+  -webkit-filter: drop-shadow(0 4px 6px rgb(7 57 114 / 14%)) !important;
+  filter: drop-shadow(0 4px 6px rgb(7 57 114 / 14%)) !important;
+}

@@ -1,6 +1,15 @@
 import type { Locale } from "@/content/i18n";
 
-const icons = Array.from({ length: 8 }, (_, index) => `/assets/img/icons/features/${index + 1}.png`);
+const icons = [
+  "/assets/img/icons/service-capabilities/business-websites.webp",
+  "/assets/img/icons/service-capabilities/ecommerce.webp",
+  "/assets/img/icons/service-capabilities/mobile-applications.webp",
+  "/assets/img/icons/service-capabilities/business-systems.webp",
+  "/assets/img/icons/service-capabilities/ai-assistants.webp",
+  "/assets/img/icons/service-capabilities/task-automation.webp",
+  "/assets/img/icons/service-capabilities/api-integrations.webp",
+  "/assets/img/icons/service-capabilities/data-workflows.webp",
+];
 
 export function MarketplaceFeaturesSection({ variant, locale = "en" }: { variant: "home" | "services"; locale?: Locale }) {
   const copy = locale === "en" ? {

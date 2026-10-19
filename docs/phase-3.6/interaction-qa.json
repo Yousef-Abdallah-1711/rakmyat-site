@@ -1,0 +1,19 @@
+{
+  "route": "/en",
+  "viewport": 1440,
+  "method": "Playwright hover the first capability card; compare computed styles before and after",
+  "before": {
+    "cardBoxShadow": "rgba(10, 43, 83, 0.15) 0px 46px 77px 0px",
+    "titleColor": "rgb(0, 0, 0)",
+    "titleTransition": "0.3s",
+    "iconFilter": "drop-shadow(rgba(7, 57, 114, 0.208) 0px 25px 20px)"
+  },
+  "after": {
+    "cardBoxShadow": "rgba(10, 43, 83, 0.15) 0px 46px 77px 0px",
+    "titleColor": "rgb(0, 0, 0)",
+    "titleTransition": "0.3s",
+    "iconFilter": "drop-shadow(rgba(7, 57, 114, 0.14) 0px 4px 6px)"
+  },
+  "cardHoverEffectsPreserved": true,
+  "onlyIntendedImageFilterChanged": true
+}

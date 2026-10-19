@@ -1,0 +1,286 @@
+{
+  "screenshots": 30,
+  "viewports": [
+    1440,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "captures": [
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/ar-1024.png",
+      "exists": true,
+      "bytes": 121688
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-1440.png",
+      "exists": true,
+      "bytes": 121621
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 360,
+      "path": "screenshots/before/ar-360.png",
+      "exists": true,
+      "bytes": 127902
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-390.png",
+      "exists": true,
+      "bytes": 128144
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 768,
+      "path": "screenshots/before/ar-768.png",
+      "exists": true,
+      "bytes": 123459
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/en-1024.png",
+      "exists": true,
+      "bytes": 159191
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-1440.png",
+      "exists": true,
+      "bytes": 151572
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 360,
+      "path": "screenshots/before/en-360.png",
+      "exists": true,
+      "bytes": 165465
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-390.png",
+      "exists": true,
+      "bytes": 163812
+    },
+    {
+      "stage": "before",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 768,
+      "path": "screenshots/before/en-768.png",
+      "exists": true,
+      "bytes": 155551
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/ar-1024.png",
+      "exists": true,
+      "bytes": 103286
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-1440.png",
+      "exists": true,
+      "bytes": 101992
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 360,
+      "path": "screenshots/after/ar-360.png",
+      "exists": true,
+      "bytes": 109961
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-390.png",
+      "exists": true,
+      "bytes": 109961
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "ar",
+      "viewportWidth": 768,
+      "path": "screenshots/after/ar-768.png",
+      "exists": true,
+      "bytes": 104823
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/en-1024.png",
+      "exists": true,
+      "bytes": 140502
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-1440.png",
+      "exists": true,
+      "bytes": 132160
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 360,
+      "path": "screenshots/after/en-360.png",
+      "exists": true,
+      "bytes": 145699
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-390.png",
+      "exists": true,
+      "bytes": 143897
+    },
+    {
+      "stage": "after",
+      "page": "home",
+      "locale": "en",
+      "viewportWidth": 768,
+      "path": "screenshots/after/en-768.png",
+      "exists": true,
+      "bytes": 135293
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "ar",
+      "viewportWidth": 1024,
+      "path": "screenshots/services/ar-1024.png",
+      "exists": true,
+      "bytes": 101232
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/services/ar-1440.png",
+      "exists": true,
+      "bytes": 100269
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "ar",
+      "viewportWidth": 360,
+      "path": "screenshots/services/ar-360.png",
+      "exists": true,
+      "bytes": 107701
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "ar",
+      "viewportWidth": 390,
+      "path": "screenshots/services/ar-390.png",
+      "exists": true,
+      "bytes": 107970
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "ar",
+      "viewportWidth": 768,
+      "path": "screenshots/services/ar-768.png",
+      "exists": true,
+      "bytes": 102649
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "en",
+      "viewportWidth": 1024,
+      "path": "screenshots/services/en-1024.png",
+      "exists": true,
+      "bytes": 135578
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "en",
+      "viewportWidth": 1440,
+      "path": "screenshots/services/en-1440.png",
+      "exists": true,
+      "bytes": 128903
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "en",
+      "viewportWidth": 360,
+      "path": "screenshots/services/en-360.png",
+      "exists": true,
+      "bytes": 141108
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "en",
+      "viewportWidth": 390,
+      "path": "screenshots/services/en-390.png",
+      "exists": true,
+      "bytes": 140354
+    },
+    {
+      "stage": "services",
+      "page": "services",
+      "locale": "en",
+      "viewportWidth": 768,
+      "path": "screenshots/services/en-768.png",
+      "exists": true,
+      "bytes": 131895
+    }
+  ]
+}
