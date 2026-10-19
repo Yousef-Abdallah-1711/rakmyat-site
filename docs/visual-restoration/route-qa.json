@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-10-19",
+  "preview": "http://127.0.0.1:5197",
+  "viewports": [1440, 390],
+  "aggregate": {
+    "captures": 24,
+    "http200": 24,
+    "brokenImages": 0,
+    "consoleErrors": 0,
+    "pageErrors": 0,
+    "unexpectedFailedRequests": 0,
+    "horizontalOverflow": 0,
+    "overflowCheck": "documentElement.scrollWidth equals documentElement.clientWidth"
+  },
+  "routes": [
+    {"path":"/en","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-1440.png","390":"screenshots/en-390.png"}},
+    {"path":"/ar","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-1440.png","390":"screenshots/ar-390.png"}},
+    {"path":"/en/about","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-about-1440.png","390":"screenshots/en-about-390.png"}},
+    {"path":"/ar/about","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-about-1440.png","390":"screenshots/ar-about-390.png"}},
+    {"path":"/en/services","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-services-1440.png","390":"screenshots/en-services-390.png"}},
+    {"path":"/ar/services","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-services-1440.png","390":"screenshots/ar-services-390.png"}},
+    {"path":"/en/portfolio","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-portfolio-1440.png","390":"screenshots/en-portfolio-390.png"}},
+    {"path":"/ar/portfolio","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-portfolio-1440.png","390":"screenshots/ar-portfolio-390.png"}},
+    {"path":"/en/contact","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-contact-1440.png","390":"screenshots/en-contact-390.png"}},
+    {"path":"/ar/contact","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-contact-1440.png","390":"screenshots/ar-contact-390.png"}},
+    {"path":"/en/projects/schooly","locale":"en","lang":"en","dir":"ltr","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/en-projects-schooly-1440.png","390":"screenshots/en-projects-schooly-390.png"}},
+    {"path":"/ar/projects/schooly","locale":"ar","lang":"ar","dir":"rtl","status":{"1440":200,"390":200},"screenshots":{"1440":"screenshots/ar-projects-schooly-1440.png","390":"screenshots/ar-projects-schooly-390.png"}}
+  ],
+  "preRestoreAboutReference": {
+    "en-1440": "screenshots/before/en-about-1440.png",
+    "en-390": "screenshots/before/en-about-390.png",
+    "ar-1440": "screenshots/before/ar-about-1440.png",
+    "ar-390": "screenshots/before/ar-about-390.png"
+  }
+}

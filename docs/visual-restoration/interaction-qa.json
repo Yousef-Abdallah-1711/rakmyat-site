@@ -1,0 +1,29 @@
+{
+  "preview": "http://127.0.0.1:5197",
+  "results": {
+    "portfolio": {
+      "filters": ["All projects", "Education", "E-commerce", "Business systems", "Automation & integrations"],
+      "allProjectsCount": 9,
+      "educationFilteredCount": 4,
+      "allRestoredCount": 9,
+      "activeFilterPressed": true,
+      "schoolyDetailLinksPresent": true
+    },
+    "localeSwitch": {
+      "from": "/en/about",
+      "to": "/ar/about",
+      "lang": "ar",
+      "dir": "rtl"
+    },
+    "mobileNavigation": {
+      "viewport": 390,
+      "expanded": true,
+      "menuVisible": true
+    },
+    "projectLightbox": {
+      "route": "/en/projects/schooly",
+      "opened": true,
+      "closedWithEscape": true
+    }
+  }
+}
