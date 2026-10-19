@@ -1,0 +1,606 @@
+{
+  "phase": "3.9-contact-only",
+  "group": "before",
+  "baseUrl": "http://127.0.0.1:5198",
+  "contactViewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "regressionViewportWidths": [
+    1440,
+    390
+  ],
+  "captureCount": 28,
+  "captures": [
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-contact-1440.png",
+      "status": 200,
+      "bytes": 129110,
+      "sha256": "254c5cd6bec91377e103187a64427cae07fce10e11a9337c0ad9169afd2133b8"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/en-contact-1280.png",
+      "status": 200,
+      "bytes": 128553,
+      "sha256": "61693eb1d5cc2cada896248b52b9111a0e5d8c54fb5fb8e9b64812a39b682d91"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/en-contact-1024.png",
+      "status": 200,
+      "bytes": 124933,
+      "sha256": "9bc9397462dd99b32a7056d1291d23b9856d1424daabdd15fb20bc39955c4e9e"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 768,
+      "path": "screenshots/before/en-contact-768.png",
+      "status": 200,
+      "bytes": 104789,
+      "sha256": "e964704fa2de540fe787d47a12dc2f9ac80160afbadb98a2f219ee4d6e71fd15"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-contact-390.png",
+      "status": 200,
+      "bytes": 108143,
+      "sha256": "2e6c11168b9535137dd78a23e131069400f1cca86d84b2e495e36a5bf7b7c69d"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 360,
+      "path": "screenshots/before/en-contact-360.png",
+      "status": 200,
+      "bytes": 107971,
+      "sha256": "ff0927b67dfdb4c67bcb2462537a390877665278dcd885c98aafd3159c4bebb8"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-contact-1440.png",
+      "status": 200,
+      "bytes": 86489,
+      "sha256": "622f16c133ae3d2fc51a8d5a0f1f2bd8ca35739b3e8fb214ecc174edf6b8d941"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/ar-contact-1280.png",
+      "status": 200,
+      "bytes": 84773,
+      "sha256": "8814ce50443d00e62bbc881df4dc7fc2b10eae24d6c5a3ec77ff1a3233d8b51d"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/ar-contact-1024.png",
+      "status": 200,
+      "bytes": 82312,
+      "sha256": "833a5d92307100150c659f6fd85a9324a5b0e695aed33c3ddffff664686c92ef"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 768,
+      "path": "screenshots/before/ar-contact-768.png",
+      "status": 200,
+      "bytes": 68685,
+      "sha256": "219d99415dfdb3375671565d86517f1aeea2e954a7605bda5ff916862aa3a350"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-contact-390.png",
+      "status": 200,
+      "bytes": 68679,
+      "sha256": "b03f7fee08ab9eafbea917b55b929d35868b30eea4d4e79343c3bb111007abe8"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 360,
+      "path": "screenshots/before/ar-contact-360.png",
+      "status": 200,
+      "bytes": 68368,
+      "sha256": "935c61aa26013309357696f39b44c8fbfbae7cd4f2bc225fee84336011560da4"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-1440.png",
+      "status": 200,
+      "bytes": 2018124,
+      "sha256": "f08b1440fb142cce570ebdeb7df7320e1ef6c3ac2f7d44a36711830f979c599e"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-390.png",
+      "status": 200,
+      "bytes": 1143179,
+      "sha256": "3252093ab13b979cb4894dcf07edf108fe24b90effd11f341853b26d6d0e85f9"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-1440.png",
+      "status": 200,
+      "bytes": 1745950,
+      "sha256": "780bd3e88d7d9f1d7b2cdd081e9e8e8bb0e34769f140a848fb4f98c2efee3d61"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-390.png",
+      "status": 200,
+      "bytes": 880137,
+      "sha256": "3f2970dfcaf69b1936c532631be006317979596475eb76b5c240465f116917b2"
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-about-1440.png",
+      "status": 200,
+      "bytes": 1053846,
+      "sha256": "cc183c20e1f17e696a330495a34b20db340447a9998f0cdd162547452cc99037"
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-about-390.png",
+      "status": 200,
+      "bytes": 626272,
+      "sha256": "12ab607f023e99f08fb0ea49bfdfa4f440cf362a8253150e6c97a0cb6a4e3d48"
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-about-1440.png",
+      "status": 200,
+      "bytes": 908880,
+      "sha256": "37ea77d48fa1710c0a814d592f0891530be028e9c1f252afc6ecff0c4a0d87e7"
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-about-390.png",
+      "status": 200,
+      "bytes": 478686,
+      "sha256": "698f47c07cde1fd571bd1ecfd302efe74e73b0955a6ea3260efd7e9aac47081c"
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-services-1440.png",
+      "status": 200,
+      "bytes": 1125989,
+      "sha256": "a67652ee494605ca14b5c2a57e44df3d46d59b7bc6a978340e3e6088ab28c679"
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-services-390.png",
+      "status": 200,
+      "bytes": 574584,
+      "sha256": "4baa89a5bb5c8d113133dae69efecd60c98446eb28307367f22cab9333df871d"
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-services-1440.png",
+      "status": 200,
+      "bytes": 900848,
+      "sha256": "b05664c90ed3f49d9d14c434d582d36a18432079693f5d90ad53ccccd0623b30"
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-services-390.png",
+      "status": 200,
+      "bytes": 448339,
+      "sha256": "fe427054906cd691803d1af31529f3a9df88797299197aade4995fd5ca407b4f"
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-portfolio-1440.png",
+      "status": 200,
+      "bytes": 1558120,
+      "sha256": "7b7a9853e1130090a59e529cd397d738c39f9fb325f992b6988cdb40491c99e4"
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-portfolio-390.png",
+      "status": 200,
+      "bytes": 801087,
+      "sha256": "77495f16d07ed9441e4b44231cee30b32daafe71b89c7c9948bae2dc3ec28abc"
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-portfolio-1440.png",
+      "status": 200,
+      "bytes": 1465663,
+      "sha256": "cb5b2b6873048c0c69f0d2f39c5de671a1aa610e85d5d06563c730c0c6c92f22"
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-portfolio-390.png",
+      "status": 200,
+      "bytes": 706503,
+      "sha256": "1bc93dae4d16cb6712ff3f547a0e83d3e0fb1e7918ed7127fbb97b9e73025925"
+    }
+  ],
+  "contactDomMetrics": [
+    {
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "pageHeading": {
+        "x": -1,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 295,
+        "y": 488,
+        "width": 850,
+        "height": 900
+      },
+      "firstInput": {
+        "x": 338,
+        "y": 623,
+        "width": 367,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 657,
+        "y": 1305,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pageHeading": {
+        "x": -1,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 265,
+        "y": 488,
+        "width": 750,
+        "height": 900
+      },
+      "firstInput": {
+        "x": 308,
+        "y": 623,
+        "width": 317,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 577,
+        "y": 1305,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "pageHeading": {
+        "x": -1,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 143,
+        "y": 480,
+        "width": 738,
+        "height": 898
+      },
+      "firstInput": {
+        "x": 185,
+        "y": 614,
+        "width": 312,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 449,
+        "y": 1296,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "pageHeading": {
+        "x": -1,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 442,
+        "width": 738,
+        "height": 870
+      },
+      "firstInput": {
+        "x": 47,
+        "y": 558,
+        "width": 322,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 321,
+        "y": 1240,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "pageHeading": {
+        "x": -1,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 534,
+        "width": 360,
+        "height": 1165
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 641,
+        "width": 322,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 132,
+        "y": 1636,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "pageHeading": {
+        "x": -1,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 534,
+        "width": 330,
+        "height": 1165
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 641,
+        "width": 292,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 117,
+        "y": 1636,
+        "width": 126,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "pageHeading": {
+        "x": 1440,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 295,
+        "y": 488,
+        "width": 850,
+        "height": 900
+      },
+      "firstInput": {
+        "x": 735,
+        "y": 623,
+        "width": 367,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 655,
+        "y": 1305,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pageHeading": {
+        "x": 1280,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 265,
+        "y": 488,
+        "width": 750,
+        "height": 900
+      },
+      "firstInput": {
+        "x": 655,
+        "y": 623,
+        "width": 317,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 575,
+        "y": 1305,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "pageHeading": {
+        "x": 1024,
+        "y": 125,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 143,
+        "y": 480,
+        "width": 738,
+        "height": 898
+      },
+      "firstInput": {
+        "x": 527,
+        "y": 614,
+        "width": 312,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 447,
+        "y": 1296,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "pageHeading": {
+        "x": 768,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 442,
+        "width": 738,
+        "height": 870
+      },
+      "firstInput": {
+        "x": 399,
+        "y": 558,
+        "width": 322,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 319,
+        "y": 1240,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "pageHeading": {
+        "x": 390,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 468,
+        "width": 360,
+        "height": 1143
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 575,
+        "width": 322,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 130,
+        "y": 1548,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "pageHeading": {
+        "x": 360,
+        "y": 126,
+        "width": 1,
+        "height": 1
+      },
+      "formPanel": {
+        "x": 15,
+        "y": 492,
+        "width": 330,
+        "height": 1165
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 599,
+        "width": 292,
+        "height": 48
+      },
+      "submitButton": {
+        "x": 115,
+        "y": 1594,
+        "width": 131,
+        "height": 40
+      },
+      "fields": 9,
+      "route": "/ar/contact"
+    }
+  ]
+}

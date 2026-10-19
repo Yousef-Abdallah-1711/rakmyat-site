@@ -1,0 +1,714 @@
+{
+  "phase": "3.9-contact-only",
+  "group": "after",
+  "baseUrl": "http://127.0.0.1:5201",
+  "contactViewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "regressionViewportWidths": [
+    1440,
+    390
+  ],
+  "captureCount": 28,
+  "captures": [
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-contact-1440.png",
+      "status": 200,
+      "bytes": 424253,
+      "sha256": "639468e76849778a96abb0a8b25bad9b9a4fc6b8806efd5186ad06d9cfcc4f23"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/en-contact-1280.png",
+      "status": 200,
+      "bytes": 394252,
+      "sha256": "42c50810ec4a839d71e2dc2277257579b5930ce21f8c52ec81e40fc95e5d7576"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/en-contact-1024.png",
+      "status": 200,
+      "bytes": 320443,
+      "sha256": "7473f40dc805c803cf8e23a3af323904b3edfa2f3be89fe4b230e55da6cb9917"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 768,
+      "path": "screenshots/after/en-contact-768.png",
+      "status": 200,
+      "bytes": 300579,
+      "sha256": "09a23e2265dc6d39a506515dfba50af18409fd9f2180cc1162290ed594932d33"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-contact-390.png",
+      "status": 200,
+      "bytes": 217580,
+      "sha256": "9c0721f6f52cef5118ece7615701175faa1b8071c40b8c3a02598ed21fd16c6e"
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 360,
+      "path": "screenshots/after/en-contact-360.png",
+      "status": 200,
+      "bytes": 201889,
+      "sha256": "27ee9ce0bd95d1219dc2726d29dcc9c1e8f2ccd630c32737c9606313b1108665"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-contact-1440.png",
+      "status": 200,
+      "bytes": 310797,
+      "sha256": "753d47498cffdb5bc4c8be5464eaf02b74ca0d93076048e493d70831f659bf59"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/ar-contact-1280.png",
+      "status": 200,
+      "bytes": 284800,
+      "sha256": "e293594bcea777751c9fbfe3aa8b969aafabbf79b5ae1f46f795d63145c8c120"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/ar-contact-1024.png",
+      "status": 200,
+      "bytes": 237970,
+      "sha256": "a70b55c53ce329fcfe345bec368d107a7ddf7c1728b59653c7f1069514ab100a"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 768,
+      "path": "screenshots/after/ar-contact-768.png",
+      "status": 200,
+      "bytes": 227523,
+      "sha256": "7ef027fb53b6287994c7be745e9878e2882e1bbe4532a9a84be5d3ef7a879b82"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-contact-390.png",
+      "status": 200,
+      "bytes": 154446,
+      "sha256": "5acb82836441f7d58c6af9f96c4199c44879e7744d3fd2019b2fc8bb2ce6f736"
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 360,
+      "path": "screenshots/after/ar-contact-360.png",
+      "status": 200,
+      "bytes": 150837,
+      "sha256": "93c4b1de02a707664daacb14999a994f6e2c1f55b16cb2f87ff1a309fb68d04c"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-1440.png",
+      "status": 200,
+      "bytes": 1707344,
+      "sha256": "19beda99ea31074f513e18ad85286152ceedf2a516d7d6af5d14a72291b8b454"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-390.png",
+      "status": 200,
+      "bytes": 1008830,
+      "sha256": "e567120ad92f397adda2aadd59d1b196046a382bc9d7eaec54a30c1f7544e184"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-1440.png",
+      "status": 200,
+      "bytes": 1435893,
+      "sha256": "571ff56d27a2f8fd9fba1d4b5cdf5a4f0ea11bb45158efc8c411e48ba7e105ac"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-390.png",
+      "status": 200,
+      "bytes": 746150,
+      "sha256": "a26fa30ccc84d7a715706322151a29e4b6ea464bd8f4d79bb4fe6fc23298b7c4"
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-about-1440.png",
+      "status": 200,
+      "bytes": 1053846,
+      "sha256": "cc183c20e1f17e696a330495a34b20db340447a9998f0cdd162547452cc99037"
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-about-390.png",
+      "status": 200,
+      "bytes": 626272,
+      "sha256": "12ab607f023e99f08fb0ea49bfdfa4f440cf362a8253150e6c97a0cb6a4e3d48"
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-about-1440.png",
+      "status": 200,
+      "bytes": 908880,
+      "sha256": "37ea77d48fa1710c0a814d592f0891530be028e9c1f252afc6ecff0c4a0d87e7"
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-about-390.png",
+      "status": 200,
+      "bytes": 478686,
+      "sha256": "698f47c07cde1fd571bd1ecfd302efe74e73b0955a6ea3260efd7e9aac47081c"
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-services-1440.png",
+      "status": 200,
+      "bytes": 1125989,
+      "sha256": "a67652ee494605ca14b5c2a57e44df3d46d59b7bc6a978340e3e6088ab28c679"
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-services-390.png",
+      "status": 200,
+      "bytes": 574584,
+      "sha256": "4baa89a5bb5c8d113133dae69efecd60c98446eb28307367f22cab9333df871d"
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-services-1440.png",
+      "status": 200,
+      "bytes": 900848,
+      "sha256": "8cfc2542cff447f105fa7a6f63f8dee96a90222aefcd4f48915fccdfffe9241f"
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-services-390.png",
+      "status": 200,
+      "bytes": 448339,
+      "sha256": "fe427054906cd691803d1af31529f3a9df88797299197aade4995fd5ca407b4f"
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-portfolio-1440.png",
+      "status": 200,
+      "bytes": 1558120,
+      "sha256": "7b7a9853e1130090a59e529cd397d738c39f9fb325f992b6988cdb40491c99e4"
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-portfolio-390.png",
+      "status": 200,
+      "bytes": 801087,
+      "sha256": "77495f16d07ed9441e4b44231cee30b32daafe71b89c7c9948bae2dc3ec28abc"
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-portfolio-1440.png",
+      "status": 200,
+      "bytes": 1465663,
+      "sha256": "cb5b2b6873048c0c69f0d2f39c5de671a1aa610e85d5d06563c730c0c6c92f22"
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-portfolio-390.png",
+      "status": 200,
+      "bytes": 706503,
+      "sha256": "1bc93dae4d16cb6712ff3f547a0e83d3e0fb1e7918ed7127fbb97b9e73025925"
+    }
+  ],
+  "contactDomMetrics": [
+    {
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "pageHeading": {
+        "x": 75,
+        "y": 279,
+        "width": 700,
+        "height": 147
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 200,
+        "y": 615,
+        "width": 1040,
+        "height": 1029
+      },
+      "firstInput": {
+        "x": 253,
+        "y": 794,
+        "width": 452,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 735,
+        "y": 794,
+        "width": 452,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 642,
+        "y": 1541,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pageHeading": {
+        "x": 70,
+        "y": 269,
+        "width": 653,
+        "height": 144
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 120,
+        "y": 602,
+        "width": 1040,
+        "height": 1029
+      },
+      "firstInput": {
+        "x": 173,
+        "y": 781,
+        "width": 452,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 655,
+        "y": 781,
+        "width": 452,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 562,
+        "y": 1528,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "pageHeading": {
+        "x": 15,
+        "y": 249,
+        "width": 567,
+        "height": 115
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 546,
+        "width": 994,
+        "height": 1008
+      },
+      "firstInput": {
+        "x": 61,
+        "y": 711,
+        "width": 436,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 527,
+        "y": 711,
+        "width": 436,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 434,
+        "y": 1458,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "pageHeading": {
+        "x": 15,
+        "y": 230,
+        "width": 700,
+        "height": 43
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 625,
+        "width": 738,
+        "height": 984
+      },
+      "firstInput": {
+        "x": 50,
+        "y": 778,
+        "width": 319,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 399,
+        "y": 778,
+        "width": 319,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 306,
+        "y": 1524,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "pageHeading": {
+        "x": 15,
+        "y": 210,
+        "width": 360,
+        "height": 76
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 614,
+        "width": 360,
+        "height": 1204
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 749,
+        "width": 322,
+        "height": 50
+      },
+      "secondInput": {
+        "x": 34,
+        "y": 845,
+        "width": 322,
+        "height": 50
+      },
+      "submitButton": {
+        "x": 34,
+        "y": 1745,
+        "width": 322,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "pageHeading": {
+        "x": 15,
+        "y": 210,
+        "width": 330,
+        "height": 73
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 635,
+        "width": 330,
+        "height": 1204
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 770,
+        "width": 292,
+        "height": 50
+      },
+      "secondInput": {
+        "x": 34,
+        "y": 866,
+        "width": 292,
+        "height": 50
+      },
+      "submitButton": {
+        "x": 34,
+        "y": 1766,
+        "width": 292,
+        "height": 50
+      },
+      "selectDirection": "ltr",
+      "selectBackgroundPosition": "calc(100% - 12px) 50%",
+      "fields": 9,
+      "route": "/en/contact"
+    },
+    {
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "pageHeading": {
+        "x": 665,
+        "y": 279,
+        "width": 700,
+        "height": 73
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 200,
+        "y": 510,
+        "width": 1040,
+        "height": 1007
+      },
+      "firstInput": {
+        "x": 735,
+        "y": 689,
+        "width": 452,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 253,
+        "y": 689,
+        "width": 452,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 642,
+        "y": 1414,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "pageHeading": {
+        "x": 558,
+        "y": 269,
+        "width": 653,
+        "height": 72
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 120,
+        "y": 499,
+        "width": 1040,
+        "height": 1007
+      },
+      "firstInput": {
+        "x": 655,
+        "y": 678,
+        "width": 452,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 173,
+        "y": 678,
+        "width": 452,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 562,
+        "y": 1402,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "pageHeading": {
+        "x": 442,
+        "y": 256,
+        "width": 567,
+        "height": 58
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 475,
+        "width": 994,
+        "height": 986
+      },
+      "firstInput": {
+        "x": 527,
+        "y": 640,
+        "width": 436,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 61,
+        "y": 640,
+        "width": 436,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 434,
+        "y": 1365,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "pageHeading": {
+        "x": 53,
+        "y": 230,
+        "width": 700,
+        "height": 43
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 625,
+        "width": 738,
+        "height": 962
+      },
+      "firstInput": {
+        "x": 399,
+        "y": 778,
+        "width": 319,
+        "height": 52
+      },
+      "secondInput": {
+        "x": 50,
+        "y": 778,
+        "width": 319,
+        "height": 52
+      },
+      "submitButton": {
+        "x": 306,
+        "y": 1502,
+        "width": 156,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "pageHeading": {
+        "x": 15,
+        "y": 210,
+        "width": 360,
+        "height": 38
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 576,
+        "width": 360,
+        "height": 1182
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 711,
+        "width": 322,
+        "height": 50
+      },
+      "secondInput": {
+        "x": 34,
+        "y": 807,
+        "width": 322,
+        "height": 50
+      },
+      "submitButton": {
+        "x": 34,
+        "y": 1685,
+        "width": 322,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    },
+    {
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "pageHeading": {
+        "x": 15,
+        "y": 210,
+        "width": 330,
+        "height": 37
+      },
+      "headingClipped": false,
+      "formPanel": {
+        "x": 15,
+        "y": 575,
+        "width": 330,
+        "height": 1204
+      },
+      "firstInput": {
+        "x": 34,
+        "y": 710,
+        "width": 292,
+        "height": 50
+      },
+      "secondInput": {
+        "x": 34,
+        "y": 806,
+        "width": 292,
+        "height": 50
+      },
+      "submitButton": {
+        "x": 34,
+        "y": 1706,
+        "width": 292,
+        "height": 50
+      },
+      "selectDirection": "rtl",
+      "selectBackgroundPosition": "12px 50%",
+      "fields": 9,
+      "route": "/ar/contact"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "route": "/en/contact",
+    "status": "passed",
+    "requiredFields": [
+      "fullName",
+      "phone"
+    ],
+    "optionalFields": 7,
+    "direction": "en",
+    "selectArrowPosition": "calc(100% - 12px) 50%",
+    "keyboardFocus": "passed",
+    "invalidFeedback": "passed",
+    "selectOptions": "passed",
+    "apiStatus": 503,
+    "failurePreservesValues": true,
+    "successNotClaimed": true
+  },
+  {
+    "route": "/ar/contact",
+    "status": "passed",
+    "requiredFields": [
+      "fullName",
+      "phone"
+    ],
+    "optionalFields": 7,
+    "direction": "ar",
+    "selectArrowPosition": "12px 50%",
+    "keyboardFocus": "passed",
+    "invalidFeedback": "passed",
+    "selectOptions": "passed",
+    "apiStatus": 503,
+    "failurePreservesValues": true,
+    "successNotClaimed": true
+  }
+]
