@@ -1,0 +1,611 @@
+{
+  "phase": "3.11-home-services",
+  "group": "after",
+  "baseUrl": "http://127.0.0.1:5202",
+  "routes": [
+    "/en",
+    "/ar"
+  ],
+  "viewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "captureCount": 12,
+  "captures": [
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-1440.png",
+      "bytes": 1949228,
+      "sha256": "8c99ac8e9550f9fc9c18c2c7d9583ed4740eaf76f0b60365acde0015db6e9675",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/en-1280.png",
+      "bytes": 1874912,
+      "sha256": "ab9e4d749cca5fde8875d2bd65faa49d38186aff74eeaf2de8c09f0e9d455e3b",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/en-1024.png",
+      "bytes": 1762994,
+      "sha256": "50c9ed592b5152cf40ac1c95e5c788a0ed5969ca8963130d3dc5d92905224c82",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 768,
+      "path": "screenshots/after/en-768.png",
+      "bytes": 1578596,
+      "sha256": "adae4ea2b648ef8987034208c8404552ad541b8bb7ecc5d5513a2ab12de8befa",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-390.png",
+      "bytes": 1310429,
+      "sha256": "c31d297f3ca7ccb966e6666b162820726c0bce3a9fd315116c96404519f0cb07",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 360,
+      "path": "screenshots/after/en-360.png",
+      "bytes": 1276833,
+      "sha256": "77cf37a97ba551de22246f012c90d2db97be6b77dfb0731c53438343b427a8de",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-1440.png",
+      "bytes": 1624788,
+      "sha256": "c56dcf0b873fb4571401927923a9054a080baea55a9bd3a78fe831d0f0154b92",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/ar-1280.png",
+      "bytes": 1539698,
+      "sha256": "592649dc814aa6efdad569dba560517d187a378326be482c24d4413e3bd5ff35",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/ar-1024.png",
+      "bytes": 1443897,
+      "sha256": "a08327fcecb0f94007c94b764847deda96a3387f3163e435dd803dffd826c1b6",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 768,
+      "path": "screenshots/after/ar-768.png",
+      "bytes": 1281230,
+      "sha256": "2a8b1f6079db4bd0d85acf04cb5fab28029494855043e3236446eb1586b9055d",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-390.png",
+      "bytes": 998208,
+      "sha256": "99a6fe15040c0337793cfa98328ff96edbea460bfe19eaa31110617b05f47f1e",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 360,
+      "path": "screenshots/after/ar-360.png",
+      "bytes": 964560,
+      "sha256": "23d7ccb655419cfefd368bf536f635de75905b71092160eb8aa8f26434142c41",
+      "status": 200
+    }
+  ],
+  "measurements": [
+    {
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "mobile-apps",
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "business-systems",
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "ai-automation",
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "integrations-apis",
+          "width": 262,
+          "height": 574
+        }
+      ],
+      "columns": 5,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 5
+    },
+    {
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "mobile-apps",
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "business-systems",
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "ai-automation",
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "integrations-apis",
+          "width": 230,
+          "height": 611
+        }
+      ],
+      "columns": 5,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 5
+    },
+    {
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "mobile-apps",
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "business-systems",
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "ai-automation",
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "integrations-apis",
+          "width": 312,
+          "height": 490
+        }
+      ],
+      "columns": 3,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 3
+    },
+    {
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "mobile-apps",
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "business-systems",
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "ai-automation",
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "integrations-apis",
+          "width": 352,
+          "height": 478
+        }
+      ],
+      "columns": 2,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 2
+    },
+    {
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 358,
+          "height": 476
+        },
+        {
+          "id": "mobile-apps",
+          "width": 358,
+          "height": 391
+        },
+        {
+          "id": "business-systems",
+          "width": 358,
+          "height": 476
+        },
+        {
+          "id": "ai-automation",
+          "width": 358,
+          "height": 391
+        },
+        {
+          "id": "integrations-apis",
+          "width": 358,
+          "height": 476
+        }
+      ],
+      "columns": 1,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 1
+    },
+    {
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 328,
+          "height": 476
+        },
+        {
+          "id": "mobile-apps",
+          "width": 328,
+          "height": 391
+        },
+        {
+          "id": "business-systems",
+          "width": 328,
+          "height": 476
+        },
+        {
+          "id": "ai-automation",
+          "width": 328,
+          "height": 412
+        },
+        {
+          "id": "integrations-apis",
+          "width": 328,
+          "height": 476
+        }
+      ],
+      "columns": 1,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/en",
+      "expectedColumns": 1
+    },
+    {
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "mobile-apps",
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "business-systems",
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "ai-automation",
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "integrations-apis",
+          "width": 262,
+          "height": 527
+        }
+      ],
+      "columns": 5,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 5
+    },
+    {
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "mobile-apps",
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "business-systems",
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "ai-automation",
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "integrations-apis",
+          "width": 230,
+          "height": 525
+        }
+      ],
+      "columns": 5,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 5
+    },
+    {
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "mobile-apps",
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "business-systems",
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "ai-automation",
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "integrations-apis",
+          "width": 312,
+          "height": 468
+        }
+      ],
+      "columns": 3,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 3
+    },
+    {
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "mobile-apps",
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "business-systems",
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "ai-automation",
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "integrations-apis",
+          "width": 352,
+          "height": 456
+        }
+      ],
+      "columns": 2,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 2
+    },
+    {
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 358,
+          "height": 454
+        },
+        {
+          "id": "mobile-apps",
+          "width": 358,
+          "height": 368
+        },
+        {
+          "id": "business-systems",
+          "width": 358,
+          "height": 454
+        },
+        {
+          "id": "ai-automation",
+          "width": 358,
+          "height": 368
+        },
+        {
+          "id": "integrations-apis",
+          "width": 358,
+          "height": 454
+        }
+      ],
+      "columns": 1,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 1
+    },
+    {
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "cardCount": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "width": 328,
+          "height": 454
+        },
+        {
+          "id": "mobile-apps",
+          "width": 328,
+          "height": 368
+        },
+        {
+          "id": "business-systems",
+          "width": 328,
+          "height": 454
+        },
+        {
+          "id": "ai-automation",
+          "width": 328,
+          "height": 368
+        },
+        {
+          "id": "integrations-apis",
+          "width": 328,
+          "height": 454
+        }
+      ],
+      "columns": 1,
+      "imagesLoaded": true,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "linksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "route": "/ar",
+      "expectedColumns": 1
+    }
+  ],
+  "consoleErrors": []
+}

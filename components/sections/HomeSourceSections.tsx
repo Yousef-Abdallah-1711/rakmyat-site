@@ -1,9 +1,10 @@
 import { ProductReasonsSection } from "@/components/sections/ProductReasonsSection";
-import { MarketplaceFeaturesSection } from "@/components/sections/MarketplaceFeaturesSection";
 import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
+import { ServicesWorkflowCards } from "@/components/sections/ServicesWorkflowCards";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader, PricingMobileTable } from "@/components/pricing/PricingTable";
 import { getHomeContent } from "@/content/home";
+import { getPageCopy } from "@/content/page-copy";
 import type { Locale } from "@/content/i18n";
 import Link from "next/link";
 
@@ -92,8 +93,8 @@ function HomeMainSection2({ locale }: { locale: Locale }) {
     <main>
       <HomeCommunityPt40Section3 locale={locale} />
       <HomeAboutSectionPaddingSection4 locale={locale} />
-      <HomeClientsStyle5Section5 locale={locale} />
       <HomeFeaturesSectionPaddingSection6 locale={locale} />
+      <HomeClientsStyle5Section5 locale={locale} />
       <HomePricingSectionPaddingSection7 locale={locale} />
       <HomeTestimonialsSectionPaddingSection8 locale={locale} />
       <HomeDownloadSectionPaddingSection9 locale={locale} />
@@ -274,7 +275,23 @@ function HomeClientsStyle5Section5({ locale }: { locale: Locale }) {
 }
 
 function HomeFeaturesSectionPaddingSection6({ locale }: { locale: Locale }) {
-  return <MarketplaceFeaturesSection variant="home" locale={locale} />;
+  const copy = getPageCopy(locale).services;
+
+  return (
+    <section className="services section-padding bg-white pb-50 style-6" aria-labelledby="home-services-workflow-heading" data-home-services>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="section-head text-center mb-60 style-5">
+              <h2 className="mb-20" id="home-services-workflow-heading">{copy.introHeading}</h2>
+              <p>{copy.introDescription}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ServicesWorkflowCards locale={locale} />
+    </section>
+  );
 }
 
 function HomePricingSectionPaddingSection7({ locale }: { locale: Locale }) {

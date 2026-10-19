@@ -1,0 +1,118 @@
+{
+  "phase": "3.11-home-services",
+  "group": "before",
+  "baseUrl": "http://127.0.0.1:5202",
+  "routes": [
+    "/en",
+    "/ar"
+  ],
+  "viewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "captureCount": 12,
+  "captures": [
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-1440.png",
+      "bytes": 1707499,
+      "sha256": "a5ef541d99e0ab987dbac261ab7bcddb2a4530c671cfd3b38f8e4487afea2215",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/en-1280.png",
+      "bytes": 1621665,
+      "sha256": "7a66361bd29ab29280a4eeffbd0ba0d42e98b78ec1b4fb300163a73d34eb7b1a",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/en-1024.png",
+      "bytes": 1504799,
+      "sha256": "86e7adc4f3734d08aa831691928740bac4c94216cd68d9e3ec2c0560c222e742",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 768,
+      "path": "screenshots/before/en-768.png",
+      "bytes": 1300923,
+      "sha256": "e3a1873bab90df9dd1462c193ed3816ae5c44f7198c3578c4ddf8fdf3cef1170",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-390.png",
+      "bytes": 1008331,
+      "sha256": "97ce44260251e22616e541e5357aae85c14555054d504c55e6b4d1fc1282befd",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 360,
+      "path": "screenshots/before/en-360.png",
+      "bytes": 985420,
+      "sha256": "46f35605f589cb7323077dd5793935cf8127cbd9b90c3936c1336eb363bcd54b",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-1440.png",
+      "bytes": 1436556,
+      "sha256": "cff7c4d115e904ed345c4cd8b81ff02bfdb05b076cb86d3d3e22ddf6d093ce29",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/ar-1280.png",
+      "bytes": 1600719,
+      "sha256": "ebc859183bfb84d0e598cd5b96217bbf4a9ade546dfb12f5c2c0481eb5938909",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/ar-1024.png",
+      "bytes": 1420303,
+      "sha256": "787468cdf458536c71512d81da68eed6acf27c25b1b3390882c63d8f9cd7a507",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 768,
+      "path": "screenshots/before/ar-768.png",
+      "bytes": 1173234,
+      "sha256": "9bf1762f7710ca6da883085ce0134a5327eac952661bc32bb5d5e62a6f482004",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-390.png",
+      "bytes": 880306,
+      "sha256": "dc736954283d3011b5b1bb193813acb64d742669319a49600693149e9dd9d0fe",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 360,
+      "path": "screenshots/before/ar-360.png",
+      "bytes": 839982,
+      "sha256": "cff3929d37fc11707010e6e2f7af369b9f97239a3f3c5e876c672b4610fe8c99",
+      "status": 200
+    }
+  ],
+  "measurements": [],
+  "consoleErrors": []
+}
