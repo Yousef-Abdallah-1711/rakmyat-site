@@ -1,0 +1,3288 @@
+{
+  "stage": "before",
+  "generatedAt": "2026-10-19T10:05:00.919755+00:00",
+  "baseUrl": "http://127.0.0.1:5191",
+  "viewportHeight": 960,
+  "records": [
+    {
+      "route": "/en/portfolio",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "before/en-portfolio-1440.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentWidth": 1440,
+      "target": {
+        "x": 75,
+        "y": -84,
+        "width": 1290,
+        "height": 1559,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 60,
+        "y": -84,
+        "width": 1320,
+        "height": 1559,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 75,
+          "y": -84,
+          "width": 410,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "EDUCATION · SCHOOL DISCOVERY",
+          "summary": "A bilingual school-discovery experience for exploring schools across the UAE.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 75,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 515,
+          "y": -84,
+          "width": 410,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nora Store",
+          "category": "E-COMMERCE · BEAUTY AND PERSONAL CARE",
+          "summary": "An Arabic storefront for browsing beauty and personal-care products.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 515,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 955,
+          "y": -84,
+          "width": 410,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nama Academy",
+          "category": "EDUCATION · PROFESSIONAL TRAINING",
+          "summary": "A public academy website for exploring professional programs, courses, and events.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 955,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 75,
+          "y": 435,
+          "width": 410,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "From Idea to Production",
+          "category": "EDUCATION · WORKSHOP PLATFORM",
+          "summary": "A workshop website presenting a course and its session-based curriculum.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 75,
+            "y": 435,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 1280,
+      "status": 200,
+      "screenshot": "before/en-portfolio-1280.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 960
+      },
+      "documentWidth": 1280,
+      "target": {
+        "x": 70,
+        "y": -84,
+        "width": 1140,
+        "height": 1559,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 55,
+        "y": -84,
+        "width": 1170,
+        "height": 1559,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 70,
+          "y": -84,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "EDUCATION · SCHOOL DISCOVERY",
+          "summary": "A bilingual school-discovery experience for exploring schools across the UAE.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 70,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 460,
+          "y": -84,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nora Store",
+          "category": "E-COMMERCE · BEAUTY AND PERSONAL CARE",
+          "summary": "An Arabic storefront for browsing beauty and personal-care products.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 460,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 850,
+          "y": -84,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nama Academy",
+          "category": "EDUCATION · PROFESSIONAL TRAINING",
+          "summary": "A public academy website for exploring professional programs, courses, and events.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 850,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 70,
+          "y": 435,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "From Idea to Production",
+          "category": "EDUCATION · WORKSHOP PLATFORM",
+          "summary": "A workshop website presenting a course and its session-based curriculum.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 70,
+            "y": 435,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 768,
+      "status": 200,
+      "screenshot": "before/en-portfolio-768.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 768,
+        "height": 960
+      },
+      "documentWidth": 768,
+      "target": {
+        "x": 15,
+        "y": -85,
+        "width": 738,
+        "height": 4392,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 0,
+        "y": -85,
+        "width": 768,
+        "height": 4392,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 15,
+          "y": -85,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "EDUCATION · SCHOOL DISCOVERY",
+          "summary": "A bilingual school-discovery experience for exploring schools across the UAE.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 15,
+            "y": -85,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 409,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nora Store",
+          "category": "E-COMMERCE · BEAUTY AND PERSONAL CARE",
+          "summary": "An Arabic storefront for browsing beauty and personal-care products.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 15,
+            "y": 409,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 902,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nama Academy",
+          "category": "EDUCATION · PROFESSIONAL TRAINING",
+          "summary": "A public academy website for exploring professional programs, courses, and events.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 15,
+            "y": 902,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 1396,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "From Idea to Production",
+          "category": "EDUCATION · WORKSHOP PLATFORM",
+          "summary": "A workshop website presenting a course and its session-based curriculum.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 15,
+            "y": 1396,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 390,
+      "status": 200,
+      "screenshot": "before/en-portfolio-390.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "documentWidth": 390,
+      "target": {
+        "x": 15,
+        "y": -85,
+        "width": 360,
+        "height": 4654,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 0,
+        "y": -85,
+        "width": 390,
+        "height": 4654,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 15,
+          "y": -85,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "EDUCATION · SCHOOL DISCOVERY",
+          "summary": "A bilingual school-discovery experience for exploring schools across the UAE.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 15,
+            "y": -85,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 434,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nora Store",
+          "category": "E-COMMERCE · BEAUTY AND PERSONAL CARE",
+          "summary": "An Arabic storefront for browsing beauty and personal-care products.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 15,
+            "y": 434,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 954,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Nama Academy",
+          "category": "EDUCATION · PROFESSIONAL TRAINING",
+          "summary": "A public academy website for exploring professional programs, courses, and events.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 15,
+            "y": 954,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 1473,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "From Idea to Production",
+          "category": "EDUCATION · WORKSHOP PLATFORM",
+          "summary": "A workshop website presenting a course and its session-based curriculum.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 15,
+            "y": 1473,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "before/ar-portfolio-1440.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentWidth": 1440,
+      "target": {
+        "x": 75,
+        "y": -84,
+        "width": 1290,
+        "height": 1533,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 60,
+        "y": -84,
+        "width": 1320,
+        "height": 1533,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 955,
+          "y": -84,
+          "width": 410,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "تجربة ثنائية اللغة تساعد الأسر على استكشاف المدارس في أنحاء الإمارات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 955,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 515,
+          "y": -84,
+          "width": 410,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "متجر عربي لاستكشاف منتجات الجمال والعناية الشخصية.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 515,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 75,
+          "y": -84,
+          "width": 410,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "موقع أكاديمية لاستكشاف البرامج المهنية والدورات والفعاليات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 75,
+            "y": -84,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 955,
+          "y": 435,
+          "width": 410,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "من الفكرة إلى الإنتاج",
+          "category": "التعليم · منصة ورش العمل",
+          "summary": "موقع ورشة يعرض الدورة ومحاورها المنظمة ضمن جلسات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 955,
+            "y": 435,
+            "width": 410,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 1280,
+      "status": 200,
+      "screenshot": "before/ar-portfolio-1280.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 960
+      },
+      "documentWidth": 1280,
+      "target": {
+        "x": 70,
+        "y": -84,
+        "width": 1140,
+        "height": 1537,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 55,
+        "y": -84,
+        "width": 1170,
+        "height": 1537,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 850,
+          "y": -84,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "تجربة ثنائية اللغة تساعد الأسر على استكشاف المدارس في أنحاء الإمارات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 850,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 460,
+          "y": -84,
+          "width": 360,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "متجر عربي لاستكشاف منتجات الجمال والعناية الشخصية.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 460,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 70,
+          "y": -84,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "موقع أكاديمية لاستكشاف البرامج المهنية والدورات والفعاليات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 70,
+            "y": -84,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 850,
+          "y": 435,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "من الفكرة إلى الإنتاج",
+          "category": "التعليم · منصة ورش العمل",
+          "summary": "موقع ورشة يعرض الدورة ومحاورها المنظمة ضمن جلسات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 850,
+            "y": 435,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 768,
+      "status": 200,
+      "screenshot": "before/ar-portfolio-768.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 768,
+        "height": 960
+      },
+      "documentWidth": 768,
+      "target": {
+        "x": 15,
+        "y": -85,
+        "width": 738,
+        "height": 4392,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 0,
+        "y": -85,
+        "width": 768,
+        "height": 4392,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 15,
+          "y": -85,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "تجربة ثنائية اللغة تساعد الأسر على استكشاف المدارس في أنحاء الإمارات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 15,
+            "y": -85,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 408,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "متجر عربي لاستكشاف منتجات الجمال والعناية الشخصية.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 15,
+            "y": 408,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 902,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "موقع أكاديمية لاستكشاف البرامج المهنية والدورات والفعاليات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 15,
+            "y": 902,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 1395,
+          "width": 738,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "من الفكرة إلى الإنتاج",
+          "category": "التعليم · منصة ورش العمل",
+          "summary": "موقع ورشة يعرض الدورة ومحاورها المنظمة ضمن جلسات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 15,
+            "y": 1395,
+            "width": 738,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 390,
+      "status": 200,
+      "screenshot": "before/ar-portfolio-390.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "documentWidth": 390,
+      "target": {
+        "x": 15,
+        "y": -85,
+        "width": 360,
+        "height": 4576,
+        "display": "block",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": {
+        "x": 0,
+        "y": -85,
+        "width": 390,
+        "height": 4576,
+        "display": "flex",
+        "padding": "0px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px",
+        "className": "row mix-container"
+      },
+      "cards": [
+        {
+          "x": 15,
+          "y": -85,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "تجربة ثنائية اللغة تساعد الأسر على استكشاف المدارس في أنحاء الإمارات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 15,
+            "y": -85,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 434,
+          "width": 360,
+          "height": 444,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "متجر عربي لاستكشاف منتجات الجمال والعناية الشخصية.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 15,
+            "y": 434,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 928,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "موقع أكاديمية لاستكشاف البرامج المهنية والدورات والفعاليات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 15,
+            "y": 928,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 15,
+          "y": 1447,
+          "width": 360,
+          "height": 470,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "portfolio-card mb-50",
+          "title": "من الفكرة إلى الإنتاج",
+          "category": "التعليم · منصة ورش العمل",
+          "summary": "موقع ورشة يعرض الدورة ومحاورها المنظمة ضمن جلسات.",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+            "x": 15,
+            "y": 1447,
+            "width": 360,
+            "height": 240,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "cardCount": 9,
+      "featuredCards": [],
+      "featuredCount": 0,
+      "imageContainerCount": 9,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [
+        "col-lg-4 mix education",
+        "col-lg-4 mix commerce",
+        "col-lg-4 mix education"
+      ],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/en",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "before/en-home-1440.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentWidth": 1440,
+      "target": {
+        "x": 0,
+        "y": 192,
+        "width": 1440,
+        "height": 409,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": -408,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev",
+          "title": "Schooly",
+          "category": "Education · School discovery",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": -372,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -168,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active",
+          "title": "Nora Store",
+          "category": "E-commerce · Beauty and personal care",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": -132,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "Nama Academy",
+          "category": "Education · Professional training",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 108,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 312,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "E-commerce · Computer hardware",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 348,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 12,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en",
+      "width": 1280,
+      "status": 200,
+      "screenshot": "before/en-home-1280.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 960
+      },
+      "documentWidth": 1280,
+      "target": {
+        "x": 0,
+        "y": 192,
+        "width": 1280,
+        "height": 409,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": -363,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev",
+          "title": "Schooly",
+          "category": "Education · School discovery",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": -327,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -150,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active",
+          "title": "Nora Store",
+          "category": "E-commerce · Beauty and personal care",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": -114,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 63,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "Nama Academy",
+          "category": "Education · Professional training",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 99,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 277,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "E-commerce · Computer hardware",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 313,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 12,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "status": 200,
+      "screenshot": "before/en-home-768.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 768,
+        "height": 960
+      },
+      "documentWidth": 768,
+      "target": {
+        "x": 0,
+        "y": 202,
+        "width": 768,
+        "height": 388,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": -654,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "Nama Academy",
+          "category": "Education · Professional training",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": -618,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -270,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "E-commerce · Computer hardware",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": -234,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 114,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-prev",
+          "title": "Schooly",
+          "category": "Education · School discovery",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 150,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 498,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-active",
+          "title": "Nora Store",
+          "category": "E-commerce · Beauty and personal care",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 534,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 8,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "status": 200,
+      "screenshot": "before/en-home-390.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "documentWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 189,
+        "width": 390,
+        "height": 413,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": -331,
+          "y": 342,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "Nama Academy",
+          "category": "Education · Professional training",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": -307,
+            "y": 397,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -136,
+          "y": 342,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "E-commerce · Computer hardware",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": -112,
+            "y": 397,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 59,
+          "y": 342,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-prev",
+          "title": "Schooly",
+          "category": "Education · School discovery",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 83,
+            "y": 397,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 254,
+          "y": 342,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-active",
+          "title": "Nora Store",
+          "category": "E-commerce · Beauty and personal care",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 278,
+            "y": 397,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 8,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "ltr",
+      "language": "en"
+    },
+    {
+      "route": "/ar",
+      "width": 1440,
+      "status": 200,
+      "screenshot": "before/ar-home-1440.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentWidth": 1440,
+      "target": {
+        "x": 0,
+        "y": 192,
+        "width": 1440,
+        "height": 409,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": 1608,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 1742,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 1368,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 1502,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 1128,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 1262,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 888,
+          "y": 340,
+          "width": 240,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "التجارة الإلكترونية · أجهزة الحاسوب",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 1022,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 12,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar",
+      "width": 1280,
+      "status": 200,
+      "screenshot": "before/ar-home-1280.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 1280,
+        "height": 960
+      },
+      "documentWidth": 1280,
+      "target": {
+        "x": 0,
+        "y": 192,
+        "width": 1280,
+        "height": 409,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": 1430,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 1537,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 1217,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 1324,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 1003,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 1111,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 790,
+          "y": 340,
+          "width": 213,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "التجارة الإلكترونية · أجهزة الحاسوب",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 897,
+            "y": 389,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 12,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar",
+      "width": 768,
+      "status": 200,
+      "screenshot": "before/ar-home-768.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 768,
+        "height": 960
+      },
+      "documentWidth": 768,
+      "target": {
+        "x": 0,
+        "y": 202,
+        "width": 768,
+        "height": 388,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": 1035,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 1313,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 651,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "التجارة الإلكترونية · أجهزة الحاسوب",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 929,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 267,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-prev",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 545,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -117,
+          "y": 329,
+          "width": 384,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-active",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 161,
+            "y": 378,
+            "width": 70,
+            "height": 62,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 8,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "rtl",
+      "language": "ar"
+    },
+    {
+      "route": "/ar",
+      "width": 390,
+      "status": 200,
+      "screenshot": "before/ar-home-390.png",
+      "pageErrors": [],
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "documentWidth": 390,
+      "target": {
+        "x": 0,
+        "y": 188,
+        "width": 390,
+        "height": 413,
+        "display": "block",
+        "padding": "0px 0px 100px",
+        "gap": "normal",
+        "maxWidth": "none",
+        "fontSize": "14.4px"
+      },
+      "grid": null,
+      "cards": [],
+      "cardCount": 0,
+      "featuredCards": [
+        {
+          "x": 525,
+          "y": 341,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next",
+          "title": "أكاديمية نماء",
+          "category": "التعليم · التدريب المهني",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+            "x": 642,
+            "y": 396,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 330,
+          "y": 341,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-duplicate",
+          "title": "GC Hardware",
+          "category": "التجارة الإلكترونية · أجهزة الحاسوب",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+            "x": 447,
+            "y": 396,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": 135,
+          "y": 341,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-prev",
+          "title": "Schooly",
+          "category": "التعليم · استكشاف المدارس",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+            "x": 252,
+            "y": 396,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        },
+        {
+          "x": -60,
+          "y": 341,
+          "width": 195,
+          "height": 160,
+          "display": "block",
+          "padding": "0px",
+          "gap": "normal",
+          "maxWidth": "none",
+          "fontSize": "14.4px",
+          "className": "swiper-slide swiper-slide-active",
+          "title": "متجر نورا",
+          "category": "التجارة الإلكترونية · الجمال والعناية الشخصية",
+          "summary": "",
+          "image": {
+            "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+            "x": 57,
+            "y": 396,
+            "width": 54,
+            "height": 50,
+            "display": "block",
+            "padding": "0px",
+            "gap": "normal",
+            "maxWidth": "100%",
+            "fontSize": "14.4px",
+            "objectFit": "cover",
+            "naturalWidth": 1440,
+            "naturalHeight": 900
+          }
+        }
+      ],
+      "featuredCount": 8,
+      "imageContainerCount": 0,
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 900
+        }
+      ],
+      "bootstrapColumns": [],
+      "direction": "rtl",
+      "language": "ar"
+    }
+  ]
+}

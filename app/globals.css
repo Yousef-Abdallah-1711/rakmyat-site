@@ -72,9 +72,12 @@
   height: 240px;
 }
 
-.portfolio-card .portfolio-project-image {
+.portfolio.style-1 .portfolio-card a.img.portfolio-project-image {
   display: flex;
-  height: 240px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  min-height: 220px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -83,15 +86,25 @@
   background: #f0eff5;
 }
 
-.portfolio-card .portfolio-project-image > img {
+.portfolio.style-1 .portfolio-card a.img.portfolio-project-image > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.5s ease;
 }
 
+.portfolio.style-1 .portfolio-card a.img.portfolio-project-image > .project-identity--card {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
 .portfolio-card:hover .portfolio-project-image > img { transform: scale(1.035); }
+.portfolio.style-1 .portfolio-card .info h5 { font-size: clamp(20px, 1.7vw, 24px); }
+.portfolio.style-1 .portfolio-card .info > small.color-main { font-size: 11px; letter-spacing: 0.04em; }
+.portfolio.style-1 .portfolio-card .info div.text { font-size: 15px; line-height: 1.7; }
 .portfolio-card .info h5 a { color: inherit; }
 .portfolio-card .info h5 a:hover { color: var(--color-blue5, #4a8df6); }
 
@@ -106,12 +119,13 @@
 }
 
 .featured-work-strip .featured-work-link > img {
-  width: 70px;
-  height: 62px;
+  width: 96px;
+  height: 78px;
   flex: 0 0 auto;
   border-radius: 10px;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
+  background: #f0eff5;
 }
 
 .featured-work-strip .featured-work-link > span { display: grid; gap: 5px; }
@@ -204,12 +218,13 @@
 .service-project-links a:hover { background: rgb(39 92 255 / 15%); color: #1b4adb; }
 
 @media (max-width: 767.98px) {
+  .portfolio-card .portfolio-project-image { min-height: 0; }
   .project-detail .project-cover-image { max-height: 58vh; }
   .project-detail .project-identity--large { min-height: 280px; }
   .project-detail .project-supporting-image img,
   .project-detail .project-gallery-image img { max-height: 480px; }
   .featured-work-strip .featured-work-link { gap: 9px; padding: 18px !important; }
-  .featured-work-strip .featured-work-link > img { width: 54px; height: 50px; }
+  .featured-work-strip .featured-work-link > img { width: 68px; height: 58px; }
   .featured-work-strip .featured-work-link strong { font-size: 13px; }
 }
 

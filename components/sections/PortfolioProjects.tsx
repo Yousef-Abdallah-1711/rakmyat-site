@@ -28,7 +28,7 @@ export function PortfolioProjects({ locale = "en" }: { locale?: Locale }) {
     <p className="visually-hidden" aria-live="polite">{copy.count(visible.length)}</p>
     <section className="portfolio style-1" aria-label={locale === "en" ? "Rakmyat projects" : "مشاريع رقميات"}>
       <div className="content"><div className="row mix-container">
-        {visible.map(({ slug, categoryId, content, assets }, index) => <div className={`col-lg-4 mix ${categoryGroup(categoryId)}`} key={slug}>
+        {visible.map(({ slug, categoryId, content, assets }, index) => <div className={`col-md-6 mix ${categoryGroup(categoryId)}`} key={slug}>
           <article className={`portfolio-card${index < visible.length - 1 ? " mb-50" : ""}`}>
             <Link className="img portfolio-project-image" href={`/${locale}/projects/${slug}`} aria-label={`${copy.open}: ${content.title}`}>
               {assets.cover
