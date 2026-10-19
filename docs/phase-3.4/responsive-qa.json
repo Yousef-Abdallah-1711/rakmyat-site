@@ -1,0 +1,7528 @@
+{
+  "base": "http://127.0.0.1:5192",
+  "routeCount": 22,
+  "viewportChecks": 132,
+  "screenshots": [
+    {
+      "route": "/en",
+      "width": 1440,
+      "file": "en-home-1440.png"
+    },
+    {
+      "route": "/en",
+      "width": 1024,
+      "file": "en-home-1024.png"
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "file": "en-home-768.png"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "file": "en-home-390.png"
+    },
+    {
+      "route": "/ar",
+      "width": 1440,
+      "file": "ar-home-1440.png"
+    },
+    {
+      "route": "/ar",
+      "width": 1024,
+      "file": "ar-home-1024.png"
+    },
+    {
+      "route": "/ar",
+      "width": 768,
+      "file": "ar-home-768.png"
+    },
+    {
+      "route": "/ar",
+      "width": 390,
+      "file": "ar-home-390.png"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 1440,
+      "file": "en-portfolio-1440.png"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 1024,
+      "file": "en-portfolio-1024.png"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 768,
+      "file": "en-portfolio-768.png"
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 390,
+      "file": "en-portfolio-390.png"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 1440,
+      "file": "ar-portfolio-1440.png"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 1024,
+      "file": "ar-portfolio-1024.png"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 768,
+      "file": "ar-portfolio-768.png"
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 390,
+      "file": "ar-portfolio-390.png"
+    },
+    {
+      "route": "/en/projects/schooly",
+      "width": 1440,
+      "file": "en-schooly-1440.png"
+    },
+    {
+      "route": "/en/projects/schooly",
+      "width": 768,
+      "file": "en-schooly-768.png"
+    },
+    {
+      "route": "/en/projects/schooly",
+      "width": 390,
+      "file": "en-schooly-390.png"
+    },
+    {
+      "route": "/en/projects/concord-crm",
+      "width": 1440,
+      "file": "en-concord-crm-1440.png"
+    },
+    {
+      "route": "/en/projects/concord-crm",
+      "width": 768,
+      "file": "en-concord-crm-768.png"
+    },
+    {
+      "route": "/en/projects/concord-crm",
+      "width": 390,
+      "file": "en-concord-crm-390.png"
+    },
+    {
+      "route": "/en/projects/product-scraper",
+      "width": 1440,
+      "file": "en-product-scraper-1440.png"
+    },
+    {
+      "route": "/en/projects/product-scraper",
+      "width": 768,
+      "file": "en-product-scraper-768.png"
+    },
+    {
+      "route": "/en/projects/product-scraper",
+      "width": 390,
+      "file": "en-product-scraper-390.png"
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "width": 1440,
+      "file": "ar-schooly-1440.png"
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "width": 768,
+      "file": "ar-schooly-768.png"
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "width": 390,
+      "file": "ar-schooly-390.png"
+    },
+    {
+      "route": "/ar/projects/concord-crm",
+      "width": 1440,
+      "file": "ar-concord-crm-1440.png"
+    },
+    {
+      "route": "/ar/projects/concord-crm",
+      "width": 768,
+      "file": "ar-concord-crm-768.png"
+    },
+    {
+      "route": "/ar/projects/concord-crm",
+      "width": 390,
+      "file": "ar-concord-crm-390.png"
+    },
+    {
+      "route": "/ar/projects/product-scraper",
+      "width": 1440,
+      "file": "ar-product-scraper-1440.png"
+    },
+    {
+      "route": "/ar/projects/product-scraper",
+      "width": 768,
+      "file": "ar-product-scraper-768.png"
+    },
+    {
+      "route": "/ar/projects/product-scraper",
+      "width": 390,
+      "file": "ar-product-scraper-390.png"
+    }
+  ],
+  "interactionChecks": [
+    {
+      "route": "/en/portfolio",
+      "test": "portfolio-filter",
+      "button": "Education",
+      "visibleCards": 4,
+      "pass": true
+    },
+    {
+      "route": "/en/portfolio",
+      "test": "all-nine-project-cards",
+      "cardSlugs": [
+        "schooly",
+        "nora-store",
+        "edtech-platform",
+        "live-workshop",
+        "eduflow",
+        "legal-translation",
+        "gc-hardware",
+        "concord-crm",
+        "product-scraper"
+      ],
+      "pass": true
+    },
+    {
+      "route": "/ar/portfolio",
+      "test": "portfolio-filter",
+      "button": "التعليم",
+      "visibleCards": 4,
+      "pass": true
+    },
+    {
+      "route": "/ar/portfolio",
+      "test": "all-nine-project-cards",
+      "cardSlugs": [
+        "schooly",
+        "nora-store",
+        "edtech-platform",
+        "live-workshop",
+        "eduflow",
+        "legal-translation",
+        "gc-hardware",
+        "concord-crm",
+        "product-scraper"
+      ],
+      "pass": true
+    },
+    {
+      "route": "/en/projects/schooly",
+      "test": "language-switch-preserves-slug",
+      "found": true,
+      "pass": true
+    },
+    {
+      "route": "/en/projects/schooly",
+      "test": "project-image-lightbox",
+      "opens": true,
+      "escapeClosesAndRestoresFocusAndUrl": true,
+      "pageErrors": [],
+      "closeButtonInitiallyFocused": true,
+      "focusRestored": true
+    },
+    {
+      "route": "/en/projects/concord-crm",
+      "test": "project-image-lightbox",
+      "opens": true,
+      "escapeClosesAndRestoresFocusAndUrl": true,
+      "pageErrors": [],
+      "closeButtonInitiallyFocused": true,
+      "focusRestored": true
+    },
+    {
+      "route": "/en/projects/product-scraper",
+      "test": "project-image-lightbox",
+      "opens": true,
+      "escapeClosesAndRestoresFocusAndUrl": true,
+      "pageErrors": [],
+      "closeButtonInitiallyFocused": true,
+      "focusRestored": true
+    },
+    {
+      "route": "/ar/projects/concord-crm",
+      "test": "project-image-lightbox",
+      "opens": true,
+      "escapeClosesAndRestoresFocusAndUrl": true,
+      "pageErrors": [],
+      "closeButtonInitiallyFocused": true,
+      "focusRestored": true
+    }
+  ],
+  "failures": [],
+  "results": [
+    {
+      "path": "/en",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 627,
+          "imageHeight": 397,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 627,
+          "imageHeight": 397,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 552,
+          "imageHeight": 349,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 552,
+          "imageHeight": 349,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 481,
+          "height": 523,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 481,
+          "height": 523,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 481,
+          "height": 523,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 481,
+          "height": 523,
+          "imageWidth": 479,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 479,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 353,
+          "height": 465,
+          "imageWidth": 351,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 353,
+          "height": 484,
+          "imageWidth": 351,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 486,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 455,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 455,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 460,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 481,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 629,
+          "height": 596,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 629,
+          "height": 596,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 537,
+          "imageHeight": 300,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 627,
+          "imageHeight": 397,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 629,
+          "height": 599,
+          "imageWidth": 627,
+          "imageHeight": 397,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 473,
+          "imageHeight": 260,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 552,
+          "imageHeight": 349,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 554,
+          "height": 552,
+          "imageWidth": 552,
+          "imageHeight": 349,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 410,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 479,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 481,
+          "height": 499,
+          "imageWidth": 479,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 300,
+          "imageHeight": 154,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 353,
+          "height": 442,
+          "imageWidth": 351,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 353,
+          "height": 468,
+          "imageWidth": 351,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 460,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 438,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 464,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 417,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 417,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 417,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 438,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 464,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 626,
+          "imageHeight": 396,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 626,
+          "imageHeight": 396,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 551,
+          "imageHeight": 349,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 551,
+          "imageHeight": 349,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 480,
+          "height": 523,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 480,
+          "height": 523,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 480,
+          "height": 523,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 480,
+          "height": 523,
+          "imageWidth": 478,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 478,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 352,
+          "height": 465,
+          "imageWidth": 350,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 352,
+          "height": 484,
+          "imageWidth": 350,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 488,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 493,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 498,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/portfolio",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 472,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 488,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 472,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 467,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 472,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 493,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 628,
+          "height": 596,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 628,
+          "height": 596,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 536,
+          "imageHeight": 299,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 626,
+          "imageHeight": 396,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 628,
+          "height": 598,
+          "imageWidth": 626,
+          "imageHeight": 396,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 472,
+          "imageHeight": 259,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 551,
+          "imageHeight": 349,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 553,
+          "height": 551,
+          "imageWidth": 551,
+          "imageHeight": 349,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 409,
+          "imageHeight": 221,
+          "naturalWidth": 620,
+          "naturalHeight": 387,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 478,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 480,
+          "height": 499,
+          "imageWidth": 478,
+          "imageHeight": 303,
+          "naturalWidth": 620,
+          "naturalHeight": 413,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 299,
+          "imageHeight": 153,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 352,
+          "height": 441,
+          "imageWidth": 350,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 352,
+          "height": 467,
+          "imageWidth": 350,
+          "imageHeight": 222,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 472,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 450,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 476,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/portfolio",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 429,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 429,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 450,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 476,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 9,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 416,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 416,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 416,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/schooly",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/nora-store",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 461,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/edtech-platform",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/live-workshop",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/eduflow",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/legal-translation",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 461,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/gc-hardware",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 413,
+          "imageHeight": 262,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 365,
+          "height": 454,
+          "imageWidth": 363,
+          "imageHeight": 230,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 454,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 454,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 317,
+          "height": 440,
+          "imageWidth": 315,
+          "imageHeight": 199,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 440,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 440,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 358,
+          "height": 449,
+          "imageWidth": 356,
+          "imageHeight": 225,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 449,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 487,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/concord-crm",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 482,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 324,
+          "naturalHeight": 216,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 461,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 1440,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 413,
+          "imageHeight": 262,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 462,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 1280,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 363,
+          "imageHeight": 230,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 1024,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 315,
+          "imageHeight": 199,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 422,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 768,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 356,
+          "imageHeight": 225,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 390,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/en/projects/product-scraper",
+      "width": 360,
+      "status": 200,
+      "dir": "ltr",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 324,
+          "naturalHeight": 216,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 456,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 461,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/schooly",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/nora-store",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/edtech-platform",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/live-workshop",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "eduflow",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/eduflow",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "edtech-platform",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "live-workshop",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/legal-translation",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 365,
+          "height": 431,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 358,
+          "height": 426,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 360,
+          "height": 461,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/gc-hardware",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "legal-translation",
+          "width": 330,
+          "height": 418,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "schooly",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 413,
+          "imageHeight": 262,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 365,
+          "height": 432,
+          "imageWidth": 363,
+          "imageHeight": 230,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 432,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 432,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 317,
+          "height": 423,
+          "imageWidth": 315,
+          "imageHeight": 199,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 423,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 423,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 358,
+          "height": 427,
+          "imageWidth": 356,
+          "imageHeight": 225,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 427,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 360,
+          "height": 465,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/concord-crm",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "product-scraper",
+          "width": 330,
+          "height": 465,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 324,
+          "naturalHeight": 216,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 4,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 1440,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 413,
+          "imageHeight": 262,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 353,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 415,
+          "height": 440,
+          "imageWidth": 354,
+          "imageHeight": 187,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 1280,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 363,
+          "imageHeight": 230,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 310,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 365,
+          "height": 409,
+          "imageWidth": 311,
+          "imageHeight": 160,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 1024,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 315,
+          "imageHeight": 199,
+          "naturalWidth": 359,
+          "naturalHeight": 239,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 317,
+          "height": 400,
+          "imageWidth": 269,
+          "imageHeight": 134,
+          "naturalWidth": 359,
+          "naturalHeight": 224,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 768,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 356,
+          "imageHeight": 225,
+          "naturalWidth": 337,
+          "naturalHeight": 225,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 358,
+          "height": 404,
+          "imageWidth": 304,
+          "imageHeight": 156,
+          "naturalWidth": 337,
+          "naturalHeight": 211,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 390,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 358,
+          "imageHeight": 259,
+          "naturalWidth": 350,
+          "naturalHeight": 233,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 360,
+          "height": 439,
+          "imageWidth": 313,
+          "imageHeight": 191,
+          "naturalWidth": 350,
+          "naturalHeight": 219,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "path": "/ar/projects/product-scraper",
+      "width": 360,
+      "status": 200,
+      "dir": "rtl",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "cards": [
+        {
+          "slug": "concord-crm",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 328,
+          "imageHeight": 238,
+          "naturalWidth": 324,
+          "naturalHeight": 216,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "nora-store",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        },
+        {
+          "slug": "gc-hardware",
+          "width": 330,
+          "height": 439,
+          "imageWidth": 287,
+          "imageHeight": 173,
+          "naturalWidth": 324,
+          "naturalHeight": 202,
+          "objectFit": "contain"
+        }
+      ],
+      "projectLinkCount": 5,
+      "headingClips": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "generatedAt": "2026-10-19",
+  "qaNotes": {
+    "prefetchCancellations": "Next.js route-prefetch requests with _rsc query strings may report ERR_ABORTED when the test closes a page. They are not document or asset failures and are excluded from unexpected failures.",
+    "headingMeasurement": "The generic query selected a visually-hidden 1px accessible heading. The rendered page heading was inspected and is not clipped; the hidden element is excluded.",
+    "screenshots": "34 full-page screenshots were recaptured after the theme preloader completed and after all image elements decoded."
+  },
+  "lightboxCheckNotes": "The MediaLightbox listener now supports project-specific data-fancybox groups as well as the original gallery group. Direct browser tests opened the modal, pressed Escape, confirmed the original URL, and observed no page errors.",
+  "filesExist": true,
+  "beforeFilesExist": true,
+  "implementationCommit": "16026751e77bcd145325593e298b2f51ffb3f3e7"
+}

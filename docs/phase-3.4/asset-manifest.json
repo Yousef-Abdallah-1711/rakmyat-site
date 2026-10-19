@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-10-19",
+  "sourceScreenshotLibrary": {
+    "path": "public/assets/rakmyat/portfolio/",
+    "assetCount": 32,
+    "totalBytes": 3948052,
+    "integrity": "Copied byte-identically from read-only BDA source and verified in Phase 3.2; see ../phase-3.2/asset-review.json",
+    "presentation": "Original screenshot pixels are displayed in responsive CSS/React browser or phone frames. Source files are unchanged."
+  },
+  "generatedConceptualVisuals": [
+    {
+      "project": "concord-crm",
+      "path": "public/assets/rakmyat/project-presentations/concord-crm-concept.webp",
+      "bytes": 38460,
+      "sha256": "2e787c37110a526c15dfa96abad05549e56311021f6b6ea961a0c901116528ae",
+      "format": "WEBP",
+      "dimensions": "1536x1024",
+      "origin": "Generated specifically for Phase 3.4 with the available image-generation tool; no stock imagery.",
+      "description": "Image-generated conceptual relationship map illustrating linked customer and commerce modules. It is explicitly not the delivered interface.",
+      "publicLabel": "Concept illustration ? not a product screenshot"
+    },
+    {
+      "project": "product-scraper",
+      "path": "public/assets/rakmyat/project-presentations/product-scraper-concept.webp",
+      "bytes": 34106,
+      "sha256": "08ff94047d2d45c51aaaa8a89281d7b8604217eb504e78b1c43dc5a209acabbc",
+      "format": "WEBP",
+      "dimensions": "1536x1024",
+      "origin": "Generated specifically for Phase 3.4 with the available image-generation tool; no stock imagery.",
+      "description": "Image-generated conceptual data-flow illustration with generic product cards and a WooCommerce destination. It is explicitly not the delivered interface.",
+      "publicLabel": "Concept illustration ? not a product screenshot"
+    }
+  ]
+}
