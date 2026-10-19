@@ -33,7 +33,7 @@ export function ContactSourceSections({ locale = "en" }: { locale?: Locale }) {
           <img src="/assets/img/icons/contact_a.png" alt="" className="contact_a" /><img src="/assets/img/icons/contact_message.png" alt="" className="contact_message" />
         </div>
       </div></section>
-      <div className="map"><div className="map-unconfigured" role="note">{locale === "en" ? "No public office location is listed." : "لا يوجد عنوان مكتب معلن."}</div></div>
+      <div className="map"><div className="map-unconfigured" role="note">{locale === "en" ? "Share the region, users, or systems your project needs to serve." : "شاركنا المنطقة والمستخدمين أو الأنظمة التي يخدمها مشروعك."}</div></div>
     </main>
   );
 }

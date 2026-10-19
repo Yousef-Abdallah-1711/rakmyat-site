@@ -31,7 +31,9 @@ export function SiteHeader({ activePage, transparent = false, locale = "en" }: S
   useEffect(() => {
     setMenuOpen(false);
     setDropdownOpen(false);
-  }, [pathname]);
+    document.documentElement.lang = locale;
+    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  }, [pathname, locale]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {

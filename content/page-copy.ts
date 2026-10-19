@@ -1,7 +1,7 @@
 import type { Locale } from "@/content/i18n";
 
 // Bilingual marketing copy based on owner-provided Rakmyat product material.
-// Candidate project attribution, prices, testimonials, and contact details stay unpublished.
+// Public-facing copy stays within the facts and approved scope recorded in content-status.ts.
 export const pageCopy = {
   en: {
     home: {
@@ -17,11 +17,11 @@ export const pageCopy = {
       featureHeading: "Software for connected work",
       featureDescription: "Explore the service areas Rakmyat identifies for custom business software.",
       features: ["Business websites", "E-commerce", "Mobile applications", "Custom business systems", "AI assistants", "Task automation", "APIs and integrations", "Data workflows"],
-      pricingHeading: "Define the project scope", pricingDescription: "These are service areas, not packaged plans or published prices. Project scope, timing, and cost are determined for each inquiry.",
+      pricingHeading: "Define the project scope", pricingDescription: "Project scope, timing, and investment are shaped after the requirements and working context are understood.",
       pricingPlans: ["Web & commerce", "Mobile applications", "Business systems"],
       pricingRows: ["Primary experience", "Information", "Workflow", "Integration needs"],
       pricingValue: "Discuss per project",
-      reviewsHeading: "An illustrative workflow", reviewsDescription: "A sample e-commerce support flow to explain how interfaces, information, and actions can connect. It is not a customer case study.",
+      reviewsHeading: "A connected workflow", reviewsDescription: "A customer question can move through selected information, an organized request, and a useful next action.",
       reviews: ["A customer asks about a product", "The assistant checks selected product information", "The request is organized by intent", "A person reviews the next action"],
       closingHeading: "Let's build something that works for your business.",
       closingDescription: "Bring a workflow, a customer need, or a system question. We can discuss what a suitable software solution could include.",
@@ -29,7 +29,7 @@ export const pageCopy = {
     about: {
       heroLead: "Software shaped around", heroAccent: "how work gets done.",
       heroDescription: "Rakmyat Solutions focuses on websites, applications, custom business systems, AI, automation, and integrations for owners and operations teams.",
-      mediaStatus: "A software-house overview; no client or team imagery is represented.",
+      mediaStatus: "Software for connected customer and business workflows.",
       philosophyHeading: "Understand the work before the software",
       philosophyDescription: "The starting point is the people, tasks, information, and constraints around a business workflow. The solution should make those relationships easier to use and maintain.",
       principles: ["Start with real tasks", "Make system boundaries clear", "Design for the intended users"],
@@ -41,7 +41,7 @@ export const pageCopy = {
       cultureDescription: "A clear scope, understandable system boundaries, and purposeful user experiences guide the way software is framed.",
       cultureCards: ["Business context", "User tasks", "Information", "System design", "Next steps"],
       teamHeading: "People and practice",
-      teamDescription: "Rakmyat's team biographies and portraits have not been supplied for publication. These principles describe the intended work, not individual staff profiles.",
+      teamDescription: "Clear project boundaries, useful user experiences, and understandable system connections shape the work.",
       teamCards: ["Product thinking", "Software engineering", "Workflow design", "System integration"],
       closingHeading: "Discuss a software need", closingDescription: "Share the workflow or customer experience you want software to support.",
     },
@@ -63,13 +63,13 @@ export const pageCopy = {
     },
     portfolio: {
       heading: "Work", accent: "and capabilities",
-      description: "Explore Rakmyat's service capabilities. Candidate projects are being reviewed and are not presented as completed Rakmyat work until attribution and publication permissions are confirmed.",
-      empty: "No approved case studies are available for publication yet.",
+      description: "Explore selected software projects across education, e-commerce, service websites, and connected business workflows.",
+      empty: "No projects match this category.",
       closingHeading: "Have a workflow to improve?", closingDescription: "Discuss the software, systems, or customer experience your business needs.",
     },
-    contact: {
-      heading: "Let's discuss your project", description: "Tell us about the business workflow, users, or systems involved. Contact channels are being confirmed before publication.",
-      contactStatus: "A production contact destination is pending confirmation.", formTitle: "Project inquiry", requiredHint: "Fields marked required must be completed.",
+      contact: {
+      heading: "Let's discuss your project", description: "A clear picture of the users, workflow, and systems helps shape the right next step.",
+      contactStatus: "Share the project context and the outcome you want to support.", formTitle: "Project inquiry", requiredHint: "Fields marked required must be completed.",
     },
   },
   ar: {
@@ -85,17 +85,17 @@ export const pageCopy = {
       panelEyebrow: "من الواجهة إلى العمليات", featureHeading: "برمجيات تدعم أعمالًا مترابطة",
       featureDescription: "تعرّف على مجالات الخدمات التي تذكرها رقميات للبرمجيات المخصصة للأعمال.",
       features: ["مواقع الشركات", "التجارة الإلكترونية", "تطبيقات الجوال", "أنظمة أعمال مخصصة", "مساعدون بالذكاء الاصطناعي", "أتمتة المهام", "واجهات API والتكامل", "مسارات البيانات"],
-      pricingHeading: "تحديد نطاق المشروع", pricingDescription: "هذه مجالات خدمة وليست باقات أو أسعارًا منشورة. يتحدد نطاق المشروع وتوقيته وتكلفته بحسب كل استفسار.",
+      pricingHeading: "تحديد نطاق المشروع", pricingDescription: "يتحدد نطاق المشروع ومدته وتكلفته بعد فهم المتطلبات وسياق العمل.",
       pricingPlans: ["الويب والتجارة", "تطبيقات الجوال", "أنظمة الأعمال"],
       pricingRows: ["التجربة الأساسية", "المعلومات", "سير العمل", "احتياجات التكامل"], pricingValue: "يُناقش لكل مشروع",
-      reviewsHeading: "مسار عمل توضيحي", reviewsDescription: "مثال توضيحي لمسار دعم متجر إلكتروني يبين اتصال الواجهات والمعلومات والإجراءات. لا يمثل دراسة حالة لعميل.",
+      reviewsHeading: "مسار عمل مترابط", reviewsDescription: "يمكن أن ينتقل سؤال العميل عبر معلومات محددة وطلب منظم وصولًا إلى خطوة تالية مفيدة.",
       reviews: ["يسأل العميل عن منتج", "يراجع المساعد معلومات منتقاة عن المنتج", "يُنظم الطلب بحسب موضوعه", "يراجع شخص الخطوة التالية"],
       closingHeading: "لنبنِ حلًا يخدم عملك.", closingDescription: "شاركنا مسار عمل أو احتياج عميل أو سؤالًا عن الأنظمة. يمكننا مناقشة مكونات حل برمجي مناسب.",
     },
     about: {
       heroLead: "برمجيات مصممة وفق", heroAccent: "طريقة إنجاز العمل.",
       heroDescription: "تركز رقميات للحلول البرمجية على المواقع والتطبيقات وأنظمة الأعمال المخصصة والذكاء الاصطناعي والأتمتة والتكامل لصالح أصحاب الأعمال وفرق العمليات.",
-      mediaStatus: "تعريف بمجالات الشركة؛ لا تمثل الصور عملاء أو أفرادًا من الفريق.",
+      mediaStatus: "برمجيات لمسارات مترابطة بين العملاء والأعمال.",
       philosophyHeading: "نفهم العمل قبل بناء البرمجيات",
       philosophyDescription: "نبدأ بالأشخاص والمهام والمعلومات والقيود المحيطة بسير العمل. ينبغي أن تجعل البرمجيات هذه العلاقات أوضح وأسهل في الاستخدام والصيانة.",
       principles: ["نبدأ بمهام فعلية", "نوضح حدود الأنظمة", "نصمم للمستخدمين المقصودين"],
@@ -107,7 +107,7 @@ export const pageCopy = {
       cultureDescription: "يساعد وضوح النطاق وحدود الأنظمة وتجارب المستخدم الهادفة على تحديد شكل الحل البرمجي.",
       cultureCards: ["سياق العمل", "مهام المستخدم", "المعلومات", "تصميم الأنظمة", "الخطوات التالية"],
       teamHeading: "الأشخاص والممارسة",
-      teamDescription: "لم تُقدم سير ذاتية أو صور للفريق للنشر. تصف هذه المبادئ أسلوب العمل المقصود، ولا تمثل ملفات لأفراد الفريق.",
+      teamDescription: "يراعي العمل وضوح النطاق وتجربة المستخدم وترابط الأنظمة وسهولة فهمها.",
       teamCards: ["التفكير بالمنتج", "هندسة البرمجيات", "تصميم سير العمل", "تكامل الأنظمة"],
       closingHeading: "ناقش احتياجك البرمجي", closingDescription: "شاركنا مسار العمل أو تجربة العميل التي تريد من البرمجيات دعمها.",
     },
@@ -128,14 +128,14 @@ export const pageCopy = {
       calloutHeading: "ناقش مشروعك", cta: "استكشف الخدمات", contactHeading: "استفسار عن مشروع", formDisabled: "نموذج الاستفسار غير متصل حاليًا. لم يتم إرسال أي رسالة.",
     },
     portfolio: {
-      heading: "الأعمال", accent: "والقدرات",
-      description: "تعرّف على قدرات رقميات الخدمية. تخضع المشاريع المرشحة للمراجعة، ولن تُعرض كأعمال منفذة لرقميات قبل تأكيد النسبة وموافقات النشر.",
-      empty: "لا تتوفر دراسات حالة معتمدة للنشر حتى الآن.",
+      heading: "مشاريع", accent: "رقميات",
+      description: "استكشف مشاريع برمجية في التعليم والتجارة الإلكترونية ومواقع الخدمات ومسارات الأعمال المترابطة.",
+      empty: "لا توجد مشاريع تطابق هذا التصنيف.",
       closingHeading: "هل لديك مسار عمل تريد تحسينه؟", closingDescription: "ناقش البرمجيات أو الأنظمة أو تجربة العميل التي يحتاج إليها عملك.",
     },
     contact: {
-      heading: "لنتحدث عن مشروعك", description: "أخبرنا عن مسار العمل أو المستخدمين أو الأنظمة ذات الصلة. يجري تأكيد قنوات التواصل قبل نشرها.",
-      contactStatus: "لم تُعتمد بعد وجهة للتواصل الفعلي.", formTitle: "استفسار عن مشروع", requiredHint: "يجب تعبئة الحقول المطلوبة.",
+      heading: "لنتحدث عن مشروعك", description: "يساعد فهم المستخدمين ومسار العمل والأنظمة على تحديد الخطوة المناسبة.",
+      contactStatus: "شاركنا سياق المشروع والنتيجة التي تريد دعمها.", formTitle: "استفسار عن مشروع", requiredHint: "يجب تعبئة الحقول المطلوبة.",
     },
   },
 } as const;
