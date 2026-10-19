@@ -51,3 +51,4 @@ CREATE TABLE IF NOT EXISTS rate_limit_buckets (
   window_started_at timestamptz NOT NULL,
   hits integer NOT NULL
 );
+CREATE INDEX IF NOT EXISTS rate_limit_buckets_window_started_at_idx ON rate_limit_buckets(window_started_at);

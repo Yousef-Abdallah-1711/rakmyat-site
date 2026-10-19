@@ -1,0 +1,197 @@
+{
+  "baseUrl": "http://127.0.0.1:5210",
+  "widths": [
+    1440,
+    1280,
+    768,
+    390,
+    360
+  ],
+  "results": [
+    {
+      "browserCase": "localized-rate-limit-message-and-retained-values",
+      "locale": "en",
+      "status": 429,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "form": {
+          "width": 934,
+          "height": 826
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 1280,
+      "status": 200,
+      "dimensions": {
+        "viewport": 1280,
+        "document": 1280,
+        "form": {
+          "width": 934,
+          "height": 826
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "status": 200,
+      "dimensions": {
+        "viewport": 768,
+        "document": 768,
+        "form": {
+          "width": 668,
+          "height": 826
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "form": {
+          "width": 322,
+          "height": 1076
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 360,
+      "status": 200,
+      "dimensions": {
+        "viewport": 360,
+        "document": 360,
+        "form": {
+          "width": 292,
+          "height": 1076
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "browserCase": "localized-rate-limit-message-and-retained-values",
+      "locale": "ar",
+      "status": 429,
+      "passed": true
+    },
+    {
+      "locale": "ar",
+      "width": 1440,
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "form": {
+          "width": 934,
+          "height": 804
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "ar",
+      "width": 1280,
+      "status": 200,
+      "dimensions": {
+        "viewport": 1280,
+        "document": 1280,
+        "form": {
+          "width": 934,
+          "height": 804
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "ar",
+      "width": 768,
+      "status": 200,
+      "dimensions": {
+        "viewport": 768,
+        "document": 768,
+        "form": {
+          "width": 668,
+          "height": 804
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "ar",
+      "width": 390,
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "form": {
+          "width": 322,
+          "height": 1054
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "locale": "ar",
+      "width": 360,
+      "status": 200,
+      "dimensions": {
+        "viewport": 360,
+        "document": 360,
+        "form": {
+          "width": 292,
+          "height": 1054
+        }
+      },
+      "overflow": false,
+      "consolePageErrors": []
+    },
+    {
+      "apiCase": "wrong-content-type",
+      "status": 415
+    },
+    {
+      "apiCase": "unknown-field",
+      "status": 422
+    },
+    {
+      "apiCase": "oversized-body",
+      "status": 413
+    },
+    {
+      "apiCase": "valid-payload-fails-closed-without-local-secrets",
+      "status": 503,
+      "safeErrorBody": {
+        "error": "service_unavailable"
+      }
+    },
+    {
+      "apiCase": "cross-origin",
+      "status": 403
+    }
+  ]
+}

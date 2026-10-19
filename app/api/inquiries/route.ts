@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import { inquiryInputSchema } from "@/lib/inquiry-schema";
 import { getDatabase } from "@/lib/server/db";
-import { consumeRateLimit, requestAddressKey } from "@/lib/server/security";
+import { consumeRateLimitDetailed, requestAddressKey } from "@/lib/server/security";
 import { deliverInquiryNotification } from "@/lib/server/notifications";
+import { isAllowedInquiryOrigin, parsePositiveLimit, retryAfterForLimits } from "@/lib/inquiry-security-policy";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -19,7 +20,8 @@ async function readBoundedJson(request: Request, maxBytes = 16 * 1024) {
 }
 
 export async function POST(request: Request) {
-  if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) return json({ error: "invalid_content_type" }, 415);
+  if (!isAllowedInquiryOrigin(request.headers.get("origin"), new URL(request.url).origin, process.env.CONTACT_ALLOWED_ORIGINS, process.env.NODE_ENV === "production")) return json({ error: "origin_rejected" }, 403);
+  if (request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() !== "application/json") return json({ error: "invalid_content_type" }, 415);
   let raw: unknown;
   try { raw = await readBoundedJson(request); } catch (error) { return json({ error: error instanceof Error && error.message === "too_large" ? "payload_too_large" : "invalid_json" }, error instanceof Error && error.message === "too_large" ? 413 : 400); }
   const parsed = inquiryInputSchema.safeParse(raw);
@@ -27,8 +29,16 @@ export async function POST(request: Request) {
   if (parsed.data.website) return json({ error: "invalid_fields" }, 422);
   const locale = request.headers.get("x-rakmyat-locale") === "ar" ? "ar" : "en";
   try {
-    const address = await requestAddressKey();
-    if (!await consumeRateLimit(`inquiry:${address}`, 5, 900)) return json({ error: "rate_limited" }, 429);
+    const address = requestAddressKey(request.headers);
+    const limit15m = parsePositiveLimit(process.env.INQUIRY_RATE_LIMIT_15M_MAX, 3);
+    const limit24h = parsePositiveLimit(process.env.INQUIRY_RATE_LIMIT_24H_MAX, 10);
+    if (!limit15m || !limit24h) throw new Error("Invalid inquiry rate limit configuration");
+    const shortWindow = await consumeRateLimitDetailed(`inquiry:15m:${address}`, limit15m, 900);
+    const dailyWindow = await consumeRateLimitDetailed(`inquiry:24h:${address}`, limit24h, 86400);
+    const retryAfter = retryAfterForLimits(shortWindow, dailyWindow);
+    if (retryAfter !== null) {
+      return NextResponse.json({ error: "rate_limited" }, { status: 429, headers: { "Cache-Control": "no-store, max-age=0", "Retry-After": String(retryAfter) } });
+    }
     const sql = getDatabase();
     const record = await sql.begin(async (tx) => {
       const inserted = await tx`INSERT INTO inquiries (idempotency_key,full_name,phone,email,company,service_type,budget,timeline,description,reference_url,locale)

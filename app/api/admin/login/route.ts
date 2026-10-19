@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   const validated = bodySchema.safeParse(raw);
   if (!validated.success) return response({ error: "invalid_credentials" }, 401);
   try {
-    const ip = await requestAddressKey(); const account = keyedDigest(`admin:${validated.data.email.toLowerCase()}`);
+    const ip = requestAddressKey(request.headers); const account = keyedDigest(`admin:${validated.data.email.toLowerCase()}`);
     if (!await consumeRateLimit(`admin-login-ip:${ip}`, 10, 900) || !await consumeRateLimit(`admin-login-account:${account}`, 6, 900)) return response({ error: "rate_limited" }, 429);
     const sql = getDatabase();
     const rows = await sql`SELECT id, password_hash FROM admin_users WHERE lower(email)=lower(${validated.data.email}) AND disabled_at IS NULL LIMIT 1`;

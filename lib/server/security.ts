@@ -1,7 +1,8 @@
 import "server-only";
 import { createHash, createHmac, randomBytes, scrypt as scryptCallback, timingSafeEqual } from "node:crypto";
-import { cookies, headers } from "next/headers";
+import { cookies } from "next/headers";
 import { getDatabase } from "@/lib/server/db";
+import { trustedClientIp } from "@/lib/inquiry-security-policy";
 
 const scrypt = (password: string, salt: Buffer, length: number) => new Promise<Buffer>((resolve, reject) => {
   scryptCallback(password, salt, length, (error, key) => error ? reject(error) : resolve(key));
@@ -13,21 +14,32 @@ export function digest(value: string) { return createHash("sha256").update(value
 function pepper() { const value = process.env.RATE_LIMIT_SECRET; if (!value || value.length < 32) throw new Error("RATE_LIMIT_SECRET must be at least 32 characters"); return value; }
 export function keyedDigest(value: string) { return createHmac("sha256", pepper()).update(value).digest("hex"); }
 
-export async function requestAddressKey() {
-  const h = await headers();
-  const address = h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || "unknown";
+export function requestAddressKey(requestHeaders: Headers) {
+  const configured = process.env.TRUSTED_CLIENT_IP_HEADER?.trim().toLowerCase();
+  if (!configured && process.env.NODE_ENV !== "production") return keyedDigest("development:127.0.0.1");
+  const address = trustedClientIp(requestHeaders, configured);
+  if (!address) throw new Error("Trusted client IP header is missing or invalid");
   return keyedDigest(address);
 }
 
-export async function consumeRateLimit(key: string, limit: number, windowSeconds: number) {
+export type RateLimitResult = { allowed: boolean; retryAfterSeconds: number };
+export async function consumeRateLimitDetailed(key: string, limit: number, windowSeconds: number): Promise<RateLimitResult> {
+  if (!Number.isSafeInteger(limit) || limit < 1 || !Number.isSafeInteger(windowSeconds) || windowSeconds < 1) throw new Error("Invalid rate limit policy");
   const sql = getDatabase();
+  const bucketKey = keyedDigest(key);
   const rows = await sql`INSERT INTO rate_limit_buckets (bucket_key, window_started_at, hits)
-    VALUES (${key}, date_trunc('minute', now()), 1)
+    VALUES (${bucketKey}, now(), 1)
     ON CONFLICT (bucket_key) DO UPDATE SET
       hits = CASE WHEN rate_limit_buckets.window_started_at <= now() - (${windowSeconds} * interval '1 second') THEN 1 ELSE rate_limit_buckets.hits + 1 END,
       window_started_at = CASE WHEN rate_limit_buckets.window_started_at <= now() - (${windowSeconds} * interval '1 second') THEN now() ELSE rate_limit_buckets.window_started_at END
-    RETURNING hits`;
-  return Number(rows[0]?.hits ?? limit + 1) <= limit;
+    RETURNING hits, GREATEST(1, CEIL(EXTRACT(EPOCH FROM (window_started_at + (${windowSeconds} * interval '1 second') - now())))::integer) AS retry_after`;
+  await sql`DELETE FROM rate_limit_buckets WHERE window_started_at < now() - interval '2 days'`;
+  const hits = Number(rows[0]?.hits ?? limit + 1);
+  return { allowed: hits <= limit, retryAfterSeconds: Math.max(1, Number(rows[0]?.retry_after ?? windowSeconds)) };
+}
+
+export async function consumeRateLimit(key: string, limit: number, windowSeconds: number) {
+  return (await consumeRateLimitDetailed(key, limit, windowSeconds)).allowed;
 }
 
 export function hashPassword(password: string) {
