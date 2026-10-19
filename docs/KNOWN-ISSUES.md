@@ -1,10 +1,12 @@
 ﻿# Known Issues and Production Decisions
 
-- **Contact submissions:** the form provides browser validation and demo feedback only. Specify and implement a production backend if messages must be delivered.
-- **External services:** Google Maps and the optional YouTube lightbox require network access when used.
-- **Asset rights:** browser-delivered theme assets and Font Awesome Pro files exist locally, but this workspace has no proof of redistribution rights. Confirm the applicable template and Font Awesome licenses before public use.
-- **Live-reference variation:** the latest local-source comparison is very close, but previously captured hosted pages contain outliers: About and Single Project pixel differences, and a 22px Services page-height difference at 1280px. Review the [Phase 2 report](../../specs/iteck-saas-clone/nextjs-migration/phase-2/live-reference-review.md) before claiming parity with the current hosted site.
-- **Content editing:** typed records cover many shared and repeated data groups, but some labels and prose remain inline in route components. There is no CMS or editor UI.
-- **CSS maintenance:** the original theme and vendor CSS remain broad to preserve the cascade. Selector-based pruning was not performed.
-- **Source scope:** the local assets are browser-delivered template files, not the vendor's private source repository. No original PHP backend or CMS was available.
-- **Accessibility:** automated DOM checks passed as reported, but manual contrast, screen-reader, zoom/reflow, and animation-timing reviews remain production decisions.
+- **Brand identity:** the current wordmark is provisional text, and the original Iteck palette remains. Approved logo files, color tokens, typefaces, and rights documentation are still needed. Candidate files were not imported; see the [Phase 3 asset review](../../specs/rakmyat-transformation/phase-3-asset-review.md).
+- **Business copy:** only Rakmyat's name and software-house category are verified. Proposed capability, process, pricing, and positioning copy needs owner review before it is represented as confirmed business practice.
+- **Portfolio and proof:** no approved case studies, clients, testimonials, team profiles, or culture assets were supplied. The Work grid uses neutral discussion cards; project-detail routes return 404 until a permission-cleared project is approved.
+- **Contact:** the form performs browser validation and reports that it is not connected. It does not store or send submissions. A destination/backend, privacy and retention policy, and spam controls must be approved and tested before activation.
+- **Domain and SEO:** no production domain is configured. Canonical URLs and absolute sitemap entries remain omitted until `NEXT_PUBLIC_SITE_URL` is set.
+- **Arabic review:** Arabic routes render RTL with localized navigation and copy. Copy has not been professionally proofread; an approved Arabic-capable font is still pending.
+- **Visual review:** 56 bilingual captures cover seven route states and four viewport widths with no detected overflow or broken images. The original Phase 2 Iteck baseline remains unchanged. No pixel-diff claim applies to this new content/identity version; manually review all captures after final brand and copy approval.
+- **Interactions:** navigation, filtering, carousels, and keyboard dismissal were checked. Pricing period controls and numeric values are not shown because the pricing model is unverified; the About demo video and external map are not presented as Rakmyat content.
+- **Asset rights and source:** browser-delivered Iteck assets, including Font Awesome Pro, are present locally. This workspace has no proof of redistribution rights and does not include the vendor's private repository, PHP backend, or CMS. Confirm licenses before public use.
+- **Accessibility and production:** representative automated DOM checks passed, but manual contrast, screen-reader, 200% zoom/reflow, cross-browser, and animation reviews remain open. No deployment occurred.

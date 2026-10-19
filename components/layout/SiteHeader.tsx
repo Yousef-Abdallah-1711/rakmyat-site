@@ -4,48 +4,47 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { TopPromotion } from "@/components/layout/SiteChrome";
-import {
-  homeMenu,
-  mainNavigation,
-  pageMenu,
-  siteSettings,
-} from "@/content/site";
+import { getLocalizedPath, localeCopy, type Locale } from "@/content/i18n";
 
 type SiteHeaderProps = {
-  activePage?:
-    "home" | "about" | "contact" | "portfolio" | "services" | "project";
+  activePage?: "home" | "about" | "contact" | "portfolio" | "services" | "project";
   transparent?: boolean;
+  locale?: Locale;
 };
 
-export function SiteHeader({
-  activePage,
-  transparent = false,
-}: SiteHeaderProps) {
+const navigation = [
+  { key: "about", path: "about" },
+  { key: "services", path: "services" },
+  { key: "portfolio", path: "portfolio" },
+  { key: "contact", path: "contact" },
+] as const;
+
+export function SiteHeader({ activePage, transparent = false, locale = "en" }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdown, setDropdown] = useState<string | null>(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const menuToggleRef = useRef<HTMLButtonElement>(null);
   const dropdownTriggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
+  const copy = localeCopy[locale];
+
   useEffect(() => {
     setMenuOpen(false);
-    setDropdown(null);
+    setDropdownOpen(false);
   }, [pathname]);
+
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
       if (event.target instanceof Node && !navRef.current?.contains(event.target)) {
-        setDropdown(null);
         setMenuOpen(false);
+        setDropdownOpen(false);
       }
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        const wasOpen = menuOpen || dropdown !== null;
+      if (event.key === "Escape" && (menuOpen || dropdownOpen)) {
         setMenuOpen(false);
-        setDropdown(null);
-        if (wasOpen) {
-          (dropdown !== null ? dropdownTriggerRef.current : menuToggleRef.current)?.focus();
-        }
+        setDropdownOpen(false);
+        (dropdownOpen ? dropdownTriggerRef.current : menuToggleRef.current)?.focus();
       }
     };
     document.addEventListener("pointerdown", onPointerDown);
@@ -54,22 +53,19 @@ export function SiteHeader({
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [dropdown, menuOpen]);
-  const isHome = activePage === "home";
-  const navbarClass = `navbar navbar-expand-lg navbar-light${transparent ? " bg-transparent" : ""} style-5`;
+  }, [dropdownOpen, menuOpen]);
 
-  function toggleDropdown(name: string, trigger: HTMLButtonElement) {
-    dropdownTriggerRef.current = trigger;
-    setDropdown((current) => (current === name ? null : name));
-  }
+  const navbarClass = `navbar navbar-expand-lg navbar-light${transparent ? " bg-transparent" : ""} style-5`;
+  const languageTarget = locale === "en" ? "ar" : "en";
 
   return (
     <>
-      <TopPromotion />
-      <nav ref={navRef} className={navbarClass} aria-label="Main navigation">
+      <TopPromotion locale={locale} />
+      <nav ref={navRef} className={navbarClass} aria-label={copy.navLabel}>
         <div className="container-fluid">
-          <Link className="navbar-brand" href="/">
-            <img src={siteSettings.headerLogo} alt={siteSettings.name} />
+          <Link className="navbar-brand rakmyat-wordmark" href={getLocalizedPath(locale, "/")} aria-label={`${copy.brand} — ${copy.category}`}>
+            <span>{copy.brand}</span>
+            {locale === "en" && <span lang="ar" dir="rtl">رقميات</span>}
           </Link>
           <button
             ref={menuToggleRef}
@@ -77,91 +73,47 @@ export function SiteHeader({
             type="button"
             aria-controls="navbarSupportedContent"
             aria-expanded={menuOpen}
-            aria-label="Toggle navigation"
+            aria-label={copy.menuLabel}
             onClick={() => setMenuOpen((open) => !open)}
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div
-            className={`collapse navbar-collapse${menuOpen ? " show" : ""}`}
-            id="navbarSupportedContent"
-          >
+          <div className={`collapse navbar-collapse${menuOpen ? " show" : ""}`} id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-              <li className="nav-item dropdown">
-                <button
-                  className={`nav-link dropdown-toggle${isHome ? " active" : ""}`}
-                  type="button"
-                  aria-expanded={dropdown === "homes"}
-                  onClick={(event) => toggleDropdown("homes", event.currentTarget)}
-                >
-                  Homes
-                </button>
-                <ul
-                  className={`dropdown-menu${dropdown === "homes" ? " show" : ""}`}
-                >
-                  {(isHome ? homeMenu : homeMenu.slice(1, 9)).map(
-                    ({ label, href }) => (
-                      <li key={label}>
-                        <Link className="dropdown-item" href={href}>
-                          {label}
-                        </Link>
-                      </li>
-                    ),
-                  )}
-                </ul>
-              </li>
-              <li className="nav-item dropdown">
-                <button
-                  className="nav-link dropdown-toggle"
-                  type="button"
-                  aria-expanded={dropdown === "pages"}
-                  onClick={(event) => toggleDropdown("pages", event.currentTarget)}
-                >
-                  pages
-                </button>
-                <ul
-                  className={`dropdown-menu${dropdown === "pages" ? " show" : ""}`}
-                >
-                  {pageMenu.map(({ label, href }) => (
-                    <li key={label}>
-                      <Link className="dropdown-item" href={href}>
-                        {label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-              {mainNavigation.map(({ label, href }) => (
-                <li className="nav-item" key={label}>
+              {navigation.map(({ key, path }) => (
+                <li className="nav-item" key={key}>
                   <Link
-                    className={`nav-link${label === activePage || (label === "portfolio" && activePage === "portfolio") ? " active" : ""}`}
-                    href={href}
+                    className={`nav-link${activePage === key ? " active" : ""}`}
+                    href={getLocalizedPath(locale, `/${path}`)}
+                    aria-current={activePage === key ? "page" : undefined}
                   >
-                    {label}
-                    {label === "blog" && (
-                      <small className="fs-10px icon-20 rounded-pill bg-blue5 text-white fw-bold px-3 ms-2 d-inline-flex justify-content-center align-items-center">
-                        3
-                      </small>
-                    )}
+                    {copy[key]}
                   </Link>
                 </li>
               ))}
+              <li className="nav-item dropdown">
+                <button
+                  ref={dropdownTriggerRef}
+                  className="nav-link dropdown-toggle"
+                  type="button"
+                  aria-expanded={dropdownOpen}
+                  onClick={() => setDropdownOpen((open) => !open)}
+                >
+                  {copy.morePages}
+                </button>
+                <ul className={`dropdown-menu${dropdownOpen ? " show" : ""}`}>
+                  <li><Link className="dropdown-item" href={getLocalizedPath(locale, "/services/details")}>{copy.serviceDetails}</Link></li>
+                  <li><Link className="dropdown-item" href={getLocalizedPath(locale, "/portfolio")}>{copy.portfolio}</Link></li>
+                </ul>
+              </li>
             </ul>
             <div className="nav-side">
               <div className="d-flex align-items-center">
-                <span className="nav-item">
-                  <Link className="nav-link" href="/contact">
-                    <i className="bi bi-person fs-5 me-2" />
-                    sign in
-                  </Link>
-                </span>
-                <Link
-                  href="/contact"
-                  className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold"
-                >
-                  <span>
-                    Start Free Trial <i className="bi bi-arrow-right ms-1" />
-                  </span>
+                <Link className="nav-link me-2" href={getLocalizedPath(languageTarget, pathname)} lang={languageTarget}>
+                  {copy.language}
+                </Link>
+                <Link href={getLocalizedPath(locale, "/contact")} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold">
+                  <span>{copy.discuss} <i className="bi bi-arrow-right ms-1" aria-hidden="true" /></span>
                 </Link>
               </div>
             </div>

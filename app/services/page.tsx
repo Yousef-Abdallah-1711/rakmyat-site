@@ -1,11 +1,5 @@
-﻿import { ServicesSourceSections } from "@/components/sections/ServicesSourceSections";
-import { SiteLayout } from "@/components/layout/SiteLayout";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Our Services | Iteck" };
-export default function ServicesPage() {
-  return (
-    <SiteLayout activePage="services">
-      <ServicesSourceSections />
-    </SiteLayout>
-  );
+export default function ServicesAlias(): never {
+  redirect("/en/services");
 }

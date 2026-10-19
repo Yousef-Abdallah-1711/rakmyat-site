@@ -1,36 +1,7 @@
-﻿import { teamMembers, teamSocialLinks } from "@/content/team";
+import type { Locale } from "@/content/i18n";
+import { getPageCopy } from "@/content/page-copy";
 
-export function TeamGrid() {
-  return (
-    <div className="row">
-      {teamMembers.map((member, index) => (
-        <div className="col-lg-3 col-sm-6" key={member.name}>
-          <div
-            className={`team-card${index < teamMembers.length - 1 ? " mb-30 mb-lg-0" : ""} style-6`}
-          >
-            <div className="img img-cover">
-              <img src={member.image} alt="" />
-              <div className="social-icons">
-                {teamSocialLinks.map((network) => (
-                  <a
-                    href="#"
-                    key={network}
-                    aria-label={`${network[0].toUpperCase()}${network.slice(1)} profile for ${member.name}`}
-                  >
-                    <i className={`fab fa-${network}`} />
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div className="info">
-              <a className="d-block" href="#">
-                <h6>{member.name}</h6>
-              </a>
-              <small>{member.role}</small>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+export function TeamGrid({ locale = "en" }: { locale?: Locale }) {
+  const labels = getPageCopy(locale).about.teamCards;
+  return <div className="row">{labels.map((label, index) => <div className="col-lg-3 col-sm-6" key={label}><article className={`team-card${index < labels.length - 1 ? " mb-30 mb-lg-0" : ""} style-6`}><div className="img neutral-content"><span>{label}</span></div><div className="info"><h6>{label}</h6><small>{locale === "en" ? "Discussion topic" : "موضوع للنقاش"}</small></div></article></div>)}</div>;
 }

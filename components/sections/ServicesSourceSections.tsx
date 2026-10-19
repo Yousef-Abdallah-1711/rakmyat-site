@@ -1,257 +1,31 @@
+import Link from "next/link";
 import { MarketplaceFeaturesSection } from "@/components/sections/MarketplaceFeaturesSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader } from "@/components/pricing/PricingTable";
 import { ServicesCarousel } from "@/components/sections/ServicesCarousel";
-import { servicesPageContent as content } from "@/content/services";
-import Link from "next/link";
+import { getPageCopy } from "@/content/page-copy";
+import type { Locale } from "@/content/i18n";
 
-export function ServicesSourceSections() {
+export function ServicesSourceSections({ locale = "en" }: { locale?: Locale }) {
+  const copy = getPageCopy(locale).services;
+  const items = locale === "en" ? ["What is the business need?", "Who will use the software?", "What should be defined first?"] : ["ما احتياج العمل؟", "من سيستخدم البرمجيات؟", "ما الذي ينبغي تحديده أولًا؟"];
   return (
-    <>
-      <ServicesServicesPageStyle5Section1 />
-    </>
-  );
-}
-
-function ServicesServicesPageStyle5Section1() {
-  return (
-    <main className={"services-page style-5"}>
-      <h1 className="visually-hidden">{content.pageHeading}</h1>
-      <ServicesFeaturesSectionPaddingSection2 />
-      <ServicesServicesSectionPaddingSection3 />
-      <ServicesAboutPt0Section4 />
-      <ServicesTestimonialsSectionPaddingSection5 />
-      <ServicesPricingSectionPaddingSection6 />
+    <main className="services-page style-5">
+      <h1 className="visually-hidden">{copy.pageHeading}</h1>
+      <MarketplaceFeaturesSection variant="services" locale={locale} />
+      <section className="services section-padding bg-white pb-50 style-6"><div className="container"><div className="row justify-content-center"><div className="col-lg-8"><div className="section-head text-center mb-60 style-5"><h2 className="mb-20">{copy.introHeading}</h2><p>{copy.introDescription}</p></div></div></div></div><div className="content"><ServicesCarousel locale={locale} /></div></section>
+      <section className="about pt-0 pb-150 style-5"><div className="content"><div className="container"><div className="row align-items-center">
+        <div className="col-lg-4 order-2 order-lg-0"><div className="section-head mb-30 style-5"><h2>{copy.benefitHeading}</h2></div><p>{copy.introDescription}</p><div className="line-links">{items.map((label) => <Link href={`/${locale}/contact`} key={label}>{label}</Link>)}</div></div>
+        <div className="col-lg-8 order-0 order-lg-2"><div className="img main-img1"><img src="/assets/img/about/about_s5_1_1.png" alt="" className="sm-circle" /><img src="/assets/img/about/about_s5_1_2.png" alt="" className="img-body" /><img src="/assets/img/about/about_s5_1_3.png" alt="" className="card1" /><img src="/assets/img/about/about_s5_1_4.png" alt="" className="card2" /><img src="/assets/img/about/about_s5_1_5.png" alt="" className="lg-circle" /></div></div>
+      </div></div></div>
+      <div className="content"><div className="container"><div className="row align-items-center"><div className="col-lg-8"><div className="img main-img2"><img src="/assets/img/about/about_s5_2_1.png" alt="" /><img src="/assets/img/about/about_s5_2_2.png" alt="" className="img-body" /></div></div>
+        <div className="col-lg-4"><div className="section-head mb-30 style-5"><h2>{locale === "en" ? "Clarify" : "وضح"}<span>{locale === "en" ? "requirements" : "المتطلبات"}</span></h2></div><p>{locale === "en" ? "Specific service deliverables are pending confirmation. Use these prompts to prepare a project conversation." : "تنتظر مخرجات الخدمات المحددة التأكيد. استخدم هذه الأسئلة للتحضير لمناقشة المشروع."}</p><ul className="list-icon">{items.map((item) => <li key={item}><span className="icon"><i className="bi bi-check2" /></span><h6>{item}</h6></li>)}</ul><Link href={`/${locale}/contact`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-50"><span>{copy.closing}</span></Link></div>
+      </div></div></div>
+      <div className="content pb-0"><div className="container"><div className="row align-items-center"><div className="col-lg-4 order-2 order-lg-0"><div className="section-head mb-30 style-5"><h2>{locale === "en" ? "Discuss" : "ناقش"}<span>{locale === "en" ? "the scope" : "النطاق"}</span></h2></div><p>{locale === "en" ? "The service list, timelines, and pricing require confirmation before publication." : "تتطلب قائمة الخدمات والجداول الزمنية والأسعار تأكيدًا قبل النشر."}</p><p className="mt-20">{locale === "en" ? "Share the project context and open questions." : "شارك سياق المشروع والأسئلة المفتوحة."}</p><div className="d-flex align-items-center mt-70"><div className="img me-2 flex-shrink-0"><img src="/assets/img/about/owners.png" alt="" /></div><div className="inf"><h4 className="color-blue5 mb-0 lh-1">{locale === "en" ? "Rakmyat" : "رقميات"}</h4><p>{locale === "en" ? "Software house" : "شركة برمجيات"}</p></div></div></div>
+        <div className="col-lg-8 order-0 order-lg-2"><div className="img main-img3"><img src="/assets/img/about/about_s5_3_1.png" alt="" className="img-body" /><img src="/assets/img/about/about_s5_3_2.png" alt="" /><img src="/assets/img/about/about_s5_3_3.png" alt="" /><img src="/assets/img/about/about_s5_3_4.png" alt="" /><img src="/assets/img/about/about_s5_3_5.png" alt="" /></div></div>
+      </div></div></div></section>
+      <TestimonialsSection locale={locale} />
+      <section className="pricing section-padding border-bottom border-1 brd-gray style-5"><div className="container"><PricingIntro locale={locale} /><PricingControls locale={locale} /><div className="table-responsive"><div className="content"><PricingPlanHeader locale={locale} /><PricingFeatureRows variant="services" locale={locale} /><PricingPlanFooter locale={locale} /></div></div></div></section>
     </main>
-  );
-}
-
-function ServicesFeaturesSectionPaddingSection2() {
-  return <MarketplaceFeaturesSection variant="services" />;
-}
-
-function ServicesServicesSectionPaddingSection3() {
-  return (
-    <section className={"services section-padding bg-white pb-50 style-6"}>
-      <div className={"container"}>
-        <div className={"row justify-content-center"}>
-          <div className={"col-lg-8"}>
-            <div className={"section-head text-center mb-60 style-5"}>
-              <h2 className={"mb-20"}>
-                {` ${content.sectionHeading.split(" ").slice(0, 2).join(" ")} `}
-                <span>{` ${content.sectionHeading.split(" ").slice(2).join(" ")} `}</span>{" "}
-              </h2>
-              <p>
-                {content.sectionDescription}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={"content"}>
-        <ServicesCarousel />
-      </div>
-    </section>
-  );
-}
-
-function ServicesAboutPt0Section4() {
-  return (
-    <section className={"about pt-0 pb-150 style-5"}>
-      <div className={"content"}>
-        <div className={"container"}>
-          <div className={"row align-items-center"}>
-            <div className={"col-lg-4 order-2 order-lg-0"}>
-              <div className={"section-head mb-30 style-5"}>
-                <h2>
-                  {` ${content.optimizedHeadingLead} `}
-                  <span>{` ${content.optimizedHeadingAccent} `}</span>{" "}
-                </h2>
-              </div>
-              <p>
-                {content.optimizedDescription}
-              </p>
-              <div className={"line-links"}>
-                {content.optimizedLinks.map((label) => (
-                  <a href={"#"} key={label}>{label}</a>
-                ))}
-              </div>
-            </div>
-            <div className={"col-lg-8 order-0 order-lg-2"}>
-              <div className={"img main-img1"}>
-                <img
-                  src={"/assets/img/about/about_s5_1_1.png"}
-                  alt={""}
-                  className={"sm-circle"}
-                />
-                <img
-                  src={"/assets/img/about/about_s5_1_2.png"}
-                  alt={""}
-                  className={"img-body"}
-                />
-                <img
-                  src={"/assets/img/about/about_s5_1_3.png"}
-                  alt={""}
-                  className={"card1"}
-                />
-                <img
-                  src={"/assets/img/about/about_s5_1_4.png"}
-                  alt={""}
-                  className={"card2"}
-                />
-                <img
-                  src={"/assets/img/about/about_s5_1_5.png"}
-                  alt={""}
-                  className={"lg-circle"}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={"content"}>
-        <div className={"container"}>
-          <div className={"row align-items-center"}>
-            <div className={"col-lg-8"}>
-              <div className={"img main-img2"}>
-                <img src={"/assets/img/about/about_s5_2_1.png"} alt={""} />
-                <img
-                  src={"/assets/img/about/about_s5_2_2.png"}
-                  alt={""}
-                  className={"img-body"}
-                />
-              </div>
-            </div>
-            <div className={"col-lg-4"}>
-              <div className={"section-head mb-30 style-5"}>
-                <h2>
-                  {content.payment.headingLead}
-                  <span>{content.payment.headingAccent}</span>{" "}
-                </h2>
-              </div>
-              <p>
-                {
-                  content.payment.description
-                }
-              </p>
-              <ul className={"list-icon"}>
-                <li>
-                  <span className={"icon"}>
-                    <i className={"bi bi-check2"}></i>
-                  </span>
-                  <h6>
-                    {
-                      content.payment.benefits[0]
-                    }
-                  </h6>
-                </li>
-                <li>
-                  <span className={"icon"}>
-                    <i className={"bi bi-check2"}></i>
-                  </span>
-                  <h6>
-                    {
-                      content.payment.benefits[1]
-                    }
-                  </h6>
-                </li>
-                <li>
-                  <span className={"icon"}>
-                    <i className={"bi bi-check2"}></i>
-                  </span>
-                  <h6>
-                    {
-                      content.payment.benefits[2]
-                    }
-                  </h6>
-                </li>
-              </ul>
-              <Link
-                href={"/contact"}
-                className={
-                  "btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-50"
-                }
-              >
-                <span>{content.payment.button}</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={"content pb-0"}>
-        <div className={"container"}>
-          <div className={"row align-items-center"}>
-            <div className={"col-lg-4 order-2 order-lg-0"}>
-              <div className={"section-head mb-30 style-5"}>
-                <h2>
-                  {content.customization.headingLead}
-                  <span>{content.customization.headingAccent}</span>{" "}
-                </h2>
-              </div>
-              <p>
-                {
-                  content.customization.paragraphs[0]
-                }
-              </p>
-              <p className={"mt-20"}>
-                {
-                  content.customization.paragraphs[1]
-                }
-              </p>
-              <div className={"d-flex align-items-center mt-70"}>
-                <div className={"img me-2 flex-shrink-0"}>
-                  <img src={"/assets/img/about/owners.png"} alt={""} />
-                </div>
-                <div className={"inf"}>
-                  <h4 className={"color-blue5 mb-0 lh-1"}>{content.customization.statistic}</h4>
-                  <p>{content.customization.statisticLabel}</p>
-                </div>
-              </div>
-            </div>
-            <div className={"col-lg-8 order-0 order-lg-2"}>
-              <div className={"img main-img3"}>
-                <img
-                  src={"/assets/img/about/about_s5_3_1.png"}
-                  alt={""}
-                  className={"img-body"}
-                />
-                <img src={"/assets/img/about/about_s5_3_2.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_3.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_4.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_5.png"} alt={""} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ServicesTestimonialsSectionPaddingSection5() {
-  return (
-    <TestimonialsSection />
-  );
-}
-
-function ServicesPricingSectionPaddingSection6() {
-  return (
-    <section
-      className={
-        "pricing section-padding border-bottom border-1 brd-gray style-5"
-      }
-    >
-      <div className={"container"}>
-        <PricingIntro />
-        <PricingControls />
-        <div className={"table-responsive"}>
-          <div className={"content"}>
-            <PricingPlanHeader />
-            <PricingFeatureRows variant="services" />
-            <PricingPlanFooter />
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }

@@ -4,19 +4,21 @@ import { ClientLogosSection } from "@/components/sections/ClientLogosSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader, PricingMobileTable } from "@/components/pricing/PricingTable";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { homePageContent } from "@/content/home";
+import { getHomeContent } from "@/content/home";
+import type { Locale } from "@/content/i18n";
 import Link from "next/link";
 
-export function HomeSourceSections() {
+export function HomeSourceSections({ locale = "en" }: { locale?: Locale }) {
   return (
     <>
-      <HomeStyle5Section1 />
-      <HomeMainSection2 />
+      <HomeStyle5Section1 locale={locale} />
+      <HomeMainSection2 locale={locale} />
     </>
   );
 }
 
-function HomeStyle5Section1() {
+function HomeStyle5Section1({ locale }: { locale: Locale }) {
+  const homePageContent = getHomeContent(locale);
   return (
     <header className={"style-5"}>
       <div className={"container"}>
@@ -44,14 +46,14 @@ function HomeStyle5Section1() {
                 <br />
                 {homePageContent.hero.descriptionTail}
               </p>
-              <ContactForm className={"form"}>
+              <ContactForm className={"form"} locale={locale}>
                 <div className={"form-group"}>
                   <span className={"icon"}>
                     <i className={"far fa-envelope"}></i>
                   </span>
                   <input
                     type={"email"}
-                    aria-label={"Your email address"}
+                    aria-label={locale === "ar" ? "البريد الإلكتروني" : "Email address"}
                     placeholder={homePageContent.hero.emailPlaceholder}
                   />
                   <Link
@@ -61,7 +63,7 @@ function HomeStyle5Section1() {
                     }
                   >
                     <span>
-                      {`${homePageContent.hero.cta.label} `}
+                  {`${homePageContent.hero.cta.label} `}
                       <i className={"bi bi-arrow-right ms-1"}></i>{" "}
                     </span>
                   </Link>
@@ -102,25 +104,36 @@ function HomeStyle5Section1() {
   );
 }
 
-function HomeMainSection2() {
+function HomeMainSection2({ locale }: { locale: Locale }) {
   return (
     <main>
-      <HomeCommunityPt40Section3 />
-      <HomeAboutSectionPaddingSection4 />
-      <HomeClientsStyle5Section5 />
-      <HomeFeaturesSectionPaddingSection6 />
-      <HomePricingSectionPaddingSection7 />
-      <HomeTestimonialsSectionPaddingSection8 />
-      <HomeDownloadSectionPaddingSection9 />
+      <HomeCommunityPt40Section3 locale={locale} />
+      <HomeAboutSectionPaddingSection4 locale={locale} />
+      <HomeClientsStyle5Section5 locale={locale} />
+      <HomeFeaturesSectionPaddingSection6 locale={locale} />
+      <HomePricingSectionPaddingSection7 locale={locale} />
+      <HomeTestimonialsSectionPaddingSection8 locale={locale} />
+      <HomeDownloadSectionPaddingSection9 locale={locale} />
     </main>
   );
 }
 
-function HomeCommunityPt40Section3() {
-  return <ProductReasonsSection />;
+function HomeCommunityPt40Section3({ locale }: { locale: Locale }) {
+  return <ProductReasonsSection locale={locale} />;
 }
 
-function HomeAboutSectionPaddingSection4() {
+function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
+  const copy = locale === "en" ? {
+    sections: ["Start with the need", "Clarify the scope", "Consider next steps"],
+    body: ["Describe the task, workflow, or business question you want software to address.", "A project conversation can help define the requirements and boundaries.", "Discuss a possible approach and what information is needed to move forward."],
+    values: ["Business need", "Current workflow", "Project scope"],
+    heading: "A project conversation",
+  } : {
+    sections: ["ابدأ بالاحتياج", "وضح النطاق", "ناقش الخطوات التالية"],
+    body: ["اشرح المهمة أو سير العمل أو سؤال العمل الذي تريد من البرمجيات معالجته.", "يمكن لمناقشة المشروع أن تساعد في تحديد المتطلبات والحدود.", "ناقش نهجًا ممكنًا والمعلومات اللازمة للمتابعة."],
+    values: ["احتياج العمل", "سير العمل الحالي", "نطاق المشروع"],
+    heading: "مناقشة مشروع",
+  };
   return (
     <section className={"about section-padding style-5"}>
       <div className={"content"}>
@@ -129,20 +142,15 @@ function HomeAboutSectionPaddingSection4() {
             <div className={"col-lg-4 order-2 order-lg-0"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {" Optimized User "}
-                  <span>{" Experiences "}</span>{" "}
+                  {locale === "en" ? "Start with" : "ابدأ بـ"}
+                  <span>{locale === "en" ? "the need" : "الاحتياج"}</span>{" "}
                 </h2>
               </div>
               <p>
-                {
-                  "The uploading and updating processes made by suppliers can be streamlined through\n                                front-end dashboards that create better ease of access. "
-                }
+                {copy.body[0]}
               </p>
               <div className={"line-links"}>
-                <a href={"#"}>{"Sales Breakdown & Funnel"}</a>
-                <a href={"#"}>{"Abadoned Carts"}</a>
-                <a href={"#"}>{"Revenue by Channel & Devices"}</a>
-                <a href={"#"}>{"Sales Forecast"}</a>
+                {copy.values.map((value) => <Link href={locale === "en" ? "/en/contact" : "/ar/contact"} key={value}>{value}</Link>)}
               </div>
             </div>
             <div className={"col-lg-8 order-0 order-lg-2"}>
@@ -193,54 +201,40 @@ function HomeAboutSectionPaddingSection4() {
             <div className={"col-lg-4"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {" 100+ Payment "}
-                  <span>{" Gateways "}</span>{" "}
+                  {locale === "en" ? "Clarify" : "وضح"}
+                  <span>{locale === "en" ? "the scope" : "النطاق"}</span>{" "}
                 </h2>
               </div>
               <p>
-                {
-                  "\n                                With Iteck Marketplace, choose from hundreds of payment gateways for your customers.\n                                From PayPal to Stripe to Skrill, Visa Debit, Master Card, etc\n                            "
-                }
+                {copy.body[1]}
               </p>
               <ul className={"list-icon"}>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>
-                    {
-                      "\n                                        100% Guarantee Secure Payment\n                                    "
-                    }
-                  </h6>
+                  <h6>{locale === "en" ? "Clarify project requirements" : "توضيح متطلبات المشروع"}</h6>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>
-                    {
-                      "\n                                        1% Extra Fees For All\n                                    "
-                    }
-                  </h6>
+                  <h6>{locale === "en" ? "Discuss scope and constraints" : "مناقشة النطاق والقيود"}</h6>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>
-                    {
-                      "\n                                        Support Dispute & Refund 24/7\n                                    "
-                    }
-                  </h6>
+                  <h6>{locale === "en" ? "Agree on next steps" : "الاتفاق على الخطوات التالية"}</h6>
                 </li>
               </ul>
               <Link
-                href={"/contact"}
+                href={locale === "ar" ? "/ar/contact" : "/en/contact"}
                 className={
                   "btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-50"
                 }
               >
-                <span>{" Book A Free Demo "}</span>
+                <span>{locale === "en" ? "Discuss a project" : "ناقش مشروعك"}</span>
               </Link>
             </div>
           </div>
@@ -252,27 +246,23 @@ function HomeAboutSectionPaddingSection4() {
             <div className={"col-lg-4 order-2 order-lg-0"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {" Easy To "}
-                  <span>{" Customizable "}</span>{" "}
+                  {locale === "en" ? "Consider" : "ناقش"}
+                  <span>{locale === "en" ? "next steps" : "الخطوات التالية"}</span>{" "}
                 </h2>
               </div>
               <p>
-                {
-                  "\n                                Dashboards are meant to be personal tools for website managers and suppliers to enjoy,\n                                and are therefore largely modifiable.\n                            "
-                }
+                {copy.body[2]}
               </p>
               <p className={"mt-20"}>
-                {
-                  "\n                                When it comes to customer actions, website administrators can choose the permissions of\n                                each supplier, allowing them to limit or empower commerce activity as needed.\n                            "
-                }
+                {locale === "en" ? "Use the conversation to identify the decisions that need to be made first." : "استخدم النقاش لتحديد القرارات التي ينبغي اتخاذها أولًا."}
               </p>
               <div className={"d-flex align-items-center mt-70"}>
                 <div className={"img me-2 flex-shrink-0"}>
                   <img src={"/assets/img/about/owners.png"} alt={""} />
                 </div>
                 <div className={"inf"}>
-                  <h4 className={"color-blue5 mb-0 lh-1"}>{"42,500+"}</h4>
-                  <p>{"Marketplace Owners Trust Us"}</p>
+                  <h4 className={"color-blue5 mb-0 lh-1"}>{locale === "en" ? "Software house" : "شركة برمجيات"}</h4>
+                  <p>{locale === "en" ? "Verified company category" : "مجال الشركة المتاح"}</p>
                 </div>
               </div>
             </div>
@@ -296,42 +286,43 @@ function HomeAboutSectionPaddingSection4() {
   );
 }
 
-function HomeClientsStyle5Section5() {
+function HomeClientsStyle5Section5({ locale }: { locale: Locale }) {
   return (
-    <ClientLogosSection variant="home" />
+    <ClientLogosSection variant="home" locale={locale} />
   );
 }
 
-function HomeFeaturesSectionPaddingSection6() {
-  return <MarketplaceFeaturesSection variant="home" />;
+function HomeFeaturesSectionPaddingSection6({ locale }: { locale: Locale }) {
+  return <MarketplaceFeaturesSection variant="home" locale={locale} />;
 }
 
-function HomePricingSectionPaddingSection7() {
+function HomePricingSectionPaddingSection7({ locale }: { locale: Locale }) {
   return (
     <section className={"pricing section-padding style-5"}>
       <div className={"container"}>
-        <PricingIntro />
-        <PricingControls />
+        <PricingIntro locale={locale} />
+        <PricingControls locale={locale} />
         <div className={"table-responsive d-none d-lg-block"}>
           <div className={"content"}>
-            <PricingPlanHeader />
-            <PricingFeatureRows variant="home" />
-            <PricingPlanFooter />
+            <PricingPlanHeader locale={locale} />
+            <PricingFeatureRows variant="home" locale={locale} />
+            <PricingPlanFooter locale={locale} />
           </div>
         </div>
-        <PricingMobileTable />
+        <PricingMobileTable locale={locale} />
       </div>
     </section>
   );
 }
 
-function HomeTestimonialsSectionPaddingSection8() {
+function HomeTestimonialsSectionPaddingSection8({ locale }: { locale: Locale }) {
   return (
-    <TestimonialsSection />
+    <TestimonialsSection locale={locale} />
   );
 }
 
-function HomeDownloadSectionPaddingSection9() {
+function HomeDownloadSectionPaddingSection9({ locale }: { locale: Locale }) {
+  const homePageContent = getHomeContent(locale);
   return (
     <section className={"download section-padding style-5"}>
       <div className={"container"}>
@@ -352,7 +343,6 @@ function HomeDownloadSectionPaddingSection9() {
                   <a
                     href={action.href}
                     className={"btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mx-1"}
-                    target={"_blank"}
                     key={action.href}
                   >
                     <span>

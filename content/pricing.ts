@@ -1,112 +1,37 @@
-export type PricingPlan = {
-  id: "basic" | "premium" | "ultimate";
-  desktopName: string;
-  mobileName: string;
-  monthlyPrice: string;
-  yearlyPrice: string;
-  caption: string;
-  note: string;
-  featured?: boolean;
-};
+import type { Locale } from "@/content/i18n";
 
-export type PricingValue = boolean | string | null;
-
-export type PricingFeature = {
-  id: string;
-  label: string;
-  values: [PricingValue, PricingValue, PricingValue];
-  tooltip?: string;
-};
+export type PricingPlan = { id: "basic" | "premium" | "ultimate"; name: string; };
+export type PricingFeature = { id: string; label: string; };
 
 export const pricingCopy = {
-  heading: "Choose Plan and",
-  headingAccent: "Kick-start",
-  description:
-    "Whether you\u2019re just getting started with rapid testing or scaling across the organization, we\u2019ve got you covered.",
-  monthlyLabel: "Billed Monthly",
-  yearlyLabel: "Billed yearly",
-  yearlyDiscount: "-15%",
-  planCta: "Get Started Now",
+  en: {
+    heading: "Discuss your",
+    accent: "project",
+    description: "No fixed rates are published. Scope and pricing need to be discussed for each project.",
+    note: "Project-specific discussion",
+    planCta: "Discuss a project",
+    plans: ["Start a conversation", "Discuss the scope", "Review next steps"],
+    rows: ["Project requirements", "Timing", "Scope", "Budget"],
+    value: "Discuss together",
+  },
+  ar: {
+    heading: "ناقش",
+    accent: "مشروعك",
+    description: "لا توجد أسعار ثابتة منشورة. يجب مناقشة النطاق والتكلفة لكل مشروع.",
+    note: "مناقشة بحسب المشروع",
+    planCta: "ناقش مشروعك",
+    plans: ["ابدأ النقاش", "ناقش النطاق", "راجع الخطوات التالية"],
+    rows: ["متطلبات المشروع", "الجدول الزمني", "النطاق", "الميزانية"],
+    value: "تُناقش معًا",
+  },
 } as const;
 
 export const pricingPlans: PricingPlan[] = [
-  {
-    id: "basic",
-    desktopName: "basic",
-    mobileName: "BASIC",
-    monthlyPrice: "Free",
-    yearlyPrice: "Free",
-    caption: "Free forever.!",
-    note: "No credit card required.",
-  },
-  {
-    id: "premium",
-    desktopName: "Premium",
-    mobileName: "PREMIUM",
-    monthlyPrice: "$49",
-    yearlyPrice: "$49",
-    caption: "Free forever.!",
-    note: "No credit card required.",
-    featured: true,
-  },
-  {
-    id: "ultimate",
-    desktopName: "ultimate",
-    mobileName: "ULTIMATE",
-    monthlyPrice: "$99",
-    yearlyPrice: "$99",
-    caption: "Free forever.!",
-    note: "No credit card required.",
-  },
+  { id: "basic", name: "Start a conversation" },
+  { id: "premium", name: "Discuss the scope" },
+  { id: "ultimate", name: "Review next steps" },
 ];
 
-export const pricingFeatures: PricingFeature[] = [
-  { id: "projects", label: "Unlimited Projects", values: [true, true, true] },
-  {
-    id: "support",
-    label: "Lifetime Support & SEO Experts Consult",
-    values: [true, true, true],
-  },
-  {
-    id: "dashboard",
-    label: "Advance Dashboard",
-    values: [true, true, true],
-  },
-  {
-    id: "security",
-    label: "Data Security & Backup",
-    values: ["200 GB", "1 TB", "Unlimited"],
-  },
-  {
-    id: "hosting",
-    label: "Cloud Hosting & Domain",
-    values: [null, null, true],
-  },
-  {
-    id: "analysis",
-    label: "Free Google Analysis",
-    values: ["$5/Year", true, true],
-    tooltip:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptatum, eos ad quia sint recusandae.",
-  },
-  {
-    id: "marketplace",
-    label: "Multi-Vendor Marketplace Support",
-    values: [null, null, true],
-  },
-  { id: "seller-app", label: "Seller App", values: [null, true, true] },
-  {
-    id: "upgrade",
-    label: "Auto Lifetime Upgrade",
-    values: [null, true, true],
-    tooltip:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptatum, eos ad quia sint recusandae.",
-  },
-  {
-    id: "ssl",
-    label: "Free SSL Certificate",
-    values: [null, null, true],
-    tooltip:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptatum, eos ad quia sint recusandae.",
-  },
-];
+export function getPricingCopy(locale: Locale) {
+  return pricingCopy[locale];
+}

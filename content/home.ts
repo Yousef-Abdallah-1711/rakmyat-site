@@ -1,21 +1,46 @@
-export const homePageContent = {
-  hero: {
-    headingLead: "All-in-one dashboard for ",
-    headingAccent: " eCommerce ",
-    descriptionLead:
-      "Iteck helps you unify your brand identity by collecting, storing and distributing ",
-    descriptionTail: " design\ntokens and assets — automatically.",
-    emailPlaceholder: "Your email address",
-    cta: { label: "Start Free Trial", href: "/contact" },
+import type { Locale } from "@/content/i18n";
+
+export const homePageContentByLocale = {
+  en: {
+    hero: {
+      headingLead: "Software solutions built around your ",
+      headingAccent: "business",
+      descriptionLead: "Rakmyat is a software house. ",
+      descriptionTail: "Tell us what your business needs from software.",
+      emailPlaceholder: "Email address",
+      cta: { label: "Discuss a project", href: "/en/contact" },
+    },
+    download: {
+      headingLead: "Have a software project in mind? ",
+      headingAccent: "Discuss it",
+      headingTail: " with Rakmyat.",
+      actions: [
+        { label: "Discuss a project", href: "/en/contact", icon: "bi bi-arrow-right" },
+        { label: "Explore services", href: "/en/services", icon: "bi bi-arrow-right" },
+      ],
+    },
   },
-  download: {
-    headingLead:
-      "Manage your ecommerce business better with an all-in-one ",
-    headingAccent: " dashboard ",
-    headingTail: " today",
-    actions: [
-      { label: "Download for MacOS", href: "https://apps.apple.com/us/genre/mac/id39?mt=12", icon: "bi bi-apple" },
-      { label: "Download for Window", href: "https://apps.microsoft.com/store/apps", icon: "bi bi-windows" },
-    ],
+  ar: {
+    hero: {
+      headingLead: "حلول برمجية مصممة لاحتياجات ",
+      headingAccent: "أعمالك",
+      descriptionLead: "رقميات شركة برمجيات. ",
+      descriptionTail: "أخبرنا بما يحتاجه عملك من البرمجيات.",
+      emailPlaceholder: "البريد الإلكتروني",
+      cta: { label: "ناقش مشروعك", href: "/ar/contact" },
+    },
+    download: {
+      headingLead: "هل لديك فكرة لمشروع برمجي؟ ",
+      headingAccent: "ناقشها",
+      headingTail: " مع رقميات.",
+      actions: [
+        { label: "ناقش مشروعك", href: "/ar/contact", icon: "bi bi-arrow-left" },
+        { label: "استكشف الخدمات", href: "/ar/services", icon: "bi bi-arrow-left" },
+      ],
+    },
   },
 } as const;
+
+export function getHomeContent(locale: Locale) {
+  return homePageContentByLocale[locale];
+}

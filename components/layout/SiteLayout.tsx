@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { LegacySliderRuntime } from "@/components/sections/LegacySliderRuntime";
 import { PricingPeriodProvider } from "@/components/sections/PricingPeriod";
 import { MediaLightbox } from "@/components/sections/MediaLightbox";
+import type { Locale } from "@/content/i18n";
 
 type SiteLayoutProps = {
   children: ReactNode;
@@ -13,6 +14,7 @@ type SiteLayoutProps = {
     "home" | "about" | "contact" | "portfolio" | "services" | "project";
   transparentHeader?: boolean;
   borderedFooter?: boolean;
+  locale?: Locale;
 };
 
 export function SiteLayout({
@@ -20,18 +22,19 @@ export function SiteLayout({
   activePage,
   transparentHeader = false,
   borderedFooter = false,
+  locale = "en",
 }: SiteLayoutProps) {
   return (
     <>
       <PageEffects />
-      <SiteHeader activePage={activePage} transparent={transparentHeader} />
+      <SiteHeader activePage={activePage} transparent={transparentHeader} locale={locale} />
       <PricingPeriodProvider>{children}</PricingPeriodProvider>
       <LegacySliderRuntime />
       <MediaLightbox />
       <SiteFooter bordered={borderedFooter}>
-        <FooterContent />
+        <FooterContent locale={locale} />
       </SiteFooter>
-      <ScrollToTop />
+      <ScrollToTop locale={locale} />
     </>
   );
 }

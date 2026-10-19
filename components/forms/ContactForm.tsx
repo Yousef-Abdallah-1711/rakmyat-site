@@ -1,20 +1,20 @@
 ﻿"use client";
 
 import { FormEvent, ReactNode, useState } from "react";
+import { localeCopy, type Locale } from "@/content/i18n";
 
 type ContactFormProps = {
   children: ReactNode;
   className?: string;
+  locale?: Locale;
 };
 
-export function ContactForm({ children, className }: ContactFormProps) {
+export function ContactForm({ children, className, locale = "en" }: ContactFormProps) {
   const [message, setMessage] = useState("");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setMessage(
-      "This form is a static demo and is not connected to a submission service.",
-    );
+    setMessage(localeCopy[locale].formDisabled);
   }
 
   return (

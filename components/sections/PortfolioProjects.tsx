@@ -2,75 +2,45 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { portfolioPageContent, portfolioProjects } from "@/content/portfolio";
+import type { Locale } from "@/content/i18n";
 
-export function PortfolioProjects() {
+const data = {
+  en: {
+    filter: "Filter discussion topics",
+    filters: [{ id: "all", label: "All topics" }, { id: "requirements", label: "Requirements" }, { id: "scope", label: "Scope" }, { id: "workflow", label: "Workflow" }, { id: "planning", label: "Planning" }],
+    cards: [
+      ["Business need", "requirements"], ["User needs", "requirements"], ["Project scope", "scope"], ["Project boundaries", "scope"],
+      ["Current workflow", "workflow"], ["Systems and data", "workflow"], ["Timing questions", "planning"], ["Next steps", "planning"],
+    ],
+    label: "Discussion topic",
+    description: "This is a planning prompt, not a client project or case study.",
+    cardNote: "No approved Rakmyat case studies are available for publication.",
+    cta: "Discuss a project",
+  },
+  ar: {
+    filter: "تصفية موضوعات النقاش",
+    filters: [{ id: "all", label: "كل الموضوعات" }, { id: "requirements", label: "المتطلبات" }, { id: "scope", label: "النطاق" }, { id: "workflow", label: "سير العمل" }, { id: "planning", label: "التخطيط" }],
+    cards: [
+      ["احتياج العمل", "requirements"], ["احتياجات المستخدمين", "requirements"], ["نطاق المشروع", "scope"], ["حدود المشروع", "scope"],
+      ["سير العمل الحالي", "workflow"], ["الأنظمة والبيانات", "workflow"], ["أسئلة الجدول الزمني", "planning"], ["الخطوات التالية", "planning"],
+    ],
+    label: "موضوع للنقاش",
+    description: "هذه نقطة للتخطيط وليست مشروع عميل أو دراسة حالة.",
+    cardNote: "لا تتوفر دراسات حالة معتمدة لرقميات للنشر.",
+    cta: "ناقش مشروعك",
+  },
+} as const;
+
+export function PortfolioProjects({ locale = "en" }: { locale?: Locale }) {
   const [filter, setFilter] = useState("all");
-  return (
-    <>
-      <div className="controls" role="group" aria-label="Filter projects">
-        {portfolioPageContent.filters.map(({ id, label }) => (
-          <button
-            type="button"
-            key={id}
-            className={`control${filter === id ? " control-active" : ""}`}
-          data-filter={id === "all" ? "all" : `.${id}`}
-            aria-pressed={filter === id}
-            onClick={() => setFilter(id)}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-      <section className="portfolio style-1">
-        <div className="content">
-          <div className="row mix-container">
-            {portfolioProjects.map((project, index) => {
-              const visible =
-                filter === "all" || project.categories.includes(filter);
-              return (
-                <div
-                  className={`col-lg-4 mix ${project.categories.join(" ")}`}
-                  key={project.title}
-                  hidden={!visible}
-                >
-                  <div className={`portfolio-card${index < 8 ? " mb-50" : ""}`}>
-                    <div className="img">
-                      <img src={project.image} alt="" />
-                    </div>
-                    <div className="info">
-                      <h5>
-                        <Link href="/projects/notero">{project.title}</Link>
-                      </h5>
-                      <small className="d-block color-main text-uppercase">
-                        {project.type}
-                      </small>
-                      <div className="text">
-                        {portfolioPageContent.cardDescription}
-                      </div>
-                      <div className="tags">
-                        {project.tags.map((tag) => (
-                          <a href="#" key={tag}>
-                            {tag}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="text-center">
-          <Link
-            href="/portfolio"
-            className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-30"
-          >
-            <span>Load More (24)</span>
-          </Link>
-        </div>
-      </section>
-    </>
-  );
+  const copy = data[locale];
+  return <>
+    <div className="controls" role="group" aria-label={copy.filter}>{copy.filters.map(({ id, label }) => <button type="button" key={id} className={`control${filter === id ? " control-active" : ""}`} aria-pressed={filter === id} onClick={() => setFilter(id)}>{label}</button>)}</div>
+    <section className="portfolio style-1"><div className="content"><div className="row mix-container">
+      {copy.cards.map(([title, category], index) => <div className={`col-lg-4 mix ${category}`} key={title} hidden={filter !== "all" && filter !== category}><article className={`portfolio-card${index < 7 ? " mb-50" : ""}`}>
+        <div className="img neutral-content"><span>{copy.label}</span></div>
+        <div className="info"><h5>{title}</h5><small className="d-block color-main text-uppercase">{copy.label}</small><div className="text">{copy.description}</div><div className="tags"><span>{category}</span></div></div>
+      </article></div>)}
+    </div></div><div className="text-center"><Link href={`/${locale}/contact`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-30"><span>{copy.cta}</span></Link><p className="mt-20">{copy.cardNote}</p></div></section>
+  </>;
 }

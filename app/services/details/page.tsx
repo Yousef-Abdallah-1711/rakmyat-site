@@ -1,11 +1,5 @@
-import { ServiceDetailsSourceSections } from "@/components/sections/ServiceDetailsSourceSections";
-import { SiteLayout } from "@/components/layout/SiteLayout";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Email Marketing | Iteck" };
-export default function ServiceDetailsPage() {
-  return (
-    <SiteLayout activePage="services" transparentHeader borderedFooter>
-      <ServiceDetailsSourceSections />
-    </SiteLayout>
-  );
+export default function ServiceDetailsAlias(): never {
+  redirect("/en/services/details");
 }

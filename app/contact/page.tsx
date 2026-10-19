@@ -1,11 +1,5 @@
-﻿import { ContactSourceSections } from "@/components/sections/ContactSourceSections";
-import { SiteLayout } from "@/components/layout/SiteLayout";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Contact Us | Iteck" };
-export default function ContactPage() {
-  return (
-    <SiteLayout activePage="contact" transparentHeader>
-      <ContactSourceSections />
-    </SiteLayout>
-  );
+export default function ContactAlias(): never {
+  redirect("/en/contact");
 }

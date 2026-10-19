@@ -1,11 +1,5 @@
-﻿import { AboutSourceSections } from "@/components/sections/AboutSourceSections";
-import { SiteLayout } from "@/components/layout/SiteLayout";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "About Us | Iteck" };
-export default function AboutPage() {
-  return (
-    <SiteLayout activePage="about">
-      <AboutSourceSections />
-    </SiteLayout>
-  );
+export default function AboutAlias(): never {
+  redirect("/en/about");
 }
