@@ -1,0 +1,294 @@
+{
+  "phase": "3.10-services-cards",
+  "group": "before",
+  "baseUrl": "http://127.0.0.1:5203",
+  "routes": [
+    "/en/services",
+    "/ar/services"
+  ],
+  "viewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "regressionRoutes": [
+    "/en",
+    "/ar",
+    "/en/about",
+    "/ar/about",
+    "/en/contact",
+    "/ar/contact",
+    "/en/portfolio",
+    "/ar/portfolio",
+    "/en/projects/schooly",
+    "/ar/projects/schooly"
+  ],
+  "regressionViewportWidths": [
+    1440,
+    390
+  ],
+  "captureCount": 32,
+  "captures": [
+    {
+      "route": "/en/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-services-1440.png",
+      "bytes": 1125989,
+      "sha256": "a67652ee494605ca14b5c2a57e44df3d46d59b7bc6a978340e3e6088ab28c679",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/en-services-1280.png",
+      "bytes": 1095418,
+      "sha256": "8bd3cd9ea22a45318724e4a75ea9a3fdf7f5a293190222d5c6d4fb35661059f2",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/en-services-1024.png",
+      "bytes": 1021344,
+      "sha256": "3007ccc97d4dcdcb3c5587de0cc36f252823e3b2dd3826a1964737688d192752",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 768,
+      "path": "screenshots/before/en-services-768.png",
+      "bytes": 800499,
+      "sha256": "1d08677bd8ccb4001e8d6288fa3fa7bfa024ef38a4eba7fafdebc9b832494b19",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-services-390.png",
+      "bytes": 574584,
+      "sha256": "4baa89a5bb5c8d113133dae69efecd60c98446eb28307367f22cab9333df871d",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 360,
+      "path": "screenshots/before/en-services-360.png",
+      "bytes": 551857,
+      "sha256": "3fbfaa4fd620a4f9a70b4acacd93447d4b7999b3014989682d524632f1e4ea48",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-services-1440.png",
+      "bytes": 900848,
+      "sha256": "8cfc2542cff447f105fa7a6f63f8dee96a90222aefcd4f48915fccdfffe9241f",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/ar-services-1280.png",
+      "bytes": 869497,
+      "sha256": "b2353100fd964b38c75369f05192569f4590717e57c69220127f2720fb6ea0ae",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1024,
+      "path": "screenshots/before/ar-services-1024.png",
+      "bytes": 806201,
+      "sha256": "ef63f15b7abf5eb3a87067b73494897574fa32927322feaa5f595041d81dbb4b",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 768,
+      "path": "screenshots/before/ar-services-768.png",
+      "bytes": 658401,
+      "sha256": "287e67c44e9cedcae4a22d323de727037395858e8055b2360249e8430ffad909",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-services-390.png",
+      "bytes": 448339,
+      "sha256": "fe427054906cd691803d1af31529f3a9df88797299197aade4995fd5ca407b4f",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 360,
+      "path": "screenshots/before/ar-services-360.png",
+      "bytes": 426086,
+      "sha256": "05fe6bdc701cbdf9b9789fe1bc2d4374a2ba1a63a305051ac4639c65967bba83",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-1440.png",
+      "bytes": 1707499,
+      "sha256": "a5ef541d99e0ab987dbac261ab7bcddb2a4530c671cfd3b38f8e4487afea2215",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-390.png",
+      "bytes": 1008331,
+      "sha256": "97ce44260251e22616e541e5357aae85c14555054d504c55e6b4d1fc1282befd",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-1440.png",
+      "bytes": 1436556,
+      "sha256": "cff7c4d115e904ed345c4cd8b81ff02bfdb05b076cb86d3d3e22ddf6d093ce29",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-390.png",
+      "bytes": 746102,
+      "sha256": "fe78142cf45290b307d4e3793b764d9e93cdfc3549ee079acf726e80417aa114",
+      "status": 200
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-about-1440.png",
+      "bytes": 1053846,
+      "sha256": "cc183c20e1f17e696a330495a34b20db340447a9998f0cdd162547452cc99037",
+      "status": 200
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-about-390.png",
+      "bytes": 626272,
+      "sha256": "12ab607f023e99f08fb0ea49bfdfa4f440cf362a8253150e6c97a0cb6a4e3d48",
+      "status": 200
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-about-1440.png",
+      "bytes": 908880,
+      "sha256": "37ea77d48fa1710c0a814d592f0891530be028e9c1f252afc6ecff0c4a0d87e7",
+      "status": 200
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-about-390.png",
+      "bytes": 478686,
+      "sha256": "698f47c07cde1fd571bd1ecfd302efe74e73b0955a6ea3260efd7e9aac47081c",
+      "status": 200
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-contact-1440.png",
+      "bytes": 424253,
+      "sha256": "639468e76849778a96abb0a8b25bad9b9a4fc6b8806efd5186ad06d9cfcc4f23",
+      "status": 200
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-contact-390.png",
+      "bytes": 217580,
+      "sha256": "9c0721f6f52cef5118ece7615701175faa1b8071c40b8c3a02598ed21fd16c6e",
+      "status": 200
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-contact-1440.png",
+      "bytes": 310797,
+      "sha256": "753d47498cffdb5bc4c8be5464eaf02b74ca0d93076048e493d70831f659bf59",
+      "status": 200
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-contact-390.png",
+      "bytes": 154446,
+      "sha256": "5acb82836441f7d58c6af9f96c4199c44879e7744d3fd2019b2fc8bb2ce6f736",
+      "status": 200
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-portfolio-1440.png",
+      "bytes": 1558120,
+      "sha256": "7b7a9853e1130090a59e529cd397d738c39f9fb325f992b6988cdb40491c99e4",
+      "status": 200
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-portfolio-390.png",
+      "bytes": 801087,
+      "sha256": "77495f16d07ed9441e4b44231cee30b32daafe71b89c7c9948bae2dc3ec28abc",
+      "status": 200
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-portfolio-1440.png",
+      "bytes": 1465663,
+      "sha256": "cb5b2b6873048c0c69f0d2f39c5de671a1aa610e85d5d06563c730c0c6c92f22",
+      "status": 200
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-portfolio-390.png",
+      "bytes": 706503,
+      "sha256": "1bc93dae4d16cb6712ff3f547a0e83d3e0fb1e7918ed7127fbb97b9e73025925",
+      "status": 200
+    },
+    {
+      "route": "/en/projects/schooly",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-projects-schooly-1440.png",
+      "bytes": 849126,
+      "sha256": "8c5cae3636286c65d10624d44bbc7e4578d38c8c7df480f01e6c4a2a0aae6d2c",
+      "status": 200
+    },
+    {
+      "route": "/en/projects/schooly",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-projects-schooly-390.png",
+      "bytes": 487101,
+      "sha256": "e5341cbf9cba0dd3ee80bd3389284e7491f95b36070c8167015150e3729365a4",
+      "status": 200
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-projects-schooly-1440.png",
+      "bytes": 774162,
+      "sha256": "9172db31fe18d3f125bb98d0453b331436dbe03a5cd6220690e8491a0d61e2c6",
+      "status": 200
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-projects-schooly-390.png",
+      "bytes": 410469,
+      "sha256": "a547dbf692bf4eec5dbdfd207a22c47b3d28b4fe74d41d1a88de34974c9d14a1",
+      "status": 200
+    }
+  ],
+  "measurements": [],
+  "consoleErrors": []
+}

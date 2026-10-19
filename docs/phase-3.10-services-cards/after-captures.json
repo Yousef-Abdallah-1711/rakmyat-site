@@ -1,0 +1,955 @@
+{
+  "phase": "3.10-services-cards",
+  "group": "after",
+  "baseUrl": "http://127.0.0.1:5202",
+  "routes": [
+    "/en/services",
+    "/ar/services"
+  ],
+  "viewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "regressionRoutes": [
+    "/en",
+    "/ar",
+    "/en/about",
+    "/ar/about",
+    "/en/contact",
+    "/ar/contact",
+    "/en/portfolio",
+    "/ar/portfolio",
+    "/en/projects/schooly",
+    "/ar/projects/schooly"
+  ],
+  "regressionViewportWidths": [
+    1440,
+    390
+  ],
+  "captureCount": 32,
+  "captures": [
+    {
+      "route": "/en/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-services-1440.png",
+      "bytes": 1267967,
+      "sha256": "e4acbc7b9dcd715af743d378b2139d8e19c36e20cb6a84da857487b3147d699b",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/en-services-1280.png",
+      "bytes": 1233791,
+      "sha256": "61c90067f431d8375c5b39c57ef73c238633978f8ad9e805b2809ec7d3907e26",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/en-services-1024.png",
+      "bytes": 1234642,
+      "sha256": "967e7daa55239d393df0fc00e0f97ad245acbfd2127645d834f082ab7654b23a",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 768,
+      "path": "screenshots/after/en-services-768.png",
+      "bytes": 1150863,
+      "sha256": "4193484d4d647b581103aec81a22058972c91efc348a785cccbd8006b1637c5a",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-services-390.png",
+      "bytes": 954898,
+      "sha256": "9ccc957161851453f53289defc362d8cb945346922c6c6ab56659682c59faff9",
+      "status": 200
+    },
+    {
+      "route": "/en/services",
+      "viewportWidth": 360,
+      "path": "screenshots/after/en-services-360.png",
+      "bytes": 925320,
+      "sha256": "e7df3191b000f71578effe9bf643a5aab01029d45d91f2ceeeabc728efc0c448",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-services-1440.png",
+      "bytes": 1035799,
+      "sha256": "e613ab55c84794606cba1910c21137f374d4c0749dfdf2f338e5482e9c8fe8d1",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1280,
+      "path": "screenshots/after/ar-services-1280.png",
+      "bytes": 998045,
+      "sha256": "e1ee3063f68424f18ef68458d55d3ad35b9349f555aebb5f65a74df5e29cbac4",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 1024,
+      "path": "screenshots/after/ar-services-1024.png",
+      "bytes": 1011484,
+      "sha256": "06754b062e6fbfa93240133727a27a669e2300a1d9839f4a5cb3c0fa1c2f42e4",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 768,
+      "path": "screenshots/after/ar-services-768.png",
+      "bytes": 960838,
+      "sha256": "50ff60a3defb43d14fd8b14aeef02555392b36352a15da38761212e7aea7f5e6",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-services-390.png",
+      "bytes": 767539,
+      "sha256": "6a58ec93fc4b46bb8bfbe3c4dd96ec488712319a957d3cad2a35517294fdd283",
+      "status": 200
+    },
+    {
+      "route": "/ar/services",
+      "viewportWidth": 360,
+      "path": "screenshots/after/ar-services-360.png",
+      "bytes": 736509,
+      "sha256": "9452c4610f661e845dca38dab6d174e954132044af4ee77377c7a8dc7fc91890",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-1440.png",
+      "bytes": 1707499,
+      "sha256": "a5ef541d99e0ab987dbac261ab7bcddb2a4530c671cfd3b38f8e4487afea2215",
+      "status": 200
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-390.png",
+      "bytes": 1008331,
+      "sha256": "97ce44260251e22616e541e5357aae85c14555054d504c55e6b4d1fc1282befd",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-1440.png",
+      "bytes": 1436556,
+      "sha256": "cff7c4d115e904ed345c4cd8b81ff02bfdb05b076cb86d3d3e22ddf6d093ce29",
+      "status": 200
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-390.png",
+      "bytes": 746102,
+      "sha256": "fe78142cf45290b307d4e3793b764d9e93cdfc3549ee079acf726e80417aa114",
+      "status": 200
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-about-1440.png",
+      "bytes": 1053846,
+      "sha256": "cc183c20e1f17e696a330495a34b20db340447a9998f0cdd162547452cc99037",
+      "status": 200
+    },
+    {
+      "route": "/en/about",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-about-390.png",
+      "bytes": 626272,
+      "sha256": "12ab607f023e99f08fb0ea49bfdfa4f440cf362a8253150e6c97a0cb6a4e3d48",
+      "status": 200
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-about-1440.png",
+      "bytes": 908880,
+      "sha256": "37ea77d48fa1710c0a814d592f0891530be028e9c1f252afc6ecff0c4a0d87e7",
+      "status": 200
+    },
+    {
+      "route": "/ar/about",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-about-390.png",
+      "bytes": 478686,
+      "sha256": "698f47c07cde1fd571bd1ecfd302efe74e73b0955a6ea3260efd7e9aac47081c",
+      "status": 200
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-contact-1440.png",
+      "bytes": 424253,
+      "sha256": "639468e76849778a96abb0a8b25bad9b9a4fc6b8806efd5186ad06d9cfcc4f23",
+      "status": 200
+    },
+    {
+      "route": "/en/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-contact-390.png",
+      "bytes": 217580,
+      "sha256": "9c0721f6f52cef5118ece7615701175faa1b8071c40b8c3a02598ed21fd16c6e",
+      "status": 200
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-contact-1440.png",
+      "bytes": 310732,
+      "sha256": "fd791e9eea524679f0041fb093e48c38fc8ede45d226e30f7b7adfbe229876a4",
+      "status": 200
+    },
+    {
+      "route": "/ar/contact",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-contact-390.png",
+      "bytes": 154446,
+      "sha256": "5acb82836441f7d58c6af9f96c4199c44879e7744d3fd2019b2fc8bb2ce6f736",
+      "status": 200
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-portfolio-1440.png",
+      "bytes": 1558120,
+      "sha256": "7b7a9853e1130090a59e529cd397d738c39f9fb325f992b6988cdb40491c99e4",
+      "status": 200
+    },
+    {
+      "route": "/en/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-portfolio-390.png",
+      "bytes": 801087,
+      "sha256": "77495f16d07ed9441e4b44231cee30b32daafe71b89c7c9948bae2dc3ec28abc",
+      "status": 200
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-portfolio-1440.png",
+      "bytes": 1465663,
+      "sha256": "cb5b2b6873048c0c69f0d2f39c5de671a1aa610e85d5d06563c730c0c6c92f22",
+      "status": 200
+    },
+    {
+      "route": "/ar/portfolio",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-portfolio-390.png",
+      "bytes": 706503,
+      "sha256": "1bc93dae4d16cb6712ff3f547a0e83d3e0fb1e7918ed7127fbb97b9e73025925",
+      "status": 200
+    },
+    {
+      "route": "/en/projects/schooly",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/en-projects-schooly-1440.png",
+      "bytes": 849126,
+      "sha256": "8c5cae3636286c65d10624d44bbc7e4578d38c8c7df480f01e6c4a2a0aae6d2c",
+      "status": 200
+    },
+    {
+      "route": "/en/projects/schooly",
+      "viewportWidth": 390,
+      "path": "screenshots/after/en-projects-schooly-390.png",
+      "bytes": 487101,
+      "sha256": "e5341cbf9cba0dd3ee80bd3389284e7491f95b36070c8167015150e3729365a4",
+      "status": 200
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "viewportWidth": 1440,
+      "path": "screenshots/after/ar-projects-schooly-1440.png",
+      "bytes": 774162,
+      "sha256": "9172db31fe18d3f125bb98d0453b331436dbe03a5cd6220690e8491a0d61e2c6",
+      "status": 200
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "viewportWidth": 390,
+      "path": "screenshots/after/ar-projects-schooly-390.png",
+      "bytes": 410469,
+      "sha256": "a547dbf692bf4eec5dbdfd207a22c47b3d28b4fe74d41d1a88de34974c9d14a1",
+      "status": 200
+    }
+  ],
+  "measurements": [
+    {
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 24,
+          "y": 1455,
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "mobile-apps",
+          "x": 306,
+          "y": 1455,
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "business-systems",
+          "x": 589,
+          "y": 1455,
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "ai-automation",
+          "x": 871,
+          "y": 1455,
+          "width": 262,
+          "height": 574
+        },
+        {
+          "id": "integrations-apis",
+          "x": 1154,
+          "y": 1455,
+          "width": 262,
+          "height": 574
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 1,
+      "route": "/en/services",
+      "expectedColumns": 5,
+      "actualColumns": 5
+    },
+    {
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 24,
+          "y": 1500,
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "mobile-apps",
+          "x": 274,
+          "y": 1500,
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "business-systems",
+          "x": 525,
+          "y": 1500,
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "ai-automation",
+          "x": 775,
+          "y": 1500,
+          "width": 230,
+          "height": 611
+        },
+        {
+          "id": "integrations-apis",
+          "x": 1026,
+          "y": 1500,
+          "width": 230,
+          "height": 611
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 1,
+      "route": "/en/services",
+      "expectedColumns": 5,
+      "actualColumns": 5
+    },
+    {
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 24,
+          "y": 1574,
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "mobile-apps",
+          "x": 356,
+          "y": 1574,
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "business-systems",
+          "x": 688,
+          "y": 1574,
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "ai-automation",
+          "x": 24,
+          "y": 2084,
+          "width": 312,
+          "height": 490
+        },
+        {
+          "id": "integrations-apis",
+          "x": 356,
+          "y": 2084,
+          "width": 312,
+          "height": 490
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 2,
+      "route": "/en/services",
+      "expectedColumns": 3,
+      "actualColumns": 3
+    },
+    {
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 24,
+          "y": 1937,
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "mobile-apps",
+          "x": 392,
+          "y": 1937,
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "business-systems",
+          "x": 24,
+          "y": 2431,
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "ai-automation",
+          "x": 392,
+          "y": 2431,
+          "width": 352,
+          "height": 478
+        },
+        {
+          "id": "integrations-apis",
+          "x": 24,
+          "y": 2926,
+          "width": 352,
+          "height": 478
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 3,
+      "route": "/en/services",
+      "expectedColumns": 2,
+      "actualColumns": 2
+    },
+    {
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 16,
+          "y": 3326,
+          "width": 358,
+          "height": 476
+        },
+        {
+          "id": "mobile-apps",
+          "x": 16,
+          "y": 3816,
+          "width": 358,
+          "height": 391
+        },
+        {
+          "id": "business-systems",
+          "x": 16,
+          "y": 4221,
+          "width": 358,
+          "height": 476
+        },
+        {
+          "id": "ai-automation",
+          "x": 16,
+          "y": 4711,
+          "width": 358,
+          "height": 391
+        },
+        {
+          "id": "integrations-apis",
+          "x": 16,
+          "y": 5116,
+          "width": 358,
+          "height": 476
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 5,
+      "route": "/en/services",
+      "expectedColumns": 1,
+      "actualColumns": 1
+    },
+    {
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 16,
+          "y": 3351,
+          "width": 328,
+          "height": 476
+        },
+        {
+          "id": "mobile-apps",
+          "x": 16,
+          "y": 3841,
+          "width": 328,
+          "height": 391
+        },
+        {
+          "id": "business-systems",
+          "x": 16,
+          "y": 4246,
+          "width": 328,
+          "height": 476
+        },
+        {
+          "id": "ai-automation",
+          "x": 16,
+          "y": 4736,
+          "width": 328,
+          "height": 412
+        },
+        {
+          "id": "integrations-apis",
+          "x": 16,
+          "y": 5162,
+          "width": 328,
+          "height": 476
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "ltr",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 5,
+      "route": "/en/services",
+      "expectedColumns": 1,
+      "actualColumns": 1
+    },
+    {
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 1154,
+          "y": 1367,
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "mobile-apps",
+          "x": 871,
+          "y": 1367,
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "business-systems",
+          "x": 589,
+          "y": 1367,
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "ai-automation",
+          "x": 306,
+          "y": 1367,
+          "width": 262,
+          "height": 527
+        },
+        {
+          "id": "integrations-apis",
+          "x": 24,
+          "y": 1367,
+          "width": 262,
+          "height": 527
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 1,
+      "route": "/ar/services",
+      "expectedColumns": 5,
+      "actualColumns": 5
+    },
+    {
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 1026,
+          "y": 1392,
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "mobile-apps",
+          "x": 775,
+          "y": 1392,
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "business-systems",
+          "x": 525,
+          "y": 1392,
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "ai-automation",
+          "x": 274,
+          "y": 1392,
+          "width": 230,
+          "height": 525
+        },
+        {
+          "id": "integrations-apis",
+          "x": 24,
+          "y": 1392,
+          "width": 230,
+          "height": 525
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 1,
+      "route": "/ar/services",
+      "expectedColumns": 5,
+      "actualColumns": 5
+    },
+    {
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 688,
+          "y": 1461,
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "mobile-apps",
+          "x": 356,
+          "y": 1461,
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "business-systems",
+          "x": 24,
+          "y": 1461,
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "ai-automation",
+          "x": 688,
+          "y": 1949,
+          "width": 312,
+          "height": 468
+        },
+        {
+          "id": "integrations-apis",
+          "x": 356,
+          "y": 1949,
+          "width": 312,
+          "height": 468
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 2,
+      "route": "/ar/services",
+      "expectedColumns": 3,
+      "actualColumns": 3
+    },
+    {
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 392,
+          "y": 1873,
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "mobile-apps",
+          "x": 24,
+          "y": 1873,
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "business-systems",
+          "x": 392,
+          "y": 2345,
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "ai-automation",
+          "x": 24,
+          "y": 2345,
+          "width": 352,
+          "height": 456
+        },
+        {
+          "id": "integrations-apis",
+          "x": 392,
+          "y": 2817,
+          "width": 352,
+          "height": 456
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 3,
+      "route": "/ar/services",
+      "expectedColumns": 2,
+      "actualColumns": 2
+    },
+    {
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 16,
+          "y": 3171,
+          "width": 358,
+          "height": 454
+        },
+        {
+          "id": "mobile-apps",
+          "x": 16,
+          "y": 3639,
+          "width": 358,
+          "height": 368
+        },
+        {
+          "id": "business-systems",
+          "x": 16,
+          "y": 4021,
+          "width": 358,
+          "height": 454
+        },
+        {
+          "id": "ai-automation",
+          "x": 16,
+          "y": 4489,
+          "width": 358,
+          "height": 368
+        },
+        {
+          "id": "integrations-apis",
+          "x": 16,
+          "y": 4872,
+          "width": 358,
+          "height": 454
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 5,
+      "route": "/ar/services",
+      "expectedColumns": 1,
+      "actualColumns": 1
+    },
+    {
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "cardCount": 5,
+      "uniqueCardIds": 5,
+      "cards": [
+        {
+          "id": "web-commerce",
+          "x": 16,
+          "y": 3194,
+          "width": 328,
+          "height": 454
+        },
+        {
+          "id": "mobile-apps",
+          "x": 16,
+          "y": 3661,
+          "width": 328,
+          "height": 368
+        },
+        {
+          "id": "business-systems",
+          "x": 16,
+          "y": 4044,
+          "width": 328,
+          "height": 454
+        },
+        {
+          "id": "ai-automation",
+          "x": 16,
+          "y": 4512,
+          "width": 328,
+          "height": 368
+        },
+        {
+          "id": "integrations-apis",
+          "x": 16,
+          "y": 4894,
+          "width": 328,
+          "height": 454
+        }
+      ],
+      "imagesLoaded": true,
+      "imageCount": 5,
+      "brokenImageCount": 0,
+      "headingClipped": false,
+      "direction": "rtl",
+      "projectLinkCount": 5,
+      "projectLinksKeyboardAccessible": true,
+      "textOverflowCount": 0,
+      "rowCount": 5,
+      "route": "/ar/services",
+      "expectedColumns": 1,
+      "actualColumns": 1
+    }
+  ],
+  "consoleErrors": []
+}
