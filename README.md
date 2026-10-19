@@ -1,18 +1,12 @@
-﻿# Iteck Next.js App
+# Rakmyat Website
 
-The App Router implementation of the seven Iteck SaaS Technology demo pages. It is isolated from the original Vite baseline in the workspace root.
+The bilingual Rakmyat website uses the preserved Iteck design, implemented with Next.js App Router, React, and TypeScript. It is isolated from the original Vite clone in the workspace root.
 
-## Routes
+## Main routes
 
-| Next.js route | Legacy URL |
-|---|---|
-| `/` | `/home-saas-technology.html` |
-| `/about` | `/page-about-5.html` |
-| `/contact` | `/page-contact-5.html` |
-| `/portfolio` | `/page-portfolio-5.html` |
-| `/services` | `/page-services-5.html` |
-| `/services/details` | `/page-services-details-5.html` |
-| `/projects/notero` | `/page-single-project-5.html` |
+English and Arabic routes are rooted at `/en` and `/ar`; each locale contains home, about, services, service details, portfolio, and contact pages. The nine portfolio detail routes use `/[locale]/projects/[slug]`.
+
+Legacy HTML aliases redirect to the matching English pages. The retired Notero page remains unpublished and returns 404.
 
 ## Development
 
@@ -37,6 +31,7 @@ npm.cmd run start
 - [Architecture and folder organization](docs/ARCHITECTURE.md)
 - [Migration history and validation](docs/MIGRATION-SUMMARY.md)
 - [Known issues and production decisions](docs/KNOWN-ISSUES.md)
+- [Phase 3.2 portfolio and visual QA evidence](docs/phase-3.2/README.md)
 - Workspace audit and regression evidence: `../specs/iteck-saas-clone/`
 
 ## Implementation notes

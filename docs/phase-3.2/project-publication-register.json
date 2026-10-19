@@ -1,0 +1,115 @@
+{
+  "ownerAttribution": "The owner explicitly confirmed all nine projects are personally owned and built.",
+  "attributionSource": "Phase 3.2 owner instruction",
+  "publicationPolicy": "Project ownership is confirmed. It does not grant client confidentiality clearance or third-party media, trademark, photography, or screenshot rights. Review each asset before production deployment.",
+  "projects": [
+    {
+      "slug": "schooly",
+      "name": "Schooly",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-arabic-desktop.webp", "hero-mobile.webp", "schools-desktop.webp", "compare-desktop.webp", "school-detail-desktop.webp", "school-detail-mobile.webp"],
+      "mediaRights": "pending written confirmation for visible school names, listing content, logos, and media",
+      "confidentialityReview": "Selected captures showed public school discovery/listing views; no private student records observed. Confirm current client and data clearance before production.",
+      "publicUrl": "https://schooly.ae/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "nora-store",
+      "name": "Nora Store",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-mobile.webp", "homepage-full.webp", "product-desktop.webp", "product-mobile.webp"],
+      "mediaRights": "pending confirmation for third-party product brands, photography, and client storefront material",
+      "confidentialityReview": "Public storefront screens selected; confirm client and product-media rights before production.",
+      "publicUrl": "https://nora-store.online/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "edtech-platform",
+      "name": "Nama Academy",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-mobile.webp", "course-detail-desktop.webp", "course-detail-mobile.webp"],
+      "mediaRights": "pending confirmation for academy identity, people/photography, and course material",
+      "confidentialityReview": "Public program and course views selected; confirm client and media clearance before production.",
+      "publicUrl": "https://edu-tech.youesf-abdallah.online/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "live-workshop",
+      "name": "From Idea to Production",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["feature-desktop.webp", "feature-mobile.webp"],
+      "mediaRights": "pending confirmation for course and promotional content",
+      "confidentialityReview": "Selected feature captures may show session or course-scope numbers. Other attendance, sales, and performance claims were excluded from copy and selection; review image contents before production.",
+      "publicUrl": "https://live-workshop.youesf-abdallah.online/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "eduflow",
+      "name": "EduFlow",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-english-desktop.webp", "hero-english-mobile.webp", "feature-desktop.webp", "feature-mobile.webp"],
+      "mediaRights": "pending confirmation for course and teacher content",
+      "confidentialityReview": "Selected public course views; authenticated screens were not accessed. Confirm course-media and client clearance before production.",
+      "publicUrl": "https://courses.youesf-abdallah.online/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "legal-translation",
+      "name": "Middle East Institute",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-mobile.webp", "homepage-full.webp", "homepage-mobile-full.webp"],
+      "mediaRights": "pending confirmation for client identity and embedded/promotional material",
+      "confidentialityReview": "Selected site images show client identity and certification/promotional content; validate permission and current claims before production.",
+      "publicUrl": "https://wegomei.com/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "gc-hardware",
+      "name": "GC Hardware",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "documented in supplied BDA materials",
+      "screenshots": ["hero-desktop.webp", "hero-mobile.webp", "homepage-full.webp", "product-desktop.webp", "product-mobile.webp"],
+      "mediaRights": "pending confirmation for product trademarks, pricing, and photography",
+      "confidentialityReview": "Public catalog and product views selected; confirm client and third-party media rights before production.",
+      "publicUrl": "https://gc-hardware.net/",
+      "publicUrlStatus": "observed in source review; not live-verified in this phase",
+      "technicalDetails": "Only documented details included"
+    },
+    {
+      "slug": "concord-crm",
+      "name": "Concord CRM",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "limited to project-name-level information; supplied source repository/docs unavailable",
+      "screenshots": [],
+      "mediaRights": "no UI screenshot copied",
+      "confidentialityReview": "Text-led identity treatment only; confirm any future details are publishable.",
+      "publicUrl": null,
+      "publicUrlStatus": "not provided",
+      "technicalDetails": "Features, stack, workflow, and implementation details remain unverified and are not claimed"
+    },
+    {
+      "slug": "product-scraper",
+      "name": "Product Scraper to WooCommerce",
+      "ownerAttribution": "confirmed-by-owner",
+      "description": "limited to project-name-level information; supplied source repository/docs unavailable",
+      "screenshots": [],
+      "mediaRights": "no UI screenshot copied",
+      "confidentialityReview": "Text-led identity treatment only; confirm any future details are publishable.",
+      "publicUrl": null,
+      "publicUrlStatus": "not provided",
+      "technicalDetails": "Metrics, interface, detailed capabilities, and implementation details remain unverified and are not claimed"
+    }
+  ]
+}

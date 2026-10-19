@@ -18,6 +18,10 @@ The Next app uses Next.js 16.4.2, React 19.3.1, strict TypeScript, and the App R
 
 The earlier migration report records a separate capture run with maximum local-source MAE 0.637/255. Phase 2 reran the captures and recorded maximum MAE 0.00447/255. These are different runs with different capture artifacts; the later Phase 2 manifest and metrics are the final result. The historical report and metrics remain available for context. Live-hosted reference captures have separate discrepancies, recorded in the Phase 2 live-reference review; they are not covered by the local-source parity result.
 
+## Phase 3.2 project integration
+
+The later Rakmyat content phase added nine owner-confirmed portfolio projects, bilingual detail routes, selected local project media, featured homepage work, service-to-project links, and localized project metadata. It passed a fresh typecheck/lint/build and 120 route/viewport captures. Rights and content approvals still open are documented in [Known Issues](KNOWN-ISSUES.md) and the [Phase 3.2 report](phase-3.2/implementation-report.md).
+
 ## Evidence locations
 
 - Final Next regression captures: `specs/iteck-saas-clone/nextjs-migration/phase-2/screenshots/current/`

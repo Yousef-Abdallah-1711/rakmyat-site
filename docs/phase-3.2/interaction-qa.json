@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-10-19T03:27:20.503090+00:00",
+  "checks": [
+    {
+      "name": "portfolio count and education filter",
+      "allProjects": 9,
+      "educationProjects": 4,
+      "projectLinks": [
+        "/en/projects/schooly",
+        "/en/projects/schooly",
+        "/en/projects/schooly",
+        "/en/projects/edtech-platform",
+        "/en/projects/edtech-platform",
+        "/en/projects/edtech-platform",
+        "/en/projects/live-workshop",
+        "/en/projects/live-workshop",
+        "/en/projects/live-workshop",
+        "/en/projects/eduflow",
+        "/en/projects/eduflow",
+        "/en/projects/eduflow"
+      ]
+    },
+    {
+      "name": "all portfolio category filters",
+      "counts": {
+        "Education": 4,
+        "E-commerce": 2,
+        "Business systems": 2,
+        "Automation & integrations": 1
+      },
+      "returnsToAll": true
+    },
+    {
+      "name": "related project navigation",
+      "relatedLinks": 6,
+      "target": "/en/projects/edtech-platform",
+      "navigated": true
+    },
+    {
+      "name": "project card navigation and slug-preserving locale switch",
+      "url": "http://127.0.0.1:5191/ar/projects/schooly",
+      "lang": "ar",
+      "dir": "rtl"
+    },
+    {
+      "name": "project gallery lightbox and Escape dismissal",
+      "opened": true,
+      "closedWithEscape": true
+    },
+    {
+      "name": "mobile navigation and Escape focus restoration",
+      "opened": true,
+      "closedWithEscape": true,
+      "focusRestored": true
+    },
+    {
+      "name": "service carousel and service-to-project links",
+      "slides": 7,
+      "links": [
+        "/en/projects/product-scraper",
+        "/en/projects/nora-store",
+        "/en/projects/gc-hardware",
+        "/en/projects/schooly",
+        "/en/projects/concord-crm",
+        "/en/projects/product-scraper",
+        "/en/projects/nora-store",
+        "/en/projects/gc-hardware",
+        "/en/projects/schooly"
+      ]
+    },
+    {
+      "name": "back-to-top scroll control",
+      "returnedToTop": true
+    },
+    {
+      "name": "contact empty required email validation",
+      "emptyFormValid": false
+    },
+    {
+      "name": "unknown and retired project routes",
+      "unknownStatus": 404,
+      "unknownRobots": [
+        "noindex, nofollow",
+        "noindex"
+      ],
+      "unknownNoindex": true,
+      "noteroStatus": 404
+    },
+    {
+      "name": "legacy alias",
+      "route": "/home-saas-technology.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-about-5.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en/about"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-contact-5.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en/contact"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-portfolio-5.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en/portfolio"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-services-5.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en/services"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-services-details-5.html",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:5191/en/services/details"
+    },
+    {
+      "name": "legacy alias",
+      "route": "/page-single-project-5.html",
+      "status": 404,
+      "finalUrl": "http://127.0.0.1:5191/page-single-project-5.html"
+    },
+    {
+      "name": "localized metadata for all project routes",
+      "routesChecked": 18,
+      "failures": [],
+      "productionCanonicalConfigured": false
+    }
+  ],
+  "pageErrors": []
+}
