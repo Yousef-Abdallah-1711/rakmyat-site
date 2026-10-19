@@ -20,8 +20,6 @@ type ScreenshotVisualProps = {
   variant: FrameVariant;
   priority?: boolean;
   group: string;
-  mobileSrc?: string;
-  mobileAlt?: string;
 };
 
 const frameCopy = {
@@ -50,8 +48,6 @@ export function ProjectVisualFrame({ project, locale, variant, priority = false,
           variant={variant}
           priority={priority}
           group={groupName}
-          mobileSrc={project.assets.mobileCover}
-          mobileAlt={project.assets.mobileCover ? mobileCoverAlt(project, locale) : undefined}
         />
       )}
       {presentation === "conceptual-visual" && <figcaption className="project-visual-caption">{copy.concept}</figcaption>}
@@ -79,7 +75,6 @@ export function ProjectScreenshotFrame({
   return (
     <figure className={`project-visual project-visual--${variant} project-visual--${slug}`} data-presentation-kind="framed-real-screenshot" data-project={slug}>
       <a className={variant === "device" ? "project-visual-device" : "project-visual-gallery-frame"} href={image.src} data-fancybox={groupName} aria-label={`${copy.open}: ${title}`}>
-        {variant === "gallery" && <BrowserChrome locale={locale} />}
         <span className="project-visual-image-area">
           <Image src={image.src} alt={image.alt[locale]} fill sizes={imageSizes(variant === "device" ? "gallery" : variant)} quality={84} loading="lazy" />
         </span>
@@ -88,7 +83,7 @@ export function ProjectScreenshotFrame({
   );
 }
 
-function ScreenshotVisual({ src, alt, locale, title, variant, priority, group, mobileSrc, mobileAlt }: ScreenshotVisualProps) {
+function ScreenshotVisual({ src, alt, locale, title, variant, priority, group }: ScreenshotVisualProps) {
   const copy = frameCopy[locale];
   const image = (
     <span className="project-visual-image-area">
@@ -97,33 +92,10 @@ function ScreenshotVisual({ src, alt, locale, title, variant, priority, group, m
   );
 
   return (
-    <div className="project-visual-stage">
-      <a className="project-visual-browser" href={src} data-fancybox={group} aria-label={`${copy.open}: ${title}`}>
-        <BrowserChrome locale={locale} />
-        {image}
-      </a>
-      {mobileSrc && mobileAlt && <a className="project-visual-phone" href={mobileSrc} data-fancybox={group} aria-label={`${copy.open}: ${title} — ${locale === "en" ? "mobile view" : "عرض الجوال"}`}>
-        <span className="project-visual-phone-speaker" aria-hidden="true" />
-        <span className="project-visual-phone-screen"><Image src={mobileSrc} alt={mobileAlt} fill sizes="(max-width: 575px) 1px, 160px" quality={82} loading="lazy" /></span>
-      </a>}
-    </div>
+    <a className="project-visual-screenshot-link" href={src} data-fancybox={group} aria-label={`${copy.open}: ${title}`}>
+      {image}
+    </a>
   );
-}
-
-function BrowserChrome({ locale }: { locale: Locale }) {
-  return (
-    <span className="project-visual-browser-chrome" aria-hidden="true">
-      <span className="project-visual-window-controls"><i /><i /><i /></span>
-      <span className="project-visual-browser-tab">{locale === "en" ? "Project preview" : "معاينة المشروع"}</span>
-      <span className="project-visual-browser-more">···</span>
-    </span>
-  );
-}
-
-function mobileCoverAlt(project: PortfolioProject, locale: Locale) {
-  return locale === "en"
-    ? `${project.locales.en.title} website shown on a mobile screen`
-    : `واجهة ${project.locales.ar.title} معروضة على شاشة الجوال`;
 }
 
 function imageSizes(variant: FrameVariant) {

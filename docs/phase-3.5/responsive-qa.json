@@ -1,0 +1,5176 @@
+{
+  "baseUrl": "http://127.0.0.1:5194",
+  "viewports": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "homeAndPortfolio": [
+    {
+      "section": {
+        "w": 1440,
+        "h": 3770.046875
+      },
+      "gridColumns": "629px 629px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            627,
+            396.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            627,
+            396.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "locale": "en",
+      "route": "home",
+      "width": 1440
+    },
+    {
+      "section": {
+        "w": 1280,
+        "h": 3532.703125
+      },
+      "gridColumns": "554px 554px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            552,
+            349.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            552,
+            349.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "locale": "en",
+      "route": "home",
+      "width": 1280
+    },
+    {
+      "section": {
+        "w": 1024,
+        "h": 3319.90625
+      },
+      "gridColumns": "481px 481px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 481,
+          "h": 523.28125,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 523.28125,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 523.28125,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 523.28125,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            479,
+            303.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            479,
+            303.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "locale": "en",
+      "route": "home",
+      "width": 1024
+    },
+    {
+      "section": {
+        "w": 768,
+        "h": 3041.484375
+      },
+      "gridColumns": "353px 353px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 465.4375,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 484.140625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            351,
+            222.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            351,
+            222.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "locale": "en",
+      "route": "home",
+      "width": 768
+    },
+    {
+      "section": {
+        "w": 390,
+        "h": 4971.34375
+      },
+      "gridColumns": "360px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 485.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "locale": "en",
+      "route": "home",
+      "width": 390
+    },
+    {
+      "section": {
+        "w": 360,
+        "h": 4846.671875
+      },
+      "gridColumns": "330px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 454.59375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 454.59375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 459.53125,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 480.59375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "locale": "en",
+      "route": "home",
+      "width": 360
+    },
+    {
+      "section": {
+        "w": 1290,
+        "h": 3151.953125
+      },
+      "gridColumns": "628px 628px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            626,
+            396.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            626,
+            396.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 1440
+    },
+    {
+      "section": {
+        "w": 1140,
+        "h": 2914.609375
+      },
+      "gridColumns": "553px 553px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            551,
+            348.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            551,
+            348.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 1280
+    },
+    {
+      "section": {
+        "w": 994,
+        "h": 2701.890625
+      },
+      "gridColumns": "480px 480px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 480,
+          "h": 522.65625,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 522.65625,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 522.65625,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 522.65625,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            478,
+            302.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            478,
+            302.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 1024
+    },
+    {
+      "section": {
+        "w": 738,
+        "h": 2478.96875
+      },
+      "gridColumns": "352px 352px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 464.8125,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 483.515625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            350,
+            221.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            350,
+            221.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 768
+    },
+    {
+      "section": {
+        "w": 360,
+        "h": 4630.390625
+      },
+      "gridColumns": "360px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 488.328125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 493.265625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 497.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 390
+    },
+    {
+      "section": {
+        "w": 330,
+        "h": 4532.09375
+      },
+      "gridColumns": "330px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 330,
+          "h": 471.53125,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 488.03125,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 471.53125,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 466.59375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 471.53125,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 492.59375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "locale": "en",
+      "route": "portfolio",
+      "width": 360
+    },
+    {
+      "section": {
+        "w": 1440,
+        "h": 3767.25
+      },
+      "gridColumns": "629px 629px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 596.234375,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 596.234375,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        },
+        {
+          "w": 629,
+          "h": 599.03125,
+          "image": {
+            "w": 627,
+            "h": 396.828125
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            625,
+            394.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            627,
+            396.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            627,
+            396.828125
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "locale": "ar",
+      "route": "home",
+      "width": 1440
+    },
+    {
+      "section": {
+        "w": 1280,
+        "h": 3532.703125
+      },
+      "gridColumns": "554px 554px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        },
+        {
+          "w": 554,
+          "h": 551.5625,
+          "image": {
+            "w": 552,
+            "h": 349.359375
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            550,
+            347.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            552,
+            349.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            552,
+            349.359375
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "locale": "ar",
+      "route": "home",
+      "width": 1280
+    },
+    {
+      "section": {
+        "w": 1024,
+        "h": 3272.3125
+      },
+      "gridColumns": "481px 481px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        },
+        {
+          "w": 481,
+          "h": 499.484375,
+          "image": {
+            "w": 479,
+            "h": 303.15625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            477,
+            301.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            479,
+            303.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            479,
+            303.15625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "locale": "ar",
+      "route": "home",
+      "width": 1024
+    },
+    {
+      "section": {
+        "w": 768,
+        "h": 2928.09375
+      },
+      "gridColumns": "353px 353px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 441.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        },
+        {
+          "w": 353,
+          "h": 467.640625,
+          "image": {
+            "w": 351,
+            "h": 222.140625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            349,
+            220.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            351,
+            222.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            351,
+            222.140625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "locale": "ar",
+      "route": "home",
+      "width": 768
+    },
+    {
+      "section": {
+        "w": 390,
+        "h": 4732.34375
+      },
+      "gridColumns": "360px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 360,
+          "h": 459.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 438.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 464.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "locale": "ar",
+      "route": "home",
+      "width": 390
+    },
+    {
+      "section": {
+        "w": 360,
+        "h": 4643.921875
+      },
+      "gridColumns": "330px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 416.65625,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 416.65625,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 416.65625,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 438.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 464.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "locale": "ar",
+      "route": "home",
+      "width": 360
+    },
+    {
+      "section": {
+        "w": 1290,
+        "h": 3149.15625
+      },
+      "gridColumns": "628px 628px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 595.59375,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 595.59375,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        },
+        {
+          "w": 628,
+          "h": 598.390625,
+          "image": {
+            "w": 626,
+            "h": 396.1875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            624,
+            394.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            626,
+            396.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            626,
+            396.1875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 1440
+    },
+    {
+      "section": {
+        "w": 1140,
+        "h": 2914.609375
+      },
+      "gridColumns": "553px 553px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        },
+        {
+          "w": 553,
+          "h": 550.921875,
+          "image": {
+            "w": 551,
+            "h": 348.71875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            549,
+            346.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            551,
+            348.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            551,
+            348.71875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1280,
+      "viewportWidth": 1280,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 1280
+    },
+    {
+      "section": {
+        "w": 994,
+        "h": 2654.296875
+      },
+      "gridColumns": "480px 480px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        },
+        {
+          "w": 480,
+          "h": 498.859375,
+          "image": {
+            "w": 478,
+            "h": 302.53125
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            620,
+            387
+          ],
+          "rendered": [
+            476,
+            300.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            478,
+            302.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            620,
+            413
+          ],
+          "rendered": [
+            478,
+            302.53125
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 1024,
+      "viewportWidth": 1024,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 1024
+    },
+    {
+      "section": {
+        "w": 738,
+        "h": 2391.078125
+      },
+      "gridColumns": "352px 352px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 441.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        },
+        {
+          "w": 352,
+          "h": 467.015625,
+          "image": {
+            "w": 350,
+            "h": 221.515625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            337,
+            211
+          ],
+          "rendered": [
+            348,
+            219.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            350,
+            221.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            337,
+            225
+          ],
+          "rendered": [
+            350,
+            221.515625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 768
+    },
+    {
+      "section": {
+        "w": 360,
+        "h": 4442.390625
+      },
+      "gridColumns": "360px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 471.828125,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 450.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        },
+        {
+          "w": 360,
+          "h": 476.390625,
+          "image": {
+            "w": 358,
+            "h": 259.40625
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            351,
+            219
+          ],
+          "rendered": [
+            356,
+            257.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            351,
+            234
+          ],
+          "rendered": [
+            358,
+            259.40625
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 390
+    },
+    {
+      "section": {
+        "w": 330,
+        "h": 4353.96875
+      },
+      "gridColumns": "330px",
+      "cardCount": 9,
+      "cards": [
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 428.65625,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 428.65625,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 450.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        },
+        {
+          "w": 330,
+          "h": 476.09375,
+          "image": {
+            "w": 328,
+            "h": 237.671875
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fschooly%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fnora-store%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fedtech-platform%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flive-workshop%2Ffeature-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Feduflow%2Fhero-english-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Flegal-translation%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fportfolio%2Fgc-hardware%2Fhero-desktop.webp&w=640&q=75",
+          "natural": [
+            324,
+            202
+          ],
+          "rendered": [
+            326,
+            235.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fconcord-crm-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        },
+        {
+          "src": "_next/image?url=%2Fassets%2Frakmyat%2Fproject-presentations%2Fproduct-scraper-concept.webp&w=640&q=75",
+          "natural": [
+            324,
+            216
+          ],
+          "rendered": [
+            328,
+            237.671875
+          ],
+          "fit": "contain",
+          "broken": false
+        }
+      ],
+      "documentWidth": 360,
+      "viewportWidth": 360,
+      "locale": "ar",
+      "route": "portfolio",
+      "width": 360
+    }
+  ],
+  "detailHero": [
+    {
+      "project": "schooly",
+      "kind": "framed-real-screenshot",
+      "frame": [
+        1070,
+        622.078125
+      ],
+      "source": [
+        1100,
+        687
+      ],
+      "fit": "contain",
+      "caption": null,
+      "captionVisible": null,
+      "docWidth": 1440,
+      "viewport": 1440,
+      "locale": "en",
+      "dir": "ltr",
+      "width": 1440
+    },
+    {
+      "project": "schooly",
+      "kind": "framed-real-screenshot",
+      "frame": [
+        360,
+        276.921875
+      ],
+      "source": [
+        390,
+        243
+      ],
+      "fit": "contain",
+      "caption": null,
+      "captionVisible": null,
+      "docWidth": 390,
+      "viewport": 390,
+      "locale": "en",
+      "dir": "ltr",
+      "width": 390
+    },
+    {
+      "project": "concord-crm",
+      "kind": "conceptual-visual",
+      "frame": [
+        1070,
+        622.078125
+      ],
+      "source": [
+        1100,
+        733
+      ],
+      "fit": "contain",
+      "caption": "Concept illustration · not a product screenshot",
+      "captionVisible": true,
+      "docWidth": 1440,
+      "viewport": 1440,
+      "locale": "en",
+      "dir": "ltr",
+      "width": 1440
+    },
+    {
+      "project": "concord-crm",
+      "kind": "conceptual-visual",
+      "frame": [
+        360,
+        276.921875
+      ],
+      "source": [
+        390,
+        260
+      ],
+      "fit": "contain",
+      "caption": "Concept illustration · not a product screenshot",
+      "captionVisible": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "locale": "en",
+      "dir": "ltr",
+      "width": 390
+    },
+    {
+      "project": "schooly",
+      "kind": "framed-real-screenshot",
+      "frame": [
+        1070,
+        622.078125
+      ],
+      "source": [
+        1100,
+        687
+      ],
+      "fit": "contain",
+      "caption": null,
+      "captionVisible": null,
+      "docWidth": 1440,
+      "viewport": 1440,
+      "locale": "ar",
+      "dir": "rtl",
+      "width": 1440
+    },
+    {
+      "project": "schooly",
+      "kind": "framed-real-screenshot",
+      "frame": [
+        360,
+        276.921875
+      ],
+      "source": [
+        390,
+        243
+      ],
+      "fit": "contain",
+      "caption": null,
+      "captionVisible": null,
+      "docWidth": 390,
+      "viewport": 390,
+      "locale": "ar",
+      "dir": "rtl",
+      "width": 390
+    },
+    {
+      "project": "concord-crm",
+      "kind": "conceptual-visual",
+      "frame": [
+        1070,
+        622.078125
+      ],
+      "source": [
+        1100,
+        733
+      ],
+      "fit": "contain",
+      "caption": "رسم توضيحي تصوري · ليس لقطة من المنتج",
+      "captionVisible": true,
+      "docWidth": 1440,
+      "viewport": 1440,
+      "locale": "ar",
+      "dir": "rtl",
+      "width": 1440
+    },
+    {
+      "project": "concord-crm",
+      "kind": "conceptual-visual",
+      "frame": [
+        360,
+        276.921875
+      ],
+      "source": [
+        390,
+        260
+      ],
+      "fit": "contain",
+      "caption": "رسم توضيحي تصوري · ليس لقطة من المنتج",
+      "captionVisible": true,
+      "docWidth": 390,
+      "viewport": 390,
+      "locale": "ar",
+      "dir": "rtl",
+      "width": 390
+    }
+  ],
+  "interactions": {
+    "portfolioCards": 9,
+    "filterButtons": 5,
+    "filteredCardCount": 4,
+    "selectedFilterPressed": "true",
+    "allRestored": 9,
+    "lightboxOpens": true,
+    "escapeCloses": true,
+    "detailHref": "/en/projects/schooly"
+  },
+  "verifiedBuild": "final Phase 3.5 production build after all source changes",
+  "finalBuildSmoke": {
+    "viewportCases": 24,
+    "httpErrors": [],
+    "horizontalOverflowCases": 0,
+    "brokenImages": 0,
+    "allImagesContain": true,
+    "filterCountAfterCategory": 4,
+    "allFilterRestores": 9,
+    "lightboxOpensAndEscapeCloses": true
+  },
+  "capturePairs": [
+    {
+      "view": "Home 1440",
+      "before": "screenshots/before/home-en-1440.png",
+      "after": "screenshots/after/home-en-1440.png"
+    },
+    {
+      "view": "Home 390",
+      "before": "screenshots/before/home-en-390.png",
+      "after": "screenshots/after/home-en-390.png"
+    },
+    {
+      "view": "Work 1440",
+      "before": "screenshots/before/work-en-1440.png",
+      "after": "screenshots/after/work-en-1440.png"
+    },
+    {
+      "view": "Work 390",
+      "before": "screenshots/before/work-en-390.png",
+      "after": "screenshots/after/work-en-390.png"
+    },
+    {
+      "view": "Schooly detail 1440",
+      "before": "screenshots/before/schooly-detail-en-1440.png",
+      "after": "screenshots/after/schooly-detail-en-1440.png"
+    },
+    {
+      "view": "Concord CRM concept detail 1440",
+      "before": "screenshots/before/concord-concept-en-1440.png",
+      "after": "screenshots/after/concord-concept-en-1440.png"
+    }
+  ]
+}
