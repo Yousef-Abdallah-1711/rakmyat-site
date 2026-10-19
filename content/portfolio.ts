@@ -41,6 +41,7 @@ export type PortfolioProject = {
   locales: Record<Locale, LocalizedProject>;
   assets: {
     cover: string;
+    coverKind: "real-screenshot" | "conceptual-visual";
     coverAlt: Record<Locale, string>;
     mobileCover?: string;
     gallery: readonly ProjectImage[];
@@ -75,7 +76,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Schooly",
         category: "Education · School discovery",
         summary:
-          "A bilingual school-discovery experience for exploring schools across the UAE.",
+          "Families can narrow school choices by emirate and curriculum, review public school profiles, and compare options in Arabic or English.",
         overview:
           "Schooly brings school search, school profiles, and comparison into one public web experience, with English and Arabic interfaces.",
         challenge:
@@ -106,7 +107,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Schooly",
         category: "التعليم · استكشاف المدارس",
         summary:
-          "تجربة ثنائية اللغة تساعد الأسر على استكشاف المدارس في أنحاء الإمارات.",
+          "تساعد الأسر على تضييق خيارات المدارس بحسب الإمارة والمنهج، ثم مراجعة الملفات العامة ومقارنة البدائل بالعربية أو الإنجليزية.",
         overview:
           "يجمع Schooly البحث عن المدارس وصفحاتها ومقارنتها ضمن تجربة ويب عامة باللغتين العربية والإنجليزية.",
         challenge:
@@ -136,6 +137,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("schooly", "hero-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: {
         en: "Schooly English school-discovery homepage",
         ar: "الصفحة الرئيسية لـ Schooly لاستكشاف المدارس باللغة الإنجليزية",
@@ -170,7 +172,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Nora Store",
         category: "E-commerce · Beauty and personal care",
         summary:
-          "An Arabic storefront for browsing beauty and personal-care products.",
+          "An Arabic beauty and personal-care storefront brings category browsing, product details, and visible cart actions together.",
         overview:
           "The public store organizes beauty and personal-care items into categories, product pages, and visible shopping actions.",
         challenge:
@@ -199,7 +201,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "متجر نورا",
         category: "التجارة الإلكترونية · الجمال والعناية الشخصية",
         summary:
-          "متجر عربي لاستكشاف منتجات الجمال والعناية الشخصية.",
+          "يجمع متجر عربي لمنتجات الجمال والعناية الشخصية بين تصفح التصنيفات وتفاصيل المنتجات وخيارات السلة الظاهرة.",
         overview:
           "ينظم المتجر العام منتجات الجمال والعناية ضمن تصنيفات وصفحات تفصيلية مع خيارات التسوق الظاهرة.",
         challenge:
@@ -227,6 +229,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("nora-store", "hero-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "Nora Store Arabic e-commerce homepage", ar: "الصفحة الرئيسية لمتجر نورا الإلكتروني باللغة العربية" },
       mobileCover: asset("nora-store", "hero-mobile.webp"),
       gallery: [
@@ -256,7 +259,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Nama Academy",
         category: "Education · Professional training",
         summary:
-          "A public academy website for exploring professional programs, courses, and events.",
+          "A public training catalog brings professional programs, course outlines, trainer information, and events into one place.",
         overview:
           "Nama Academy presents training programs and course information through a public Arabic-language web experience.",
         challenge:
@@ -285,7 +288,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "أكاديمية نماء",
         category: "التعليم · التدريب المهني",
         summary:
-          "موقع أكاديمية لاستكشاف البرامج المهنية والدورات والفعاليات.",
+          "يجمع دليل تدريبي عام البرامج المهنية ومحاور الدورات ومعلومات المدربين والفعاليات في مكان واحد.",
         overview:
           "تعرض أكاديمية نماء البرامج التدريبية ومعلومات الدورات عبر تجربة ويب عامة باللغة العربية.",
         challenge:
@@ -313,6 +316,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("edtech-platform", "hero-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "Nama Academy Arabic training homepage", ar: "الصفحة الرئيسية لأكاديمية نماء باللغة العربية" },
       mobileCover: asset("edtech-platform", "hero-mobile.webp"),
       gallery: [
@@ -341,7 +345,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "From Idea to Production",
         category: "Education · Workshop platform",
         summary:
-          "A workshop website presenting a course and its session-based curriculum.",
+          "A workshop landing page introduces the course through a ten-session outline, published pricing, and enrollment information.",
         overview:
           "The public site introduces the workshop, outlines its sessions, and provides public pricing and enrollment information.",
         challenge:
@@ -369,7 +373,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "من الفكرة إلى الإنتاج",
         category: "التعليم · منصة ورش العمل",
         summary:
-          "موقع ورشة يعرض الدورة ومحاورها المنظمة ضمن جلسات.",
+          "تقدم صفحة الورشة الدورة عبر منهج من عشر جلسات ومعلومات الأسعار والتسجيل المنشورة.",
         overview:
           "يقدم الموقع العام الورشة ومحاور جلساتها ومعلومات الأسعار والتسجيل.",
         challenge:
@@ -396,6 +400,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("live-workshop", "feature-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "From Idea to Production workshop course section", ar: "قسم الدورة في موقع ورشة من الفكرة إلى الإنتاج" },
       mobileCover: asset("live-workshop", "feature-mobile.webp"),
       gallery: [
@@ -423,7 +428,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "EduFlow",
         category: "Education · Learning platform",
         summary:
-          "A bilingual course website with a public lesson preview and course access paths.",
+          "Arabic and English course pages lead into a public lesson preview with notes, alongside sign-in and enrollment paths.",
         overview:
           "EduFlow presents course information in Arabic and English and offers a public preview lesson alongside sign-in and enrollment paths.",
         challenge:
@@ -453,7 +458,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "EduFlow",
         category: "التعليم · منصة تعلم",
         summary:
-          "موقع دورات ثنائي اللغة يضم معاينة عامة لدرس ومسارات للوصول إلى الدورة.",
+          "تقود صفحات الدورات بالعربية والإنجليزية إلى معاينة درس عامة وملاحظاتها، مع مسارات لتسجيل الدخول والالتحاق.",
         overview:
           "يعرض EduFlow معلومات الدورات بالعربية والإنجليزية، ويتيح معاينة درس عامة مع مسارات لتسجيل الدخول والالتحاق.",
         challenge:
@@ -482,6 +487,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("eduflow", "hero-english-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "EduFlow English course homepage", ar: "الصفحة الرئيسية لـ EduFlow باللغة الإنجليزية" },
       mobileCover: asset("eduflow", "hero-english-mobile.webp"),
       gallery: [
@@ -511,7 +517,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Middle East Institute",
         category: "Business website · Legal translation",
         summary:
-          "A public service website presenting legal-translation information and request steps.",
+          "Translation categories, a four-step request guide, FAQs, and contact options organize this public service website.",
         overview:
           "The public website introduces translation services, explains the request process, answers common questions, and provides contact paths.",
         challenge:
@@ -539,7 +545,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "معهد الشرق الأوسط",
         category: "موقع أعمال · الترجمة القانونية",
         summary:
-          "موقع خدمات عام يعرض معلومات الترجمة القانونية وخطوات تقديم الطلب.",
+          "ينظم موقع الخدمات فئات الترجمة ودليلًا من أربع خطوات للطلب وأسئلة شائعة وخيارات للتواصل.",
         overview:
           "يعرّف الموقع بالخدمات، ويوضح خطوات الطلب، ويجيب عن الأسئلة الشائعة، ويوفر قنوات للتواصل.",
         challenge:
@@ -566,6 +572,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("legal-translation", "hero-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "Middle East Institute legal-translation website homepage", ar: "الصفحة الرئيسية لموقع الترجمة القانونية لمعهد الشرق الأوسط" },
       mobileCover: asset("legal-translation", "hero-mobile.webp"),
       gallery: [
@@ -594,7 +601,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "GC Hardware",
         category: "E-commerce · Computer hardware",
         summary:
-          "A bilingual product catalog for computer components and hardware.",
+          "A bilingual hardware catalog connects component categories with product details, displayed prices, and purchase or support options.",
         overview:
           "The public store presents computer-component categories, product listings, and individual product pages in Arabic and English.",
         challenge:
@@ -623,7 +630,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "GC Hardware",
         category: "التجارة الإلكترونية · أجهزة الحاسوب",
         summary:
-          "كتالوج منتجات ثنائي اللغة لمكونات الحاسوب والأجهزة.",
+          "يربط كتالوج ثنائي اللغة فئات مكونات الحاسوب بتفاصيل المنتجات والأسعار وخيارات الشراء أو الدعم الظاهرة.",
         overview:
           "يعرض المتجر العام فئات مكونات الحاسوب وقوائم المنتجات وصفحاتها التفصيلية بالعربية والإنجليزية.",
         challenge:
@@ -651,6 +658,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
     assets: {
       cover: asset("gc-hardware", "hero-desktop.webp"),
+      coverKind: "real-screenshot",
       coverAlt: { en: "GC Hardware Arabic product-catalog homepage", ar: "الصفحة الرئيسية لكتالوج GC Hardware باللغة العربية" },
       mobileCover: asset("gc-hardware", "hero-mobile.webp"),
       gallery: [
@@ -680,13 +688,13 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Concord CRM",
         category: "Business systems · CRM",
         summary:
-          "A CRM project associated with a WooCommerce integration.",
+          "A business-systems project associated with Concord CRM and WooCommerce; further implementation details are not available.",
         overview:
-          "Concord CRM is a business-systems project connecting customer relationship management with WooCommerce commerce workflows.",
+          "The confirmed project record names Concord CRM and its association with WooCommerce. The supplied evidence does not document its workflows, delivered scope, or implementation.",
         challenge:
-          "The project brings customer relationship management and online commerce operations into the same workflow.",
+          "Project goals and workflow details are not documented in the available source material.",
         solution:
-          "The integration connects Concord CRM and WooCommerce as part of a business-systems project.",
+          "The delivered integration behavior and implementation details have not been documented.",
         features: [],
         projectType: "CRM and commerce integration project",
         technologies: [],
@@ -700,13 +708,13 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Concord CRM",
         category: "أنظمة الأعمال · إدارة علاقات العملاء",
         summary:
-          "مشروع CRM يرتبط بتكامل مع WooCommerce.",
+          "مشروع لأنظمة الأعمال يرتبط باسم Concord CRM وWooCommerce، ولا تتوفر تفاصيل موثقة عن التنفيذ.",
         overview:
-          "Concord CRM مشروع لأنظمة الأعمال يربط إدارة علاقات العملاء بمسارات التجارة عبر WooCommerce.",
+          "يسمي سجل المشروع المؤكد Concord CRM ويربطه بـ WooCommerce. ولا توثق المواد المتاحة مسارات العمل أو النطاق المنفذ أو تفاصيل التنفيذ.",
         challenge:
-          "يجمع المشروع بين إدارة علاقات العملاء وعمليات التجارة الإلكترونية ضمن مسار عمل واحد.",
+          "لا توثق المواد المتاحة أهداف المشروع أو تفاصيل مسارات العمل.",
         solution:
-          "يربط التكامل بين Concord CRM وWooCommerce ضمن مشروع لأنظمة الأعمال.",
+          "لم توثق تفاصيل التكامل المنفذ أو آلية عمله.",
         features: [],
         projectType: "مشروع تكامل CRM وتجارة إلكترونية",
         technologies: [],
@@ -718,8 +726,12 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       },
     },
     assets: {
-      cover: "",
-      coverAlt: { en: "Concord CRM project identity", ar: "هوية مشروع Concord CRM" },
+      cover: "/assets/rakmyat/project-presentations/concord-crm-concept.webp",
+      coverKind: "conceptual-visual",
+      coverAlt: {
+        en: "Concept illustration of linked customer records and commerce modules; not a screenshot of the Concord CRM project.",
+        ar: "رسم تصوري يوضح ترابط سجلات العملاء ووحدات التجارة؛ وليس لقطة شاشة من مشروع Concord CRM.",
+      },
       gallery: [],
     },
     links: {},
@@ -743,13 +755,13 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "Product Scraper to WooCommerce",
         category: "Automation · E-commerce integration",
         summary:
-          "A project focused on moving product-sourcing information toward a WooCommerce catalog.",
+          "A project titled Product Scraper to WooCommerce; verified interface and implementation details are not available.",
         overview:
-          "This automation project connects product sourcing with a WooCommerce catalog workflow.",
+          "The project name is confirmed, but current source materials do not establish its delivered workflow, interface, or implementation details.",
         challenge:
-          "The project title identifies a workflow between product sourcing and WooCommerce catalog content.",
+          "Project goals and workflow details are not documented in the available source material.",
         solution:
-          "The project centers on collecting product information and preparing it for a WooCommerce catalog.",
+          "The delivered processing steps and implementation details have not been documented.",
         features: [],
         projectType: "Product data and e-commerce integration project",
         technologies: [],
@@ -763,13 +775,13 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         title: "أداة جمع المنتجات إلى WooCommerce",
         category: "الأتمتة · تكامل التجارة الإلكترونية",
         summary:
-          "مشروع يركز على نقل معلومات المنتجات من مصادرها إلى كتالوج WooCommerce.",
+          "مشروع بعنوان Product Scraper to WooCommerce، ولا تتوفر تفاصيل موثقة عن واجهته أو تنفيذه.",
         overview:
-          "يربط مشروع الأتمتة هذا بين استكشاف المنتجات ومسار كتالوج WooCommerce.",
+          "اسم المشروع مؤكد، لكن المواد المتاحة لا تثبت مسار العمل أو الواجهة أو تفاصيل التنفيذ المنجزة.",
         challenge:
-          "يشير اسم المشروع إلى مسار عمل يربط مصادر المنتجات بمحتوى كتالوج WooCommerce.",
+          "لا توثق المواد المتاحة أهداف المشروع أو تفاصيل مسارات العمل.",
         solution:
-          "يركز المشروع على جمع معلومات المنتجات وتهيئتها لكتالوج WooCommerce.",
+          "لم توثق خطوات المعالجة المنفذة أو تفاصيل التنفيذ.",
         features: [],
         projectType: "مشروع بيانات منتجات وتكامل تجارة إلكترونية",
         technologies: [],
@@ -781,8 +793,12 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       },
     },
     assets: {
-      cover: "",
-      coverAlt: { en: "Product Scraper to WooCommerce project identity", ar: "هوية مشروع جمع المنتجات إلى WooCommerce" },
+      cover: "/assets/rakmyat/project-presentations/product-scraper-concept.webp",
+      coverKind: "conceptual-visual",
+      coverAlt: {
+        en: "Concept illustration of product information flowing toward a WooCommerce catalog; not a screenshot of the delivered project.",
+        ar: "رسم تصوري لتدفق معلومات المنتجات نحو كتالوج WooCommerce؛ وليس لقطة شاشة من المشروع المنفذ.",
+      },
       gallery: [],
     },
     links: {},
@@ -797,13 +813,6 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     },
   }),
 ];
-
-export const featuredProjectSlugs = [
-  "schooly",
-  "nora-store",
-  "edtech-platform",
-  "gc-hardware",
-] as const;
 
 export const projectCategories = {
   en: [

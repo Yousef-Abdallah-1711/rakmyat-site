@@ -58,7 +58,7 @@ export function AboutSourceSections({ locale = "en" }: { locale?: Locale }) {
           <Link href={`/${locale}/services`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-60 px-5">{locale === "en" ? "Services information" : "معلومات الخدمات"}</Link>
         </div></div>
       </div></div><img src="/assets/img/about/about_s6_bubbles.png" alt="" className="bubbles rotate-center" /></section>
-      <ClientLogosSection variant="about" locale={locale} />
+      <ClientLogosSection locale={locale} />
       <section className="numbers style-6"><div className="container"><div className="content pb-100 border-1 border-bottom brd-gray"><div className="row">
         {copy.stats.map((stat, index) => <div className="col-lg-4" key={stat.label}><div className={`number-card style-6${index === 2 ? " border-0" : ""}`}><h2 className="me-4 color-blue5"><span>{stat.value}</span></h2><div className="text">{stat.label}</div></div></div>)}
       </div></div></div></section>

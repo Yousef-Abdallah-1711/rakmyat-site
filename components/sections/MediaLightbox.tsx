@@ -12,6 +12,7 @@ export function MediaLightbox() {
   const [media, setMedia] = useState<MediaState>(null);
   const [videoFailed, setVideoFailed] = useState(false);
   const pathname = usePathname();
+  const isArabic = pathname.startsWith("/ar");
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const openerRef = useRef<HTMLElement | null>(null);
@@ -46,16 +47,17 @@ export function MediaLightbox() {
         return;
       }
       const imageLink = target.closest<HTMLAnchorElement>(
-        'a[data-fancybox="gallery"]',
+        "a[data-fancybox]",
       );
       if (!imageLink) return;
       event.preventDefault();
       openerRef.current = imageLink;
+      const group = imageLink.getAttribute("data-fancybox");
       const links = [
         ...document.querySelectorAll<HTMLAnchorElement>(
-          'a[data-fancybox="gallery"]',
+          "a[data-fancybox]",
         ),
-      ];
+      ].filter((link) => link.getAttribute("data-fancybox") === group);
       setMedia({
         kind: "image",
         images: links.map((link) => ({
@@ -129,7 +131,7 @@ export function MediaLightbox() {
       className="media-lightbox"
       role="dialog"
       aria-modal="true"
-      aria-label={media.kind === "image" ? "Image gallery" : "Video player"}
+      aria-label={media.kind === "image" ? (isArabic ? "معرض الصور" : "Image gallery") : (isArabic ? "مشغل الفيديو" : "Video player")}
       tabIndex={-1}
       onClick={() => setMedia(null)}
     >
@@ -137,7 +139,7 @@ export function MediaLightbox() {
         ref={closeButtonRef}
         className="media-lightbox__close"
         type="button"
-        aria-label="Close media"
+        aria-label={isArabic ? "إغلاق الوسائط" : "Close media"}
         onClick={() => setMedia(null)}
       >
         ×
@@ -147,7 +149,7 @@ export function MediaLightbox() {
           <button
             className="media-lightbox__previous"
             type="button"
-            aria-label="Previous image"
+            aria-label={isArabic ? "الصورة السابقة" : "Previous image"}
             onClick={(event) => {
               event.stopPropagation();
               setMedia({
@@ -168,7 +170,7 @@ export function MediaLightbox() {
           <button
             className="media-lightbox__next"
             type="button"
-            aria-label="Next image"
+            aria-label={isArabic ? "الصورة التالية" : "Next image"}
             onClick={(event) => {
               event.stopPropagation();
               setMedia({
@@ -185,21 +187,23 @@ export function MediaLightbox() {
           <iframe
             className="media-lightbox__video"
             src={media.src}
-            title="Iteck introduction video"
+            title={isArabic ? "فيديو تعريفي" : "Introduction video"}
             allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
             onError={() => setVideoFailed(true)}
             onClick={(event) => event.stopPropagation()}
           />
           <p className="media-lightbox__fallback" role="status">
-            {videoFailed ? "Video could not be loaded." : "If the video does not play:"}{" "}
+            {videoFailed
+              ? isArabic ? "تعذر تحميل الفيديو." : "Video could not be loaded."
+              : isArabic ? "إذا لم يعمل الفيديو:" : "If the video does not play:"}{" "}
             <a
               href={media.externalHref}
               target="_blank"
               rel="noreferrer"
               onClick={(event) => event.stopPropagation()}
             >
-              Open on YouTube
+              {isArabic ? "افتحه على YouTube" : "Open on YouTube"}
             </a>
           </p>
         </>

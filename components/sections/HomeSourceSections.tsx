@@ -1,6 +1,6 @@
 import { ProductReasonsSection } from "@/components/sections/ProductReasonsSection";
 import { MarketplaceFeaturesSection } from "@/components/sections/MarketplaceFeaturesSection";
-import { ClientLogosSection } from "@/components/sections/ClientLogosSection";
+import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader, PricingMobileTable } from "@/components/pricing/PricingTable";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -287,9 +287,7 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
 }
 
 function HomeClientsStyle5Section5({ locale }: { locale: Locale }) {
-  return (
-    <ClientLogosSection variant="home" locale={locale} />
-  );
+  return <ProjectShowcaseSection locale={locale} />;
 }
 
 function HomeFeaturesSectionPaddingSection6({ locale }: { locale: Locale }) {
