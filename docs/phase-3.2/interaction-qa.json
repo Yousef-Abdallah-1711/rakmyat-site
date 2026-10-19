@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-10-19T03:27:20.503090+00:00",
+  "generatedAt": "2026-10-19T03:31:17.791451+00:00",
   "checks": [
+    {
+      "name": "desktop navigation dropdown and Escape focus restoration",
+      "opened": true,
+      "closedWithEscape": true,
+      "focusRestored": true
+    },
     {
       "name": "portfolio count and education filter",
       "allProjects": 9,
@@ -54,8 +60,11 @@
       "focusRestored": true
     },
     {
-      "name": "service carousel and service-to-project links",
+      "name": "service carousel autoplay and service-to-project links",
       "slides": 7,
+      "swiperReady": true,
+      "activeIndexBefore": 1,
+      "activeIndexAfter": 2,
       "links": [
         "/en/projects/product-scraper",
         "/en/projects/nora-store",

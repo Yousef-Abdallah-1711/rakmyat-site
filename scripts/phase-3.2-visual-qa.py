@@ -242,6 +242,13 @@ async def interactions(base_url: str) -> dict:
 
         await page.goto(base_url.rstrip("/") + "/en/portfolio", wait_until="networkidle")
         await page.wait_for_function("document.getElementById('preloader')?.classList.contains('isdone')")
+        dropdown = page.locator("button.nav-link.dropdown-toggle")
+        await dropdown.click()
+        dropdown_open = "show" in (await page.locator(".dropdown-menu").get_attribute("class") or "")
+        await page.keyboard.press("Escape")
+        dropdown_closed = "show" not in (await page.locator(".dropdown-menu").get_attribute("class") or "")
+        dropdown_focus = await dropdown.evaluate("el => document.activeElement === el")
+        checks.append({"name": "desktop navigation dropdown and Escape focus restoration", "opened": dropdown_open, "closedWithEscape": dropdown_closed, "focusRestored": dropdown_focus})
         all_count = await page.locator(".portfolio-card").count()
         await page.get_by_role("button", name="Education", exact=True).click()
         education_count = await page.locator(".portfolio-card").count()
@@ -293,7 +300,13 @@ async def interactions(base_url: str) -> dict:
         await page.goto(base_url.rstrip("/") + "/en/services", wait_until="networkidle")
         service_project_slugs = await page.locator(".service-project-links a").evaluate_all("els => els.map(el => new URL(el.href).pathname)")
         service_slides = await page.locator(".services-slider .swiper-slide").count()
-        checks.append({"name": "service carousel and service-to-project links", "slides": service_slides, "links": service_project_slugs})
+        carousel = page.locator(".services-slider .swiper-container")
+        swiper_ready = await carousel.evaluate("el => Boolean(el.swiper)")
+        slide_before = await carousel.evaluate("el => el.swiper?.activeIndex ?? null")
+        if swiper_ready:
+            await page.wait_for_timeout(4300)
+        slide_after = await carousel.evaluate("el => el.swiper?.activeIndex ?? null")
+        checks.append({"name": "service carousel autoplay and service-to-project links", "slides": service_slides, "swiperReady": swiper_ready, "activeIndexBefore": slide_before, "activeIndexAfter": slide_after, "links": service_project_slugs})
 
         await page.evaluate("window.scrollTo(0, document.documentElement.scrollHeight)")
         await page.wait_for_timeout(150)
