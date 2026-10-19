@@ -4,10 +4,12 @@ import { AboutSourceSections } from "@/components/sections/AboutSourceSections";
 import { ContactSourceSections } from "@/components/sections/ContactSourceSections";
 import { HomeSourceSections } from "@/components/sections/HomeSourceSections";
 import { PortfolioSourceSections } from "@/components/sections/PortfolioSourceSections";
+import { ProjectDetailSections } from "@/components/sections/ProjectDetailSections";
 import { ServiceDetailsSourceSections } from "@/components/sections/ServiceDetailsSourceSections";
 import { ServicesSourceSections } from "@/components/sections/ServicesSourceSections";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { localeCopy, type Locale, type PageKey } from "@/content/i18n";
+import { getPortfolioProject } from "@/content/portfolio";
 
 export const dynamic = "force-dynamic";
 
@@ -32,6 +34,51 @@ export async function generateMetadata({
   if (localeParam !== "en" && localeParam !== "ar") return {};
   const locale: Locale = localeParam;
   const copy = localeCopy[locale];
+  if (path?.length === 2 && path[0] === "projects") {
+    const project = getPortfolioProject(path[1]);
+    if (!project) {
+      return {
+        title: copy.notFoundTitle,
+        description: copy.notFoundText,
+        robots: { index: false, follow: false },
+      };
+    }
+    const content = project.locales[locale];
+    const route = `/${locale}/projects/${project.slug}`;
+    const siteUrl = getConfiguredSiteUrl();
+    const image = project.assets.cover || "/assets/rakmyat/brand/rakmyat-mark.webp";
+    const socialImage = siteUrl
+      ? { images: [{ url: new URL(image, siteUrl).toString(), alt: project.assets.coverAlt[locale] }] }
+      : {};
+    return {
+      title: content.seoTitle,
+      description: content.seoDescription,
+      alternates: {
+        canonical: siteUrl ? new URL(route, siteUrl).toString() : undefined,
+        languages: {
+          en: `/en/projects/${project.slug}`,
+          ar: `/ar/projects/${project.slug}`,
+        },
+      },
+      openGraph: {
+        title: content.seoTitle,
+        description: content.seoDescription,
+        locale: locale === "ar" ? "ar_EG" : "en_US",
+        type: "article",
+        url: siteUrl ? new URL(route, siteUrl).toString() : undefined,
+        ...socialImage,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: content.seoTitle,
+        description: content.seoDescription,
+        ...socialImage,
+      },
+    };
+  }
+  if (path?.[0] === "projects") {
+    return { title: copy.notFoundTitle, robots: { index: false, follow: false } };
+  }
   const page = getPageKey(path);
   if (!page) {
     return {
@@ -72,6 +119,16 @@ export default async function LocalizedPage({
   const { locale: localeParam, path } = await params;
   if (localeParam !== "en" && localeParam !== "ar") notFound();
   const locale: Locale = localeParam;
+  if (path?.[0] === "projects") {
+    if (path.length !== 2) notFound();
+    const project = getPortfolioProject(path[1]);
+    if (!project) notFound();
+    return (
+      <SiteLayout activePage="project" locale={locale} borderedFooter>
+        <ProjectDetailSections project={project} locale={locale} />
+      </SiteLayout>
+    );
+  }
   const page = getPageKey(path);
   if (!page) notFound();
 
@@ -97,4 +154,15 @@ export default async function LocalizedPage({
       {section}
     </SiteLayout>
   );
+}
+
+function getConfiguredSiteUrl() {
+  const value = process.env.NEXT_PUBLIC_SITE_URL;
+  if (!value) return null;
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.origin : null;
+  } catch {
+    return null;
+  }
 }

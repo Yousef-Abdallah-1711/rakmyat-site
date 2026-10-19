@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 
-// Notero is template demonstration content, not an approved Rakmyat case study.
-// Keep the reusable SingleProjectSourceSections component for a future approved record.
+// Preserve the old unlocalized project alias as an unpublished 404.
 export default function ProjectPage(): never {
   notFound();
 }

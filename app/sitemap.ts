@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { portfolioProjects } from "@/content/portfolio";
 
 const routes = ["", "/about", "/services", "/services/details", "/portfolio", "/contact"];
 
@@ -12,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [];
   }
   const base = siteUrl.origin;
-  return routes.flatMap((route) =>
+  const mainRoutes = routes.flatMap((route) =>
     (["en", "ar"] as const).map((locale) => ({
       url: new URL(`/${locale}${route}`, base).toString(),
       alternates: {
@@ -23,4 +24,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     })),
   );
+  const projectRoutes = portfolioProjects
+    .filter((project) => project.publicationState === "published")
+    .flatMap((project) =>
+      (["en", "ar"] as const).map((locale) => ({
+        url: new URL(`/${locale}/projects/${project.slug}`, base).toString(),
+        alternates: {
+          languages: {
+            en: new URL(`/en/projects/${project.slug}`, base).toString(),
+            ar: new URL(`/ar/projects/${project.slug}`, base).toString(),
+          },
+        },
+      })),
+    );
+  return [...mainRoutes, ...projectRoutes];
 }
