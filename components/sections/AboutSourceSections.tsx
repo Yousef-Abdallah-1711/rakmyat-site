@@ -10,6 +10,9 @@ const decoration = ["/assets/img/header/head5_line.png", "/assets/img/header/hea
 
 export function AboutSourceSections({ locale = "en" }: { locale?: Locale }) {
   const copy = getPageCopy(locale).about;
+  const serviceSummaries = locale === "en"
+    ? ["Customer-facing websites, online stores, and application experiences.", "Internal systems that organize business information, roles, and workflows.", "Selected task automation, AI assistance, and links between existing tools."]
+    : ["مواقع ومتاجر وتجارب تطبيقات موجهة للعملاء.", "أنظمة داخلية تنظم معلومات العمل والأدوار ومساراته.", "أتمتة مهام محددة ومساعدة ذكية وربط الأدوات الحالية."];
   const form = locale === "en" ? {
     required: "Fields marked required must be completed.",
     name: "Name", email: "Email address", phone: "Phone number (optional)", website: "Website (optional)",
@@ -51,7 +54,7 @@ export function AboutSourceSections({ locale = "en" }: { locale?: Locale }) {
       <section className="choose-us style-6"><div className="container"><div className="row justify-content-between gx-0">
         <div className="col-lg-6"><div className="img"><img src="/assets/img/choose_us/man_arrow.png" alt="" /></div></div>
         <div className="col-lg-4"><div className="info"><div className="section-head mb-30 style-5"><h2>{copy.servicesHeading}</h2></div><div className="text mb-50 fs-12px color-666">{copy.servicesDescription}</div>
-          <ul>{copy.serviceCards.map((label, index) => <li className={index < 2 ? "d-flex mb-40" : "d-flex"} key={label}><small className="icon-50 me-4 flex-shrink-0"><img src={`/assets/img/icons/serv_icons/${[1, 3, 5][index]}.png`} alt="" /></small><div className="inf"><h5>{label}</h5><p className="fs-12px color-666 mt-2">{locale === "en" ? "Discussion topic; no specific service is represented." : "موضوع للنقاش؛ لا يمثل خدمة محددة."}</p></div></li>)}</ul>
+          <ul>{copy.serviceCards.map((label, index) => <li className={index < 2 ? "d-flex mb-40" : "d-flex"} key={label}><small className="icon-50 me-4 flex-shrink-0"><img src={`/assets/img/icons/serv_icons/${[1, 3, 5][index]}.png`} alt="" /></small><div className="inf"><h5>{label}</h5><p className="fs-12px color-666 mt-2">{serviceSummaries[index]}</p></div></li>)}</ul>
           <Link href={`/${locale}/services`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-60 px-5">{locale === "en" ? "Services information" : "معلومات الخدمات"}</Link>
         </div></div>
       </div></div><img src="/assets/img/about/about_s6_bubbles.png" alt="" className="bubbles rotate-center" /></section>

@@ -64,6 +64,7 @@ export function SiteHeader({ activePage, transparent = false, locale = "en" }: S
       <nav ref={navRef} className={navbarClass} aria-label={copy.navLabel}>
         <div className="container-fluid">
           <Link className="navbar-brand rakmyat-wordmark" href={getLocalizedPath(locale, "/")} aria-label={`${copy.brand} — ${copy.category}`}>
+            <img src="/assets/rakmyat/brand/rakmyat-mark.webp" alt="" width="34" height="34" />
             <span>{copy.brand}</span>
             {locale === "en" && <span lang="ar" dir="rtl">رقميات</span>}
           </Link>

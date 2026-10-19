@@ -66,6 +66,7 @@ export function FooterContent({ locale = "en" }: { locale?: Locale }) {
         <div className="row">
           <div className="col-lg-3 col-sm-6">
             <div className="logo rakmyat-wordmark rakmyat-wordmark--footer" aria-label={`${copy.brand} — ${copy.category}`}>
+              <img src="/assets/rakmyat/brand/rakmyat-mark.webp" alt="" width="36" height="36" />
               <span>{copy.brand}</span>{locale === "en" && <span lang="ar" dir="rtl">رقميات</span>}
             </div>
           </div>

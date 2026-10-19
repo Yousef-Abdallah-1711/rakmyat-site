@@ -124,15 +124,15 @@ function HomeCommunityPt40Section3({ locale }: { locale: Locale }) {
 
 function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
   const copy = locale === "en" ? {
-    sections: ["Start with the need", "Clarify the scope", "Consider next steps"],
-    body: ["Describe the task, workflow, or business question you want software to address.", "A project conversation can help define the requirements and boundaries.", "Discuss a possible approach and what information is needed to move forward."],
-    values: ["Business need", "Current workflow", "Project scope"],
-    heading: "A project conversation",
+    sections: ["Websites and commerce for customer journeys", "Business systems for real operations", "AI and integrations with clear boundaries"],
+    body: ["Plan clear web and e-commerce experiences around what customers need to find, understand, and do.", "Organize information, responsibilities, and recurring workflows in a custom system.", "Connect tools and automate a defined task with selected data and review points."],
+    values: ["Web & commerce", "Mobile applications", "Business systems"],
+    heading: "Software for real workflows",
   } : {
-    sections: ["ابدأ بالاحتياج", "وضح النطاق", "ناقش الخطوات التالية"],
-    body: ["اشرح المهمة أو سير العمل أو سؤال العمل الذي تريد من البرمجيات معالجته.", "يمكن لمناقشة المشروع أن تساعد في تحديد المتطلبات والحدود.", "ناقش نهجًا ممكنًا والمعلومات اللازمة للمتابعة."],
-    values: ["احتياج العمل", "سير العمل الحالي", "نطاق المشروع"],
-    heading: "مناقشة مشروع",
+    sections: ["مواقع ومتاجر تراعي رحلة العميل", "أنظمة أعمال تدعم العمليات", "ذكاء اصطناعي وتكامل بحدود واضحة"],
+    body: ["نخطط لتجارب ويب وتجارة إلكترونية واضحة تساعد العملاء على العثور على ما يحتاجون إليه وفهمه واستخدامه.", "ننظم المعلومات والمسؤوليات ومسارات العمل المتكررة في نظام مخصص.", "نربط الأدوات ونؤتمت مهمة محددة ببيانات منتقاة ونقاط مراجعة واضحة."],
+    values: ["الويب والتجارة", "تطبيقات الجوال", "أنظمة الأعمال"],
+    heading: "برمجيات لسير العمل الفعلي",
   };
   return (
     <section className={"about section-padding style-5"}>
@@ -142,8 +142,8 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
             <div className={"col-lg-4 order-2 order-lg-0"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {locale === "en" ? "Start with" : "ابدأ بـ"}
-                  <span>{locale === "en" ? "the need" : "الاحتياج"}</span>{" "}
+                  {locale === "en" ? "Websites &" : "مواقع"}
+                  <span>{locale === "en" ? "commerce" : "ومتاجر"}</span>{" "}
                 </h2>
               </div>
               <p>
@@ -201,8 +201,8 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
             <div className={"col-lg-4"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {locale === "en" ? "Clarify" : "وضح"}
-                  <span>{locale === "en" ? "the scope" : "النطاق"}</span>{" "}
+                  {locale === "en" ? "Business" : "أنظمة"}
+                  <span>{locale === "en" ? "systems" : "الأعمال"}</span>{" "}
                 </h2>
               </div>
               <p>
@@ -213,19 +213,19 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Clarify project requirements" : "توضيح متطلبات المشروع"}</h6>
+                  <h6>{locale === "en" ? "Map the information each workflow needs" : "تحديد المعلومات التي يحتاج إليها كل مسار عمل"}</h6>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Discuss scope and constraints" : "مناقشة النطاق والقيود"}</h6>
+                  <h6>{locale === "en" ? "Review available systems and interfaces" : "مراجعة الأنظمة والواجهات المتاحة"}</h6>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Agree on next steps" : "الاتفاق على الخطوات التالية"}</h6>
+                  <h6>{locale === "en" ? "Plan how data should move between tools" : "تخطيط انتقال البيانات بين الأدوات"}</h6>
                 </li>
               </ul>
               <Link
@@ -246,23 +246,23 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
             <div className={"col-lg-4 order-2 order-lg-0"}>
               <div className={"section-head mb-30 style-5"}>
                 <h2>
-                  {locale === "en" ? "Consider" : "ناقش"}
-                  <span>{locale === "en" ? "next steps" : "الخطوات التالية"}</span>{" "}
+                  {locale === "en" ? "AI &" : "ذكاء اصطناعي"}
+                  <span>{locale === "en" ? "integrations" : "وتكامل"}</span>{" "}
                 </h2>
               </div>
               <p>
                 {copy.body[2]}
               </p>
               <p className={"mt-20"}>
-                {locale === "en" ? "Use the conversation to identify the decisions that need to be made first." : "استخدم النقاش لتحديد القرارات التي ينبغي اتخاذها أولًا."}
+                {locale === "en" ? "Choose a defined task, approved information sources, and a clear point for human review." : "نحدد المهمة ومصادر المعلومات ونقطة المراجعة البشرية بوضوح."}
               </p>
               <div className={"d-flex align-items-center mt-70"}>
                 <div className={"img me-2 flex-shrink-0"}>
                   <img src={"/assets/img/about/owners.png"} alt={""} />
                 </div>
                 <div className={"inf"}>
-                  <h4 className={"color-blue5 mb-0 lh-1"}>{locale === "en" ? "Software house" : "شركة برمجيات"}</h4>
-                  <p>{locale === "en" ? "Verified company category" : "مجال الشركة المتاح"}</p>
+                  <h4 className={"color-blue5 mb-0 lh-1"}>{locale === "en" ? "AI & automation" : "الذكاء الاصطناعي والأتمتة"}</h4>
+                  <p>{locale === "en" ? "Defined tasks, sources, and review" : "مهام ومصادر ومراجعة محددة"}</p>
                 </div>
               </div>
             </div>

@@ -13,9 +13,21 @@
   line-height: 1;
 }
 
+.rakmyat-wordmark img {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
 .rakmyat-wordmark--footer {
   color: inherit;
   font-size: 1.2rem;
+}
+
+.rakmyat-wordmark--footer img {
+  width: 36px;
+  height: 36px;
 }
 
 .neutral-logo {

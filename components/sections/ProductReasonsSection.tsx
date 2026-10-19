@@ -2,15 +2,15 @@ import type { Locale } from "@/content/i18n";
 
 export function ProductReasonsSection({ locale = "en" }: { locale?: Locale }) {
   const content = locale === "en" ? {
-    heading: "A project",
-    headingAccent: "conversation",
-    description: "Start with the business need and the questions you want to resolve.",
-    cards: ["Understand the need", "Clarify the scope", "Discuss next steps"],
+    heading: "Software built around",
+    headingAccent: "the work",
+    description: "Bring the customer experience, business process, and supporting systems into the same conversation.",
+    cards: ["Start with the workflow", "Connect the right systems", "Plan for real users"],
   } : {
-    heading: "مناقشة",
-    headingAccent: "المشروع",
-    description: "ابدأ باحتياج العمل والأسئلة التي تريد الإجابة عنها.",
-    cards: ["فهم الاحتياج", "توضيح النطاق", "مناقشة الخطوات التالية"],
+    heading: "برمجيات تتمحور حول",
+    headingAccent: "سير العمل",
+    description: "نجمع تجربة العميل وعمليات العمل والأنظمة الداعمة في صورة واحدة.",
+    cards: ["نبدأ بسير العمل", "نربط الأنظمة المناسبة", "نخطط للمستخدمين الفعليين"],
   };
   const images = ["/assets/img/icons/code3d.png", "/assets/img/icons/price3d.png", "/assets/img/icons/message3d.png"];
   return (

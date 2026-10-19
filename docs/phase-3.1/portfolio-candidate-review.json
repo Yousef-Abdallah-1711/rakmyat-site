@@ -1,0 +1,221 @@
+﻿{
+    "title":  "Rakmyat Phase 3.1 portfolio candidate review",
+    "sourceProject":  "C:\\Users\\yosea\\Desktop\\BDA\\rakmyat-landing",
+    "reviewDate":  "2026-10-19",
+    "sourceBoundary":  "Read-only inspection; no BDA files changed",
+    "rule":  "Observed product features are not evidence that Rakmyat built the product. Publish only after attribution and media rights are confirmed.",
+    "projects":  [
+                     {
+                         "name":  "Schooly",
+                         "slug":  "schooly",
+                         "category":  "School discovery platform",
+                         "sourceRoute":  "/projects/schooly",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/schooly/compare-desktop.webp",
+                                                       "public/portfolio/schooly/hero-arabic-desktop.webp",
+                                                       "public/portfolio/schooly/hero-desktop.webp",
+                                                       "public/portfolio/schooly/hero-mobile.webp",
+                                                       "public/portfolio/schooly/homepage-full.webp",
+                                                       "public/portfolio/schooly/homepage-mobile-full.webp",
+                                                       "public/portfolio/schooly/school-detail-desktop.webp",
+                                                       "public/portfolio/schooly/school-detail-mobile.webp",
+                                                       "public/portfolio/schooly/schools-desktop.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public school discovery and comparison experience with Arabic and English views, directory filters, and school profile screens. This describes the observed product surface only; Rakmyat attribution is unconfirmed.",
+                         "missingProof":  [
+                                              "Confirm Rakmyat contribution and delivered scope",
+                                              "Confirm Schooly name and school-data publication rights",
+                                              "Confirm permission to republish captured screens"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "Nora Store",
+                         "slug":  "nora-store",
+                         "category":  "E-commerce storefront",
+                         "sourceRoute":  "/projects/nora-store",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/nora-store/hero-desktop.webp",
+                                                       "public/portfolio/nora-store/hero-mobile.webp",
+                                                       "public/portfolio/nora-store/homepage-full.webp",
+                                                       "public/portfolio/nora-store/homepage-mobile-full.jpg",
+                                                       "public/portfolio/nora-store/product-desktop.webp",
+                                                       "public/portfolio/nora-store/product-mobile.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public Arabic storefront with product categories and product detail views. Observed site technology does not establish who delivered it.",
+                         "missingProof":  [
+                                              "Confirm Rakmyat contribution and scope",
+                                              "Confirm relationship to supplied source repositories",
+                                              "Confirm client and screenshot/copy permissions"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "Nama Academy",
+                         "slug":  "edtech-platform",
+                         "category":  "Professional training platform",
+                         "sourceRoute":  "/projects/edtech-platform",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/edtech-platform/course-detail-desktop.webp",
+                                                       "public/portfolio/edtech-platform/course-detail-mobile.webp",
+                                                       "public/portfolio/edtech-platform/hero-desktop.webp",
+                                                       "public/portfolio/edtech-platform/hero-mobile.webp",
+                                                       "public/portfolio/edtech-platform/homepage-full.webp",
+                                                       "public/portfolio/edtech-platform/homepage-mobile-full.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public training site with programs, events, trainer pages, and course details. The live UI uses the Nama Academy name; mapping to the nominated project is unconfirmed.",
+                         "missingProof":  [
+                                              "Confirm project identity and naming",
+                                              "Confirm Rakmyat contribution and scope",
+                                              "Confirm screenshot and content permissions"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "From Idea to Production",
+                         "slug":  "live-workshop",
+                         "category":  "Workshop platform",
+                         "sourceRoute":  "/projects/live-workshop",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/live-workshop/feature-desktop.webp",
+                                                       "public/portfolio/live-workshop/feature-mobile.webp",
+                                                       "public/portfolio/live-workshop/hero-desktop.webp",
+                                                       "public/portfolio/live-workshop/hero-mobile.webp",
+                                                       "public/portfolio/live-workshop/homepage-full.jpg",
+                                                       "public/portfolio/live-workshop/homepage-mobile-full.jpg",
+                                                       "public/portfolio/live-workshop/pricing-desktop.webp",
+                                                       "public/portfolio/live-workshop/pricing-mobile.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public workshop/course presentation with a session outline, pricing section, and enrollment call to action. No Rakmyat delivery claim is established.",
+                         "missingProof":  [
+                                              "Confirm Rakmyat contribution and delivered outputs",
+                                              "Confirm screenshot and content permissions",
+                                              "Do not reuse the public course claims as Rakmyat outcomes"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "EduFlow / Courses Platform",
+                         "slug":  "eduflow",
+                         "category":  "Course platform",
+                         "sourceRoute":  "/projects/eduflow",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/eduflow/feature-desktop.webp",
+                                                       "public/portfolio/eduflow/feature-mobile.webp",
+                                                       "public/portfolio/eduflow/hero-desktop.webp",
+                                                       "public/portfolio/eduflow/hero-english-desktop.webp",
+                                                       "public/portfolio/eduflow/hero-english-mobile.webp",
+                                                       "public/portfolio/eduflow/hero-mobile.webp",
+                                                       "public/portfolio/eduflow/homepage-english-full.jpg",
+                                                       "public/portfolio/eduflow/homepage-full.jpg",
+                                                       "public/portfolio/eduflow/homepage-mobile-full.jpg"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public course landing and lesson preview observed in Arabic and English. The live product branding and nominated EduFlow identity do not yet match conclusively.",
+                         "missingProof":  [
+                                              "Confirm relationship between Courses Platform and EduFlow",
+                                              "Confirm Rakmyat role and scope",
+                                              "Confirm screenshot and content permissions"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "Middle East Institute",
+                         "slug":  "legal-translation",
+                         "category":  "Legal translation services website",
+                         "sourceRoute":  "/projects/legal-translation",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/legal-translation/hero-desktop.webp",
+                                                       "public/portfolio/legal-translation/hero-mobile.webp",
+                                                       "public/portfolio/legal-translation/homepage-full.webp",
+                                                       "public/portfolio/legal-translation/homepage-mobile-full.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public legal translation service site with service descriptions, request steps, FAQ, and contact options. WordPress runtime markers were observed.",
+                         "missingProof":  [
+                                              "Confirm Rakmyat contribution and scope",
+                                              "Confirm permission to reuse screenshots and business copy",
+                                              "Confirm any WordPress theme attribution"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "GC Hardware",
+                         "slug":  "gc-hardware",
+                         "category":  "Computer hardware catalog",
+                         "sourceRoute":  "/projects/gc-hardware",
+                         "availableSourceAssets":  [
+                                                       "public/portfolio/gc-hardware/hero-desktop.webp",
+                                                       "public/portfolio/gc-hardware/hero-mobile.webp",
+                                                       "public/portfolio/gc-hardware/homepage-full.webp",
+                                                       "public/portfolio/gc-hardware/homepage-mobile-full.jpg",
+                                                       "public/portfolio/gc-hardware/product-desktop.webp",
+                                                       "public/portfolio/gc-hardware/product-mobile.webp"
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "Public catalog with computer component categories, product details, pricing, and purchase controls. The site was observed using WordPress.",
+                         "missingProof":  [
+                                              "Confirm Rakmyat contribution and scope",
+                                              "Confirm screenshot and product-media permissions",
+                                              "No source repository was supplied"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "Concord CRM",
+                         "slug":  "concord-crm",
+                         "category":  "CRM / WooCommerce integration candidate",
+                         "sourceRoute":  "/projects/concord-crm",
+                         "availableSourceAssets":  [
+
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "No public UI or accessible source was available to verify functionality, technology, or project scope.",
+                         "missingProof":  [
+                                              "Obtain accessible source/evidence",
+                                              "Confirm how the CRM and WooCommerce plugin repositories relate",
+                                              "Confirm Rakmyat contribution, feature claims, and publication permission"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     },
+                     {
+                         "name":  "Product Scraper to WooCommerce",
+                         "slug":  "product-scraper",
+                         "category":  "Engineering tool candidate",
+                         "sourceRoute":  "/projects/product-scraper",
+                         "availableSourceAssets":  [
+
+                                                   ],
+                         "attributionStatus":  "owner_confirmation_required",
+                         "publicationPermission":  "pending",
+                         "verifiedProductDescription":  "No current source repository or live UI was available. A stale indexed README is insufficient evidence for current features or attribution.",
+                         "missingProof":  [
+                                              "Obtain current source/evidence",
+                                              "Confirm feature description and technology",
+                                              "Confirm Rakmyat contribution and publication permission"
+                                          ],
+                         "recommendedPublicationState":  "candidate",
+                         "publicInNextApp":  false
+                     }
+                 ]
+}

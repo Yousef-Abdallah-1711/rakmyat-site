@@ -3,16 +3,16 @@ import type { Locale } from "@/content/i18n";
 export const homePageContentByLocale = {
   en: {
     hero: {
-      headingLead: "Software solutions built around your ",
-      headingAccent: "business",
-      descriptionLead: "Rakmyat is a software house. ",
-      descriptionTail: "Tell us what your business needs from software.",
+      headingLead: "Custom software that moves your business ",
+      headingAccent: "forward",
+      descriptionLead: "Websites, applications, business systems, AI, and integrations. ",
+      descriptionTail: "We shape software around real workflows and the people who use them.",
       emailPlaceholder: "Email address",
       cta: { label: "Discuss a project", href: "/en/contact" },
     },
     download: {
-      headingLead: "Have a software project in mind? ",
-      headingAccent: "Discuss it",
+      headingLead: "Let's build something that works ",
+      headingAccent: "for your business",
       headingTail: " with Rakmyat.",
       actions: [
         { label: "Discuss a project", href: "/en/contact", icon: "bi bi-arrow-right" },
@@ -22,16 +22,16 @@ export const homePageContentByLocale = {
   },
   ar: {
     hero: {
-      headingLead: "حلول برمجية مصممة لاحتياجات ",
-      headingAccent: "أعمالك",
-      descriptionLead: "رقميات شركة برمجيات. ",
-      descriptionTail: "أخبرنا بما يحتاجه عملك من البرمجيات.",
+      headingLead: "حلول برمجية تدفع ",
+      headingAccent: "أعمالك إلى الأمام",
+      descriptionLead: "مواقع وتطبيقات وأنظمة أعمال وحلول للذكاء الاصطناعي والتكامل. ",
+      descriptionTail: "نصمم البرمجيات حول سير العمل الفعلي واحتياجات مستخدميها.",
       emailPlaceholder: "البريد الإلكتروني",
       cta: { label: "ناقش مشروعك", href: "/ar/contact" },
     },
     download: {
-      headingLead: "هل لديك فكرة لمشروع برمجي؟ ",
-      headingAccent: "ناقشها",
+      headingLead: "لنبنِ حلًا يخدم ",
+      headingAccent: "عملك",
       headingTail: " مع رقميات.",
       actions: [
         { label: "ناقش مشروعك", href: "/ar/contact", icon: "bi bi-arrow-left" },
