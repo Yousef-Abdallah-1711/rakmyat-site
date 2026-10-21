@@ -1,21 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Locale } from "@/content/i18n";
-import { portfolioProjects, projectCategories } from "@/content/portfolio";
+import { portfolioProjects, projectCategories, categoryGroup } from "@/content/portfolio";
 import { ProjectShowcaseGrid } from "@/components/projects/ProjectShowcaseGrid";
 
-function categoryGroup(categoryId: string) {
-  if (categoryId.startsWith("education") || categoryId === "learning-platform" || categoryId === "workshop-platform") return "education";
-  if (categoryId === "ecommerce" || categoryId === "product-catalog") return "commerce";
-  if (categoryId === "business-systems" || categoryId === "business-website") return "business";
-  return "integration";
-}
-
 export function PortfolioProjects({ locale = "en" }: { locale?: Locale }) {
-  const [filter, setFilter] = useState("all");
-  const projects = portfolioProjects;
+  const searchParams = useSearchParams();
   const filters = projectCategories[locale];
+  const requestedFilter = searchParams.get("category");
+  const initialFilter = filters.some(({ id }) => id === requestedFilter) ? requestedFilter! : "all";
+  const [filter, setFilter] = useState(initialFilter);
+  const projects = portfolioProjects;
   const copy = locale === "en"
       ? { count: (count: number) => `${count} projects` }
     : { count: (count: number) => `${count} مشاريع` };

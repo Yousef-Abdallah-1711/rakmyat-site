@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/content/i18n";
 import type { PortfolioProject } from "@/content/portfolio";
-import { getRelatedProjects, portfolioProjects } from "@/content/portfolio";
+import { getRelatedProjects, portfolioProjects, categoryGroup } from "@/content/portfolio";
 import { ProjectVisualFrame, ProjectScreenshotFrame } from "@/components/projects/ProjectVisualFrame";
 import { ProjectShowcaseGrid } from "@/components/projects/ProjectShowcaseGrid";
 
@@ -60,7 +60,7 @@ export function ProjectDetailSections({
             <h1 className="color-000 mb-50">{content.title}</h1>
             <div className="about-cards border-bottom brd-gray">
               <div className="row">
-                <div className="col-lg-3 col-sm-6"><div className="about-card mb-30 mb-lg-0"><small className="d-block">{text.category}</small><h6>{content.category}</h6></div></div>
+                <div className="col-lg-3 col-sm-6"><div className="about-card mb-30 mb-lg-0"><small className="d-block">{text.category}</small><h6><Link href={`/${locale}/portfolio?category=${categoryGroup(project.categoryId)}`} className="color-000">{content.category}</Link></h6></div></div>
                 <div className="col-lg-3 col-sm-6"><div className="about-card mb-30 mb-lg-0"><small className="d-block">{text.type}</small><h6>{content.projectType}</h6></div></div>
                 <div className="col-lg-3 col-sm-6"><div className="about-card mb-30 mb-lg-0"><small className="d-block">{text.languages}</small><h6>{languages}</h6></div></div>
                 <div className="col-lg-3 col-sm-6"><div className="about-card mb-30 mb-lg-0"><small className="d-block">{text.by}</small><h6>{locale === "en" ? "Rakmyat" : "رقميات"}</h6></div></div>

@@ -86,11 +86,13 @@ const imagePresentation: Record<
   [asset("edtech-platform", "course-detail-desktop.webp")]: { width: 1425, height: 3623, presentation: "tall-preview" },
   [asset("edtech-platform", "course-detail-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
   [asset("live-workshop", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("live-workshop", "feature-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
   [asset("eduflow", "hero-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
   [asset("eduflow", "feature-desktop.webp")]: { width: 1434, height: 4466, presentation: "tall-preview" },
   [asset("eduflow", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
   [asset("legal-translation", "homepage-full.webp")]: { width: 1425, height: 7355, presentation: "tall-preview" },
   [asset("legal-translation", "homepage-mobile-full.webp")]: { width: 375, height: 13474, presentation: "mobile" },
+  [asset("legal-translation", "hero-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
   [asset("gc-hardware", "homepage-full.webp")]: { width: 1425, height: 10065, presentation: "tall-preview" },
   [asset("gc-hardware", "product-desktop.webp")]: { width: 1425, height: 9089, presentation: "tall-preview" },
   [asset("gc-hardware", "product-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
@@ -447,7 +449,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       coverAlt: { en: "From Idea to Production workshop course section", ar: "قسم الدورة في موقع ورشة من الفكرة إلى الإنتاج" },
       mobileCover: asset("live-workshop", "feature-mobile.webp"),
       gallery: [
-        { src: asset("live-workshop", "feature-mobile.webp"), alt: { en: "Workshop course content on mobile", ar: "محتوى الدورة على الجوال" }, role: "mobile" },
+        { src: asset("live-workshop", "feature-desktop.webp"), alt: { en: "From Idea to Production workshop site section", ar: "قسم من موقع ورشة من الفكرة إلى الإنتاج" }, role: "gallery" },
       ],
     },
     links: { publicUrl: "https://live-workshop.youesf-abdallah.online/" },
@@ -620,7 +622,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       mobileCover: asset("legal-translation", "hero-mobile.webp"),
       gallery: [
         { src: asset("legal-translation", "homepage-full.webp"), alt: { en: "Middle East Institute service website", ar: "موقع خدمات معهد الشرق الأوسط" }, role: "gallery" },
-        { src: asset("legal-translation", "homepage-mobile-full.webp"), alt: { en: "Middle East Institute website on mobile", ar: "موقع معهد الشرق الأوسط على الجوال" }, role: "mobile" },
+        { src: asset("legal-translation", "hero-desktop.webp"), alt: { en: "Middle East Institute public service website homepage", ar: "الصفحة الرئيسية لموقع خدمات معهد الشرق الأوسط" }, role: "gallery" },
       ],
     },
     links: { publicUrl: "https://wegomei.com/" },
@@ -873,6 +875,13 @@ export const projectCategories = {
     { id: "integration", label: "الأتمتة والتكامل" },
   ],
 } as const;
+
+export function categoryGroup(categoryId: ProjectCategory) {
+  if (categoryId.startsWith("education") || categoryId === "learning-platform" || categoryId === "workshop-platform") return "education";
+  if (categoryId === "ecommerce" || categoryId === "product-catalog") return "commerce";
+  if (categoryId === "business-systems" || categoryId === "business-website") return "business";
+  return "integration";
+}
 
 export function getPortfolioProjects(locale: Locale) {
   return portfolioProjects.map((item) => ({
