@@ -86,7 +86,7 @@ const imagePresentation: Record<
   [asset("edtech-platform", "course-detail-desktop.webp")]: { width: 1425, height: 3623, presentation: "tall-preview" },
   [asset("edtech-platform", "course-detail-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
   [asset("live-workshop", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
-  [asset("live-workshop", "feature-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
+  [asset("live-workshop", "curriculum-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
   [asset("eduflow", "hero-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
   [asset("eduflow", "feature-desktop.webp")]: { width: 1434, height: 4466, presentation: "tall-preview" },
   [asset("eduflow", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
@@ -449,7 +449,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       coverAlt: { en: "From Idea to Production workshop course section", ar: "قسم الدورة في موقع ورشة من الفكرة إلى الإنتاج" },
       mobileCover: asset("live-workshop", "feature-mobile.webp"),
       gallery: [
-        { src: asset("live-workshop", "feature-desktop.webp"), alt: { en: "From Idea to Production workshop site section", ar: "قسم من موقع ورشة من الفكرة إلى الإنتاج" }, role: "gallery" },
+        { src: asset("live-workshop", "curriculum-desktop.webp"), alt: { en: "From Idea to Production session-by-session curriculum and course stats", ar: "منهج الورشة جلسة بجلسة وإحصاءات الدورة" }, role: "gallery" },
       ],
     },
     links: { publicUrl: "https://live-workshop.youesf-abdallah.online/" },
