@@ -537,7 +537,6 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       gallery: [
         { src: asset("eduflow", "hero-desktop.webp"), alt: { en: "EduFlow Arabic course homepage", ar: "الصفحة الرئيسية لـ EduFlow باللغة العربية" }, role: "gallery" },
         { src: asset("eduflow", "feature-desktop.webp"), alt: { en: "EduFlow course feature section", ar: "قسم من صفحة خصائص الدورة في EduFlow" }, role: "desktop" },
-        { src: asset("eduflow", "feature-mobile.webp"), alt: { en: "EduFlow course preview on mobile", ar: "معاينة دورة EduFlow على الجوال" }, role: "mobile" },
       ],
     },
     links: { publicUrl: "https://courses.youesf-abdallah.online/" },
