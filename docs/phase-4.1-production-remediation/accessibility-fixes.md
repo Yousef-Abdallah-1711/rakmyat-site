@@ -1,0 +1,5 @@
+# Accessibility remediation
+
+Scoped fixes address the audit’s specific findings: the project-card accessible name now begins with the visible “View project” action; selected card headings follow the surrounding section hierarchy; process item labels that were not section headings are no longer exposed as headings; and the mobile navigation toggler has a 44px minimum height. The top promotion strip and blue CTA text/background contrast were darkened within existing brand styling. Existing content layout, navigation behavior, and animation preferences remain intact.
+
+Automated browser checks confirm the visible action is contained in the computed label, Arabic direction is RTL, the menu opens, and the mobile control measures 56×44px. Fresh Lighthouse mobile audits report accessibility 100/100 on EN/AR Home and Services, with no contrast or heading-order audit failures on those four routes. This does not establish sitewide WCAG 2.2 AA conformance: other routes and states were not fully covered. Manual keyboard, screen-reader, high zoom/reflow, contrast across every state, and assistive technology review remain necessary before claiming conformance.

@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-10-19",
+  "viewportWidth": 1440,
+  "captureType": "full-page Chromium screenshots; eager images verified complete and decodable before capture",
+  "groups": {
+    "before": [
+      {
+        "file": "ar-1440.png",
+        "width": 1440,
+        "height": 9543,
+        "bytes": 2762901,
+        "sha256": "2977ac739c4afb365bb267ae9696c31e774bdb690f7ecc14d0ae75e7218a9290"
+      },
+      {
+        "file": "ar-portfolio-1440.png",
+        "width": 1440,
+        "height": 4419,
+        "bytes": 1422231,
+        "sha256": "284ce095951d6529b8c2debaf7f493558b8e40a8587316415b1b0f7760afa60b"
+      },
+      {
+        "file": "ar-services-1440.png",
+        "width": 1440,
+        "height": 4258,
+        "bytes": 917149,
+        "sha256": "289168c75e3f9609929a4f0e9fbca7e4eafce12e270b3461957a23e68403e4a1"
+      },
+      {
+        "file": "en-1440.png",
+        "width": 1440,
+        "height": 9776,
+        "bytes": 3054456,
+        "sha256": "a8086976ed12c661c8655a4f0514a7cc95b1ffd7b6cc90c26d59dc75d4d1e507"
+      },
+      {
+        "file": "en-portfolio-1440.png",
+        "width": 1440,
+        "height": 4421,
+        "bytes": 1516955,
+        "sha256": "5d6144f82d5aaaf8187000b7cc6d2cb66a7d2380312c9c5a82aa3dde8ce9ecf9"
+      },
+      {
+        "file": "en-services-1440.png",
+        "width": 1440,
+        "height": 4393,
+        "bytes": 1082658,
+        "sha256": "405f0d89c4f7734e20315ebe87d1dbc22029a3a265bd6ce3f2518db8989a6777"
+      }
+    ],
+    "after": [
+      {
+        "file": "ar-1440.png",
+        "width": 1440,
+        "height": 9627,
+        "bytes": 2841466,
+        "sha256": "28f1bdabf30192466b533f4c7ef6e2203a9403c111fa4d3dc4596ec50a8a9f7e"
+      },
+      {
+        "file": "ar-portfolio-1440.png",
+        "width": 1440,
+        "height": 4503,
+        "bytes": 1482792,
+        "sha256": "121141abd50dd42b855af80ce52c535136e7e4ef45f8ef502755758f645fe92a"
+      },
+      {
+        "file": "ar-services-1440.png",
+        "width": 1440,
+        "height": 4342,
+        "bytes": 927208,
+        "sha256": "e6a58b3e1365b93b8d669cf9183ad51d9053f5170638363db10933f6d2af7ce5"
+      },
+      {
+        "file": "en-1440.png",
+        "width": 1440,
+        "height": 9860,
+        "bytes": 3159647,
+        "sha256": "7496be721914d9bbb4a4c980a55ed24311825231984251e3b61261d1bd2918a5"
+      },
+      {
+        "file": "en-portfolio-1440.png",
+        "width": 1440,
+        "height": 4505,
+        "bytes": 1573929,
+        "sha256": "55fb4593c77f3c0d0d170d926d3dba12c16992cb04de8756e80d9b8aa504981a"
+      },
+      {
+        "file": "en-services-1440.png",
+        "width": 1440,
+        "height": 4477,
+        "bytes": 1088868,
+        "sha256": "18f56f411c5cef80e331323147b245423c1c5c71541f56f5d04a068c3b75fcb9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "generatedAt": "2026-10-20T02:09:05.902Z",
+  "projectCount": 9,
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    430,
+    576,
+    768,
+    900,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "observations": 234,
+  "issueCount": 0,
+  "projects": [
+    {
+      "project": "Schooly",
+      "slug": "schooly",
+      "routes": [
+        "/en/projects/schooly",
+        "/ar/projects/schooly"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (measured)",
+      "status": "PASS",
+      "notes": "Strong bilingual desktop hero; 3 desktop screenshots and 2 mobile/detail screens. Focused previews resolve the two full-page captures."
+    },
+    {
+      "project": "Nora Store",
+      "slug": "nora-store",
+      "routes": [
+        "/en/projects/nora-store",
+        "/ar/projects/nora-store"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "Wide storefront hero; long storefront and product captures use readable previews; product screen stays in a phone frame."
+    },
+    {
+      "project": "Nama Academy",
+      "slug": "edtech-platform",
+      "routes": [
+        "/en/projects/edtech-platform",
+        "/ar/projects/edtech-platform"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "Wide hero, tall course-detail preview, and matching mobile course screen."
+    },
+    {
+      "project": "From Idea to Production",
+      "slug": "live-workshop",
+      "routes": [
+        "/en/projects/live-workshop",
+        "/ar/projects/live-workshop"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "Wide feature hero with a portrait course screen in a device frame."
+    },
+    {
+      "project": "EduFlow",
+      "slug": "eduflow",
+      "routes": [
+        "/en/projects/eduflow",
+        "/ar/projects/eduflow"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "English hero, Arabic desktop screen, long feature preview, and a mobile course screen."
+    },
+    {
+      "project": "Middle East Institute",
+      "slug": "legal-translation",
+      "routes": [
+        "/en/projects/legal-translation",
+        "/ar/projects/legal-translation"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "Wide service-site hero; desktop and full-page mobile captures preview their first fold at readable scale."
+    },
+    {
+      "project": "GC Hardware",
+      "slug": "gc-hardware",
+      "routes": [
+        "/en/projects/gc-hardware",
+        "/ar/projects/gc-hardware"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS",
+      "notes": "Wide product-catalog hero; long catalog and product detail previews; mobile product screen in a device frame."
+    },
+    {
+      "project": "Concord CRM",
+      "slug": "concord-crm",
+      "routes": [
+        "/en/projects/concord-crm",
+        "/ar/projects/concord-crm"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS WITH WARNINGS",
+      "notes": "Concept illustration is clearly labeled; no owner-supplied real product screenshot exists in the source inventory."
+    },
+    {
+      "project": "Product Scraper to WooCommerce",
+      "slug": "product-scraper",
+      "routes": [
+        "/en/projects/product-scraper",
+        "/ar/projects/product-scraper"
+      ],
+      "hero": "PASS",
+      "gallery": "PASS",
+      "readability": "PASS",
+      "tallScreenshotHandling": "PASS",
+      "mobileScreenshotHandling": "PASS",
+      "fullImageViewer": "PASS",
+      "desktop": "PASS",
+      "mobile": "PASS",
+      "english": "PASS",
+      "arabic": "PASS",
+      "accessibility": "PASS",
+      "performance": "PASS (shared responsive sizing; not measured individually)",
+      "status": "PASS WITH WARNINGS",
+      "notes": "Concept illustration is clearly labeled; no owner-supplied real product screenshot exists in the source inventory."
+    }
+  ]
+}

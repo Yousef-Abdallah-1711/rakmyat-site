@@ -1,0 +1,5 @@
+# Failure and recovery
+
+Use only `docker compose ... stop postgres`, `stop mailpit`, and service-scoped `restart` commands against project `rakmyat-phase43-staging`. Never use global prune or volume deletion.
+
+Verified against the isolated stack: database health returned 503 and a contact POST returned 503 while PostgreSQL was stopped; after restart health returned `ok` and all inquiry rows remained. SMTP stop kept the inquiry/outbox, recorded `pending:1`, and delivery resumed as `sent:2` after Mailpit returned and the retry time was advanced. A queued `pending:0` row survived worker stop and became `sent:1` after restart. A synthetic outbox insert trigger caused 503 and transaction rollback left zero inquiry rows for that idempotency key; the temporary trigger was removed. For terminal failure, a synthetic row at attempt 4 reached `failed:5` when SMTP was unavailable. Two workers processed two pending rows concurrently; both reached `sent:1` and Mailpit contained one message for each stable Message-ID. PostgreSQL restart preserved stored records.

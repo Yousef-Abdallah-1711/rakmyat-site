@@ -1,0 +1,5 @@
+# Responsive and browser QA
+
+Current final matrix: 1,122 observations across Chromium 156.0.8078.4 and WebKit 27.2 (each covered all 33 routes and 17 requested widths), with zero route/layout/image/page/console issues. Firefox was unavailable: Playwright expected binary `firefox-1555`, while the local cache only had Firefox 1522 and no system executable was on PATH. The Phase 4.1 report records a 510-observation sweep across 34 routes x 15 widths plus a focused 900px route sweep; Phase 4.2 records 160 observations across 320-1440px; Phase 4.3 checked selected paths at 390/900/1440px. This final review adds [current route matrix results](responsive-route-results.json) across 320, 360, 375, 390, 414, 430, 576, 768, 820, 900, 1024, 1280, 1366, 1440, 1600, 1920 and 2560px.
+
+Firefox was not testable due to the Playwright binary mismatch. Pixel parity screenshots across every route are not provided. The automated checks cover rendering/status, horizontal overflow, broken loaded images, page errors and H1 counts. Functional controls and screenreader behavior require separate checks.

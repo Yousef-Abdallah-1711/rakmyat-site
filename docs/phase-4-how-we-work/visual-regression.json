@@ -1,0 +1,103 @@
+{
+  "method": "Pixel comparison of the pre-insertion and final Home captures, cropped from the document top to the new How We Work section. The inserted section is excluded.",
+  "baseline": "screenshots/before/",
+  "after": "screenshots/after/home/",
+  "comparisons": [
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "comparedRegion": "0..4618px before the new section",
+      "meanAbsoluteChannelDifference": 0.5343,
+      "changedPixelsBoundingBox": [
+        0,
+        83,
+        1440,
+        3633
+      ]
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1280,
+      "comparedRegion": "0..4681px before the new section",
+      "meanAbsoluteChannelDifference": 0.3768,
+      "changedPixelsBoundingBox": [
+        0,
+        83,
+        1280,
+        3601
+      ]
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 768,
+      "comparedRegion": "0..6621px before the new section",
+      "meanAbsoluteChannelDifference": 0.3542,
+      "changedPixelsBoundingBox": [
+        0,
+        700,
+        768,
+        4377
+      ]
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "comparedRegion": "0..7207px before the new section",
+      "meanAbsoluteChannelDifference": 0.3289,
+      "changedPixelsBoundingBox": [
+        0,
+        931,
+        390,
+        3977
+      ]
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "comparedRegion": "0..4508px before the new section",
+      "meanAbsoluteChannelDifference": 0.3627,
+      "changedPixelsBoundingBox": [
+        0,
+        81,
+        1440,
+        3632
+      ]
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1280,
+      "comparedRegion": "0..4460px before the new section",
+      "meanAbsoluteChannelDifference": 0.6584,
+      "changedPixelsBoundingBox": [
+        0,
+        81,
+        1280,
+        3563
+      ]
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 768,
+      "comparedRegion": "0..6440px before the new section",
+      "meanAbsoluteChannelDifference": 0.2492,
+      "changedPixelsBoundingBox": [
+        0,
+        628,
+        768,
+        4304
+      ]
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "comparedRegion": "0..6791px before the new section",
+      "meanAbsoluteChannelDifference": 0.3594,
+      "changedPixelsBoundingBox": [
+        0,
+        787,
+        390,
+        3766
+      ]
+    }
+  ]
+}

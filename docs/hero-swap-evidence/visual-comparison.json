@@ -1,0 +1,635 @@
+{
+  "method": "Full-page screenshots were cropped at each page's hero bottom; post-hero regions are aligned and compared independently of intentional hero height changes. Hero screenshots are retained for visual review and are not pixel-compared because their content/design is intentionally swapped.",
+  "viewports": [
+    1440,
+    1280,
+    768,
+    390
+  ],
+  "comparisons": [
+    {
+      "route": "/en",
+      "width": 1440,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1167,
+      "afterHeroHeight": 819,
+      "beforeCropSize": [
+        1440,
+        10622
+      ],
+      "afterCropSize": [
+        1440,
+        10622
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1440,
+        10622
+      ],
+      "meanAbsoluteChannelDifference": 0.0176
+    },
+    {
+      "route": "/en",
+      "width": 1440,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1167,
+      "afterHeight": 819,
+      "beforeDimensions": [
+        1440,
+        1168
+      ],
+      "afterDimensions": [
+        1440,
+        820
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en",
+      "width": 1280,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1193,
+      "afterHeroHeight": 819,
+      "beforeCropSize": [
+        1280,
+        10479
+      ],
+      "afterCropSize": [
+        1280,
+        10479
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1280,
+        10479
+      ],
+      "meanAbsoluteChannelDifference": 0.06807
+    },
+    {
+      "route": "/en",
+      "width": 1280,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1193,
+      "afterHeight": 819,
+      "beforeDimensions": [
+        1280,
+        1194
+      ],
+      "afterDimensions": [
+        1280,
+        820
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1183,
+      "afterHeroHeight": 789,
+      "beforeCropSize": [
+        768,
+        11872
+      ],
+      "afterCropSize": [
+        768,
+        11872
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        768,
+        11872
+      ],
+      "meanAbsoluteChannelDifference": 1.51443
+    },
+    {
+      "route": "/en",
+      "width": 768,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1183,
+      "afterHeight": 789,
+      "beforeDimensions": [
+        768,
+        1185
+      ],
+      "afterDimensions": [
+        768,
+        790
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1143,
+      "afterHeroHeight": 1085,
+      "beforeCropSize": [
+        390,
+        15574
+      ],
+      "afterCropSize": [
+        390,
+        15575
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        390,
+        15574
+      ],
+      "meanAbsoluteChannelDifference": 3.25148
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1143,
+      "afterHeight": 1085,
+      "beforeDimensions": [
+        390,
+        1144
+      ],
+      "afterDimensions": [
+        390,
+        1086
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar",
+      "width": 1440,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1167,
+      "afterHeroHeight": 794,
+      "beforeCropSize": [
+        1440,
+        10414
+      ],
+      "afterCropSize": [
+        1440,
+        10413
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        1440,
+        10413
+      ],
+      "meanAbsoluteChannelDifference": 0.91871
+    },
+    {
+      "route": "/ar",
+      "width": 1440,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1167,
+      "afterHeight": 794,
+      "beforeDimensions": [
+        1440,
+        1168
+      ],
+      "afterDimensions": [
+        1440,
+        795
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar",
+      "width": 1280,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1121,
+      "afterHeroHeight": 794,
+      "beforeCropSize": [
+        1280,
+        10194
+      ],
+      "afterCropSize": [
+        1280,
+        10193
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        1280,
+        10193
+      ],
+      "meanAbsoluteChannelDifference": 0.9737
+    },
+    {
+      "route": "/ar",
+      "width": 1280,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1121,
+      "afterHeight": 794,
+      "beforeDimensions": [
+        1280,
+        1122
+      ],
+      "afterDimensions": [
+        1280,
+        795
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar",
+      "width": 768,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 1111,
+      "afterHeroHeight": 764,
+      "beforeCropSize": [
+        768,
+        11481
+      ],
+      "afterCropSize": [
+        768,
+        11480
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        768,
+        11480
+      ],
+      "meanAbsoluteChannelDifference": 2.53677
+    },
+    {
+      "route": "/ar",
+      "width": 768,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 1111,
+      "afterHeight": 764,
+      "beforeDimensions": [
+        768,
+        1113
+      ],
+      "afterDimensions": [
+        768,
+        765
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar",
+      "width": 390,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 999,
+      "afterHeroHeight": 988,
+      "beforeCropSize": [
+        390,
+        14715
+      ],
+      "afterCropSize": [
+        390,
+        14715
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        390,
+        14715
+      ],
+      "meanAbsoluteChannelDifference": 0.79335
+    },
+    {
+      "route": "/ar",
+      "width": 390,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 999,
+      "afterHeight": 988,
+      "beforeDimensions": [
+        390,
+        1000
+      ],
+      "afterDimensions": [
+        390,
+        989
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en/about",
+      "width": 1440,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 745,
+      "afterHeroHeight": 1155,
+      "beforeCropSize": [
+        1440,
+        3563
+      ],
+      "afterCropSize": [
+        1440,
+        3563
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1440,
+        3563
+      ],
+      "meanAbsoluteChannelDifference": 0.0442
+    },
+    {
+      "route": "/en/about",
+      "width": 1440,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 745,
+      "afterHeight": 1155,
+      "beforeDimensions": [
+        1440,
+        746
+      ],
+      "afterDimensions": [
+        1440,
+        1156
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en/about",
+      "width": 1280,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 745,
+      "afterHeroHeight": 1109,
+      "beforeCropSize": [
+        1280,
+        3622
+      ],
+      "afterCropSize": [
+        1280,
+        3622
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1280,
+        3622
+      ],
+      "meanAbsoluteChannelDifference": 0.04891
+    },
+    {
+      "route": "/en/about",
+      "width": 1280,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 745,
+      "afterHeight": 1109,
+      "beforeDimensions": [
+        1280,
+        746
+      ],
+      "afterDimensions": [
+        1280,
+        1110
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en/about",
+      "width": 768,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 655,
+      "afterHeroHeight": 1003,
+      "beforeCropSize": [
+        768,
+        4778
+      ],
+      "afterCropSize": [
+        768,
+        4778
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        768,
+        4778
+      ],
+      "meanAbsoluteChannelDifference": 1.22319
+    },
+    {
+      "route": "/en/about",
+      "width": 768,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 655,
+      "afterHeight": 1003,
+      "beforeDimensions": [
+        768,
+        656
+      ],
+      "afterDimensions": [
+        768,
+        1005
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/en/about",
+      "width": 390,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 765,
+      "afterHeroHeight": 783,
+      "beforeCropSize": [
+        390,
+        5556
+      ],
+      "afterCropSize": [
+        390,
+        5555
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        390,
+        5555
+      ],
+      "meanAbsoluteChannelDifference": 0.87468
+    },
+    {
+      "route": "/en/about",
+      "width": 390,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 765,
+      "afterHeight": 783,
+      "beforeDimensions": [
+        390,
+        766
+      ],
+      "afterDimensions": [
+        390,
+        784
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar/about",
+      "width": 1440,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 720,
+      "afterHeroHeight": 1155,
+      "beforeCropSize": [
+        1440,
+        3275
+      ],
+      "afterCropSize": [
+        1440,
+        3275
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1440,
+        3275
+      ],
+      "meanAbsoluteChannelDifference": 0.84294
+    },
+    {
+      "route": "/ar/about",
+      "width": 1440,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 720,
+      "afterHeight": 1155,
+      "beforeDimensions": [
+        1440,
+        721
+      ],
+      "afterDimensions": [
+        1440,
+        1156
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar/about",
+      "width": 1280,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 745,
+      "afterHeroHeight": 1109,
+      "beforeCropSize": [
+        1280,
+        3330
+      ],
+      "afterCropSize": [
+        1280,
+        3330
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        1280,
+        3330
+      ],
+      "meanAbsoluteChannelDifference": 0.0532
+    },
+    {
+      "route": "/ar/about",
+      "width": 1280,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 745,
+      "afterHeight": 1109,
+      "beforeDimensions": [
+        1280,
+        746
+      ],
+      "afterDimensions": [
+        1280,
+        1110
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar/about",
+      "width": 768,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 655,
+      "afterHeroHeight": 1003,
+      "beforeCropSize": [
+        768,
+        4620
+      ],
+      "afterCropSize": [
+        768,
+        4621
+      ],
+      "sameCropSize": false,
+      "comparedSize": [
+        768,
+        4620
+      ],
+      "meanAbsoluteChannelDifference": 0.97705
+    },
+    {
+      "route": "/ar/about",
+      "width": 768,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 655,
+      "afterHeight": 1003,
+      "beforeDimensions": [
+        768,
+        656
+      ],
+      "afterDimensions": [
+        768,
+        1005
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    },
+    {
+      "route": "/ar/about",
+      "width": 390,
+      "region": "page content below hero, aligned to each hero's bottom edge",
+      "intentionalDifference": false,
+      "beforeHeroHeight": 717,
+      "afterHeroHeight": 757,
+      "beforeCropSize": [
+        390,
+        5152
+      ],
+      "afterCropSize": [
+        390,
+        5152
+      ],
+      "sameCropSize": true,
+      "comparedSize": [
+        390,
+        5152
+      ],
+      "meanAbsoluteChannelDifference": 0.81491
+    },
+    {
+      "route": "/ar/about",
+      "width": 390,
+      "region": "hero",
+      "intentionalDifference": true,
+      "beforeHeight": 717,
+      "afterHeight": 757,
+      "beforeDimensions": [
+        390,
+        718
+      ],
+      "afterDimensions": [
+        390,
+        758
+      ],
+      "pixelMetric": "not compared; both hero design and copy are intentionally swapped"
+    }
+  ]
+}

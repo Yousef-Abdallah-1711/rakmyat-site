@@ -1,0 +1,362 @@
+[
+  {
+    "route": "/en",
+    "width": 1440,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1440,
+    "viewportWidth": 1440
+  },
+  {
+    "route": "/en/about",
+    "width": 1440,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1440,
+    "viewportWidth": 1440,
+    "pageErrors": []
+  },
+  {
+    "route": "/en",
+    "width": 1280,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1280,
+    "viewportWidth": 1280
+  },
+  {
+    "route": "/en/about",
+    "width": 1280,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1280,
+    "viewportWidth": 1280,
+    "pageErrors": []
+  },
+  {
+    "route": "/en",
+    "width": 1024,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1024,
+    "viewportWidth": 1024
+  },
+  {
+    "route": "/en/about",
+    "width": 1024,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1024,
+    "viewportWidth": 1024,
+    "pageErrors": []
+  },
+  {
+    "route": "/en",
+    "width": 768,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 768,
+    "viewportWidth": 768
+  },
+  {
+    "route": "/en/about",
+    "width": 768,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 768,
+    "viewportWidth": 768,
+    "pageErrors": []
+  },
+  {
+    "route": "/en",
+    "width": 390,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 390,
+    "viewportWidth": 390
+  },
+  {
+    "route": "/en/about",
+    "width": 390,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 390,
+    "viewportWidth": 390,
+    "pageErrors": []
+  },
+  {
+    "route": "/en",
+    "width": 360,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/contact",
+    "capabilities": [
+      "Websites & Applications",
+      "Business Systems",
+      "AI & Integrations"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 360,
+    "viewportWidth": 360
+  },
+  {
+    "route": "/en/about",
+    "width": 360,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/en/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 360,
+    "viewportWidth": 360,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 1440,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1440,
+    "viewportWidth": 1440
+  },
+  {
+    "route": "/ar/about",
+    "width": 1440,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1440,
+    "viewportWidth": 1440,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 1280,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1280,
+    "viewportWidth": 1280
+  },
+  {
+    "route": "/ar/about",
+    "width": 1280,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1280,
+    "viewportWidth": 1280,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 1024,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 1024,
+    "viewportWidth": 1024
+  },
+  {
+    "route": "/ar/about",
+    "width": 1024,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 1024,
+    "viewportWidth": 1024,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 768,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 768,
+    "viewportWidth": 768
+  },
+  {
+    "route": "/ar/about",
+    "width": 768,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 768,
+    "viewportWidth": 768,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 390,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 390,
+    "viewportWidth": 390
+  },
+  {
+    "route": "/ar/about",
+    "width": 390,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 390,
+    "viewportWidth": 390,
+    "pageErrors": []
+  },
+  {
+    "route": "/ar",
+    "width": 360,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/contact",
+    "capabilities": [
+      "مواقع وتطبيقات",
+      "أنظمة أعمال",
+      "ذكاء اصطناعي وتكاملات"
+    ],
+    "brokenHeroImages": [],
+    "scrollWidth": 360,
+    "viewportWidth": 360
+  },
+  {
+    "route": "/ar/about",
+    "width": 360,
+    "check": "hero content, locale, CTA destination, artwork load, and overflow",
+    "passed": true,
+    "status": 200,
+    "headingCount": 1,
+    "ctaHref": "/ar/how-we-work",
+    "brokenHeroImages": [],
+    "scrollWidth": 360,
+    "viewportWidth": 360,
+    "pageErrors": []
+  }
+]

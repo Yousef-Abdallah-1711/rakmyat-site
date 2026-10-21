@@ -1,0 +1,68 @@
+{
+  "capturedAt": "2026-10-19",
+  "baseUrl": "http://127.0.0.1:5210",
+  "viewportWidths": [
+    1440,
+    1280,
+    768,
+    390
+  ],
+  "captures": [
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/en-1440.png",
+      "bytes": 1956263,
+      "sha256": "b6cdb245a48924dff391d9bb7c129fb679787b0528eaea4522fd8b6be725bc82"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/en-1280.png",
+      "bytes": 1878429,
+      "sha256": "38bf7025902eed52dc24c0966892e6752a499cc723d8c915088de73205e50438"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 768,
+      "path": "screenshots/before/en-768.png",
+      "bytes": 1481031,
+      "sha256": "2082e76f7efbef4eda3ad085dc257f9cfc33f8c7a31f121ca30b9cb7a8921a9d"
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "path": "screenshots/before/en-390.png",
+      "bytes": 1174521,
+      "sha256": "3618b6f93b9568c9ff26e578bdeb9160a7b4bfcba9c963972381b2e27a570837"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "path": "screenshots/before/ar-1440.png",
+      "bytes": 1631848,
+      "sha256": "f31a4d4c451e03eb57c646e967938bacbe216ca7d4b16c6cf6d4957b520a9e95"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1280,
+      "path": "screenshots/before/ar-1280.png",
+      "bytes": 1543773,
+      "sha256": "15817326a9d5b6e5f7b98987f5cd4f7bb665d06faa56c4602a7bb40c507179e5"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 768,
+      "path": "screenshots/before/ar-768.png",
+      "bytes": 1179935,
+      "sha256": "770bfdc3b146019154a23d750ae0a513ed1d899ac6e8b983cc7f6c5c899b7be3"
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "path": "screenshots/before/ar-390.png",
+      "bytes": 858883,
+      "sha256": "45b4b230344ce92a35373e8a0c79510e17f7a5b2b53d1c7b997bfe8d987a8e3d"
+    }
+  ]
+}

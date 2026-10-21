@@ -1,0 +1,826 @@
+{
+  "generatedAt": "2026-10-20T02:10:46.790950+00:00",
+  "assetCount": 34,
+  "projectCount": 9,
+  "assets": [
+    {
+      "src": "/assets/rakmyat/portfolio/edtech-platform/course-detail-desktop.webp",
+      "projects": [
+        "edtech-platform"
+      ],
+      "roles": [
+        "desktop"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "Nama Academy course detail page"
+      ],
+      "width": 1425,
+      "height": 3623,
+      "path": "public/assets/rakmyat/portfolio/edtech-platform/course-detail-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.3933,
+      "bytes": 214762,
+      "sizeKiB": 209.7,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/edtech-platform/course-detail-mobile.webp",
+      "projects": [
+        "edtech-platform"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "Nama Academy course detail on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/edtech-platform/course-detail-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 34098,
+      "sizeKiB": 33.3,
+      "category": "mobile screenshot",
+      "baselineIssue": "Portrait screenshot already has a device presentation"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+      "projects": [
+        "edtech-platform"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "Nama Academy Arabic training homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/edtech-platform/hero-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 78708,
+      "sizeKiB": 76.9,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/edtech-platform/hero-mobile.webp",
+      "projects": [
+        "edtech-platform"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "Nama Academy Arabic training homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/edtech-platform/hero-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 40030,
+      "sizeKiB": 39.1,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/eduflow/feature-desktop.webp",
+      "projects": [
+        "eduflow"
+      ],
+      "roles": [
+        "desktop"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "EduFlow course feature section"
+      ],
+      "width": 1434,
+      "height": 4466,
+      "path": "public/assets/rakmyat/portfolio/eduflow/feature-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.3211,
+      "bytes": 260064,
+      "sizeKiB": 254.0,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/eduflow/feature-mobile.webp",
+      "projects": [
+        "eduflow"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "EduFlow course preview on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/eduflow/feature-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 28028,
+      "sizeKiB": 27.4,
+      "category": "mobile screenshot",
+      "baselineIssue": "Portrait screenshot already has a device presentation"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/eduflow/hero-desktop.webp",
+      "projects": [
+        "eduflow"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "landscape"
+      ],
+      "alts": [
+        "EduFlow Arabic course homepage"
+      ],
+      "width": 1440,
+      "height": 900,
+      "path": "public/assets/rakmyat/portfolio/eduflow/hero-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 1.6,
+      "bytes": 65242,
+      "sizeKiB": 63.7,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/eduflow/hero-english-desktop.webp",
+      "projects": [
+        "eduflow"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "EduFlow English course homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/eduflow/hero-english-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 65774,
+      "sizeKiB": 64.2,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/eduflow/hero-english-mobile.webp",
+      "projects": [
+        "eduflow"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "EduFlow English course homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/eduflow/hero-english-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 34890,
+      "sizeKiB": 34.1,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+      "projects": [
+        "gc-hardware"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "GC Hardware Arabic product-catalog homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/gc-hardware/hero-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 81302,
+      "sizeKiB": 79.4,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/gc-hardware/hero-mobile.webp",
+      "projects": [
+        "gc-hardware"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "GC Hardware Arabic product-catalog homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/gc-hardware/hero-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 29308,
+      "sizeKiB": 28.6,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/gc-hardware/homepage-full.webp",
+      "projects": [
+        "gc-hardware"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "GC Hardware product catalog"
+      ],
+      "width": 1425,
+      "height": 10065,
+      "path": "public/assets/rakmyat/portfolio/gc-hardware/homepage-full.webp",
+      "format": "webp",
+      "aspectRatio": 0.1416,
+      "bytes": 709788,
+      "sizeKiB": 693.2,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/gc-hardware/product-desktop.webp",
+      "projects": [
+        "gc-hardware"
+      ],
+      "roles": [
+        "desktop"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "GC Hardware product detail page"
+      ],
+      "width": 1425,
+      "height": 9089,
+      "path": "public/assets/rakmyat/portfolio/gc-hardware/product-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.1568,
+      "bytes": 748788,
+      "sizeKiB": 731.2,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/gc-hardware/product-mobile.webp",
+      "projects": [
+        "gc-hardware"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "GC Hardware product page on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/gc-hardware/product-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 30458,
+      "sizeKiB": 29.7,
+      "category": "mobile screenshot",
+      "baselineIssue": "Portrait screenshot already has a device presentation"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/legal-translation/hero-desktop.webp",
+      "projects": [
+        "legal-translation"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "Middle East Institute legal-translation website homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/legal-translation/hero-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 111764,
+      "sizeKiB": 109.1,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/legal-translation/hero-mobile.webp",
+      "projects": [
+        "legal-translation"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "Middle East Institute legal-translation website homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/legal-translation/hero-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 33724,
+      "sizeKiB": 32.9,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/legal-translation/homepage-full.webp",
+      "projects": [
+        "legal-translation"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "Middle East Institute service website"
+      ],
+      "width": 1425,
+      "height": 7355,
+      "path": "public/assets/rakmyat/portfolio/legal-translation/homepage-full.webp",
+      "format": "webp",
+      "aspectRatio": 0.1937,
+      "bytes": 139380,
+      "sizeKiB": 136.1,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/legal-translation/homepage-mobile-full.webp",
+      "projects": [
+        "legal-translation"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "Middle East Institute website on mobile"
+      ],
+      "width": 375,
+      "height": 13474,
+      "path": "public/assets/rakmyat/portfolio/legal-translation/homepage-mobile-full.webp",
+      "format": "webp",
+      "aspectRatio": 0.0278,
+      "bytes": 77342,
+      "sizeKiB": 75.5,
+      "category": "mobile screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+      "projects": [
+        "live-workshop"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "From Idea to Production workshop course section"
+      ],
+      "path": "public/assets/rakmyat/portfolio/live-workshop/feature-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 56570,
+      "sizeKiB": 55.2,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/live-workshop/feature-mobile.webp",
+      "projects": [
+        "live-workshop"
+      ],
+      "roles": [
+        "mobile-cover",
+        "mobile"
+      ],
+      "presentations": [
+        "responsive-source",
+        "mobile"
+      ],
+      "alts": [
+        "From Idea to Production workshop course section",
+        "Workshop course content on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/live-workshop/feature-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 31330,
+      "sizeKiB": 30.6,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+      "projects": [
+        "nora-store"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "Nora Store Arabic e-commerce homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/nora-store/hero-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 71506,
+      "sizeKiB": 69.8,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/nora-store/hero-mobile.webp",
+      "projects": [
+        "nora-store"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "Nora Store Arabic e-commerce homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/nora-store/hero-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 39792,
+      "sizeKiB": 38.9,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/nora-store/homepage-full.webp",
+      "projects": [
+        "nora-store"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "Nora Store storefront and product categories"
+      ],
+      "width": 1425,
+      "height": 12106,
+      "path": "public/assets/rakmyat/portfolio/nora-store/homepage-full.webp",
+      "format": "webp",
+      "aspectRatio": 0.1177,
+      "bytes": 176960,
+      "sizeKiB": 172.8,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/nora-store/product-desktop.webp",
+      "projects": [
+        "nora-store"
+      ],
+      "roles": [
+        "desktop"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "Nora Store product detail page"
+      ],
+      "width": 1425,
+      "height": 2964,
+      "path": "public/assets/rakmyat/portfolio/nora-store/product-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.4808,
+      "bytes": 158030,
+      "sizeKiB": 154.3,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/nora-store/product-mobile.webp",
+      "projects": [
+        "nora-store"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "Nora Store product page on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/nora-store/product-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 18658,
+      "sizeKiB": 18.2,
+      "category": "mobile screenshot",
+      "baselineIssue": "Portrait screenshot already has a device presentation"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/compare-desktop.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "landscape"
+      ],
+      "alts": [
+        "School comparison workspace"
+      ],
+      "width": 1425,
+      "height": 1195,
+      "path": "public/assets/rakmyat/portfolio/schooly/compare-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 1.1925,
+      "bytes": 77732,
+      "sizeKiB": 75.9,
+      "category": "detailed screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/hero-arabic-desktop.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "landscape"
+      ],
+      "alts": [
+        "Schooly Arabic homepage"
+      ],
+      "width": 1440,
+      "height": 900,
+      "path": "public/assets/rakmyat/portfolio/schooly/hero-arabic-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 1.6,
+      "bytes": 73284,
+      "sizeKiB": 71.6,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "real-screenshot"
+      ],
+      "alts": [
+        "Schooly English school-discovery homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/schooly/hero-desktop.webp",
+      "format": "webp",
+      "width": 1440,
+      "height": 900,
+      "aspectRatio": 1.6,
+      "bytes": 80968,
+      "sizeKiB": 79.1,
+      "category": "wide screenshot",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/hero-mobile.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "mobile-cover"
+      ],
+      "presentations": [
+        "responsive-source"
+      ],
+      "alts": [
+        "Schooly English school-discovery homepage"
+      ],
+      "path": "public/assets/rakmyat/portfolio/schooly/hero-mobile.webp",
+      "format": "webp",
+      "width": 390,
+      "height": 844,
+      "aspectRatio": 0.4621,
+      "bytes": 44140,
+      "sizeKiB": 43.1,
+      "category": "mobile screenshot",
+      "baselineIssue": "Responsive mobile source listed in project data; it is not separately displayed in the case-study gallery"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/school-detail-desktop.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "School profile with public information"
+      ],
+      "width": 1425,
+      "height": 4182,
+      "path": "public/assets/rakmyat/portfolio/schooly/school-detail-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.3407,
+      "bytes": 155336,
+      "sizeKiB": 151.7,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/school-detail-mobile.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "mobile"
+      ],
+      "presentations": [
+        "mobile"
+      ],
+      "alts": [
+        "School profile displayed on mobile"
+      ],
+      "width": 390,
+      "height": 844,
+      "path": "public/assets/rakmyat/portfolio/schooly/school-detail-mobile.webp",
+      "format": "webp",
+      "aspectRatio": 0.4621,
+      "bytes": 42458,
+      "sizeKiB": 41.5,
+      "category": "mobile screenshot",
+      "baselineIssue": "Portrait screenshot already has a device presentation"
+    },
+    {
+      "src": "/assets/rakmyat/portfolio/schooly/schools-desktop.webp",
+      "projects": [
+        "schooly"
+      ],
+      "roles": [
+        "gallery"
+      ],
+      "presentations": [
+        "tall-preview"
+      ],
+      "alts": [
+        "School directory with school discovery filters"
+      ],
+      "width": 1425,
+      "height": 5727,
+      "path": "public/assets/rakmyat/portfolio/schooly/schools-desktop.webp",
+      "format": "webp",
+      "aspectRatio": 0.2488,
+      "bytes": 137838,
+      "sizeKiB": 134.6,
+      "category": "full-page screenshot",
+      "baselineIssue": "Unreadable full-page capture in a landscape or device preview frame"
+    },
+    {
+      "src": "/assets/rakmyat/project-presentations/concord-crm-concept.webp",
+      "projects": [
+        "concord-crm"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "conceptual-visual"
+      ],
+      "alts": [
+        "Concept illustration of linked customer records and commerce modules; not a screenshot of the Concord CRM project."
+      ],
+      "path": "public/assets/rakmyat/project-presentations/concord-crm-concept.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "aspectRatio": 1.5,
+      "bytes": 38460,
+      "sizeKiB": 37.6,
+      "category": "conceptual illustration",
+      "baselineIssue": "None identified"
+    },
+    {
+      "src": "/assets/rakmyat/project-presentations/product-scraper-concept.webp",
+      "projects": [
+        "product-scraper"
+      ],
+      "roles": [
+        "cover"
+      ],
+      "presentations": [
+        "conceptual-visual"
+      ],
+      "alts": [
+        "Concept illustration of product information flowing toward a WooCommerce catalog; not a screenshot of the delivered project."
+      ],
+      "path": "public/assets/rakmyat/project-presentations/product-scraper-concept.webp",
+      "format": "webp",
+      "width": 1536,
+      "height": 1024,
+      "aspectRatio": 1.5,
+      "bytes": 34106,
+      "sizeKiB": 33.3,
+      "category": "conceptual illustration",
+      "baselineIssue": "None identified"
+    }
+  ]
+}

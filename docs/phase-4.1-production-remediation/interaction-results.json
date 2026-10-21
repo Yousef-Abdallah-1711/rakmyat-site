@@ -1,0 +1,151 @@
+{
+  "baseUrl": "http://127.0.0.1:5211",
+  "checks": [
+    {
+      "name": "language dropdown opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current locale is identified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locale switch preserves home route",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Arabic document direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portfolio has all nine projects",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "portfolio category filter changes visible cards",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "portfolio all filter restores nine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "project link accessible name contains visible label",
+      "passed": true,
+      "detail": {
+        "visible": "View project",
+        "accessible": "View project: Schooly"
+      }
+    },
+    {
+      "name": "project navigation reaches a localized case study",
+      "passed": true,
+      "detail": "http://127.0.0.1:5211/en/projects/schooly"
+    },
+    {
+      "name": "unauthenticated admin API is rejected",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "admin response is no-store",
+      "passed": true,
+      "detail": "private, no-store, max-age=0"
+    },
+    {
+      "name": "en: required fields announce errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "en: invalid controls receive focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "en: invalid email is associated with its error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "en: unconfigured endpoint returns failure without false success",
+      "passed": true,
+      "detail": 403
+    },
+    {
+      "name": "en: values remain after endpoint failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "en: failure status is announced",
+      "passed": true,
+      "detail": "We could not save your inquiry. Your entries are still here; please try again shortly."
+    },
+    {
+      "name": "ar: required fields announce errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar: invalid controls receive focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar: invalid email is associated with its error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar: unconfigured endpoint returns failure without false success",
+      "passed": true,
+      "detail": 403
+    },
+    {
+      "name": "ar: values remain after endpoint failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar: failure status is announced",
+      "passed": true,
+      "detail": "تعذر حفظ الاستفسار. ما زالت البيانات التي أدخلتها محفوظة هنا؛ يرجى المحاولة بعد قليل."
+    },
+    {
+      "name": "mobile navigation toggle meets touch target",
+      "passed": true,
+      "detail": {
+        "x": 322.3125,
+        "y": 61.609375,
+        "width": 56,
+        "height": 44
+      }
+    },
+    {
+      "name": "mobile navigation opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced-motion preference is active",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no browser page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passCount": 27,
+  "failCount": 0,
+  "pageErrors": []
+}

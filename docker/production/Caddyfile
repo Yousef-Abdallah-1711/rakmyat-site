@@ -1,0 +1,10 @@
+{$PRODUCTION_HOSTNAME} {
+	encode zstd gzip
+	@internal path /api/internal/*
+	respond @internal 404
+	reverse_proxy web:3000 {
+		header_up X-Real-IP {remote_host}
+	}
+	# Add HSTS only after owner-approved HTTPS is verified. Do not enable preload or
+	# includeSubDomains until every affected subdomain has been reviewed.
+}

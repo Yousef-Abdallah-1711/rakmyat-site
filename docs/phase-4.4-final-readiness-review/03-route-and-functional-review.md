@@ -1,0 +1,9 @@
+# Route and functional review
+
+The public route inventory is generated from seven localized page families plus the published projects in `content/portfolio.ts`. Current content has nine published projects, unlike the older historical audit inventory. Slugs are derived by the route sweep script, not assumed from the older audit. The automated matrix visits `/admin/login` plus all EN/AR base pages and each EN/AR project route. It records status, title, document language/direction, H1 count, overflow, broken images and page errors.
+
+Matrix: [responsive-route-results.json](responsive-route-results.json). Current completed sweep: 1,122 observations across Chromium 156.0.8078.4 and WebKit 27.2 (561 each), 33 routes x 17 widths per engine, 0 route/layout/image/page/console issues; Firefox could not launch because the Playwright-required binary was absent; all sampled route responses were 200, and each result had exactly one H1. `lang` values were `en` and `ar`; `dir` values were `ltr` and `rtl`. It covers HTTP rendering/layout, not every interactive state.
+
+Functional results available from Phase 4.3: EN/AR contact validation and synthetic persistence, Mailpit outbox capture, selected navigation routes, health route, and unauthenticated admin API rejection. Previous Phase 4.1 has 27 interaction checks; Phase 4.2 has five interaction regressions.
+
+Not fully retested in this review: all portfolio filter states, each project gallery/lightbox keyboard behavior, every CTA destination, browser history, and all admin session flows. Phase 4.3 records prior synthetic admin lifecycle evidence. Additional smoke checks: `/` resolves to `/en`, unknown EN/AR paths return 404, and `/admin/inquiries` redirects to `/admin/login`; details are in [redirect-not-found-smoke.json](redirect-not-found-smoke.json).

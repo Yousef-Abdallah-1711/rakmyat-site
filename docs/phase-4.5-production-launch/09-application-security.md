@@ -1,0 +1,7 @@
+# Application security
+
+The app retains same-origin checks, bounded request validation, database-backed rate limits, hashed rate-limit keys, authenticated internal outbox calls, parameterized SQL, output escaping, restrictive security headers, and no-store behavior on private inquiry responses as documented in Phase 4.3/4.4. Production Caddy explicitly replaces `X-Real-IP` from its peer connection, preventing a client-supplied value from being trusted by the rate-limit address logic.
+
+`Content-Security-Policy-Report-Only` was added as an observation policy. It permits same-origin resources and inline styles/scripts needed for current rendering, blocks objects, restricts base/form/frame origins, and does not block traffic. The full browser matrix recorded 34 Firefox `Function("")` capability-check diagnostics and 561 WebKit diagnostics that the report-only policy has no reporting destination and therefore has no effect there. No central CSP report collector exists. Keep the policy report-only; review a safe reporting endpoint/destination and bundled capability check before enforcement. HSTS remains absent until approved HTTPS is live.
+
+No destructive penetration test or dependency audit against production was performed. Container network isolation is Compose-level only; selected-host firewall, secrets permissions, dependency scanning, host patching, and log retention remain operational tasks. These findings do not constitute a broad security certification.

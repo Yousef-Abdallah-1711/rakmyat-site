@@ -1,0 +1,7 @@
+# 08 — PostgreSQL performance
+
+Public EN/AR rendering is file/build-backed and makes no per-request PostgreSQL query. The application connection pool uses `postgres` with `max: 8`, `idle_timeout: 20s`, `connect_timeout: 10s`, and prepared statements disabled. Production PostgreSQL 17 compose has a 1 GiB memory limit and 2 CPU limit; its server connection ceiling remains PostgreSQL's configured default unless an operator overrides it. Budget app pools across all web replicas, worker/migration sessions, and operator reserve before increasing replica count.
+
+Schema indexes cover `inquiries(created_at DESC)`, `(status, created_at DESC)`, notification retries, session expiry and rate-limit window cleanup. On 10,000 synthetic temporary inquiries, after `ANALYZE`, status-ordered pagination used an index scan and returned 25 rows in 0.068 ms execution (4 shared buffer hits). A recent-first contains-search also used the created-at index and stopped after its first 25 matches in 0.066 ms (4 buffer hits). These warm, low-cardinality synthetic plans are not a production-data benchmark. Leading-wildcard `ILIKE` can scan deeply when matches are rare or absent; consider trigram/full-text indexing only after representative query plans and data size justify it.
+
+The temporary database used loopback port 5547 and tmpfs only. It did not connect to or mutate the existing Phase 4.3 persisted database. It was removed after the test. No production DB capacity claim is made.

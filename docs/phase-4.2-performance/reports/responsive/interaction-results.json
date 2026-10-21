@@ -1,0 +1,37 @@
+{
+  "baseUrl": "http://127.0.0.1:5214",
+  "observations": 160,
+  "responsivePasses": 160,
+  "responsiveFailures": [],
+  "interactionChecks": [
+    {
+      "name": "900px menu opens and Escape closes with focus restored",
+      "pass": true,
+      "open": true,
+      "escape": true
+    },
+    {
+      "name": "locale switch preserves the current route",
+      "pass": true,
+      "url": "http://127.0.0.1:5214/ar"
+    },
+    {
+      "name": "portfolio category filters update visible projects",
+      "pass": true,
+      "before": 9,
+      "after": 4
+    },
+    {
+      "name": "project gallery opens and closes with Escape",
+      "pass": true,
+      "open": true,
+      "closed": true
+    },
+    {
+      "name": "contact form rejects empty required fields before submission",
+      "pass": true
+    }
+  ],
+  "interactionFailures": [],
+  "browserErrors": []
+}

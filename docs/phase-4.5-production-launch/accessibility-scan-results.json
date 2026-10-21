@@ -1,0 +1,675 @@
+{
+  "generatedAt": "2026-10-20T00:43:49.484Z",
+  "base": "http://127.0.0.1:5214",
+  "axeCore": "4.10.3",
+  "browser": "Chromium",
+  "routes": [
+    {
+      "route": "/en",
+      "status": 200,
+      "violations": [],
+      "incompleteRuleIds": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "keyboard": {
+        "tabStops": [
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Discuss a project",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Rakmyat — Software house",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Toggle navigation",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Discuss Your Project",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Web & commerce",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Mobile applications",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Business systems",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Discuss a project",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Explore our full process",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Open full-size project image: Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "View project: Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Open full-size project image: Nora Store",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Nora Store",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "View project: Nora Store",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Open full-size project image: Nama Academy",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Nama Academy",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "View project: Nama Academy",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Open full-size project image: From Idea to Production",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "From Idea to Production",
+            "visible": true
+          }
+        ],
+        "invisibleTabStops": 0
+      }
+    },
+    {
+      "route": "/ar",
+      "status": 200,
+      "violations": [],
+      "incompleteRuleIds": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "keyboard": {
+        "tabStops": [
+          {
+            "tag": "A",
+            "role": "",
+            "name": "ناقش مشروعك",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "رقميات — شركة برمجيات",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "فتح أو إغلاق القائمة",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "ناقش مشروعك معنا",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "الويب والتجارة",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "تطبيقات الجوال",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "أنظمة الأعمال",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "ناقش مشروعك",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "اكتشف مراحل العمل بالتفصيل",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "افتح صورة المشروع بالحجم الكامل: Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "عرض المشروع: Schooly",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "افتح صورة المشروع بالحجم الكامل: متجر نورا",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "متجر نورا",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "عرض المشروع: متجر نورا",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "افتح صورة المشروع بالحجم الكامل: أكاديمية نماء",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "أكاديمية نماء",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "عرض المشروع: أكاديمية نماء",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "افتح صورة المشروع بالحجم الكامل: من الفكرة إلى الإنتاج",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "من الفكرة إلى الإنتاج",
+            "visible": true
+          }
+        ],
+        "invisibleTabStops": 0
+      }
+    },
+    {
+      "route": "/en/contact",
+      "status": 200,
+      "violations": [],
+      "incompleteRuleIds": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "keyboard": {
+        "tabStops": [
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Discuss a project",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Rakmyat — Software house",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Toggle navigation",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "Choose an optionWebsite or e-commerceMobile applicationBusiness systemAI or auto",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "Choose an optionNot decided yetI need help estimatingI have a range in mindPrefe",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "Choose an optionExploring options1–3 months3–6 monthsFlexible",
+            "visible": true
+          },
+          {
+            "tag": "TEXTAREA",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Send inquiry",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Home",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "About",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Services",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Work",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Contact",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "Back to top",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Software house Rakmyat Discuss a projectRakmyatHomeAboutServicesHow We WorkWorkC",
+            "visible": true
+          }
+        ],
+        "invisibleTabStops": 0
+      }
+    },
+    {
+      "route": "/ar/contact",
+      "status": 200,
+      "violations": [],
+      "incompleteRuleIds": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ],
+      "keyboard": {
+        "tabStops": [
+          {
+            "tag": "A",
+            "role": "",
+            "name": "ناقش مشروعك",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "رقميات — شركة برمجيات",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "فتح أو إغلاق القائمة",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "اختر خيارًاموقع إلكتروني أو متجرتطبيق جوالنظام أعمالذكاء اصطناعي أو أتمتةتكامل ا",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "اختر خيارًالم أحددها بعدأحتاج إلى تقديرلدي نطاق محددأفضل عدم الإفصاح",
+            "visible": true
+          },
+          {
+            "tag": "SELECT",
+            "role": "",
+            "name": "اختر خيارًاما زلت أستكشف الخياراتمن شهر إلى ثلاثة أشهرمن ثلاثة إلى ستة أشهرمرن",
+            "visible": true
+          },
+          {
+            "tag": "TEXTAREA",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "إرسال الاستفسار",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "الرئيسية",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "من نحن",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "الخدمات",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "الأعمال",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "تواصل معنا",
+            "visible": true
+          },
+          {
+            "tag": "A",
+            "role": "",
+            "name": "العودة إلى الأعلى",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "شركة برمجيات رقميات ناقش مشروعكرقمياتالرئيسيةمن نحنالخدماتكيف نعملالأعمالتواصل م",
+            "visible": true
+          }
+        ],
+        "invisibleTabStops": 0
+      }
+    },
+    {
+      "route": "/admin/login",
+      "status": 200,
+      "violations": [],
+      "incompleteRuleIds": [],
+      "keyboard": {
+        "tabStops": [
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Sign in",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Inquiry administrationSign in with an account provisioned by the server operator",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Sign in",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Inquiry administrationSign in with an account provisioned by the server operator",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Sign in",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Inquiry administrationSign in with an account provisioned by the server operator",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Sign in",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Inquiry administrationSign in with an account provisioned by the server operator",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "INPUT",
+            "role": "",
+            "name": "",
+            "visible": true
+          },
+          {
+            "tag": "BUTTON",
+            "role": "",
+            "name": "Sign in",
+            "visible": true
+          },
+          {
+            "tag": "BODY",
+            "role": "",
+            "name": "Inquiry administrationSign in with an account provisioned by the server operator",
+            "visible": true
+          }
+        ],
+        "invisibleTabStops": 0
+      }
+    }
+  ]
+}

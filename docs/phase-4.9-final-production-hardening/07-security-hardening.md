@@ -1,0 +1,7 @@
+# 07 — Security hardening
+
+Implemented controls include bounded request bodies, exact inquiry-origin checks, a proxy-overwritten client IP header, persistent rate limiting, parameterized SQL, password hashing, hashed session tokens, SameSite/HTTP-only/Secure production cookies, no-store private APIs, protected outbox authorization, non-root standalone web image, private PostgreSQL, private worker routing, read-only web/worker containers, bounded temporary caches, and fail-closed production preflight. Caddy does not proxy `/api/internal/*` publicly.
+
+Next response headers include content-type sniffing protection, frame protection, referrer and permissions policies, plus a CSP in report-only mode. Keep CSP report-only until browser reports are reviewed and the production script/font/image requirements are confirmed. HTTPS is ready in Caddy once DNS and host reachability are approved. HSTS is intentionally absent; do not add preload or broad subdomain coverage without domain review.
+
+The Compose topology separates private paths from SMTP and certificate egress, but Docker networks alone cannot restrict destinations. Apply host firewall rules and verify the provider's trusted proxy configuration. No dependency audit or host penetration test was run in this phase; review current dependency advisories and host configuration before launch. Do not expose secrets through logs or diagnostic endpoints.

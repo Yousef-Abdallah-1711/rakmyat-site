@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-20T02:15:30.823419+00:00",
+  "unitTests": {
+    "command": "npm.cmd test",
+    "passed": 17,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "typecheck": {
+    "command": "npm.cmd run typecheck",
+    "status": "PASS"
+  },
+  "eslint": {
+    "scope": [
+      "components/projects/ProjectVisualFrame.tsx",
+      "components/sections/MediaLightbox.tsx",
+      "content/portfolio.ts",
+      "tests/portfolio-media.test.ts",
+      "tests/e2e/portfolio-media.spec.ts"
+    ],
+    "status": "PASS"
+  },
+  "playwright": {
+    "spec": "tests/e2e/portfolio-media.spec.ts",
+    "passed": 4,
+    "failed": 0,
+    "coverage": [
+      "viewer zoom and scroll lock",
+      "keyboard focus trap and return",
+      "previous/next keyboard navigation",
+      "Escape close",
+      "Arabic RTL labels",
+      "related and previous/next project navigation",
+      "all 18 localized project routes"
+    ],
+    "status": "PASS"
+  },
+  "responsive": {
+    "observations": 234,
+    "issueCount": 0,
+    "status": "PASS"
+  },
+  "productionBuild": {
+    "environment": "isolated temporary copy",
+    "compile": "PASS",
+    "nextBuildTypeValidation": "SKIPPED after 4 GB and 6 GB Node heap exhaustion",
+    "separateTsc": "PASS",
+    "deployment": "NOT PERFORMED"
+  }
+}

@@ -15405,7 +15405,7 @@ footer.style-16 .form-check-input:checked {
 ================================================================*/
 /* --------------- inner-header style-5 --------------- */
 .inner-header.style-5 {
-  background-image: url(../img/inner5_back.png);
+  background-image: url(../img/inner5_back.webp);
   background-size: cover;
   background-repeat: no-repeat;
   color: #000;
@@ -18305,7 +18305,7 @@ footer.style-16 .form-check-input:checked {
   padding: 40px;
   border-radius: 5px;
   text-align: center;
-  background-image: url(../img/banner_back1.png);
+  background-image: url(../img/banner_back1.webp);
   background-size: cover;
   position: relative;
 }

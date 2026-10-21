@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-10-20T01:53:10Z",
+  "base": "http://127.0.0.1:5214",
+  "candidate": "rakmyat-phase45-candidate:20261020b",
+  "imageDigest": "sha256:9775a9a627565d43fc64497b3d43a1efbb715c9ace69737ee9c0485f76c8831e",
+  "environment": "Loopback-only isolated read-only container; synthetic invalid database endpoint; no production or staging connection.",
+  "results": [
+    {"route":"/en","status":200},
+    {"route":"/ar","status":200},
+    {"route":"/en/about","status":200},
+    {"route":"/ar/about","status":200},
+    {"route":"/en/services","status":200},
+    {"route":"/ar/services","status":200},
+    {"route":"/en/how-we-work","status":200},
+    {"route":"/ar/how-we-work","status":200},
+    {"route":"/en/portfolio","status":200},
+    {"route":"/ar/portfolio","status":200},
+    {"route":"/en/contact","status":200},
+    {"route":"/ar/contact","status":200},
+    {"route":"/en/projects/schooly","status":200},
+    {"route":"/ar/projects/schooly","status":200},
+    {"route":"/admin/login","status":200},
+    {"route":"/robots.txt","status":200},
+    {"route":"/sitemap.xml","status":200},
+    {"route":"/_next/image?url=%2Fassets%2Fimg%2Ficons%2Fservice-showcase%2Fweb-commerce.webp&w=640&q=75","status":200,"bytes":19013}
+  ],
+  "health": {"route":"/api/health","status":503,"expected":true,"reason":"Database intentionally disconnected in isolated preview."},
+  "cacheWriteErrorsAfterTmpfsFix": 0,
+  "productionSmokeTest": false
+}

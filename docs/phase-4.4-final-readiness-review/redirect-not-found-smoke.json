@@ -1,0 +1,45 @@
+{
+  "base": "http://127.0.0.1:5212",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "finalPath": "/en",
+      "result": "PASS; locale redirect resolved"
+    },
+    {
+      "path": "/en/not-a-published-route",
+      "status": 404,
+      "result": "PASS; expected localized not-found"
+    },
+    {
+      "path": "/ar/not-a-published-route",
+      "status": 404,
+      "result": "PASS; expected localized not-found"
+    },
+    {
+      "path": "/admin/inquiries",
+      "status": 200,
+      "finalPath": "/admin/login",
+      "result": "PASS; unauthenticated page redirected to login"
+    },
+    {
+      "path": "/api/internal/outbox",
+      "method": "GET",
+      "status": 405,
+      "result": "Expected method rejection; not treated as authentication evidence"
+    },
+    {
+      "path": "/api/admin/login",
+      "method": "GET",
+      "status": 405,
+      "result": "Expected method rejection; login flow separately covered in Phase 4.3"
+    },
+    {
+      "path": "/api/inquiries",
+      "method": "GET",
+      "status": 405,
+      "result": "Expected method rejection; contact uses POST"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "mobile": {
+    "score": {
+      "baseline_median": 75.0,
+      "after_median": 79.5
+    },
+    "lcp_ms": {
+      "baseline_median": 3982.8165,
+      "after_median": 3578.5775000000003
+    },
+    "fcp_ms": {
+      "baseline_median": 3528.7349999999997,
+      "after_median": 3578.577
+    },
+    "tbt_ms": {
+      "baseline_median": 168.09799996948277,
+      "after_median": 175.43650000000048
+    },
+    "cls": {
+      "baseline_median": 5.1248697337933215e-05,
+      "after_median": 4.18263383071917e-05
+    },
+    "speed_index_ms": {
+      "baseline_median": 3987.5,
+      "after_median": 3859.0
+    },
+    "transfer_bytes": {
+      "baseline_median": 1845677.5,
+      "after_median": 1401766.5
+    }
+  },
+  "desktop": {
+    "score": {
+      "baseline_median": 90.0,
+      "after_median": 94.0
+    },
+    "lcp_ms": {
+      "baseline_median": 1747.4371999999998,
+      "after_median": 1477.4856874999998
+    },
+    "fcp_ms": {
+      "baseline_median": 1180.60205,
+      "after_median": 940.9837249999999
+    },
+    "tbt_ms": {
+      "baseline_median": 0.0,
+      "after_median": 0.0
+    },
+    "cls": {
+      "baseline_median": 0.0005424226750606201,
+      "after_median": 0.0004812593387263429
+    },
+    "speed_index_ms": {
+      "baseline_median": 1180.60205,
+      "after_median": 940.9837249999999
+    },
+    "transfer_bytes": {
+      "baseline_median": 1854687.0,
+      "after_median": 1411210.5
+    }
+  },
+  "sample_count": 32
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "check": "home CTA exists",
+    "passed": true
+  },
+  {
+    "check": "mobile nav target",
+    "passed": true
+  },
+  {
+    "check": "mobile menu closes after navigation",
+    "passed": true
+  },
+  {
+    "check": "locale switch preserves process route",
+    "passed": true
+  },
+  {
+    "check": "homepage process CTA supports keyboard activation",
+    "passed": true
+  },
+  {
+    "check": "en active How We Work nav",
+    "passed": true
+  },
+  {
+    "check": "en Contact CTA",
+    "passed": true
+  },
+  {
+    "check": "en native FAQ disclosure",
+    "passed": true
+  },
+  {
+    "check": "en document direction",
+    "passed": true
+  },
+  {
+    "check": "en page overflow",
+    "passed": true
+  },
+  {
+    "check": "ar active How We Work nav",
+    "passed": true
+  },
+  {
+    "check": "ar Contact CTA",
+    "passed": true
+  },
+  {
+    "check": "ar native FAQ disclosure",
+    "passed": true
+  },
+  {
+    "check": "ar document direction",
+    "passed": true
+  },
+  {
+    "check": "ar page overflow",
+    "passed": true
+  },
+  {
+    "check": "portfolio filter remains interactive",
+    "passed": true
+  },
+  {
+    "check": "portfolio project cards remain present",
+    "passed": true
+  },
+  {
+    "check": "reduced motion disables animation",
+    "passed": true
+  }
+]

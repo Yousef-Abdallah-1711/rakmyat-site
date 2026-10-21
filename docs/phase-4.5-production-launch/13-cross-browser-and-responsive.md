@@ -1,0 +1,5 @@
+# Cross-browser and responsive
+
+Phase 4.4's `responsive-route-results.json` records 1,122 checks: 33 routes × 17 widths × Chromium and WebKit; it reported zero route/layout/image issues and one Firefox launch issue. Its source is preserved. The completed Phase 4.5 matrix uses project-pinned Playwright 1.64.1 and Chromium 156.0.8078.4, Firefox 157.0 and WebKit 27.2 across 33 routes × 17 widths (1,683 observations); its separate results are in this folder.
+
+The route matrix measures HTTP status, title, language/direction, H1 count, horizontal overflow, broken images and console/page errors. The completed run had 1,683 observations and zero route/layout/image/page errors; its 595 console diagnostics are all CSP report-only warnings (34 Firefox eval capability-check notices and 561 WebKit missing-report-destination notices), retained separately in the JSON evidence. This does not prove pixel-perfect design equivalence or every interaction. Representative navigation, language switching, portfolio filtering, contact form errors/success, and admin login require separate interaction checks. All 17 widths and both locales are included.

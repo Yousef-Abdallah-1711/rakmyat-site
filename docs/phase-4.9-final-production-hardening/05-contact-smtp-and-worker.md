@@ -1,0 +1,7 @@
+# 05 — Contact, SMTP, and worker
+
+The public inquiry route validates a bounded JSON request server-side, rejects invalid origins and honeypot submissions, applies PostgreSQL-backed per-client limits, and stores the inquiry and outbox row in one transaction. An idempotency key prevents duplicate inquiry/outbox creation on retry. Delivery is asynchronous with bounded attempts, `SKIP LOCKED` claiming, a stable Message-ID, and sanitized operational errors. Accepted form values stay in the client form after a failed request; localized validation/status text and focusable field errors are implemented.
+
+The prepared provider settings are `smtp.hostinger.com:465`, implicit TLS, `info@rakmyat.online`, and the proposed notification recipient in the environment template. The newly rotated password must be injected through the production secret file. The prepared network provides the SMTP path, but the host firewall must allow the provider endpoint. No SMTP credential was supplied or used.
+
+Status: configuration template ready; provider authentication, SMTP acceptance, and inbox receipt are **not verified**. Existing Phase 4.3 Mailpit evidence covers synthetic staging flows only. A new synthetic contact-to-Mailpit run was not performed because the existing staging stack has persistent data and its E2E helper clears a staging rate-limit fixture. Run it against a disposable candidate database and isolated Mailpit before release. SMTP timeouts can still produce at-least-once delivery; stable Message-ID does not guarantee recipient-side deduplication.

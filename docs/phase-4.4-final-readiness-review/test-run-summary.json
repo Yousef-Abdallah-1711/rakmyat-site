@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-19T20:49:15.753Z",
+  "branch": "phase-3/rakmyat-content-only",
+  "head": "512c18c305620891dd2ebc4bf99f288a9c2f51d9",
+  "checks": [
+    {
+      "command": "npm.cmd run typecheck",
+      "status": "PASS"
+    },
+    {
+      "command": "npm.cmd run lint",
+      "status": "PASS"
+    },
+    {
+      "command": "npm.cmd test",
+      "status": "PASS",
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "command": "Phase 4.3 npm run phase43:e2e",
+      "status": "PASS (prior evidence)",
+      "passed": 2
+    },
+    {
+      "command": "Phase 4.3 Docker production image build",
+      "status": "PASS (prior evidence)"
+    },
+    {
+      "command": "Fresh Lighthouse repeat",
+      "status": "NOT RUN",
+      "reason": "Do not replace or modify live staging build; Phase 4.2 raw reports reviewed and retained"
+    },
+    {
+      "command": "node docs/phase-4.4-final-readiness-review/route-matrix.mjs",
+      "status": "PASS WITH WARNINGS",
+      "observations": 1122,
+      "routes": 33,
+      "widths": 17,
+      "engines": [
+        {
+          "name": "chromium",
+          "version": "156.0.8078.4"
+        },
+        {
+          "name": "webkit",
+          "version": "27.2"
+        }
+      ],
+      "measuredRouteIssues": 0,
+      "firefox": "NOT TESTED: Playwright Firefox 1555 executable absent; cached Firefox is version 1522",
+      "processExitCode": 1,
+      "reason": "The script exits non-zero for the Firefox engine-launch error; Chromium and WebKit each completed all route/viewport observations with zero route-level issues."
+    }
+  ]
+}

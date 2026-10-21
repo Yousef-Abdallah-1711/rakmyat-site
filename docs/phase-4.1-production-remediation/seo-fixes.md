@@ -1,0 +1,5 @@
+# SEO and indexing fixes
+
+`lib/site-url.ts` accepts an indexable origin only when `ROBOTS_INDEXING_ENABLED=true`, `NODE_ENV=production`, and `NEXT_PUBLIC_SITE_URL` is a valid HTTPS URL without credentials or localhost. Metadata emits locale-specific canonical URLs and `en`, `ar`, and `x-default` alternates only after this gate passes. Project records receive localized canonical and Open Graph URLs. The sitemap includes localized public paths and published project records only. Otherwise metadata is `noindex,nofollow`, canonicals are omitted, and the sitemap contains no public URLs. Robots disallows crawling in that unconfigured state and always excludes admin/API paths.
+
+Unit coverage verifies the gate, language alternates, noindex default, and published-only sitemap. The isolated production preview used `https://www.example.test` only to exercise the enabled path; it is not configured in source or offered as the production domain. Before launch, the owner must supply and approve the real HTTPS domain, DNS/hosting must be validated, and indexing must be enabled deliberately.

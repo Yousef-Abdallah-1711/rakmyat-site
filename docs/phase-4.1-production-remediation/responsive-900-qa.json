@@ -1,0 +1,720 @@
+{
+  "baseUrl": "http://127.0.0.1:5213",
+  "viewport": {
+    "width": 900,
+    "height": 900
+  },
+  "generatedAt": "2026-10-19",
+  "routeCount": 34,
+  "routes": [
+    "/en",
+    "/en/about",
+    "/en/services",
+    "/en/services/details",
+    "/en/how-we-work",
+    "/en/portfolio",
+    "/en/contact",
+    "/ar",
+    "/ar/about",
+    "/ar/services",
+    "/ar/services/details",
+    "/ar/how-we-work",
+    "/ar/portfolio",
+    "/ar/contact",
+    "/en/projects/schooly",
+    "/en/projects/nora-store",
+    "/en/projects/edtech-platform",
+    "/en/projects/live-workshop",
+    "/en/projects/eduflow",
+    "/en/projects/legal-translation",
+    "/en/projects/gc-hardware",
+    "/en/projects/concord-crm",
+    "/en/projects/product-scraper",
+    "/ar/projects/schooly",
+    "/ar/projects/nora-store",
+    "/ar/projects/edtech-platform",
+    "/ar/projects/live-workshop",
+    "/ar/projects/eduflow",
+    "/ar/projects/legal-translation",
+    "/ar/projects/gc-hardware",
+    "/ar/projects/concord-crm",
+    "/ar/projects/product-scraper",
+    "/admin/login",
+    "/admin/inquiries"
+  ],
+  "non200": [],
+  "horizontalOverflow": [],
+  "clippedHeadings": [],
+  "brokenImages": [],
+  "badMenuChecks": [],
+  "menuChecks": [
+    {
+      "route": "/en",
+      "expanded": true,
+      "navigationLinksVisible": true,
+      "touchTargetAtLeast44px": true
+    },
+    {
+      "route": "/en/services",
+      "expanded": true,
+      "navigationLinksVisible": true,
+      "touchTargetAtLeast44px": true
+    },
+    {
+      "route": "/ar",
+      "expanded": true,
+      "navigationLinksVisible": true,
+      "touchTargetAtLeast44px": true
+    },
+    {
+      "route": "/ar/services",
+      "expanded": true,
+      "navigationLinksVisible": true,
+      "touchTargetAtLeast44px": true
+    }
+  ],
+  "selectedProjectLabels": [],
+  "pageErrors": [],
+  "results": [
+    {
+      "route": "/en",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Software built around your\nbusiness needs.",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 5,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/about",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "We turn business needs into practical software.",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/services",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 5,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/services/details",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/how-we-work",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "How we work",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/portfolio",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/contact",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Let's discuss your project",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "برمجيات مصممة\nلاحتياجات عملك",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 5,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/about",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "بنحوّل احتياجات عملك لحلول برمجية عملية",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/services",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 5,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/services/details",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/how-we-work",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "كيف نعمل",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/portfolio",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": null,
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/contact",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "لنتحدث عن مشروعك",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/schooly",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Schooly",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/nora-store",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Nora Store",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/edtech-platform",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Nama Academy",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/live-workshop",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "From Idea to Production",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/eduflow",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "EduFlow",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/legal-translation",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Middle East Institute",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/gc-hardware",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "GC Hardware",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/concord-crm",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Concord CRM",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/en/projects/product-scraper",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Product Scraper to WooCommerce",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/schooly",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "Schooly",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/nora-store",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "متجر نورا",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/edtech-platform",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "أكاديمية نماء",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/live-workshop",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "من الفكرة إلى الإنتاج",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/eduflow",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "EduFlow",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/legal-translation",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "معهد الشرق الأوسط",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/gc-hardware",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "GC Hardware",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/concord-crm",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "Concord CRM",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/ar/projects/product-scraper",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "ar",
+      "dir": "rtl",
+      "h1": "أداة جمع المنتجات إلى WooCommerce",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": true,
+      "menuToggleSize": {
+        "width": 56,
+        "height": 44
+      },
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/admin/login",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Inquiry administration",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": false,
+      "menuToggleSize": null,
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    },
+    {
+      "route": "/admin/inquiries",
+      "width": 900,
+      "status": 200,
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "lang": "en",
+      "dir": "ltr",
+      "h1": "Admin setup required",
+      "clippedHeadingText": [],
+      "brokenImages": [],
+      "menuToggleVisible": false,
+      "menuToggleSize": null,
+      "serviceCardCount": 0,
+      "hasSelectedProjectsLabel": false
+    }
+  ]
+}

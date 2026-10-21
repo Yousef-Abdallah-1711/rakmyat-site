@@ -1,0 +1,2413 @@
+{
+  "generatedAt": "2026-10-19",
+  "baseUrl": "http://127.0.0.1:5210",
+  "baselineHomeWidths": [
+    1440,
+    1280,
+    768,
+    390
+  ],
+  "homeWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "processWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    390,
+    360
+  ],
+  "captures": [
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "group": "home",
+      "path": "screenshots/after/home/en-1440.png",
+      "bytes": 2288409,
+      "sha256": "be27b0a7116ad0b9ce901669d8c864fa241a1dd2a9aeac1e8387fd9ceee550ca",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 11915,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1440,
+          "height": 981
+        },
+        "processSection": {
+          "width": 1440,
+          "height": 958,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1440,
+      "group": "home-process",
+      "path": "screenshots/after/home-process/en-1440.png",
+      "bytes": 335910,
+      "sha256": "87a4e49e29e3a67eee152307de64b8ae098e0dbd2f1733d0f4d7419599e97502",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 11915,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1440,
+          "height": 981
+        },
+        "processSection": {
+          "width": 1440,
+          "height": 958,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1280,
+      "group": "home",
+      "path": "screenshots/after/home/en-1280.png",
+      "bytes": 2208076,
+      "sha256": "ce69ae2a0de180b1b5fb48b7e1aee77dec6a3a219fae240823d0ae5a6ee5acc2",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1280,
+        "scrollWidth": 1280,
+        "bodyHeight": 11798,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1280,
+          "height": 1018
+        },
+        "processSection": {
+          "width": 1280,
+          "height": 974,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 1024,
+      "group": "home",
+      "path": "screenshots/after/home/en-1024.png",
+      "bytes": 2083820,
+      "sha256": "7accb5284198fe02520a4c2917b36311f661c95894205db4f44237070587a31e",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyHeight": 12194,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1024,
+          "height": 1408
+        },
+        "processSection": {
+          "width": 1024,
+          "height": 1156,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 768,
+      "group": "home",
+      "path": "screenshots/after/home/en-768.png",
+      "bytes": 1796575,
+      "sha256": "a247e90a3a37b069adb0f81815f9d16800cad7b9b46808adad885c8ab81b74a7",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 768,
+        "scrollWidth": 768,
+        "bodyHeight": 13182,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 768,
+          "height": 1802
+        },
+        "processSection": {
+          "width": 768,
+          "height": 1102,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "group": "home",
+      "path": "screenshots/after/home/en-390.png",
+      "bytes": 1537536,
+      "sha256": "e5ef6f641b66f80874a485b02e1ab84ef8fc8989782b9d4833231ff694cf16d1",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 16844,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 390,
+          "height": 2694
+        },
+        "processSection": {
+          "width": 390,
+          "height": 1585,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 390,
+      "group": "home-process",
+      "path": "screenshots/after/home-process/en-390.png",
+      "bytes": 354535,
+      "sha256": "ff5f649e5099f3af8dcc517bb995805240061b87df78d57a044bf72e81641f67",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 16844,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 390,
+          "height": 2694
+        },
+        "processSection": {
+          "width": 390,
+          "height": 1585,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en",
+      "viewportWidth": 360,
+      "group": "home",
+      "path": "screenshots/after/home/en-360.png",
+      "bytes": 1471100,
+      "sha256": "d2eb314444661933d1580900f80746b8a978c34af7b633f3cec25a0fa0c072cc",
+      "metrics": {
+        "title": "Custom Software for Business | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 360,
+        "scrollWidth": 360,
+        "bodyHeight": 16791,
+        "heading": "Custom software that moves your business forward",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": "page"
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": null
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 360,
+          "height": 2715
+        },
+        "processSection": {
+          "width": 360,
+          "height": 1597,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 1440,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-1440.png",
+      "bytes": 3028799,
+      "sha256": "17f5c3e4875534768006876101588e7a6126f5a245080122726f33dee0e63b1b",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 9919,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 1280,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-1280.png",
+      "bytes": 2955790,
+      "sha256": "ecf4d2dc6d45c5dc0fbdf83466b87d1f0966a6d0b7567ff2a965e0770be85e64",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1280,
+        "scrollWidth": 1280,
+        "bodyHeight": 9874,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 1024,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-1024.png",
+      "bytes": 2884541,
+      "sha256": "3da6361baa4371a6f70242423d3b759e4a2529cf3e2fbbbc427d507242927c95",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyHeight": 9893,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 768,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-768.png",
+      "bytes": 2629316,
+      "sha256": "2c655624b865704946500f8759ad0f4c7183d1b9bbae80f6fad95af1bcb0d83a",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 768,
+        "scrollWidth": 768,
+        "bodyHeight": 10678,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 390,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-390.png",
+      "bytes": 2189994,
+      "sha256": "238ecf9f075c34557040c7a20a633751c11548b66e5da0412448270e63419c72",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 14803,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/en/how-we-work",
+      "viewportWidth": 360,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/en-360.png",
+      "bytes": 2147551,
+      "sha256": "ec2041c74e6bba8bfa06809c059275d295dac27828a2d953e8f4775cdaa85d19",
+      "metrics": {
+        "title": "How We Work | Rakmyat",
+        "lang": "en",
+        "dir": "ltr",
+        "viewportWidth": 360,
+        "scrollWidth": 360,
+        "bodyHeight": 15152,
+        "heading": "How we work",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "Home",
+            "href": "/en",
+            "current": null
+          },
+          {
+            "text": "About",
+            "href": "/en/about",
+            "current": null
+          },
+          {
+            "text": "Services",
+            "href": "/en/services",
+            "current": null
+          },
+          {
+            "text": "How We Work",
+            "href": "/en/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "Work",
+            "href": "/en/portfolio",
+            "current": null
+          },
+          {
+            "text": "Contact",
+            "href": "/en/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact",
+          "/en/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "group": "home",
+      "path": "screenshots/after/home/ar-1440.png",
+      "bytes": 1909624,
+      "sha256": "b7c00792424632b2ea66035b6ea5b92375ed661f24272cc8831e200e379a0748",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 11707,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1440,
+          "height": 871
+        },
+        "processSection": {
+          "width": 1440,
+          "height": 933,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1440,
+      "group": "home-process",
+      "path": "screenshots/after/home-process/ar-1440.png",
+      "bytes": 289035,
+      "sha256": "137e6f520d7eb260cf36f167efded7cb783ce92b61ce0f51b0ee7f46cbfed2d9",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 11707,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1440,
+          "height": 871
+        },
+        "processSection": {
+          "width": 1440,
+          "height": 933,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1280,
+      "group": "home",
+      "path": "screenshots/after/home/ar-1280.png",
+      "bytes": 1828074,
+      "sha256": "a2c8ad175da40cf40ba5568a68ddf464457ef412ae948c89a78f0f8596f5534a",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1280,
+        "scrollWidth": 1280,
+        "bodyHeight": 11441,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1280,
+          "height": 869
+        },
+        "processSection": {
+          "width": 1280,
+          "height": 950,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 1024,
+      "group": "home",
+      "path": "screenshots/after/home/ar-1024.png",
+      "bytes": 1766236,
+      "sha256": "360dffb92e7a8dfb7e5b78e37bc5715654b4ff775d121105c55e802d9ce202cf",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyHeight": 11586,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 1024,
+          "height": 1300
+        },
+        "processSection": {
+          "width": 1024,
+          "height": 1073,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 768,
+      "group": "home",
+      "path": "screenshots/after/home/ar-768.png",
+      "bytes": 1451220,
+      "sha256": "136b74e3c64c502d746adc3372f4d8702694b9561b9e6d86a5de68a568c402ed",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 768,
+        "scrollWidth": 768,
+        "bodyHeight": 12719,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 768,
+          "height": 1693
+        },
+        "processSection": {
+          "width": 768,
+          "height": 1058,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "group": "home",
+      "path": "screenshots/after/home/ar-390.png",
+      "bytes": 1176445,
+      "sha256": "472090409633db12c7357c468687a2ac348c07d28a96156ce6e7e3abb76fb6dc",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 15841,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 390,
+          "height": 2515
+        },
+        "processSection": {
+          "width": 390,
+          "height": 1561,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 390,
+      "group": "home-process",
+      "path": "screenshots/after/home-process/ar-390.png",
+      "bytes": 307380,
+      "sha256": "46b538beb51d2f2d53269644dc79704a8e3c8c3096f221d8c85c298ea36cda43",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 15841,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 390,
+          "height": 2515
+        },
+        "processSection": {
+          "width": 390,
+          "height": 1561,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar",
+      "viewportWidth": 360,
+      "group": "home",
+      "path": "screenshots/after/home/ar-360.png",
+      "bytes": 1135378,
+      "sha256": "879820af0935b9412424d8f358e0352b99b743e76e03651bc16b2451af5c5619",
+      "metrics": {
+        "title": "حلول برمجية للأعمال | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 360,
+        "scrollWidth": 360,
+        "bodyHeight": 15815,
+        "heading": "حلول برمجية تدفع أعمالك إلى الأمام",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": "page"
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": null
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": {
+          "width": 360,
+          "height": 2515
+        },
+        "processSection": {
+          "width": 360,
+          "height": 1566,
+          "steps": 9
+        },
+        "processPage": null,
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 1440,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-1440.png",
+      "bytes": 2436808,
+      "sha256": "3eee3eba535cad51764e8d708862e7592f401633ea7003334a2aee1d6ca946ab",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyHeight": 9614,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 1280,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-1280.png",
+      "bytes": 2372765,
+      "sha256": "25f5828a90d780044907e5b148688eade94e708fde7dfb5fb263badcc6b03106",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1280,
+        "scrollWidth": 1280,
+        "bodyHeight": 9583,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 1024,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-1024.png",
+      "bytes": 2307686,
+      "sha256": "1eb3fb9c2c822673b74cefb44995d8d3c1dce3014eabb22019c9e6bc335702ff",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyHeight": 9443,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 768,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-768.png",
+      "bytes": 2061761,
+      "sha256": "c6bae63db3e731b857ffd86f8f645742cf52e7dd5475f84a941b51fae18240f3",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 768,
+        "scrollWidth": 768,
+        "bodyHeight": 10223,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 390,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-390.png",
+      "bytes": 1630525,
+      "sha256": "2a3563fe678fff89452c5655f5269256ea66f9e741b8014b8a469cc010e8d8c0",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "bodyHeight": 13246,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    },
+    {
+      "route": "/ar/how-we-work",
+      "viewportWidth": 360,
+      "group": "how-we-work",
+      "path": "screenshots/after/how-we-work/ar-360.png",
+      "bytes": 1587646,
+      "sha256": "d85102b345d92b7d3c622902a7bf226c5cc2b22f9aeb03cee40a3401dd0f6755",
+      "metrics": {
+        "title": "كيف نعمل | رقميات",
+        "lang": "ar",
+        "dir": "rtl",
+        "viewportWidth": 360,
+        "scrollWidth": 360,
+        "bodyHeight": 13558,
+        "heading": "كيف نعمل",
+        "brokenImages": [],
+        "navigation": [
+          {
+            "text": "الرئيسية",
+            "href": "/ar",
+            "current": null
+          },
+          {
+            "text": "من نحن",
+            "href": "/ar/about",
+            "current": null
+          },
+          {
+            "text": "الخدمات",
+            "href": "/ar/services",
+            "current": null
+          },
+          {
+            "text": "كيف نعمل",
+            "href": "/ar/how-we-work",
+            "current": "page"
+          },
+          {
+            "text": "الأعمال",
+            "href": "/ar/portfolio",
+            "current": null
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "/ar/contact",
+            "current": null
+          }
+        ],
+        "homeSection": null,
+        "processSection": null,
+        "processPage": {
+          "steps": 9,
+          "detailSteps": 9
+        },
+        "languageAlternates": [
+          {
+            "lang": "en",
+            "href": "http://127.0.0.1:5210/en/how-we-work"
+          },
+          {
+            "lang": "ar",
+            "href": "http://127.0.0.1:5210/ar/how-we-work"
+          }
+        ],
+        "contactLinks": [
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact",
+          "/ar/contact"
+        ]
+      }
+    }
+  ],
+  "interactionChecks": [
+    {
+      "check": "home CTA exists",
+      "passed": true
+    },
+    {
+      "check": "mobile nav target",
+      "passed": true
+    },
+    {
+      "check": "mobile menu closes after navigation",
+      "passed": true
+    },
+    {
+      "check": "locale switch preserves process route",
+      "passed": true
+    },
+    {
+      "check": "homepage process CTA supports keyboard activation",
+      "passed": true
+    },
+    {
+      "check": "en active How We Work nav",
+      "passed": true
+    },
+    {
+      "check": "en Contact CTA",
+      "passed": true
+    },
+    {
+      "check": "en native FAQ disclosure",
+      "passed": true
+    },
+    {
+      "check": "en document direction",
+      "passed": true
+    },
+    {
+      "check": "en page overflow",
+      "passed": true
+    },
+    {
+      "check": "ar active How We Work nav",
+      "passed": true
+    },
+    {
+      "check": "ar Contact CTA",
+      "passed": true
+    },
+    {
+      "check": "ar native FAQ disclosure",
+      "passed": true
+    },
+    {
+      "check": "ar document direction",
+      "passed": true
+    },
+    {
+      "check": "ar page overflow",
+      "passed": true
+    },
+    {
+      "check": "portfolio filter remains interactive",
+      "passed": true
+    },
+    {
+      "check": "portfolio project cards remain present",
+      "passed": true
+    },
+    {
+      "check": "reduced motion disables animation",
+      "passed": true
+    }
+  ],
+  "regressionRoutes": [
+    "/en/about",
+    "/ar/about",
+    "/en/services",
+    "/ar/services",
+    "/en/portfolio",
+    "/ar/portfolio",
+    "/en/contact",
+    "/ar/contact",
+    "/en/projects/schooly",
+    "/ar/projects/schooly",
+    "/admin/login",
+    "/admin/inquiries"
+  ],
+  "errors": []
+}

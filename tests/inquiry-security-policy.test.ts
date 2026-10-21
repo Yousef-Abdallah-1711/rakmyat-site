@@ -4,11 +4,12 @@ import { isAllowedInquiryOrigin, parsePositiveLimit, retryAfterForLimits, truste
 
 test("origin policy requires exact configured origins in production", () => {
   assert.equal(isAllowedInquiryOrigin("https://site.example", "https://site.example", "https://site.example, https://www.site.example", true), true);
+  assert.equal(isAllowedInquiryOrigin("https://www.site.example", "https://site.example", "https://site.example, https://www.site.example", true), false);
   assert.equal(isAllowedInquiryOrigin("https://evil.example", "https://site.example", "https://site.example", true), false);
   assert.equal(isAllowedInquiryOrigin("https://site.example.attacker.test", "https://site.example", "https://site.example", true), false);
   assert.equal(isAllowedInquiryOrigin("null", "https://site.example", "https://site.example", true), false);
   assert.equal(isAllowedInquiryOrigin(null, "https://site.example", "https://site.example", true), false);
-  assert.equal(isAllowedInquiryOrigin("http://127.0.0.1:5210", "http://localhost:5210", undefined, false), true);
+  assert.equal(isAllowedInquiryOrigin("http://127.0.0.1:5210", "http://127.0.0.1:5210", undefined, false), true);
   assert.equal(isAllowedInquiryOrigin("https://localhost:5175", "https://localhost:5175", undefined, true), false);
 });
 
