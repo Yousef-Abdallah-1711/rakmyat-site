@@ -366,7 +366,6 @@ export const portfolioProjects: readonly PortfolioProject[] = [
       mobileCover: asset("edtech-platform", "hero-mobile.webp"),
       gallery: [
         { src: asset("edtech-platform", "course-detail-desktop.webp"), alt: { en: "Nama Academy course detail page", ar: "صفحة تفاصيل دورة في أكاديمية نماء" }, role: "desktop" },
-        { src: asset("edtech-platform", "course-detail-mobile.webp"), alt: { en: "Nama Academy course detail on mobile", ar: "تفاصيل دورة من أكاديمية نماء على الجوال" }, role: "mobile" },
       ],
     },
     links: { publicUrl: "https://edu-tech.youesf-abdallah.online/" },
