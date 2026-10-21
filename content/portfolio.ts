@@ -446,7 +446,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
     assets: {
       cover: asset("live-workshop", "feature-desktop.webp"),
       coverKind: "real-screenshot",
-      coverAlt: { en: "From Idea to Production workshop course section", ar: "قسم الدورة في موقع ورشة من الفكرة إلى الإنتاج" },
+      coverAlt: { en: "From Idea to Production workshop homepage hero", ar: "الصفحة الرئيسية لموقع ورشة من الفكرة إلى الإنتاج" },
       mobileCover: asset("live-workshop", "feature-mobile.webp"),
       gallery: [
         { src: asset("live-workshop", "curriculum-desktop.webp"), alt: { en: "From Idea to Production session-by-session curriculum and course stats", ar: "منهج الورشة جلسة بجلسة وإحصاءات الدورة" }, role: "gallery" },
