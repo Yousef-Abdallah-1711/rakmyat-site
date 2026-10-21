@@ -21,8 +21,6 @@ export const pageCopy = {
       pricingPlans: ["Web & commerce", "Mobile applications", "Business systems"],
       pricingRows: ["Primary experience", "Information", "Workflow", "Integration needs"],
       pricingValue: "Discuss per project",
-      reviewsHeading: "A connected workflow", reviewsDescription: "A customer question can move through selected information, an organized request, and a useful next action.",
-      reviews: ["A customer asks about a product", "The assistant checks selected product information", "The request is organized by intent", "A person reviews the next action"],
       closingHeading: "Let's build something that works for your business.",
       closingDescription: "Bring a workflow, a customer need, or a system question. We can discuss what a suitable software solution could include.",
     },
@@ -88,8 +86,6 @@ export const pageCopy = {
       pricingHeading: "تحديد نطاق المشروع", pricingDescription: "يتحدد نطاق المشروع ومدته وتكلفته بعد فهم المتطلبات وسياق العمل.",
       pricingPlans: ["الويب والتجارة", "تطبيقات الجوال", "أنظمة الأعمال"],
       pricingRows: ["التجربة الأساسية", "المعلومات", "سير العمل", "احتياجات التكامل"], pricingValue: "يُناقش لكل مشروع",
-      reviewsHeading: "مسار عمل مترابط", reviewsDescription: "يمكن أن ينتقل سؤال العميل عبر معلومات محددة وطلب منظم وصولًا إلى خطوة تالية مفيدة.",
-      reviews: ["يسأل العميل عن منتج", "يراجع المساعد معلومات منتقاة عن المنتج", "يُنظم الطلب بحسب موضوعه", "يراجع شخص الخطوة التالية"],
       closingHeading: "لنبنِ حلًا يخدم عملك.", closingDescription: "شاركنا مسار عمل أو احتياج عميل أو سؤالًا عن الأنظمة. يمكننا مناقشة مكونات حل برمجي مناسب.",
     },
     about: {

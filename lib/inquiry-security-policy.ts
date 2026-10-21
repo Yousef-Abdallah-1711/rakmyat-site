@@ -8,11 +8,11 @@ function originOf(value: string | null | undefined) {
 export function isAllowedInquiryOrigin(originHeader: string | null, requestOrigin: string, configuredOrigins: string | undefined, production: boolean) {
   const origin = originOf(originHeader);
   if (!origin) return false;
+  const target = originOf(requestOrigin);
+  if (!target || origin !== target) return false;
   const configured = configuredOrigins?.split(",").map((item) => item.trim()).filter(Boolean) ?? [];
   if (configured.length) return configured.some((item) => originOf(item) === origin);
   if (production) return false;
-  const target = originOf(requestOrigin);
-  if (!target) return false;
   const originUrl = new URL(origin);
   const targetUrl = new URL(target);
   const loopback = (hostname: string) => hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]";

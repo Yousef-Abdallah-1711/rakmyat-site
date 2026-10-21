@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1 --port 5175",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --incremental false --project tsconfig.typecheck.json",
     "test": "node --import tsx --test",
-    "db:migrate": "tsx scripts/migrate.ts",
-    "admin:create": "tsx scripts/create-admin.ts",
-    "inquiries:retry-email": "tsx scripts/retry-inquiry-notifications.ts"
+    "db:migrate": "node --experimental-strip-types scripts/migrate.ts",
+    "admin:create": "node --experimental-strip-types scripts/create-admin.ts",
+    "inquiries:retry-email": "tsx scripts/retry-inquiry-notifications.ts",
+    "phase43:e2e": "node scripts/run-phase43-e2e.mjs",
+    "responsive:e2e": "playwright test -c playwright.responsive.config.ts"
   },
   "dependencies": {
     "dotenv": "^18.0.8",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
     "@types/node": "^24.0.0",
     "@types/nodemailer": "^8.0.2",
     "@types/react": "^19.0.0",

@@ -5,7 +5,7 @@ import { getLocalizedPath, localeCopy, type Locale } from "@/content/i18n";
 export function TopPromotion({ locale = "en" }: { locale?: Locale }) {
   const copy = localeCopy[locale];
   return (
-    <div className="top-navbar style-5">
+    <div className="top-navbar style-5" role="region" aria-label={locale === "ar" ? "إعلان الموقع" : "Site announcement"}>
       <div className="container">
         <div className="content text-white">
           <span className="btn sm-butn bg-white py-0 px-2 me-2 fs-10px"><small className="fs-10px">{copy.category}</small></span>
@@ -46,7 +46,7 @@ export function FooterContent({ locale = "en" }: { locale?: Locale }) {
           <div className="items">
             <div className="title">{copy.information}</div>
             <small className="text mb-10 d-block">{copy.category}</small>
-            <small className="text d-block">{copy.brand} / {copy.brandArabic}</small>
+            <small className="text d-block">{locale === "en" ? copy.brand : `${copy.brand} / ${copy.brandArabic}`}</small>
           </div>
         </div>
         <div className="col-lg-2 col-sm-6">
@@ -67,7 +67,7 @@ export function FooterContent({ locale = "en" }: { locale?: Locale }) {
           <div className="col-lg-3 col-sm-6">
             <div className="logo rakmyat-wordmark rakmyat-wordmark--footer" aria-label={`${copy.brand} — ${copy.category}`}>
               <img src="/assets/rakmyat/brand/rakmyat-mark.webp" alt="" width="36" height="36" />
-              <span>{copy.brand}</span>{locale === "en" && <span lang="ar" dir="rtl">رقميات</span>}
+              <span>{copy.brand}</span>
             </div>
           </div>
           <div className="col-lg-6"><small className="small">{copy.copyright}</small></div>

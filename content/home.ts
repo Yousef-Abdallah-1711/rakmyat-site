@@ -2,14 +2,6 @@ import type { Locale } from "@/content/i18n";
 
 export const homePageContentByLocale = {
   en: {
-    hero: {
-      headingLead: "Custom software that moves your business ",
-      headingAccent: "forward",
-      descriptionLead: "Websites, applications, business systems, AI, and integrations. ",
-      descriptionTail: "We shape software around real workflows and the people who use them.",
-      emailPlaceholder: "Email address",
-      cta: { label: "Discuss a project", href: "/en/contact" },
-    },
     download: {
       headingLead: "Let's build something that works ",
       headingAccent: "for your business",
@@ -21,14 +13,6 @@ export const homePageContentByLocale = {
     },
   },
   ar: {
-    hero: {
-      headingLead: "حلول برمجية تدفع ",
-      headingAccent: "أعمالك إلى الأمام",
-      descriptionLead: "مواقع وتطبيقات وأنظمة أعمال وحلول للذكاء الاصطناعي والتكامل. ",
-      descriptionTail: "نصمم البرمجيات حول سير العمل الفعلي واحتياجات مستخدميها.",
-      emailPlaceholder: "البريد الإلكتروني",
-      cta: { label: "ناقش مشروعك", href: "/ar/contact" },
-    },
     download: {
       headingLead: "لنبنِ حلًا يخدم ",
       headingAccent: "عملك",

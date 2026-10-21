@@ -1,0 +1,159 @@
+.capabilitiesHero :global(.hand-mega) {
+  position: absolute;
+  z-index: 2;
+  top: 9%;
+  left: 0;
+  width: 17%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.capabilitiesHero :global(.head6-rating) {
+  position: absolute;
+  z-index: 2;
+  top: 27%;
+  left: 15%;
+  width: 18%;
+  object-fit: contain;
+}
+
+.capabilitiesHero :global(.head6-charts) {
+  position: absolute;
+  z-index: 2;
+  top: 7%;
+  right: 10%;
+  width: 14%;
+  object-fit: contain;
+}
+
+.capabilitiesHero :global(.head6-rocket) {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  right: -30px;
+  width: 20%;
+}
+
+.capabilitiesHero :global(.info) {
+  position: relative;
+  z-index: 3;
+  padding-inline: clamp(8px, 3vw, 34px);
+}
+
+.capabilitiesHero :global(.info h1) {
+  max-width: 100%;
+  margin-inline: auto;
+  font-size: clamp(2.25rem, 5.8vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.capabilitiesHero :global(.info p) {
+  max-width: 68ch;
+  margin: 24px auto 0;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.heroVisual {
+  position: relative;
+  display: grid;
+  min-height: 370px;
+  align-content: center;
+  gap: 24px;
+  margin: 22px 0 0;
+  padding: clamp(28px, 5vw, 62px);
+  border: 1px solid #e5ebf4;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f6f9ff 0%, #eef4ff 100%);
+}
+
+.flow {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.flow::before {
+  position: absolute;
+  top: 58px;
+  right: 15%;
+  left: 15%;
+  height: 2px;
+  background: #cbd9f2;
+  content: "";
+}
+
+.flowNode {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 31%;
+  justify-items: center;
+  gap: 14px;
+  color: #202b40;
+  text-align: center;
+}
+
+.iconFrame {
+  display: grid;
+  width: 116px;
+  height: 116px;
+  place-items: center;
+  border: 1px solid #e3eaf5;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 14px rgb(39 74 132 / 8%);
+}
+
+.iconFrame img {
+  display: block;
+  width: 94px;
+  height: 94px;
+  object-fit: contain;
+}
+
+.flowLabel {
+  max-width: 250px;
+  color: #24334b;
+  font-size: clamp(14px, 1.25vw, 17px);
+  font-weight: 700;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+
+.heroCaption {
+  color: #566780;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.heroCta { margin-top: 22px; }
+.heroCta :global(a.btn.bg-blue5) { background-color: #1763bf !important; }
+.heroCta :global(a.btn.bg-blue5) { background-color: #1763bf !important; }
+
+@media (max-width: 991.98px) {
+  .heroVisual { min-height: 340px; }
+  .capabilitiesHero :global(.hand-mega),
+  .capabilitiesHero :global(.head6-rating),
+  .capabilitiesHero :global(.head6-charts),
+  .capabilitiesHero :global(.head6-rocket) { display: none; }
+}
+
+@media (max-width: 575.98px) {
+  .capabilitiesHero :global(.info) { padding-inline: 0; }
+  .capabilitiesHero :global(.info h1) { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .capabilitiesHero :global(.info p) { margin-top: 18px; font-size: 15px; }
+  .heroVisual { min-height: 0; gap: 20px; padding: 25px 18px; }
+  .flow { display: grid; justify-content: stretch; gap: 0; }
+  .flow::before { top: 44px; right: auto; bottom: 44px; left: 40px; width: 2px; height: auto; }
+  .flowNode { display: flex; width: 100%; min-height: 94px; align-items: center; justify-items: initial; gap: 16px; text-align: start; }
+  .iconFrame { width: 82px; height: 82px; flex: 0 0 82px; border-radius: 12px; }
+  .iconFrame img { width: 68px; height: 68px; }
+  .flowLabel { max-width: none; font-size: 15px; text-align: start; }
+  .heroCta { margin-top: 18px; }
+}

@@ -15,6 +15,9 @@ export type ProjectImage = {
   src: string;
   alt: Record<Locale, string>;
   role: "cover" | "desktop" | "mobile" | "gallery";
+  width: number;
+  height: number;
+  presentation: "landscape" | "tall-preview" | "mobile";
 };
 
 export type LocalizedProject = {
@@ -61,9 +64,49 @@ export type PortfolioProject = {
 const asset = (slug: string, file: string) =>
   `/assets/rakmyat/portfolio/${slug}/${file}`;
 
-const project = (
-  record: PortfolioProject,
-): PortfolioProject => record;
+type ProjectImageInput = Omit<ProjectImage, "width" | "height" | "presentation">;
+type PortfolioProjectInput = Omit<PortfolioProject, "assets"> & {
+  assets: Omit<PortfolioProject["assets"], "gallery"> & {
+    gallery: readonly ProjectImageInput[];
+  };
+};
+
+const imagePresentation: Record<
+  string,
+  Pick<ProjectImage, "width" | "height" | "presentation">
+> = {
+  [asset("schooly", "schools-desktop.webp")]: { width: 1425, height: 5727, presentation: "tall-preview" },
+  [asset("schooly", "compare-desktop.webp")]: { width: 1425, height: 1195, presentation: "landscape" },
+  [asset("schooly", "school-detail-desktop.webp")]: { width: 1425, height: 4182, presentation: "tall-preview" },
+  [asset("schooly", "hero-arabic-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
+  [asset("schooly", "school-detail-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("nora-store", "homepage-full.webp")]: { width: 1425, height: 12106, presentation: "tall-preview" },
+  [asset("nora-store", "product-desktop.webp")]: { width: 1425, height: 2964, presentation: "tall-preview" },
+  [asset("nora-store", "product-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("edtech-platform", "course-detail-desktop.webp")]: { width: 1425, height: 3623, presentation: "tall-preview" },
+  [asset("edtech-platform", "course-detail-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("live-workshop", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("eduflow", "hero-desktop.webp")]: { width: 1440, height: 900, presentation: "landscape" },
+  [asset("eduflow", "feature-desktop.webp")]: { width: 1434, height: 4466, presentation: "tall-preview" },
+  [asset("eduflow", "feature-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+  [asset("legal-translation", "homepage-full.webp")]: { width: 1425, height: 7355, presentation: "tall-preview" },
+  [asset("legal-translation", "homepage-mobile-full.webp")]: { width: 375, height: 13474, presentation: "mobile" },
+  [asset("gc-hardware", "homepage-full.webp")]: { width: 1425, height: 10065, presentation: "tall-preview" },
+  [asset("gc-hardware", "product-desktop.webp")]: { width: 1425, height: 9089, presentation: "tall-preview" },
+  [asset("gc-hardware", "product-mobile.webp")]: { width: 390, height: 844, presentation: "mobile" },
+};
+
+const project = (record: PortfolioProjectInput): PortfolioProject => ({
+  ...record,
+  assets: {
+    ...record.assets,
+    gallery: record.assets.gallery.map((image) => {
+      const presentation = imagePresentation[image.src];
+      if (!presentation) throw new Error(`Missing presentation metadata for ${image.src}`);
+      return { ...image, ...presentation };
+    }),
+  },
+});
 
 export const portfolioProjects: readonly PortfolioProject[] = [
   project({
@@ -93,7 +136,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "Schooly — School Discovery Platform | Rakmyat",
         seoDescription:
-          "Explore Schooly, a bilingual school-discovery and comparison experience built by Rakmyat.",
+          "Explore Schooly, a bilingual school-discovery platform where families narrow choices by emirate and curriculum, review profiles, and compare options.",
         galleryHeading: "Explore the school journey",
         imageAlts: [
           "School directory with school discovery filters",
@@ -124,7 +167,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "Schooly — منصة استكشاف المدارس | رقميات",
         seoDescription:
-          "تعرّف على Schooly، تجربة ثنائية اللغة لاستكشاف المدارس ومقارنتها، من تنفيذ رقميات.",
+          "تعرّف على Schooly، منصة ثنائية اللغة تساعد الأسر على تضييق خيارات المدارس بحسب الإمارة والمنهج، ومراجعة الملفات ومقارنة البدائل.",
         galleryHeading: "تعرّف على رحلة استكشاف المدارس",
         imageAlts: [
           "دليل المدارس مع فلاتر البحث والاستكشاف",
@@ -189,7 +232,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["WordPress", "WooCommerce", "Elementor"],
         seoTitle: "Nora Store — E-commerce Website | Rakmyat",
         seoDescription:
-          "Explore Nora Store, an Arabic beauty and personal-care e-commerce experience built by Rakmyat.",
+          "Explore Nora Store, an Arabic beauty and personal-care e-commerce experience with category browsing, product details, and a visible shopping cart.",
         galleryHeading: "Browse the storefront",
         imageAlts: [
           "Nora Store Arabic storefront homepage",
@@ -218,7 +261,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["WordPress", "WooCommerce", "Elementor"],
         seoTitle: "متجر نورا — موقع للتجارة الإلكترونية | رقميات",
         seoDescription:
-          "تعرّف على متجر نورا العربي لمنتجات الجمال والعناية الشخصية، من تنفيذ رقميات.",
+          "تعرّف على متجر نورا العربي لمنتجات الجمال والعناية الشخصية، الذي يجمع تصفح التصنيفات وتفاصيل المنتجات وسلة مشتريات ظاهرة.",
         galleryHeading: "استكشف المتجر",
         imageAlts: [
           "الصفحة الرئيسية لمتجر نورا باللغة العربية",
@@ -276,7 +319,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["Nuxt runtime observed on public site"],
         seoTitle: "Nama Academy — Professional Training Website | Rakmyat",
         seoDescription:
-          "Explore Nama Academy, a professional-training website for programs, courses, events, and trainers.",
+          "Explore Nama Academy, a professional-training website bringing programs, course outlines, trainer information, and events together in one place.",
         galleryHeading: "Explore the learning experience",
         imageAlts: [
           "Nama Academy Arabic training homepage",
@@ -305,7 +348,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["لوحظ تشغيل الموقع باستخدام Nuxt"],
         seoTitle: "أكاديمية نماء — موقع للتدريب المهني | رقميات",
         seoDescription:
-          "تعرّف على موقع أكاديمية نماء للبرامج والدورات المهنية والفعاليات والمدربين.",
+          "تعرّف على موقع أكاديمية نماء التدريبي، الذي يجمع البرامج المهنية ومحاور الدورات ومعلومات المدربين والفعاليات في مكان واحد.",
         galleryHeading: "استكشف تجربة التعلم",
         imageAlts: [
           "الصفحة الرئيسية لأكاديمية نماء باللغة العربية",
@@ -362,7 +405,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "From Idea to Production — Workshop Website | Rakmyat",
         seoDescription:
-          "Explore From Idea to Production, a workshop website with course information and a session curriculum.",
+          "Explore From Idea to Production, a workshop website presenting a ten-session course outline alongside published pricing and enrollment information.",
         galleryHeading: "A closer look at the workshop site",
         imageAlts: [
           "From Idea to Production workshop site section",
@@ -390,7 +433,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "من الفكرة إلى الإنتاج — موقع ورشة تعليمية | رقميات",
         seoDescription:
-          "تعرّف على موقع ورشة من الفكرة إلى الإنتاج، الذي يعرض معلومات الدورة ومنهجها بحسب الجلسات.",
+          "تعرّف على موقع ورشة من الفكرة إلى الإنتاج، الذي يقدم الدورة التعليمية عبر منهج من عشر جلسات مع معلومات الأسعار والتسجيل المنشورة بوضوح.",
         galleryHeading: "نظرة أقرب إلى موقع الورشة",
         imageAlts: [
           "قسم من موقع ورشة من الفكرة إلى الإنتاج",
@@ -445,7 +488,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "EduFlow — Bilingual Learning Platform | Rakmyat",
         seoDescription:
-          "Explore EduFlow, a bilingual course website with a public lesson preview and learner access paths.",
+          "Explore EduFlow, a bilingual course website offering a public lesson preview with notes, plus sign-in and enrollment paths for learners.",
         galleryHeading: "Preview the learning experience",
         imageAlts: [
           "EduFlow English course homepage",
@@ -475,7 +518,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "EduFlow — منصة تعلم ثنائية اللغة | رقميات",
         seoDescription:
-          "تعرّف على EduFlow، موقع دورات ثنائي اللغة يتيح معاينة عامة لدرس ومسارات للمتعلمين.",
+          "تعرّف على EduFlow، موقع دورات ثنائي اللغة يقدم معاينة عامة لدرس تعليمي مع ملاحظاته، إلى جانب مسارات لتسجيل الدخول والالتحاق بالدورات.",
         galleryHeading: "استكشف تجربة التعلم",
         imageAlts: [
           "الصفحة الرئيسية لـ EduFlow باللغة الإنجليزية",
@@ -562,7 +605,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["WordPress"],
         seoTitle: "معهد الشرق الأوسط — موقع خدمات | رقميات",
         seoDescription:
-          "تعرّف على موقع معهد الشرق الأوسط لخدمات الترجمة وفئاتها وإرشادات الطلب والتواصل.",
+          "تعرّف على موقع معهد الشرق الأوسط الخاص بخدمات الترجمة، الذي ينظم فئات الترجمة ودليلًا من أربع خطوات للطلب وأسئلة شائعة وخيارات للتواصل.",
         galleryHeading: "نظرة على تجربة الخدمات",
         imageAlts: [
           "الصفحة الرئيسية لموقع خدمات معهد الشرق الأوسط",
@@ -618,7 +661,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["WordPress"],
         seoTitle: "GC Hardware — Computer Hardware Store | Rakmyat",
         seoDescription:
-          "Explore GC Hardware, a bilingual catalog and e-commerce website for computer components.",
+          "Explore GC Hardware, a bilingual catalog and e-commerce website connecting computer component categories with product details, prices, and support options.",
         galleryHeading: "Browse the hardware catalog",
         imageAlts: [
           "GC Hardware Arabic product-catalog homepage",
@@ -647,7 +690,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: ["WordPress"],
         seoTitle: "GC Hardware — متجر أجهزة الحاسوب | رقميات",
         seoDescription:
-          "تعرّف على GC Hardware، كتالوج وموقع تجارة إلكترونية ثنائي اللغة لمكونات الحاسوب.",
+          "تعرّف على GC Hardware، كتالوج وموقع تجارة إلكترونية ثنائي اللغة يربط فئات مكونات الحاسوب بتفاصيل المنتجات والأسعار وخيارات الدعم.",
         galleryHeading: "استكشف كتالوج الأجهزة",
         imageAlts: [
           "الصفحة الرئيسية لكتالوج GC Hardware باللغة العربية",
@@ -700,7 +743,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "Concord CRM — Business Systems Project | Rakmyat",
         seoDescription:
-          "Concord CRM is a Rakmyat business-systems project associated with WooCommerce integration.",
+          "Concord CRM is a Rakmyat business-systems project associated with a WooCommerce integration; further implementation details are not publicly available.",
         galleryHeading: "Project identity",
         imageAlts: [],
       },
@@ -720,7 +763,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "Concord CRM — مشروع أنظمة أعمال | رقميات",
         seoDescription:
-          "Concord CRM مشروع لرقميات في أنظمة الأعمال ويرتبط بتكامل مع WooCommerce.",
+          "Concord CRM مشروع لرقميات في أنظمة الأعمال يرتبط باسمه بتكامل مع WooCommerce، ولا تتوفر حاليًا تفاصيل موثقة إضافية عن تنفيذه الكامل.",
         galleryHeading: "هوية المشروع",
         imageAlts: [],
       },
@@ -767,7 +810,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "Product Scraper to WooCommerce | Rakmyat",
         seoDescription:
-          "An owner-confirmed Rakmyat project focused on product-sourcing data and WooCommerce.",
+          "An owner-confirmed Rakmyat project, Product Scraper to WooCommerce focuses on product-sourcing data; verified implementation details are not available.",
         galleryHeading: "Project identity",
         imageAlts: [],
       },
@@ -787,7 +830,7 @@ export const portfolioProjects: readonly PortfolioProject[] = [
         technologies: [],
         seoTitle: "جمع المنتجات إلى WooCommerce | رقميات",
         seoDescription:
-          "مشروع لرقميات أكده المالك، يركز على بيانات مصادر المنتجات وWooCommerce.",
+          "مشروع لرقميات أكده المالك بعنوان Product Scraper to WooCommerce، يركز على بيانات مصادر المنتجات، ولا تتوفر تفاصيل تنفيذ موثقة.",
         galleryHeading: "هوية المشروع",
         imageAlts: [],
       },

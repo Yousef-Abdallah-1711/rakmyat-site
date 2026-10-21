@@ -1,15 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Locale } from "@/content/i18n";
-import { getPortfolioProject } from "@/content/portfolio";
 import { getServices } from "@/content/services";
 import styles from "./ServicesWorkflowCards.module.css";
-
-const projectSlugs: Record<string, readonly string[]> = {
-  "web-commerce": ["nora-store", "gc-hardware", "schooly"],
-  "business-systems": ["concord-crm"],
-  "integrations-apis": ["product-scraper"],
-};
 
 const illustrations: Record<string, string> = {
   "web-commerce": "/assets/img/icons/service-showcase/web-commerce.webp",
@@ -21,15 +13,10 @@ const illustrations: Record<string, string> = {
 
 export function ServicesWorkflowCards({ locale }: { locale: Locale }) {
   const services = getServices(locale);
-  const selectedProjectsLabel = locale === "en" ? "Selected projects" : "مشاريع مختارة";
 
   return (
     <div className={styles.grid} data-services-cards>
       {services.map((service) => {
-        const projects = (projectSlugs[service.id] ?? [])
-          .map((slug) => getPortfolioProject(slug))
-          .filter((project) => project !== undefined);
-
         return (
           <article className={styles.card} data-service-card={service.id} key={service.id}>
             <div className={styles.illustration}>
@@ -56,23 +43,6 @@ export function ServicesWorkflowCards({ locale }: { locale: Locale }) {
                 </li>
               ))}
             </ul>
-            {projects.length > 0 && (
-              <div className={styles.projectGroup}>
-                <span className={styles.projectLabel}>{selectedProjectsLabel}</span>
-                <div className={styles.projectLinks}>
-                  {projects.map((project) => (
-                    <Link
-                      className={styles.projectPill}
-                      data-project-link
-                      href={`/${locale}/projects/${project.slug}`}
-                      key={project.slug}
-                    >
-                      {project.locales[locale].title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
           </article>
         );
       })}

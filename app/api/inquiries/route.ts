@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { inquiryInputSchema } from "@/lib/inquiry-schema";
 import { getDatabase } from "@/lib/server/db";
 import { consumeRateLimitDetailed, requestAddressKey } from "@/lib/server/security";
-import { deliverInquiryNotification } from "@/lib/server/notifications";
 import { isAllowedInquiryOrigin, parsePositiveLimit, retryAfterForLimits } from "@/lib/inquiry-security-policy";
 
 export const runtime = "nodejs";
@@ -20,7 +19,11 @@ async function readBoundedJson(request: Request, maxBytes = 16 * 1024) {
 }
 
 export async function POST(request: Request) {
-  if (!isAllowedInquiryOrigin(request.headers.get("origin"), new URL(request.url).origin, process.env.CONTACT_ALLOWED_ORIGINS, process.env.NODE_ENV === "production")) return json({ error: "origin_rejected" }, 403);
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const forwardedProto = request.headers.get("x-forwarded-proto");
+  const proxyOrigin = process.env.TRUSTED_CLIENT_IP_HEADER === "x-real-ip" && forwardedHost && forwardedProto ? `${forwardedProto}://${forwardedHost}` : null;
+  const requestOrigin = proxyOrigin ?? new URL(request.url).origin;
+  if (!isAllowedInquiryOrigin(request.headers.get("origin"), requestOrigin, process.env.CONTACT_ALLOWED_ORIGINS, process.env.NODE_ENV === "production")) return json({ error: "origin_rejected" }, 403);
   if (request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() !== "application/json") return json({ error: "invalid_content_type" }, 415);
   let raw: unknown;
   try { raw = await readBoundedJson(request); } catch (error) { return json({ error: error instanceof Error && error.message === "too_large" ? "payload_too_large" : "invalid_json" }, error instanceof Error && error.message === "too_large" ? 413 : 400); }
@@ -51,8 +54,7 @@ export async function POST(request: Request) {
       const duplicate = await tx`SELECT id FROM inquiries WHERE idempotency_key=${parsed.data.idempotencyKey} LIMIT 1`;
       return { id: String(duplicate[0].id), created: false };
     });
-    const notification = record.created ? await deliverInquiryNotification(record.id) : "pending";
-    return json({ ok: true, id: record.id, notification }, record.created ? 201 : 200);
+    return json({ ok: true, id: record.id, notification: "queued" }, record.created ? 201 : 200);
   } catch {
     console.error("inquiry_persist_failed");
     return json({ error: "service_unavailable" }, 503);

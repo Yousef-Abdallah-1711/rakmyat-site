@@ -2,15 +2,6 @@ import type { Locale } from "@/content/i18n";
 
 export const aboutCopy = {
   en: {
-    heroLead: "Software built around",
-    heroAccent: "real business needs.",
-    heroDescription: "Rakmyat designs and develops websites, applications, business systems, and connected workflows that help businesses serve customers and organize their operations.",
-    ecosystem: {
-      experience: "Websites and applications",
-      operations: "Business systems",
-      connections: "Automation and integrations",
-    },
-    ecosystemCaption: "Customer experiences connected to the work behind them",
     workHeading: "Built around how your business ",
     workAccent: "operates",
     workDescription: "Good software starts with the people using it, the tasks they perform, and the systems they depend on.",
@@ -47,15 +38,6 @@ export const aboutCopy = {
     contactCta: "Discuss your project",
   },
   ar: {
-    heroLead: "برمجيات تلبي",
-    heroAccent: "احتياجات عملك الفعلية.",
-    heroDescription: "في رقميات نصمّم ونطوّر مواقع وتطبيقات وأنظمة أعمال ومسارات عمل مترابطة، لمساعدة الشركات على خدمة عملائها وتنظيم عملياتها.",
-    ecosystem: {
-      experience: "مواقع وتطبيقات",
-      operations: "أنظمة الأعمال",
-      connections: "أتمتة وتكاملات",
-    },
-    ecosystemCaption: "تجارب العملاء مترابطة مع العمليات التي تدعمها",
     workHeading: "حلول مبنية على طبيعة ",
     workAccent: "عملك",
     workDescription: "تبدأ البرمجيات المناسبة بفهم من سيستخدمها، والمهام التي ينفذها، والأنظمة التي يعتمد عليها.",

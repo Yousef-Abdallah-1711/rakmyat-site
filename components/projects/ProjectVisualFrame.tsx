@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Locale } from "@/content/i18n";
 import type { PortfolioProject, ProjectImage } from "@/content/portfolio";
 
@@ -20,6 +21,7 @@ type ScreenshotVisualProps = {
   variant: FrameVariant;
   priority?: boolean;
   group: string;
+  slug: string;
 };
 
 const frameCopy = {
@@ -36,9 +38,9 @@ export function ProjectVisualFrame({ project, locale, variant, priority = false,
   return (
     <figure className={`project-visual project-visual--${variant} project-visual--${project.slug}`} data-presentation-kind={kind} data-project={project.slug}>
       {presentation === "conceptual-visual" ? (
-        <a className="project-visual-concept" href={project.assets.cover} data-fancybox={groupName} aria-label={`${copy.open}: ${project.locales[locale].title}`}>
+        <Link className="project-visual-concept" href={`/${locale}/projects/${project.slug}`} aria-label={project.locales[locale].title}>
           <Image src={project.assets.cover} alt={project.assets.coverAlt[locale]} fill sizes={imageSizes(variant)} quality={84} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} />
-        </a>
+        </Link>
       ) : (
         <ScreenshotVisual
           src={project.assets.cover}
@@ -48,6 +50,7 @@ export function ProjectVisualFrame({ project, locale, variant, priority = false,
           variant={variant}
           priority={priority}
           group={groupName}
+          slug={project.slug}
         />
       )}
       {presentation === "conceptual-visual" && <figcaption className="project-visual-caption">{copy.concept}</figcaption>}
@@ -74,17 +77,17 @@ export function ProjectScreenshotFrame({
   const groupName = group ?? `project-${slug}`;
   return (
     <figure className={`project-visual project-visual--${variant} project-visual--${slug}`} data-presentation-kind="framed-real-screenshot" data-project={slug}>
-      <a className={variant === "device" ? "project-visual-device" : "project-visual-gallery-frame"} href={image.src} data-fancybox={groupName} aria-label={`${copy.open}: ${title}`}>
-        <span className="project-visual-image-area">
+      <a className={variant === "device" ? "project-visual-device" : "project-visual-gallery-frame"} href={image.src} data-fancybox={groupName} aria-label={`${copy.open}: ${title}. ${image.alt[locale]}`}>
+        <span className="project-visual-image-area" data-image-presentation={image.presentation} style={{ aspectRatio: image.presentation === "tall-preview" ? "1.56 / 1" : image.presentation === "landscape" ? `${image.width} / ${image.height}` : undefined }}>
           <Image src={image.src} alt={image.alt[locale]} fill sizes={imageSizes(variant === "device" ? "gallery" : variant)} quality={84} loading="lazy" />
         </span>
       </a>
+      <figcaption className="project-visual-description">{image.alt[locale]}</figcaption>
     </figure>
   );
 }
 
-function ScreenshotVisual({ src, alt, locale, title, variant, priority, group }: ScreenshotVisualProps) {
-  const copy = frameCopy[locale];
+function ScreenshotVisual({ src, alt, locale, title, variant, priority, group, slug }: ScreenshotVisualProps) {
   const image = (
     <span className="project-visual-image-area">
       <Image src={src} alt={alt} fill sizes={imageSizes(variant)} quality={84} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} />
@@ -92,9 +95,9 @@ function ScreenshotVisual({ src, alt, locale, title, variant, priority, group }:
   );
 
   return (
-    <a className="project-visual-screenshot-link" href={src} data-fancybox={group} aria-label={`${copy.open}: ${title}`}>
+    <Link className="project-visual-screenshot-link" href={`/${locale}/projects/${slug}`} aria-label={title}>
       {image}
-    </a>
+    </Link>
   );
 }
 

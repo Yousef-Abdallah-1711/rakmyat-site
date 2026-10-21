@@ -82,7 +82,13 @@ export async function destroyAdminSession() {
 export async function requireSameOrigin(request: Request) {
   const origin = request.headers.get("origin");
   const url = new URL(request.url);
-  try { if (origin && new URL(origin).origin === url.origin) return true; } catch { return false; }
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const forwardedProto = request.headers.get("x-forwarded-proto");
+  let expectedOrigin = url.origin;
+  if (process.env.TRUSTED_CLIENT_IP_HEADER === "x-real-ip" && forwardedHost && forwardedProto) {
+    try { expectedOrigin = new URL(`${forwardedProto}://${forwardedHost}`).origin; } catch { return false; }
+  }
+  try { if (origin && new URL(origin).origin === expectedOrigin) return true; } catch { return false; }
   const referer = request.headers.get("referer");
-  try { return !!referer && new URL(referer).origin === url.origin; } catch { return false; }
+  try { return !!referer && new URL(referer).origin === expectedOrigin; } catch { return false; }
 }

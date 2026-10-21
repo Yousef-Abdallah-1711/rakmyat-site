@@ -1,0 +1,245 @@
+﻿name: rakmyat-phase43-staging
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-rakmyat_phase43}
+      POSTGRES_USER: ${POSTGRES_USER:-rakmyat_staging}
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    secrets:
+      - postgres_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - private
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-rakmyat_staging} -d ${POSTGRES_DB:-rakmyat_phase43}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 120
+    stop_grace_period: 30s
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: "no"
+    environment:
+      DATABASE_URL_FILE: /run/secrets/database_url
+      DATABASE_SSL: "false"
+    secrets:
+      - database_url
+    command: ["node", "--experimental-strip-types", "scripts/migrate.ts"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - private
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 80
+
+  mailpit:
+    image: axllent/mailpit:v1.31.5
+    restart: unless-stopped
+    environment:
+      MP_SMTP_AUTH_ACCEPT_ANY: "true"
+      MP_SMTP_AUTH_ALLOW_INSECURE: "true"
+      MP_MAX_MESSAGES: "1000"
+      MP_DATABASE: /data/mailpit.db
+      MP_BLOCK_REMOTE_CSS_AND_FONTS: "true"
+    expose:
+      - "8025"
+    volumes:
+      - mailpit_data:/data
+    networks:
+      - private
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:8025/ || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 80
+    stop_grace_period: 10s
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      DATABASE_URL_FILE: /run/secrets/database_url
+      DATABASE_SSL: "false"
+      RATE_LIMIT_SECRET_FILE: /run/secrets/rate_limit_secret
+      SMTP_HOST: mailpit
+      SMTP_PORT: "1025"
+      SMTP_USER: ${SMTP_USER:-local-staging}
+      SMTP_PASS_FILE: /run/secrets/mailpit_smtp_password
+      SMTP_FROM: ${SMTP_FROM:-info@rakmyat.online}
+      INQUIRY_NOTIFICATION_TO: ${INQUIRY_NOTIFICATION_TO:-yoseabdallah866@gmail.com}
+      TRUSTED_CLIENT_IP_HEADER: x-real-ip
+      CONTACT_ALLOWED_ORIGINS: ${CONTACT_ALLOWED_ORIGINS:-http://127.0.0.1:5212,http://localhost:5212}
+      INQUIRY_RATE_LIMIT_15M_MAX: ${INQUIRY_RATE_LIMIT_15M_MAX:-8}
+      INQUIRY_RATE_LIMIT_24H_MAX: ${INQUIRY_RATE_LIMIT_24H_MAX:-30}
+      ROBOTS_INDEXING_ENABLED: "false"
+      NEXT_PUBLIC_SITE_URL: ""
+      OUTBOX_WORKER_SECRET_FILE: /run/secrets/outbox_worker_secret
+      OUTBOX_MAX_ATTEMPTS: "5"
+    secrets:
+      - database_url
+      - rate_limit_secret
+      - mailpit_smtp_password
+      - outbox_worker_secret
+    expose:
+      - "3000"
+    networks:
+      - private
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+      mailpit:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    mem_limit: 1024m
+    cpus: 2.0
+    pids_limit: 200
+    stop_grace_period: 20s
+
+  email-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    init: true
+    command: ["node", "scripts/outbox-worker.mjs"]
+    environment:
+      OUTBOX_WORKER_URL: http://web:3000/api/internal/outbox
+      OUTBOX_WORKER_SECRET_FILE: /run/secrets/outbox_worker_secret
+      OUTBOX_WORKER_INTERVAL_MS: "10000"
+    secrets:
+      - outbox_worker_secret
+    networks:
+      - private
+    depends_on:
+      web:
+        condition: service_healthy
+      mailpit:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('node:fs').stat('/tmp/outbox-worker-heartbeat',(e,s)=>process.exit(!e&&Date.now()-s.mtimeMs<30000?0:1))"]
+      interval: 10s
+      timeout: 3s
+      retries: 4
+      start_period: 10s
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 80
+    stop_grace_period: 10s
+
+  edge:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${WEB_PORT:-5212}:8080"
+      - "127.0.0.1:${MAILPIT_UI_PORT:-18025}:8081"
+    volumes:
+      - ./docker/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - private
+      - edge_gateway
+    depends_on:
+      web:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:8080/api/health || exit 1"]
+      interval: 10s
+      timeout: 4s
+      retries: 12
+      start_period: 5s
+    mem_limit: 128m
+    cpus: 0.5
+    pids_limit: 50
+    stop_grace_period: 10s
+
+  admin-provision:
+    profiles: ["tools"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    environment:
+      DATABASE_URL_FILE: /run/secrets/database_url
+      DATABASE_SSL: "false"
+    secrets:
+      - database_url
+    command: ["node", "--experimental-strip-types", "scripts/create-admin.ts"]
+    networks:
+      - private
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 80
+
+secrets:
+  postgres_password:
+    file: ./.phase43-secrets/postgres_password
+  database_url:
+    file: ./.phase43-secrets/database_url
+  rate_limit_secret:
+    file: ./.phase43-secrets/rate_limit_secret
+  mailpit_smtp_password:
+    file: ./.phase43-secrets/mailpit_smtp_password
+  outbox_worker_secret:
+    file: ./.phase43-secrets/outbox_worker_secret
+
+volumes:
+  postgres_data:
+    name: rakmyat_phase43_postgres_data
+  mailpit_data:
+    name: rakmyat_phase43_mailpit_data
+  caddy_data:
+    name: rakmyat_phase43_caddy_data
+  caddy_config:
+    name: rakmyat_phase43_caddy_config
+
+networks:
+  private:
+    name: rakmyat_phase43_private
+    driver: bridge
+    internal: true
+  edge_gateway:
+    name: rakmyat_phase43_edge
+    driver: bridge

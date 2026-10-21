@@ -10,12 +10,11 @@ export function ProjectShowcaseCard({ project, locale, variant = "grid", index =
   index?: number;
 }) {
   const content = project.locales[locale];
-  const openLabel = locale === "en" ? `Explore ${content.title}` : `استكشف ${content.title}`;
   const action = locale === "en" ? "View project" : "عرض المشروع";
 
   return (
     <article className={`project-showcase-card project-showcase-card--${variant}`} data-project={project.slug}>
-      <ProjectVisualFrame project={project} locale={locale} variant={variant === "related" ? "related" : "card"} group={`project-${project.slug}`} />
+      <ProjectVisualFrame project={project} locale={locale} variant={variant === "related" ? "related" : "card"} priority={variant === "grid" && index === 0} group={`project-${project.slug}`} />
       <div className="project-showcase-card-content">
         <div className="project-showcase-card-heading">
           <div>
@@ -25,7 +24,7 @@ export function ProjectShowcaseCard({ project, locale, variant = "grid", index =
           <span className="project-showcase-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
         </div>
         <p>{content.summary}</p>
-        <Link className="project-showcase-link" href={`/${locale}/projects/${project.slug}`} aria-label={openLabel}>
+        <Link className="project-showcase-link" href={`/${locale}/projects/${project.slug}`} aria-label={`${action}: ${content.title}`}>
           {action}<i className="bi bi-arrow-up-right" aria-hidden="true" />
         </Link>
       </div>

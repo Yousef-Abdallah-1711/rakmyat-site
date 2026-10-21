@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 export function proxy(request: NextRequest) {
-  const locale = request.nextUrl.pathname.split("/")[1] === "ar" ? "ar" : "en";
+  if (request.nextUrl.pathname.startsWith("/api/")) return NextResponse.next();
+  const locale = request.nextUrl.pathname.split("/")[1] === "en" ? "en" : "ar";
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-rakmyat-locale", locale);
   return NextResponse.next({ request: { headers: requestHeaders } });

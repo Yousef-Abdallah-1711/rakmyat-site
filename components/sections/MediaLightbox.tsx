@@ -11,20 +11,28 @@ type MediaState =
 export function MediaLightbox() {
   const [media, setMedia] = useState<MediaState>(null);
   const [videoFailed, setVideoFailed] = useState(false);
+  const [zoom, setZoom] = useState(1);
   const pathname = usePathname();
   const isArabic = pathname.startsWith("/ar");
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const openerRef = useRef<HTMLElement | null>(null);
+  const swipeStartX = useRef<number | null>(null);
 
   useEffect(() => {
     if (media) {
       closeButtonRef.current?.focus();
-      return;
+      const previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = previousOverflow; };
     }
     openerRef.current?.focus();
     openerRef.current = null;
   }, [Boolean(media)]);
+
+  useEffect(() => {
+    setZoom(1);
+  }, [media?.kind === "image" ? media.index : media?.kind]);
 
   useEffect(() => {
     const openMedia = (event: MouseEvent) => {
@@ -125,6 +133,15 @@ export function MediaLightbox() {
   }, [Boolean(media)]);
 
   if (!media) return null;
+  const activeImage = media.kind === "image" ? media.images[media.index] : null;
+  const imageBaseWidth = typeof window === "undefined" ? 1200 : Math.min(1200, window.innerWidth * 0.9);
+  const moveImage = (direction: number) => {
+    setMedia((current) => current?.kind === "image" ? {
+      ...current,
+      index: (current.index + direction + current.images.length) % current.images.length,
+    } : current);
+    setZoom(1);
+  };
   return (
     <div
       ref={dialogRef}
@@ -146,41 +163,55 @@ export function MediaLightbox() {
       </button>
       {media.kind === "image" ? (
         <>
+          <div className="media-lightbox__toolbar" onClick={(event) => event.stopPropagation()}>
+            <button type="button" aria-label={isArabic ? "تصغير" : "Zoom out"} onClick={() => setZoom((value) => Math.max(1, value - 0.5))}>−</button>
+            <button type="button" aria-label={isArabic ? "تكبير" : "Zoom in"} onClick={() => setZoom((value) => Math.min(3, value + 0.5))}>+</button>
+            <button type="button" aria-label={isArabic ? "الحجم الأصلي للعرض" : "Reset image zoom"} onClick={() => setZoom(1)}>{Math.round(zoom * 100)}%</button>
+          </div>
           <button
             className="media-lightbox__previous"
             type="button"
             aria-label={isArabic ? "الصورة السابقة" : "Previous image"}
             onClick={(event) => {
               event.stopPropagation();
-              setMedia({
-                ...media,
-                index:
-                  (media.index - 1 + media.images.length) % media.images.length,
-              });
+              moveImage(-1);
             }}
           >
             ‹
           </button>
-          <img
-            className="media-lightbox__image"
-            src={media.images[media.index].src}
-            alt={media.images[media.index].alt}
+          <div
+            className="media-lightbox__stage"
             onClick={(event) => event.stopPropagation()}
-          />
+            onTouchStart={(event) => { swipeStartX.current = event.touches[0]?.clientX ?? null; }}
+            onTouchEnd={(event) => {
+              const start = swipeStartX.current;
+              const end = event.changedTouches[0]?.clientX;
+              swipeStartX.current = null;
+              if (start !== null && end !== undefined && Math.abs(end - start) > 80) moveImage(end < start ? 1 : -1);
+            }}
+          >
+            <img
+              key={activeImage?.src}
+              className="media-lightbox__image"
+              src={activeImage?.src}
+              alt={activeImage?.alt ?? ""}
+              style={{ width: `${imageBaseWidth * zoom}px` }}
+            />
+          </div>
           <button
             className="media-lightbox__next"
             type="button"
             aria-label={isArabic ? "الصورة التالية" : "Next image"}
             onClick={(event) => {
               event.stopPropagation();
-              setMedia({
-                ...media,
-                index: (media.index + 1) % media.images.length,
-              });
+              moveImage(1);
             }}
           >
             ›
           </button>
+          <p className="media-lightbox__caption" aria-live="polite" dir={isArabic ? "rtl" : "ltr"}>
+            {media.index + 1} / {media.images.length} · {activeImage?.alt}
+          </p>
         </>
       ) : (
         <>

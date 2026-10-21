@@ -24,7 +24,7 @@ export function ProductReasonsSection({ locale = "en" }: { locale?: Locale }) {
           {content.cards.map((title, index) => (
             <div className="commun-card" key={title}>
               <div className="icon"><img src={images[index]} alt="" /></div>
-              <div className="inf"><h5>{title}</h5></div>
+              <div className="inf"><h3>{title}</h3></div>
             </div>
           ))}
         </div>

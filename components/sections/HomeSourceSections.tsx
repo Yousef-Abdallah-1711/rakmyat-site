@@ -1,102 +1,31 @@
 import { ProductReasonsSection } from "@/components/sections/ProductReasonsSection";
 import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
+import { HowWeWorkHomeSection } from "@/components/sections/HowWeWork";
 import { ServicesWorkflowCards } from "@/components/sections/ServicesWorkflowCards";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { PricingControls, PricingFeatureRows, PricingIntro, PricingPlanFooter, PricingPlanHeader, PricingMobileTable } from "@/components/pricing/PricingTable";
+import { AboutCapabilitiesHero } from "@/components/sections/PageHeroes";
 import { getHomeContent } from "@/content/home";
 import { getPageCopy } from "@/content/page-copy";
 import type { Locale } from "@/content/i18n";
 import Link from "next/link";
 
 export function HomeSourceSections({ locale = "en" }: { locale?: Locale }) {
+  const direction = locale === "ar" ? "rtl" : "ltr";
   return (
     <>
-      <HomeStyle5Section1 locale={locale} />
-      <HomeMainSection2 locale={locale} />
+      <AboutCapabilitiesHero locale={locale} direction={direction} />
+      <HomeMainSection2 locale={locale} direction={direction} />
     </>
   );
 }
 
-function HomeStyle5Section1({ locale }: { locale: Locale }) {
-  const homePageContent = getHomeContent(locale);
+function HomeMainSection2({ locale, direction }: { locale: Locale; direction: "rtl" | "ltr" }) {
   return (
-    <header className={"style-5"}>
-      <div className={"container"}>
-        <div className={"row justify-content-center"}>
-          <div className={"col-lg-8"}>
-            <div className={"info"}>
-              <h1>
-                {homePageContent.hero.headingLead}
-                <span>
-                  {homePageContent.hero.headingAccent}
-                  <img
-                    src={"/assets/img/header/head5_line.png"}
-                    alt={""}
-                    className={"head-line"}
-                  />
-                  <img
-                    src={"/assets/img/header/head5_pen.png"}
-                    alt={""}
-                    className={"head-pen"}
-                  />
-                </span>
-              </h1>
-              <p>
-                {homePageContent.hero.descriptionLead}
-                <br />
-                {homePageContent.hero.descriptionTail}
-              </p>
-              <div className="form">
-                <div className="form-group">
-                  <Link href={homePageContent.hero.cta.href} className="btn rounded-pill bg-blue5 hover-blue2 sm-butn fw-bold text-white">
-                    <span>{`${homePageContent.hero.cta.label} `}<i className="bi bi-arrow-right ms-1" aria-hidden="true" /></span>
-                  </Link>
-                </div>
-              </div>
-              <div className={"main-img"}>
-                <img
-                  src={"/assets/img/header/header5_page.png"}
-                  alt={""}
-                  className={"page-img"}
-                />
-                <img
-                  src={"/assets/img/header/header5_linechart.png"}
-                  alt={""}
-                  className={"linechart-img"}
-                />
-                <img
-                  src={"/assets/img/header/header5_piechart.png"}
-                  alt={""}
-                  className={"piechart-img"}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src={"/assets/img/header/header5_handl.png"}
-        alt={""}
-        className={"handl-img"}
-      />
-      <img
-        src={"/assets/img/header/header5_handr.png"}
-        alt={""}
-        className={"handr-img"}
-      />
-    </header>
-  );
-}
-
-function HomeMainSection2({ locale }: { locale: Locale }) {
-  return (
-    <main>
+    <main dir={direction}>
       <HomeCommunityPt40Section3 locale={locale} />
       <HomeAboutSectionPaddingSection4 locale={locale} />
       <HomeFeaturesSectionPaddingSection6 locale={locale} />
+      <HowWeWorkHomeSection locale={locale} />
       <HomeClientsStyle5Section5 locale={locale} />
-      <HomePricingSectionPaddingSection7 locale={locale} />
-      <HomeTestimonialsSectionPaddingSection8 locale={locale} />
       <HomeDownloadSectionPaddingSection9 locale={locale} />
     </main>
   );
@@ -145,17 +74,17 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
                   className={"sm-circle"}
                 />
                 <img
-                  src={"/assets/img/about/about_s5_1_2.png"}
+                  src={"/assets/img/about/about_s5_1_2.webp"}
                   alt={""}
                   className={"img-body"}
                 />
                 <img
-                  src={"/assets/img/about/about_s5_1_3.png"}
+                  src={"/assets/img/about/about_s5_1_3.webp"}
                   alt={""}
                   className={"card1"}
                 />
                 <img
-                  src={"/assets/img/about/about_s5_1_4.png"}
+                  src={"/assets/img/about/about_s5_1_4.webp"}
                   alt={""}
                   className={"card2"}
                 />
@@ -176,7 +105,7 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
               <div className={"img main-img2"}>
                 <img src={"/assets/img/about/about_s5_2_1.png"} alt={""} />
                 <img
-                  src={"/assets/img/about/about_s5_2_2.png"}
+                  src={"/assets/img/about/about_s5_2_2.webp"}
                   alt={""}
                   className={"img-body"}
                 />
@@ -197,19 +126,19 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Map the information each workflow needs" : "تحديد المعلومات التي يحتاج إليها كل مسار عمل"}</h6>
+                  <p className="workflow-point-label">{locale === "en" ? "Map the information each workflow needs" : "تحديد المعلومات التي يحتاج إليها كل مسار عمل"}</p>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Review available systems and interfaces" : "مراجعة الأنظمة والواجهات المتاحة"}</h6>
+                  <p className="workflow-point-label">{locale === "en" ? "Review available systems and interfaces" : "مراجعة الأنظمة والواجهات المتاحة"}</p>
                 </li>
                 <li>
                   <span className={"icon"}>
                     <i className={"bi bi-check2"}></i>
                   </span>
-                  <h6>{locale === "en" ? "Plan how data should move between tools" : "تخطيط انتقال البيانات بين الأدوات"}</h6>
+                  <p className="workflow-point-label">{locale === "en" ? "Plan how data should move between tools" : "تخطيط انتقال البيانات بين الأدوات"}</p>
                 </li>
               </ul>
               <Link
@@ -245,7 +174,7 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
                   <img src={"/assets/img/about/owners.png"} alt={""} />
                 </div>
                 <div className={"inf"}>
-                  <h4 className={"color-blue5 mb-0 lh-1"}>{locale === "en" ? "AI & automation" : "الذكاء الاصطناعي والأتمتة"}</h4>
+                  <h3 className={"color-blue5 mb-0 lh-1 workflow-subheading"}>{locale === "en" ? "AI & automation" : "الذكاء الاصطناعي والأتمتة"}</h3>
                   <p>{locale === "en" ? "Defined tasks, sources, and review" : "مهام ومصادر ومراجعة محددة"}</p>
                 </div>
               </div>
@@ -257,10 +186,10 @@ function HomeAboutSectionPaddingSection4({ locale }: { locale: Locale }) {
                   alt={""}
                   className={"img-body"}
                 />
-                <img src={"/assets/img/about/about_s5_3_2.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_3.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_4.png"} alt={""} />
-                <img src={"/assets/img/about/about_s5_3_5.png"} alt={""} />
+                <img src={"/assets/img/about/about_s5_3_2.webp"} alt={""} />
+                <img src={"/assets/img/about/about_s5_3_3.webp"} alt={""} />
+                <img src={"/assets/img/about/about_s5_3_4.webp"} alt={""} />
+                <img src={"/assets/img/about/about_s5_3_5.webp"} alt={""} />
               </div>
             </div>
           </div>
@@ -291,31 +220,6 @@ function HomeFeaturesSectionPaddingSection6({ locale }: { locale: Locale }) {
       </div>
       <ServicesWorkflowCards locale={locale} />
     </section>
-  );
-}
-
-function HomePricingSectionPaddingSection7({ locale }: { locale: Locale }) {
-  return (
-    <section className={"pricing section-padding style-5"}>
-      <div className={"container"}>
-        <PricingIntro locale={locale} />
-        <PricingControls locale={locale} />
-        <div className={"table-responsive d-none d-lg-block"}>
-          <div className={"content"}>
-            <PricingPlanHeader locale={locale} />
-            <PricingFeatureRows variant="home" locale={locale} />
-            <PricingPlanFooter locale={locale} />
-          </div>
-        </div>
-        <PricingMobileTable locale={locale} />
-      </div>
-    </section>
-  );
-}
-
-function HomeTestimonialsSectionPaddingSection8({ locale }: { locale: Locale }) {
-  return (
-    <TestimonialsSection locale={locale} />
   );
 }
 

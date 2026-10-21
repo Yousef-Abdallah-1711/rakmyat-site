@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AboutSourceSections } from "@/components/sections/AboutSourceSections";
 import { ContactSourceSections } from "@/components/sections/ContactSourceSections";
 import { HomeSourceSections } from "@/components/sections/HomeSourceSections";
+import { HowWeWorkPage } from "@/components/sections/HowWeWork";
 import { PortfolioSourceSections } from "@/components/sections/PortfolioSourceSections";
 import { ProjectDetailSections } from "@/components/sections/ProjectDetailSections";
 import { ServiceDetailsSourceSections } from "@/components/sections/ServiceDetailsSourceSections";
@@ -10,8 +11,30 @@ import { ServicesSourceSections } from "@/components/sections/ServicesSourceSect
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { localeCopy, type Locale, type PageKey } from "@/content/i18n";
 import { getPortfolioProject } from "@/content/portfolio";
+import { portfolioProjects } from "@/content/portfolio";
+import { publicRouteMetadata } from "@/lib/seo";
+import { getIndexableSiteOrigin } from "@/lib/site-url";
+import { escapeJsonLd } from "@/lib/structured-data";
 
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
+
+const staticPagePaths: string[][] = [
+  [],
+  ["about"],
+  ["services"],
+  ["services", "details"],
+  ["how-we-work"],
+  ["portfolio"],
+  ["contact"],
+];
+
+export function generateStaticParams(_params: { params: { locale: string } }) {
+  const projectPaths = portfolioProjects
+    .filter((project) => project.publicationState === "published")
+    .map((project) => ["projects", project.slug]);
+
+  return [...staticPagePaths, ...projectPaths].map((path) => ({ path }));
+}
 
 type RouteParams = { locale: string; path?: string[] };
 function getPageKey(path: string[] = []): PageKey | null {
@@ -19,6 +42,7 @@ function getPageKey(path: string[] = []): PageKey | null {
   if (key === "") return "home";
   if (key === "about") return "about";
   if (key === "services") return "services";
+  if (key === "how-we-work") return "howWeWork";
   if (key === "services/details") return "serviceDetails";
   if (key === "portfolio") return "portfolio";
   if (key === "contact") return "contact";
@@ -45,7 +69,7 @@ export async function generateMetadata({
     }
     const content = project.locales[locale];
     const route = `/${locale}/projects/${project.slug}`;
-    const siteUrl = getConfiguredSiteUrl();
+    const siteUrl = getIndexableSiteOrigin();
     const image = project.assets.cover || "/assets/rakmyat/brand/rakmyat-mark.webp";
     const socialImage = siteUrl
       ? { images: [{ url: new URL(image, siteUrl).toString(), alt: project.assets.coverAlt[locale] }] }
@@ -53,16 +77,11 @@ export async function generateMetadata({
     return {
       title: content.seoTitle,
       description: content.seoDescription,
-      alternates: {
-        canonical: siteUrl ? new URL(route, siteUrl).toString() : undefined,
-        languages: {
-          en: `/en/projects/${project.slug}`,
-          ar: `/ar/projects/${project.slug}`,
-        },
-      },
+      ...publicRouteMetadata(locale, `/projects/${project.slug}`, siteUrl),
       openGraph: {
         title: content.seoTitle,
         description: content.seoDescription,
+        siteName: locale === "ar" ? "رقميات" : "Rakmyat",
         locale: locale === "ar" ? "ar_EG" : "en_US",
         type: "article",
         url: siteUrl ? new URL(route, siteUrl).toString() : undefined,
@@ -93,20 +112,28 @@ export async function generateMetadata({
     };
   }
   const localizedPath = path?.length ? `/${path.join("/")}` : "";
+  const siteUrl = getIndexableSiteOrigin();
+  const route = `/${locale}${localizedPath}`;
+  const publicMetadata = publicRouteMetadata(locale, localizedPath, siteUrl);
+  const socialImageUrl = siteUrl ? new URL("/assets/rakmyat/brand/rakmyat-social.png", siteUrl).toString() : undefined;
   return {
     title: copy.pageTitles[page],
     description: copy.pageDescriptions[page],
+    ...publicMetadata,
     openGraph: {
       title: copy.pageTitles[page],
       description: copy.pageDescriptions[page],
+      siteName: locale === "ar" ? "رقميات" : "Rakmyat",
       locale: locale === "ar" ? "ar_EG" : "en_US",
       type: "website",
+      url: siteUrl ? new URL(route, siteUrl).toString() : undefined,
+      ...(socialImageUrl ? { images: [{ url: socialImageUrl, width: 1200, height: 630, alt: locale === "ar" ? "رقميات — حلول برمجية للأعمال" : "Rakmyat — software for business" }] } : {}),
     },
-    alternates: {
-      languages: {
-        en: `/en${localizedPath}`,
-        ar: `/ar${localizedPath}`,
-      },
+    twitter: {
+      card: "summary_large_image",
+      title: copy.pageTitles[page],
+      description: copy.pageDescriptions[page],
+      ...(socialImageUrl ? { images: [socialImageUrl] } : {}),
     },
   };
 }
@@ -119,6 +146,7 @@ export default async function LocalizedPage({
   const { locale: localeParam, path } = await params;
   if (localeParam !== "en" && localeParam !== "ar") notFound();
   const locale: Locale = localeParam;
+  const siteUrl = getIndexableSiteOrigin();
   if (path?.[0] === "projects") {
     if (path.length !== 2) notFound();
     const project = getPortfolioProject(path[1]);
@@ -136,12 +164,40 @@ export default async function LocalizedPage({
     home: <HomeSourceSections locale={locale} />,
     about: <AboutSourceSections locale={locale} />,
     services: <ServicesSourceSections locale={locale} />,
+    howWeWork: <HowWeWorkPage locale={locale} />,
     serviceDetails: <ServiceDetailsSourceSections locale={locale} />,
     portfolio: <PortfolioSourceSections locale={locale} />,
     contact: <ContactSourceSections locale={locale} />,
     project: null,
   }[page];
-  const activePage = page === "home" || page === "about" || page === "contact" || page === "portfolio" || page === "services"
+  const websiteJsonLd = page === "home" && siteUrl ? {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "Rakmyat",
+        alternateName: "رقميات",
+        url: siteUrl,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/assets/rakmyat/brand/rakmyat-mark.webp", siteUrl).toString(),
+          width: 256,
+          height: 256,
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: `${siteUrl}/`,
+        name: locale === "ar" ? "رقميات" : "Rakmyat",
+        alternateName: locale === "ar" ? "Rakmyat" : "رقميات",
+        inLanguage: locale,
+        publisher: { "@id": `${siteUrl}/#organization` },
+      },
+    ],
+  } : null;
+  const activePage = page === "home" || page === "about" || page === "contact" || page === "portfolio" || page === "services" || page === "howWeWork"
     ? page
     : page === "serviceDetails" ? "services" : "project";
   return (
@@ -151,18 +207,11 @@ export default async function LocalizedPage({
       transparentHeader={page === "contact" || page === "serviceDetails"}
       borderedFooter={page === "home" || page === "portfolio" || page === "serviceDetails"}
     >
+      {websiteJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: escapeJsonLd(websiteJsonLd) }} />}
+      {page === "serviceDetails" && (
+        <link rel="preload" as="image" href="/assets/img/inner5_back.webp" fetchPriority="high" />
+      )}
       {section}
     </SiteLayout>
   );
-}
-
-function getConfiguredSiteUrl() {
-  const value = process.env.NEXT_PUBLIC_SITE_URL;
-  if (!value) return null;
-  try {
-    const url = new URL(value);
-    return url.protocol === "http:" || url.protocol === "https:" ? url.origin : null;
-  } catch {
-    return null;
-  }
 }

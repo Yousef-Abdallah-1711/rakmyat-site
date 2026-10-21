@@ -11,7 +11,7 @@ import type { Locale } from "@/content/i18n";
 type SiteLayoutProps = {
   children: ReactNode;
   activePage:
-    "home" | "about" | "contact" | "portfolio" | "services" | "project";
+    "home" | "about" | "contact" | "portfolio" | "services" | "howWeWork" | "project";
   transparentHeader?: boolean;
   borderedFooter?: boolean;
   locale?: Locale;
@@ -29,12 +29,12 @@ export function SiteLayout({
       <PageEffects />
       <SiteHeader activePage={activePage} transparent={transparentHeader} locale={locale} />
       <PricingPeriodProvider>{children}</PricingPeriodProvider>
-      <LegacySliderRuntime />
-      <MediaLightbox />
+      {activePage === "home" && <LegacySliderRuntime />}
+      {activePage === "project" && <MediaLightbox />}
       <SiteFooter bordered={borderedFooter}>
         <FooterContent locale={locale} />
+        <ScrollToTop locale={locale} />
       </SiteFooter>
-      <ScrollToTop locale={locale} />
     </>
   );
 }

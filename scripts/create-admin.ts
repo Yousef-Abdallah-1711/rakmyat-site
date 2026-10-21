@@ -24,7 +24,8 @@ const password = await hiddenPrompt("New password (minimum 14 characters): ");
 const confirmation = await hiddenPrompt("Confirm password: ");
 if (password.length < 14 || password !== confirmation) throw new Error("Passwords must match and contain at least 14 characters.");
 const salt = randomBytes(16); const hash = (await scrypt(password, salt, 64)).toString("hex"); const encoded = `scrypt$${salt.toString("hex")}$${hash}`;
-const sql = postgres(process.env.DATABASE_URL, { max: 1, prepare: false, ssl: process.env.DATABASE_URL.includes("localhost") ? false : "require" });
+const ssl = process.env.DATABASE_SSL === "false" || /localhost|127\.0\.0\.1|@postgres[:/]/.test(process.env.DATABASE_URL) ? false : "require";
+const sql = postgres(process.env.DATABASE_URL, { max: 1, prepare: false, ssl });
 try {
   const rows = await sql`INSERT INTO admin_users (email,password_hash) VALUES (${email},${encoded}) ON CONFLICT (email) DO NOTHING RETURNING id`;
   if (!rows.length) throw new Error("An admin with that email already exists; use a separate controlled credential rotation process.");

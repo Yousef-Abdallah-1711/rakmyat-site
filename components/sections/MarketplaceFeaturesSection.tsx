@@ -30,7 +30,7 @@ export function MarketplaceFeaturesSection({ variant, locale = "en" }: { variant
   return (
     <section className={copy.sectionClass}>
       <div className="container"><div className="row justify-content-center"><div className="col-lg-8"><div className="section-head text-center mb-60 style-5"><h2 className="mb-20">{` ${copy.heading} `}<span>{` ${copy.accent} `}</span></h2><p>{copy.description}</p></div></div></div>
-        <div className="content"><div className="row">{copy.items.map((title, index) => <div className="col-lg-3 col-sm-6" key={title}><div className={`features-card ${index < 4 ? "mb-30 style-5" : index < 7 ? "mb-30 mb-lg-0 style-5" : "style-5"}`}><div className="icon"><img src={icons[index]} alt="" /></div><div className="info"><h5 className="card-title">{title}</h5><p className="text">{copy.bodies[index]}</p></div></div></div>)}</div></div>
+        <div className="content"><div className="row">{copy.items.map((title, index) => <div className="col-lg-3 col-sm-6" key={title}><div className={`features-card ${index < 4 ? "mb-30 style-5" : index < 7 ? "mb-30 mb-lg-0 style-5" : "style-5"}`}><div className="icon"><img src={icons[index]} alt="" /></div><div className="info"><h3 className="card-title">{title}</h3><p className="text">{copy.bodies[index]}</p></div></div></div>)}</div></div>
       </div>
     </section>
   );

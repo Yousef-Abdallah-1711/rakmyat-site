@@ -13,6 +13,127 @@
   line-height: 1;
 }
 
+.language-switcher {
+  position: relative;
+  z-index: 1050;
+  margin-inline-end: .75rem;
+  color: var(--bs-navbar-color, #333);
+}
+
+.language-switcher > summary {
+  display: inline-flex;
+  direction: ltr;
+  min-height: 44px;
+  align-items: center;
+  gap: .45rem;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.language-switcher > summary::-webkit-details-marker { display: none; }
+.language-switcher > summary::marker { content: ""; }
+.language-switcher > summary:hover,
+.language-switcher[open] > summary { background: rgb(20 101 255 / 8%); }
+.language-switcher > summary:focus-visible,
+.language-switcher-menu a:focus-visible { outline: 2px solid #1677ff; outline-offset: 2px; }
+
+.language-switcher-menu {
+  position: absolute;
+  top: calc(100% + .4rem);
+  inset-inline-end: 0;
+  display: grid;
+  min-width: 190px;
+  padding: .4rem;
+  border: 1px solid rgb(0 0 0 / 9%);
+  border-radius: .75rem;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(20 40 80 / 16%);
+}
+
+.language-switcher-menu a {
+  display: flex;
+  direction: ltr;
+  min-height: 44px;
+  align-items: center;
+  gap: .6rem;
+  padding: .5rem .65rem;
+  border-radius: .5rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.language-flag { display: block; width: 20px; height: 14px; flex: 0 0 auto; overflow: hidden; border-radius: 2px; }
+.language-code { color: #445064; font-size: .68rem; font-weight: 700; letter-spacing: .02em; }
+.language-switcher-menu a span[lang="ar"] { direction: rtl; unicode-bidi: isolate; }
+.language-switcher-menu a:hover,
+.language-switcher-menu a[aria-current="page"] { background: #edf4fe; }
+.language-switcher-menu small { margin-inline-start: auto; color: #555; }
+
+.home-hero .home-hero-cta { margin: 36px auto 0; text-align: center; }
+.home-hero .home-hero-cta .btn { position: static; }
+.home-hero .main-img { margin-top: 36px; }
+
+/* Session 3: the vendor's own mobile reduction for this exact hero heading
+   style (header.style-5 .info h1, 60px -> 30px) is scoped to an ancestor
+   `.about-page` class that only the About page's <main> actually carries. The
+   homepage hero (AboutCapabilitiesHero in PageHeroes.tsx, despite the name) is
+   the same heading markup but sits directly under <body> with no such
+   ancestor, so it never receives any reduction at any width in either locale —
+   confirmed live at 60px from 390px through 1440px. At narrow English
+   viewports this forces nearly every word onto its own line (up to 6 lines for
+   "Software built around your business needs."). #home-hero-title is stable
+   (set directly in PageHeroes.tsx) and independent of ancestor structure, so
+   the fix targets it directly rather than trying to replicate the vendor's
+   ancestor-class dependency. Fluid via clamp(), consistent with this file's
+   existing convention (e.g. .admin-heading h1), rather than a hard breakpoint
+   jump; the 60px ceiling preserves the current, unchanged desktop size. */
+#home-hero-title { font-size: clamp(32px, 7vw, 60px); }
+
+/* Plain text labels in the business-systems list are not headings. */
+.about.style-5 .content .list-icon li .workflow-point-label {
+  margin: 0;
+  color: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.workflow-subheading { font-size: 1.5rem; }
+
+/* Scoped corrections for measured promo and branded action contrast. */
+.top-navbar.style-1,
+.top-navbar.style-5 { background: linear-gradient(90deg, #0d55ad, #1763bf) !important; }
+.top-navbar.style-1 .op-6,
+.top-navbar.style-5 .op-6 { opacity: 1 !important; }
+.community.style-5 .content .commun-card .inf h3 {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.btn.blue5-3Dbutn,
+.butn.blue5-3Dbutn { background-color: #1763bf !important; }
+.btn.blue5-3Dbutn:hover,
+.butn.blue5-3Dbutn:hover { background-color: #0d55ad !important; }
+.about.style-5 .content > .container > .row > .col-lg-4 > p,
+.about.style-5 .content .inf > p,
+main .features-card.style-5 .text,
+.services-page .about .inf > p { color: #666 !important; }
+.project-showcase-index { color: #667386 !important; }
+.service-owner-name { display: block; font-size: 1.5rem; line-height: 1; }
+
+@media (max-width: 1199.98px) {
+  .language-switcher-menu { inset-inline-end: auto; inset-inline-start: 0; }
+}
+
+@media (max-width: 575.98px) {
+  .home-hero .home-hero-cta { margin-top: 28px; }
+  .home-hero .main-img { margin-top: 28px; }
+}
+
 .rakmyat-wordmark img {
   flex: 0 0 auto;
   width: 34px;
@@ -211,12 +332,6 @@
 .project-detail .project-related .project-card > .img { display: block; height: 220px; overflow: hidden; background: #f0eff5; }
 .project-detail .project-related .project-card > .img > img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .project-detail .project-related .project-identity { height: 220px; min-height: 220px; }
-.service-project-links { margin-block-start: 20px; padding-block-start: 14px; border-block-start: 1px solid rgb(0 0 0 / 8%); }
-.service-project-links > small { display: block; margin-block-end: 8px; color: #777; font-size: 10px; text-transform: uppercase; }
-.service-project-links > div { display: flex; flex-wrap: wrap; gap: 6px; }
-.service-project-links a { padding: 4px 7px; border-radius: 20px; background: rgb(39 92 255 / 7%); color: #333; font-size: 11px; text-decoration: none; }
-.service-project-links a:hover { background: rgb(39 92 255 / 15%); color: #1b4adb; }
-
 @media (max-width: 767.98px) {
   .portfolio-card .portfolio-project-image { min-height: 0; }
   .project-detail .project-cover-image { max-height: 58vh; }
@@ -286,10 +401,76 @@ html[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !importa
   display: none;
 }
 
-.navbar.style-5 .navbar-nav .nav-link[aria-current="page"] { color: var(--color-blue5, #4a8df6); }
+/* Vendor style-5 navbar sits on a light #e7f1ff background; its own active/hover
+   link color (--color-blue5, #157efb) fails WCAG AA (3.4:1, needs 4.5:1) there.
+   #0b5ed7 keeps the same brand-blue hue at ~5.1:1 contrast. !important beats the
+   vendor rule, which loads after this stylesheet at equal selector specificity. */
+.navbar.style-5 .navbar-nav .nav-link.active,
+.navbar.style-5 .navbar-nav .nav-link[aria-current="page"] { color: #0b5ed7 !important; }
 .navbar.style-5 .nav-side { flex: 0 0 auto; }
+
+/* Vendor rules for main-img1 set object-fit: contain on every <img>; the
+   main-img2/main-img3 rules omit it, so their unclassed <img> falls back to the
+   CSS-default object-fit: fill and gets stretched off its natural aspect ratio. */
+.about.style-5 .content .img.main-img2 img,
+.about.style-5 .content .img.main-img3 img {
+  object-fit: contain;
+}
 .navbar.style-5 .nav-side .d-flex { gap: 0.5rem; }
-.navbar.style-5 .navbar-brand span[lang="ar"] { font-size: 0.82em; }
+
+/* Vendor breadcrumb rule only styles <a>; ServiceDetailsSourceSections renders the
+   current page as a <span> (correct — it shouldn't link to itself), so the
+   separator the vendor CSS draws between items never appears and both breadcrumb
+   labels render with zero gap between them. Reset the vendor's physical
+   border-right/padding-right/margin-right (which doesn't flip for RTL anyway) and
+   apply a single logical-property separator between any two adjacent items,
+   regardless of whether they're <a> or <span>. */
+.inner-header.style-5 .content .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+.inner-header.style-5 .content .links a,
+.inner-header.style-5 .content .links span {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+.inner-header.style-5 .content .links > :not(:last-child) {
+  padding-inline-end: 10px !important;
+  border-inline-end: 1px solid rgb(0 0 0 / 20%) !important;
+}
+
+/* The decorative rocket (.side-img) sits at position:absolute;right:0 and is
+   sized relative to .content's height (40% desktop / 20% at <=991px). .content
+   only reserves right-side space for it at <=991px (padding-right:50px), and
+   even there the height-driven width can exceed that 50px slot — the image
+   spills onto the heading text at every width and covers its first letter(s).
+   Reserve real space at the default (desktop) rule too, sized to the rocket's
+   natural rendered width plus a buffer, and cap the image's own width so it can
+   never outgrow whichever slot is reserved; object-fit keeps its aspect ratio
+   intact instead of letting width/height constraints distort it. */
+@media (min-width: 992px) {
+  .inner-header.style-5 .content {
+    /* !important: the vendor rule for this exact selector sets the `padding`
+       shorthand (padding: 120px 0), which implicitly zeroes padding-right and
+       loads after this stylesheet, so a plain declaration here is overwritten.
+       Scoped to >=992px so it doesn't fight the vendor's own, separately
+       correct, <=991px padding-right:50px reduction. */
+    padding-right: 170px !important;
+  }
+  .inner-header.style-5 .content .side-img {
+    max-width: 150px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 991.98px) {
+  .inner-header.style-5 .content .side-img {
+    max-width: 42px;
+    object-fit: contain;
+  }
+}
 
 .inquiry-page { position: relative; overflow: hidden; }
 .inquiry-page .container { position: relative; z-index: 1; }
@@ -320,7 +501,7 @@ html[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !importa
 .inquiry-honeypot { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .admin-shell { min-height: 100vh; background: #f5f7fa; color: #20242a; font-family: inherit; }
-.admin-shell input, .admin-shell select, .admin-shell textarea { width: 100%; min-height: 42px; padding: 9px 11px; border: 1px solid #aeb8c6; border-radius: 4px; background: #fff; color: #20242a; font: inherit; }
+.admin-shell input, .admin-shell select, .admin-shell textarea { box-sizing: border-box; width: 100%; min-height: 42px; padding: 9px 11px; border: 1px solid #aeb8c6; border-radius: 4px; background: #fff; color: #20242a; font: inherit; }
 .admin-shell :focus-visible { outline: 3px solid #2861c9; outline-offset: 2px; }
 .admin-login { width: min(100% - 32px, 460px); margin: 0 auto; padding-top: 14vh; }
 .admin-login img { object-fit: contain; }
@@ -342,9 +523,15 @@ html[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !importa
 .admin-metrics article { display: grid; gap: 7px; padding: 18px; border: 1px solid #dfe4ea; border-radius: 8px; background: #fff; }
 .admin-metrics span { color: #4d5a69; font-size: 14px; }
 .admin-metrics strong { font-size: 25px; }
-.admin-filters { display: grid; grid-template-columns: minmax(220px,1fr) 230px; gap: 16px; margin-bottom: 20px; }
+.admin-filters { display: grid; grid-template-columns: minmax(220px,1fr) minmax(160px,230px); gap: 16px; margin-bottom: 20px; }
 .admin-filters label, .admin-detail label { display: grid; gap: 7px; font-weight: 600; }
 .admin-list { display: grid; gap: 10px; }
+.admin-pagination { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; }
+.admin-pagination p { margin: 0; color: #344054; }
+.admin-pagination > div { display: flex; gap: 8px; }
+.admin-pagination button { min-height: 42px; padding: 8px 14px; border: 1px solid #b7c5d6; border-radius: 6px; background: #fff; color: #172b4d; font: inherit; font-weight: 600; }
+.admin-pagination button:focus-visible { outline: 3px solid #1268c4; outline-offset: 2px; }
+.admin-pagination button:disabled { cursor: not-allowed; opacity: .55; }
 .admin-inquiry { border: 1px solid #dfe4ea; border-radius: 7px; background: #fff; }
 .admin-inquiry summary { display: flex; min-height: 68px; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 16px; cursor: pointer; list-style-position: inside; }
 .admin-inquiry summary > span:first-of-type, .admin-summary-meta { display: grid; gap: 4px; }
@@ -359,13 +546,15 @@ html[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !importa
 .admin-description { white-space: pre-wrap; }
 .admin-notice { color: #a21b14; }
 .admin-empty { padding: 24px; text-align: center; }
-@media (max-width: 600px) { .admin-main { margin-top: 25px; } .admin-metrics { gap: 8px; } .admin-metrics article { padding: 12px; } .admin-metrics span { font-size: 12px; } .admin-metrics strong { font-size: 21px; } .admin-filters { grid-template-columns: 1fr; } .admin-inquiry summary { align-items: flex-start; } .admin-summary-meta small { max-width: 140px; text-align: right; } .admin-detail dl { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .admin-main { margin-top: 25px; } .admin-metrics { gap: 8px; } .admin-metrics article { padding: 12px; } .admin-metrics span { font-size: 12px; } .admin-metrics strong { font-size: 21px; } .admin-filters { grid-template-columns: 1fr; } .admin-inquiry summary { align-items: flex-start; } .admin-summary-meta small { max-width: 140px; text-align: right; } .admin-detail dl { grid-template-columns: 1fr; } .admin-pagination { align-items: flex-start; flex-direction: column; } }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
+  .navbar.style-5 .navbar-toggler { min-height: 44px; }
   .navbar.style-5 .navbar-collapse.show { padding: 10px 0 16px; }
   .navbar.style-5 .navbar-nav { margin-inline: 0 !important; }
+  .navbar.style-5 .navbar-nav .nav-link { display: flex; min-height: 44px; align-items: center; }
   .navbar.style-5 .nav-side { padding-top: 8px; }
-  .navbar.style-5 .nav-side .d-flex { justify-content: flex-start; flex-wrap: wrap; }
+  .navbar.style-5 .nav-side .d-flex { justify-content: flex-start; flex-wrap: wrap; gap: 8px; }
 }
 @media (max-width: 575.98px) {
   .inquiry-panel { padding: 22px 18px; }
@@ -418,11 +607,15 @@ html {
   background: rgb(0 0 0 / 94%);
 }
 
-.media-lightbox__image {
-  max-width: min(90vw, 1200px);
-  max-height: 85vh;
-  object-fit: contain;
-}
+.media-lightbox__stage { display: block; width: min(100%, 1400px); max-height: 82vh; overflow: auto; overscroll-behavior: contain; scrollbar-color: rgb(255 255 255 / 55%) transparent; touch-action: pan-x pan-y; }
+.media-lightbox__image { display: block; max-width: none; height: auto; margin-inline: auto; object-fit: contain; transition: width 140ms ease; }
+.media-lightbox__toolbar { position: absolute; z-index: 2; inset-block-start: 20px; inset-inline-start: 20px; display: flex; align-items: center; gap: 8px; color: #fff; }
+.media-lightbox__toolbar button { min-width: 44px; min-height: 44px; border: 1px solid rgb(255 255 255 / 35%); border-radius: 4px; background: rgb(20 20 20 / 80%); color: #fff; font: inherit; cursor: pointer; }
+.media-lightbox__toolbar button:focus-visible,
+.media-lightbox__close:focus-visible,
+.media-lightbox__previous:focus-visible,
+.media-lightbox__next:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.media-lightbox__caption { position: absolute; inset-block-end: 12px; inset-inline: 70px; margin: 0; color: #fff; font-size: 14px; line-height: 1.5; text-align: center; pointer-events: none; }
 
 .media-lightbox__video {
   width: min(90vw, 1100px);
@@ -609,11 +802,18 @@ html {
 }
 
 .project-visual-gallery-frame .project-visual-image-area { position: relative; inset: auto; aspect-ratio: 1.55 / 1; }
-.project-visual--device { display: flex; min-height: 380px; align-items: center; justify-content: center; overflow: visible; background: transparent; }
-.project-visual-device { position: relative; display: block; width: min(100%, 300px); aspect-ratio: 390 / 844; overflow: hidden; border: 1px solid rgb(32 50 82 / 12%); border-radius: 4px; background: #fff; box-shadow: none; }
+.project-visual-description { margin-block-start: 10px; color: #5d6674; font-size: 13px; line-height: 1.45; }
+.project-visual-gallery-frame .project-visual-image-area[data-image-presentation="tall-preview"] { aspect-ratio: 1.56 / 1; }
+.project-visual-gallery-frame .project-visual-image-area[data-image-presentation="landscape"] { aspect-ratio: auto; }
+.project-visual-gallery-frame .project-visual-image-area img { object-fit: cover; object-position: center; }
+.project-visual-gallery-frame .project-visual-image-area[data-image-presentation="tall-preview"] img { object-position: top center; }
+.project-visual--device { display: flex; min-height: 0; flex-direction: column; align-items: center; overflow: visible; background: transparent; }
+.project-visual-device { position: relative; display: block; width: min(100%, 270px); aspect-ratio: 390 / 844; overflow: hidden; border: 1px solid rgb(32 50 82 / 12%); border-radius: 4px; background: #fff; box-shadow: none; }
 .project-visual-device .project-visual-image-area { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; background: #fff; }
-.project-detail-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 32px; }
-.project-detail-gallery-grid .project-visual--device { grid-row: span 2; }
+.project-visual-device .project-visual-image-area img { object-fit: cover; object-position: top center; }
+.project-visual--device .project-visual-description { width: min(100%, 330px); text-align: center; }
+.project-detail-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 28px 32px; }
+.project-detail-gallery-grid .project-visual--device { grid-row: auto; }
 .project-showcase-card :focus-visible,
 .project-visual a:focus-visible { outline: 3px solid #315fce; outline-offset: 4px; }
 .project-showcase-home .project-showcase-card--home { height: 100%; }
@@ -624,10 +824,6 @@ html {
 .project-showcase-list .project-showcase-grid { gap: 40px 34px; }
 .project-showcase-list .project-showcase-card-content { padding: 23px 26px 25px; }
 .project-overview { max-width: 900px; margin-inline: auto; }
-.project-detail[data-project="concord-crm"] .project-visual,
-.project-detail[data-project="product-scraper"] .project-visual { overflow: hidden; }
-.project-detail[data-project="concord-crm"] .project-visual-caption,
-.project-detail[data-project="product-scraper"] .project-visual-caption { bottom: 12px; }
 
 @media (max-width: 991.98px) {
   .project-showcase-grid--related { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -656,14 +852,18 @@ html {
   .project-visual--related { aspect-ratio: 1.38 / 1; }
   .project-visual-caption { right: 9px; bottom: 8px; padding: 5px 8px; font-size: 9px; }
   .project-visual--hero { aspect-ratio: 1.3 / 1; }
-  .project-detail-gallery-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-detail-gallery-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .project-visual--device { min-height: 0; padding-block: 12px; }
-  .project-visual-device { width: min(72vw, 280px); }
+  .project-visual-device { width: min(76vw, 280px); }
+  .media-lightbox__close { inset-block-start: 12px; inset-inline-end: 12px; }
+  .media-lightbox__previous { inset-inline-start: 12px; }
+  .media-lightbox__next { inset-inline-end: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .project-showcase-card,
-  .project-showcase-link i { transition-duration: .01ms !important; }
+  .project-showcase-link i,
+  .media-lightbox__image { transition-duration: .01ms !important; }
 }
 
 .media-lightbox__close,
@@ -683,12 +883,15 @@ html {
   line-height: 1;
 }
 
-.media-lightbox__close { top: 20px; right: 20px; }
-.media-lightbox__previous { left: 20px; }
-.media-lightbox__next { right: 20px; }
+.media-lightbox__close { inset-block-start: 20px; inset-inline-end: 20px; cursor: pointer; }
+.media-lightbox__previous { inset-inline-start: 20px; cursor: pointer; }
+.media-lightbox__next { inset-inline-end: 20px; cursor: pointer; }
 
 @media (max-width: 575.98px) {
-  .media-lightbox { padding: 20px; }
+  .media-lightbox { align-items: center; padding: 72px 12px 64px; }
+  .media-lightbox__stage { max-height: 78vh; }
+  .media-lightbox__toolbar { inset-block-start: 12px; inset-inline-start: 12px; }
+  .media-lightbox__caption { inset-inline: 58px; font-size: 12px; }
 }
 
 .features-card.style-5 .icon img {

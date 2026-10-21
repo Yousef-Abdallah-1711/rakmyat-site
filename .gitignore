@@ -7,5 +7,13 @@ coverage/
 *.tsbuildinfo
 .env*
 !.env.example
+.phase43-secrets/
+.phase43-backups/
+.phase43-logs/
+.production-secrets/
+.production-backups/
+deployment/production.env
+test-results/
+playwright-report/
 .DS_Store
 Thumbs.db
