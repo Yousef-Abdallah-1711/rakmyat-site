@@ -20,6 +20,7 @@ const stylesheets = [
   "/assets/css/lib/bootstrap-icons.css",
   "/assets/css/lib/bootstrap.min.css",
   "/assets/css/lib/inter.css",
+  "/assets/css/lib/noto-sans-arabic.css",
   "/assets/css/lib/all.min.css",
   "/assets/css/lib/animate.css",
   "/assets/css/lib/jquery.fancybox.css",

@@ -103,7 +103,7 @@ export function ProjectDetailSections({
 
       <section className="about-app style-5">
         <div className="container"><div className="content text-center"><div className="img-content pt-70 pb-100 border-bottom brd-gray"><div className="row justify-content-center"><div className="col-lg-7"><div className="info mt-30"><p className="text color-666">{locale === "en" ? "Explore related work or bring a similar business need to Rakmyat." : "استكشف مشاريع ذات صلة أو شارك رقميات احتياجًا مشابهًا في عملك."}</p><Link href={`/${locale}/contact`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-30"><span>{text.cta}</span></Link></div></div></div></div>
-          <div className="next-prog section-padding"><h5 className="color-999 text-uppercase fw-light">{text.related}</h5><nav className="project-neighbor-links" aria-label={text.related}>{adjacent.map(({ project: item, label }) => <Link key={`${label}-${item.slug}`} href={`/${locale}/projects/${item.slug}`} className="color-000 fs-4 fw-bold mt-20"><small>{label}</small><span>{item.locales[locale].title}</span></Link>)}</nav></div>
+          <div className="next-prog section-padding"><h5 className="color-666 text-uppercase fw-light">{text.related}</h5><nav className="project-neighbor-links" aria-label={text.related}>{adjacent.map(({ project: item, label }) => <Link key={`${label}-${item.slug}`} href={`/${locale}/projects/${item.slug}`} className="color-000 fs-4 fw-bold mt-20"><small>{label}</small><span>{item.locales[locale].title}</span></Link>)}</nav></div>
         </div></div>
       </section>
 

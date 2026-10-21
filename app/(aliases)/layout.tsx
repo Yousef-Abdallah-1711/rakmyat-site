@@ -17,6 +17,7 @@ export default function AliasRootLayout({ children }: Readonly<{ children: React
         <link rel="stylesheet" href="/assets/css/lib/bootstrap-icons.css" />
         <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/lib/inter.css" />
+        <link rel="stylesheet" href="/assets/css/lib/noto-sans-arabic.css" />
         <link rel="stylesheet" href="/assets/css/lib/all.min.css" />
         <link rel="stylesheet" href="/assets/css/lib/animate.css" />
         <link rel="stylesheet" href="/assets/css/lib/jquery.fancybox.css" />
