@@ -14,6 +14,8 @@ export default function AliasRootLayout({ children }: Readonly<{ children: React
   return (
     <html lang="ar" dir="rtl">
       <head>
+        <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/NotoSansArabic-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="stylesheet" href="/assets/css/lib/bootstrap-icons.css" />
         <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/lib/inter.css" />

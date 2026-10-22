@@ -42,6 +42,8 @@ export default async function LocaleRootLayout({
   return (
     <html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
       <head>
+        <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {language === "ar" && <link rel="preload" href="/fonts/NotoSansArabic-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />}
         {stylesheets.map((href) => <link rel="stylesheet" href={href} key={href} />)}
       </head>
       <body>{children}</body>
