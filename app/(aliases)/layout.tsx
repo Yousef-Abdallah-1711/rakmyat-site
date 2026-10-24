@@ -15,11 +15,13 @@ export default function AliasRootLayout({ children }: Readonly<{ children: React
     <html lang="ar" dir="rtl">
       <head>
         <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/NotoSansArabic-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Cairo-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Tajawal-500.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="stylesheet" href="/assets/css/lib/bootstrap-icons.css" />
         <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/lib/inter.css" />
-        <link rel="stylesheet" href="/assets/css/lib/noto-sans-arabic.css" />
+        <link rel="stylesheet" href="/assets/css/lib/cairo.css" />
+        <link rel="stylesheet" href="/assets/css/lib/tajawal.css" />
         <link rel="stylesheet" href="/assets/css/lib/all.min.css" />
         <link rel="stylesheet" href="/assets/css/lib/animate.css" />
         <link rel="stylesheet" href="/assets/css/lib/jquery.fancybox.css" />

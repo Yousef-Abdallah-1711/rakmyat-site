@@ -7,7 +7,7 @@ import { TopPromotion } from "@/components/layout/SiteChrome";
 import { getLocalizedPath, localeCopy, type Locale } from "@/content/i18n";
 
 type SiteHeaderProps = {
-  activePage?: "home" | "about" | "contact" | "portfolio" | "services" | "howWeWork" | "project";
+  activePage?: "home" | "about" | "contact" | "portfolio" | "services" | "howWeWork" | "project" | "blog";
   transparent?: boolean;
   locale?: Locale;
 };
@@ -18,6 +18,7 @@ const navigation = [
   { key: "services", path: "services" },
   { key: "howWeWork", path: "how-we-work" },
   { key: "portfolio", path: "portfolio" },
+  { key: "blog", path: "blog" },
   { key: "contact", path: "contact" },
 ] as const;
 
@@ -88,10 +89,10 @@ export function SiteHeader({ activePage, transparent = false, locale = "en" }: S
 
   const navbarClass = `navbar navbar-expand-xl navbar-light${transparent ? " bg-transparent" : ""} style-5`;
   const languageTarget = locale === "en" ? "ar" : "en";
-  const languagePath = (["/en", "/ar", "/en/about", "/ar/about", "/en/services", "/ar/services", "/en/services/details", "/ar/services/details", "/en/how-we-work", "/ar/how-we-work", "/en/portfolio", "/ar/portfolio", "/en/contact", "/ar/contact"].includes(pathname) || /^\/(en|ar)\/projects\/[a-z0-9-]+$/.test(pathname))
+  const languagePath = (["/en", "/ar", "/en/about", "/ar/about", "/en/services", "/ar/services", "/en/services/details", "/ar/services/details", "/en/how-we-work", "/ar/how-we-work", "/en/portfolio", "/ar/portfolio", "/en/blog", "/ar/blog", "/en/contact", "/ar/contact"].includes(pathname) || /^\/(en|ar)\/projects\/[a-z0-9-]+$/.test(pathname) || /^\/(en|ar)\/blog\/[a-z0-9-]+$/.test(pathname))
     ? getLocalizedPath(languageTarget, pathname)
     : getLocalizedPath(languageTarget, "/contact");
-  const currentLanguagePath = (["/en", "/ar", "/en/about", "/ar/about", "/en/services", "/ar/services", "/en/services/details", "/ar/services/details", "/en/how-we-work", "/ar/how-we-work", "/en/portfolio", "/ar/portfolio", "/en/contact", "/ar/contact"].includes(pathname) || /^\/(en|ar)\/projects\/[a-z0-9-]+$/.test(pathname))
+  const currentLanguagePath = (["/en", "/ar", "/en/about", "/ar/about", "/en/services", "/ar/services", "/en/services/details", "/ar/services/details", "/en/how-we-work", "/ar/how-we-work", "/en/portfolio", "/ar/portfolio", "/en/blog", "/ar/blog", "/en/contact", "/ar/contact"].includes(pathname) || /^\/(en|ar)\/projects\/[a-z0-9-]+$/.test(pathname) || /^\/(en|ar)\/blog\/[a-z0-9-]+$/.test(pathname))
     ? getLocalizedPath(locale, pathname)
     : getLocalizedPath(locale, "/contact");
   const localizedHref = `${languagePath}${searchSuffix}`;

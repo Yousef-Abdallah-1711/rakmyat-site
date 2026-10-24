@@ -1,6 +1,7 @@
 import { ProductReasonsSection } from "@/components/sections/ProductReasonsSection";
 import { ProjectShowcaseSection } from "@/components/sections/ProjectShowcaseSection";
 import { HowWeWorkHomeSection } from "@/components/sections/HowWeWork";
+import { HomeBlogSection } from "@/components/sections/HomeBlogSection";
 import { ServicesWorkflowCards } from "@/components/sections/ServicesWorkflowCards";
 import { AboutCapabilitiesHero } from "@/components/sections/PageHeroes";
 import { getHomeContent } from "@/content/home";
@@ -25,6 +26,7 @@ function HomeMainSection2({ locale, direction }: { locale: Locale; direction: "r
       <HomeAboutSectionPaddingSection4 locale={locale} />
       <HomeFeaturesSectionPaddingSection6 locale={locale} />
       <HowWeWorkHomeSection locale={locale} />
+      <HomeBlogSection locale={locale} />
       <HomeClientsStyle5Section5 locale={locale} />
       <HomeDownloadSectionPaddingSection9 locale={locale} />
     </main>

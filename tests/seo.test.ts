@@ -17,7 +17,7 @@ test("localized metadata uses locale-specific canonicals and reciprocal absolute
   assert.deepEqual(ar.alternates.languages, {
     en: "https://www.example.test/en/projects/schooly",
     ar: "https://www.example.test/ar/projects/schooly",
-    "x-default": "https://www.example.test/ar/projects/schooly",
+    "x-default": "https://www.example.test/en/projects/schooly",
   });
   assert.deepEqual(ar.robots, { index: true, follow: true });
 });
@@ -27,7 +27,7 @@ test("without approved production origin pages stay noindex and do not emit cano
   assert.equal(result.alternates.canonical, undefined);
   assert.deepEqual(result.robots, { index: false, follow: false });
   assert.deepEqual(localizedAlternates("/contact", null), {
-    en: "/en/contact", ar: "/ar/contact", "x-default": "/ar/contact",
+    en: "/en/contact", ar: "/ar/contact", "x-default": "/en/contact",
   });
 });
 
@@ -41,7 +41,7 @@ test("sitemap lists localized public pages and published projects only", () => {
   assert.ok(!sitemap.some((entry) => entry.url.includes("draft")));
   assert.ok(!sitemap.some((entry) => entry.url.includes("admin") || entry.url.includes("api")));
   assert.deepEqual(sitemap[0].alternates?.languages, {
-    en: "https://www.example.test/en", ar: "https://www.example.test/ar", "x-default": "https://www.example.test/ar",
+    en: "https://www.example.test/en", ar: "https://www.example.test/ar", "x-default": "https://www.example.test/en",
   });
   assert.deepEqual(createPublicSitemap(null, []), []);
 });

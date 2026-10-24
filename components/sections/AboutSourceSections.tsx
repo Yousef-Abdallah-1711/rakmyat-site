@@ -36,7 +36,7 @@ export function AboutSourceSections({ locale = "en" }: { locale?: Locale }) {
       <section className="choose-us style-6"><div className="container"><div className="row justify-content-between gx-0">
         <div className="col-lg-6"><div className="img"><img src="/assets/img/choose_us/man_arrow.webp" alt="" /></div></div>
         <div className="col-lg-4"><div className="info"><div className="section-head mb-30 style-5"><h2>{copy.capabilitiesHeading}</h2></div><div className="text mb-50 fs-12px color-666">{copy.capabilitiesDescription}</div>
-          <ul>{copy.capabilities.map(({ title, description, image }) => <li className="d-flex mb-30" key={title}><small className="icon-50 me-4 flex-shrink-0"><img src={image} alt="" /></small><div className="inf"><h5>{title}</h5><p className="fs-12px color-666 mt-2">{description}</p></div></li>)}</ul>
+          <ul>{copy.capabilities.map(({ title, description, image }) => <li className="d-flex mb-30" key={title}><small className="icon-50 me-4 flex-shrink-0"><img src={image} alt="" /></small><div className="inf"><h3>{title}</h3><p className="fs-12px color-666 mt-2">{description}</p></div></li>)}</ul>
           <Link href={`/${locale}/services`} className="btn rounded-pill blue5-3Dbutn hover-blue2 sm-butn fw-bold mt-30 px-5">{copy.servicesCta}</Link>
         </div></div>
       </div></div><img src="/assets/img/about/about_s6_bubbles.png" alt="" className="bubbles rotate-center" /></section>

@@ -1,0 +1,45 @@
+/* Admin-only stylesheet — imported only by app/admin/layout.tsx.
+   The public site never loads this file.
+   Tailwind v4 CSS-first configuration: @source scopes utility scanning
+   to admin routes and components only. Preflight is loaded here so it
+   applies only within the admin HTML tree. */
+
+@import "tailwindcss";
+
+/* Scope Tailwind utility scanning to admin files only */
+@source "../../components/admin/**/*.{ts,tsx}";
+@source "../../app/admin/**/*.{ts,tsx}";
+@source "../../components/ui/**/*.{ts,tsx}";
+
+/* Allow Tailwind utilities to win over the legacy .admin-shell input etc.
+   rules that live in globals.css. We do this by placing globals.css rules
+   on a lower layer so Tailwind's un-layered utilities beat them. */
+@layer legacy-admin {
+  /* Existing admin rules from globals.css are applied unlayered there;
+     we don't move them here, but any Tailwind utility on an admin element
+     will naturally win because unlayered Tailwind utilities have higher
+     specificity than same-specificity layered rules. Tailwind v4 places
+     its utilities outside any layer, so they already outrank @layer rules.
+     No extra action needed — this comment documents the order. */
+}
+
+/* Admin design tokens — mapped to the Rakmyat brand palette */
+@theme {
+  --color-brand-blue: #1763bf;
+  --color-brand-blue-dark: #0d55ad;
+  --color-brand-blue-accent: #315fce;
+  --color-brand-blue-link: #275cff;
+  --color-brand-ink: #20242a;
+  --color-brand-ink-soft: #222;
+  --color-brand-muted: #666;
+  --color-brand-muted-dark: #4d5a69;
+  --color-brand-surface: #f0eff5;
+  --color-brand-border: #dfe4ea;
+  --color-brand-bg: #fff;
+  --color-brand-error: #a21b14;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}

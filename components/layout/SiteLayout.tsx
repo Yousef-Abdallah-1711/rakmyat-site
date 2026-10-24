@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { FooterContent, SiteFooter } from "@/components/layout/SiteChrome";
 import { PageEffects } from "@/components/layout/PageEffects";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { LegacySliderRuntime } from "@/components/sections/LegacySliderRuntime";
 import { PricingPeriodProvider } from "@/components/sections/PricingPeriod";
@@ -11,7 +12,7 @@ import type { Locale } from "@/content/i18n";
 type SiteLayoutProps = {
   children: ReactNode;
   activePage:
-    "home" | "about" | "contact" | "portfolio" | "services" | "howWeWork" | "project";
+    "home" | "about" | "contact" | "portfolio" | "services" | "howWeWork" | "project" | "blog";
   transparentHeader?: boolean;
   borderedFooter?: boolean;
   locale?: Locale;
@@ -35,6 +36,7 @@ export function SiteLayout({
         <FooterContent locale={locale} />
         <ScrollToTop locale={locale} />
       </SiteFooter>
+      <WhatsAppFloat />
     </>
   );
 }

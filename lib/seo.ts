@@ -8,7 +8,7 @@ export function localizedAlternates(path: string, origin: string | null) {
   return {
     en: absolute(en),
     ar: absolute(ar),
-    "x-default": absolute(ar),
+    "x-default": absolute(en),
   };
 }
 
@@ -35,7 +35,7 @@ export function createPublicSitemap(
     for (const locale of ["en", "ar"] as const) {
       entries.push({
         url: new URL(`/${locale}${path}`, origin).toString(),
-        alternates: { languages: { en: new URL(`/en${path}`, origin).toString(), ar: new URL(`/ar${path}`, origin).toString(), "x-default": new URL(`/ar${path}`, origin).toString() } },
+        alternates: { languages: { en: new URL(`/en${path}`, origin).toString(), ar: new URL(`/ar${path}`, origin).toString(), "x-default": new URL(`/en${path}`, origin).toString() } },
       });
     }
   }
@@ -44,7 +44,7 @@ export function createPublicSitemap(
       const path = `/projects/${project.slug}`;
       entries.push({
         url: new URL(`/${locale}${path}`, origin).toString(),
-        alternates: { languages: { en: new URL(`/en${path}`, origin).toString(), ar: new URL(`/ar${path}`, origin).toString(), "x-default": new URL(`/ar${path}`, origin).toString() } },
+        alternates: { languages: { en: new URL(`/en${path}`, origin).toString(), ar: new URL(`/ar${path}`, origin).toString(), "x-default": new URL(`/en${path}`, origin).toString() } },
       });
     }
   }

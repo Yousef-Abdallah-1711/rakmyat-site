@@ -20,7 +20,8 @@ const stylesheets = [
   "/assets/css/lib/bootstrap-icons.css",
   "/assets/css/lib/bootstrap.min.css",
   "/assets/css/lib/inter.css",
-  "/assets/css/lib/noto-sans-arabic.css",
+  "/assets/css/lib/cairo.css",
+  "/assets/css/lib/tajawal.css",
   "/assets/css/lib/all.min.css",
   "/assets/css/lib/animate.css",
   "/assets/css/lib/jquery.fancybox.css",
@@ -43,7 +44,10 @@ export default async function LocaleRootLayout({
     <html lang={language} dir={language === "ar" ? "rtl" : "ltr"}>
       <head>
         <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        {language === "ar" && <link rel="preload" href="/fonts/NotoSansArabic-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />}
+        {language === "ar" && <>
+          <link rel="preload" href="/fonts/Cairo-Variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/Tajawal-500.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        </>}
         {stylesheets.map((href) => <link rel="stylesheet" href={href} key={href} />)}
       </head>
       <body>{children}</body>

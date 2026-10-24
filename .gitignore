@@ -17,3 +17,7 @@ test-results/
 playwright-report/
 .DS_Store
 Thumbs.db
+
+public/uploads/
+postgres.log
+dev-server.log

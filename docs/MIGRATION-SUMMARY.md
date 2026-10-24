@@ -1,4 +1,4 @@
-﻿# Migration Summary
+# Migration Summary
 
 ## History
 
@@ -29,3 +29,17 @@ The later Rakmyat content phase added nine owner-confirmed portfolio projects, b
 - Current saved hosted-reference set: `specs/iteck-saas-clone/nextjs-migration/screenshots/stable/reference/`
 - Phase 2 manifest and metrics: `specs/iteck-saas-clone/nextjs-migration/phase-2/screenshots/captures.json` and `metrics.json`
 - Full workspace inventory and cleanup actions: [cleanup report](../../specs/iteck-saas-clone/cleanup-report.md)
+
+## Blog CMS migration: `0003_blog.sql`
+
+`db/migrations/0003_blog.sql` adds the database-backed blog. It creates new tables only and does not alter the existing contact, admin, rate-limit, or outbox tables. Full details are in the [blog CMS guide](blog-cms/README.md).
+
+- Tables: `blog_categories`, `blog_post_types`, `blog_tags`, `blog_posts`, and `blog_post_tags` (the join table between posts and tags).
+- Relationships: `blog_posts.category_id` and `blog_posts.post_type_id` are `ON DELETE SET NULL`. `blog_post_tags` rows are removed when their post or tag is deleted (`ON DELETE CASCADE`).
+- Constraints: `blog_posts.status` is `draft`, `published`, or `archived`; `locale_primary` is `en` or `ar`. Slugs are unique in every table.
+- Indexes: `blog_posts(status, published_at DESC)` for the public list, plus `blog_posts(category_id)` and `blog_posts(slug)`.
+- Seed data: 4 post types (`article`, `tutorial`, `case-study`, `news`), 4 categories, and 8 tags. Seeds use `ON CONFLICT (slug) DO NOTHING`.
+- Re-running the migration is safe: tables and indexes use `IF NOT EXISTS`, and seeds skip existing slugs.
+- Applied with `npm run db:migrate`. The runner picks up `NNNN_name.sql` files in filename order, so `0003` runs after `0002`.
+- Rollback: there is no `0003` down file. `0002` has one (`0002_bounded_outbox_retries.down.sql`). Reverting the blog schema means dropping the five tables by hand, in dependency order (`blog_post_tags`, `blog_posts`, then the taxonomy tables).
+- Verification in this pass: the SQL text and the runner's filename pattern were checked by reading the files. The migration was not re-run against the database in this pass.

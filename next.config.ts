@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  allowedDevOrigins: ["127.0.0.1", "localhost"],
   deploymentId: process.env.NEXT_DEPLOYMENT_ID || undefined,
   poweredByHeader: false,
   turbopack: { root: process.cwd() },

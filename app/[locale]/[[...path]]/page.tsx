@@ -12,6 +12,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { localeCopy, type Locale, type PageKey } from "@/content/i18n";
 import { getPortfolioProject } from "@/content/portfolio";
 import { portfolioProjects } from "@/content/portfolio";
+import { processCopy } from "@/content/process";
 import { publicRouteMetadata } from "@/lib/seo";
 import { getIndexableSiteOrigin } from "@/lib/site-url";
 import { escapeJsonLd } from "@/lib/structured-data";
@@ -47,6 +48,43 @@ function getPageKey(path: string[] = []): PageKey | null {
   if (key === "portfolio") return "portfolio";
   if (key === "contact") return "contact";
   return null;
+}
+
+type BreadcrumbLabel = "about" | "services" | "serviceDetails" | "howWeWork" | "portfolio" | "contact";
+
+function breadcrumbItems(page: PageKey): { label: BreadcrumbLabel; path: string }[] | null {
+  switch (page) {
+    case "about": return [{ label: "about", path: "/about" }];
+    case "services": return [{ label: "services", path: "/services" }];
+    case "serviceDetails": return [
+      { label: "services", path: "/services" },
+      { label: "serviceDetails", path: "/services/details" },
+    ];
+    case "howWeWork": return [{ label: "howWeWork", path: "/how-we-work" }];
+    case "portfolio": return [{ label: "portfolio", path: "/portfolio" }];
+    case "contact": return [{ label: "contact", path: "/contact" }];
+    default: return null;
+  }
+}
+
+function breadcrumbJsonLd(locale: Locale, page: PageKey, siteUrl: string) {
+  const items = breadcrumbItems(page);
+  if (!items) return null;
+  const copy = localeCopy[locale];
+  const trail = [
+    { name: copy.home, path: "" },
+    ...items.map((item) => ({ name: copy[item.label], path: item.path })),
+  ];
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: new URL(`/${locale}${crumb.path}`, siteUrl).toString(),
+    })),
+  };
 }
 
 export async function generateMetadata({
@@ -168,6 +206,7 @@ export default async function LocalizedPage({
     serviceDetails: <ServiceDetailsSourceSections locale={locale} />,
     portfolio: <PortfolioSourceSections locale={locale} />,
     contact: <ContactSourceSections locale={locale} />,
+    blog: null,
     project: null,
   }[page];
   const websiteJsonLd = page === "home" && siteUrl ? {
@@ -197,6 +236,28 @@ export default async function LocalizedPage({
       },
     ],
   } : null;
+  const breadcrumbLd = siteUrl ? breadcrumbJsonLd(locale, page, siteUrl) : null;
+  const serviceLd = page === "services" && siteUrl ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: locale === "en" ? "Custom Software Development" : "تطوير البرمجيات المخصصة",
+    provider: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "Rakmyat" },
+    serviceType: locale === "en" ? "Software Development" : "تطوير البرمجيات",
+    areaServed: "Worldwide",
+    description: locale === "en"
+      ? "Websites, applications, business systems, AI features, and integrations."
+      : "مواقع وتطبيقات وأنظمة أعمال وميزات للذكاء الاصطناعي وتكاملات.",
+  } : null;
+  // FAQPage uses the visible FAQ (real questions and answers), not the process stage titles.
+  const faqLd = page === "howWeWork" && siteUrl ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: processCopy[locale].faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  } : null;
   const activePage = page === "home" || page === "about" || page === "contact" || page === "portfolio" || page === "services" || page === "howWeWork"
     ? page
     : page === "serviceDetails" ? "services" : "project";
@@ -208,8 +269,14 @@ export default async function LocalizedPage({
       borderedFooter={page === "home" || page === "portfolio" || page === "serviceDetails"}
     >
       {websiteJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: escapeJsonLd(websiteJsonLd) }} />}
+      {breadcrumbLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: escapeJsonLd(breadcrumbLd) }} />}
+      {serviceLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: escapeJsonLd(serviceLd) }} />}
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: escapeJsonLd(faqLd) }} />}
       {page === "serviceDetails" && (
         <link rel="preload" as="image" href="/assets/img/inner5_back.webp" fetchPriority="high" />
+      )}
+      {page === "home" && (
+        <link rel="preload" as="image" href="/assets/img/header/hand_megaphone.webp" fetchPriority="high" />
       )}
       {section}
     </SiteLayout>

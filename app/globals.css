@@ -171,6 +171,149 @@ main .features-card.style-5 .text,
   height: 36px;
 }
 
+/* Footer gradient top border and bottom-bar separator */
+footer.style-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+  z-index: 1;
+}
+
+footer.style-5 .foot {
+  border-top: 1px solid #dfe4ea !important;
+}
+
+footer.style-5 .foot::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+}
+
+/* Back-to-top: pulsing shadow on hover */
+@keyframes to-top-pulse {
+  0% { box-shadow: 0 0 0 0 rgb(2 181 255 / 45%); }
+  70% { box-shadow: 0 0 0 10px rgb(2 181 255 / 0%); }
+  100% { box-shadow: 0 0 0 0 rgb(2 181 255 / 0%); }
+}
+
+.to_top:hover {
+  animation: to-top-pulse 1.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .to_top:hover {
+    animation: none;
+  }
+}
+
+/* ============================================================
+   WhatsApp floating button — ALL styles here, zero JS overhead.
+   The button is always in the DOM (SSR-safe). Entrance animation
+   runs once via CSS @keyframes with a 0.8s delay; no useState,
+   no useEffect, no re-render ever.
+   ============================================================ */
+@keyframes wa-enter {
+  from { opacity: 0; transform: translateY(24px) scale(0.8); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes wa-float-pulse {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-6px) scale(1.04); }
+}
+
+@keyframes wa-ring {
+  0%   { box-shadow: 0 4px 16px rgba(37,211,102,.45), 0 0 0 0 rgba(37,211,102,.55); }
+  70%  { box-shadow: 0 4px 16px rgba(37,211,102,.45), 0 0 0 14px rgba(37,211,102,0); }
+  100% { box-shadow: 0 4px 16px rgba(37,211,102,.45), 0 0 0 0 rgba(37,211,102,0); }
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 9998;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 4px 16px rgba(37,211,102,.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  /* entrance: runs once, 0.8s delay so page content loads first */
+  animation:
+    wa-enter 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.8s both,
+    wa-float-pulse 3s ease-in-out 1.4s infinite,
+    wa-ring 3s ease-out 1.6s infinite;
+  will-change: transform;
+}
+
+.wa-float:hover,
+.wa-float:focus-visible {
+  background: #20c05a;
+  box-shadow: 0 6px 24px rgba(37,211,102,.6);
+  transform: scale(1.1);
+  animation: none;   /* freeze pulse on hover */
+  outline: none;
+}
+
+.wa-float:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.wa-float svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+/* Tooltip that appears to the right of the button */
+.wa-float-tooltip {
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: #111;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+.wa-float:hover .wa-float-tooltip,
+.wa-float:focus-visible .wa-float-tooltip {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float {
+    animation: wa-enter 0.2s ease 0.3s both;
+  }
+  .wa-float:hover,
+  .wa-float:focus-visible {
+    animation: none;
+  }
+}
+
 .neutral-logo {
   min-height: 64px;
   display: flex !important;
@@ -917,4 +1060,377 @@ html {
 .features-card.style-5 .icon img {
   -webkit-filter: drop-shadow(0 4px 6px rgb(7 57 114 / 14%)) !important;
   filter: drop-shadow(0 4px 6px rgb(7 57 114 / 14%)) !important;
+}
+
+/* ============================================================
+   Arabic typography: Cairo (headings) + Tajawal (body/UI)
+   RTL layout corrections
+   ============================================================ */
+
+html[dir="rtl"] body,
+html[lang="ar"] body {
+  font-family: "Tajawal", "Cairo", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+html[dir="rtl"] #home-hero-title,
+html[dir="rtl"] .inner-header h1,
+html[dir="rtl"] .section-head h6,
+html[dir="rtl"] .section-head h2 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+}
+
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .nav-link,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .butn {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] li,
+html[dir="rtl"] .text,
+html[dir="rtl"] .inf p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  line-height: 1.9;
+  text-wrap: pretty;
+}
+
+html[dir="rtl"] .card,
+html[dir="rtl"] .features-card,
+html[dir="rtl"] .community-card,
+html[dir="rtl"] .service-card {
+  font-family: "Tajawal", sans-serif;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea,
+html[dir="rtl"] .form-control,
+html[dir="rtl"] .form-select {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .admin-shell {
+  font-family: "Tajawal", sans-serif;
+}
+
+/* Admin sidebar layout */
+.admin-frame { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; background: #f5f7fa; }
+.admin-sidebar { position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column; background: #fff; border-inline-end: 1px solid var(--rakmyat-border); padding: 0; }
+.admin-sidebar-brand { display: flex; align-items: center; gap: 0.6rem; padding: 1.25rem 1.25rem 1rem; font-weight: 700; font-size: 1.05rem; color: var(--rakmyat-ink); text-decoration: none; border-bottom: 1px solid var(--rakmyat-border); }
+.admin-sidebar-brand img { width: 32px; height: 32px; flex: 0 0 auto; }
+.admin-sidebar-label { font-size: 0.75rem; font-weight: 600; color: var(--rakmyat-muted); letter-spacing: 0.06em; text-transform: uppercase; padding: 1.25rem 1.25rem 0.4rem; }
+.admin-sidebar-nav { flex: 1; padding: 0.5rem 0.75rem; display: flex; flex-direction: column; gap: 2px; }
+.admin-sidebar-link { display: flex; align-items: center; gap: 0.65rem; padding: 0.6rem 0.75rem; border-radius: 8px; color: var(--rakmyat-ink); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: background 0.15s, color 0.15s; }
+.admin-sidebar-link:hover { background: var(--rakmyat-surface-muted); }
+.admin-sidebar-link.active { background: #dbeafe; color: var(--rakmyat-blue-dark); font-weight: 700; }
+.admin-sidebar-link svg { flex: 0 0 auto; opacity: 0.7; }
+.admin-sidebar-footer { padding: 0.75rem; border-top: 1px solid var(--rakmyat-border); }
+.admin-signout-btn { width: 100%; padding: 0.55rem 0.75rem; border: 1px solid var(--rakmyat-border); border-radius: 8px; background: #fff; color: var(--rakmyat-muted); font: inherit; font-size: 0.9rem; cursor: pointer; text-align: start; }
+.admin-signout-btn:hover { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
+.admin-content { min-width: 0; }
+@media (max-width: 768px) {
+  .admin-frame { grid-template-columns: 1fr; }
+  .admin-sidebar { position: static; height: auto; flex-direction: row; flex-wrap: wrap; align-items: center; padding: 0.5rem; border-bottom: 1px solid var(--rakmyat-border); border-inline-end: 0; }
+  .admin-sidebar-brand { border-bottom: 0; padding: 0.5rem; }
+  .admin-sidebar-nav { flex: 1 1 100%; flex-direction: row; flex-wrap: wrap; padding: 0.25rem; gap: 4px; }
+  .admin-sidebar-link { padding: 0.4rem 0.6rem; font-size: 0.82rem; }
+  .admin-sidebar-label { display: none; }
+  .admin-sidebar-footer { padding: 0.35rem; border-top: 0; border-inline-start: 1px solid var(--rakmyat-border); }
+}
+
+html[dir="rtl"] .text-start { text-align: right !important; }
+html[dir="rtl"] .text-end { text-align: left !important; }
+
+html[dir="rtl"] .inner-header.style-5 .content {
+  padding-right: 0 !important;
+  padding-left: 170px !important;
+}
+
+@media (max-width: 991.98px) {
+  html[dir="rtl"] .inner-header.style-5 .content {
+    padding-left: 50px !important;
+    padding-right: 0 !important;
+  }
+}
+
+html[dir="rtl"] .inner-header.style-5 .content .side-img {
+  right: auto !important;
+  left: 0 !important;
+}
+
+[dir="rtl"] .project-showcase-link i {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+html[dir="rtl"] .inner-header.style-5 .content .links > :not(:last-child) {
+  padding-inline-end: 10px;
+  border-inline-end: 1px solid rgb(0 0 0 / 20%);
+}
+
+/* ============================================================
+   Navigation: bold menu links (LTR and RTL)
+   ============================================================ */
+
+.navbar.style-5 .navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+/* The CTA button already has fw-bold via Bootstrap; make sure it's at least 700 */
+.navbar.style-5 .nav-side .btn {
+  font-weight: 700 !important;
+}
+
+html[dir="rtl"] .navbar.style-5 .navbar-nav .nav-link {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* ============================================================
+   Production typography refinements
+   ============================================================ */
+
+/* Footer title and section heads: Cairo bold for Arabic */
+html[dir="rtl"] footer.style-5 .items .title,
+html[dir="rtl"] footer.style-5 .foot .logo span {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+/* Arabic footer: bigger, bolder link text with brand color */
+html[dir="rtl"] footer.style-5 .items ul li a {
+  font-family: "Cairo", sans-serif;
+  font-size: 0.9rem;       /* up from vendor 12px */
+  font-weight: 600;
+  color: var(--rakmyat-ink);
+  transition: color 0.2s ease;
+}
+
+html[dir="rtl"] footer.style-5 .items ul li a:hover,
+html[dir="rtl"] footer.style-5 .items ul li a:focus-visible {
+  color: var(--rakmyat-blue) !important;
+}
+
+/* Arabic footer: column title uses brand gradient accent */
+html[dir="rtl"] footer.style-5 .items .title {
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: var(--rakmyat-ink);
+  background: linear-gradient(to left, var(--rakmyat-blue-dark), var(--rakmyat-blue-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Arabic footer description text */
+html[dir="rtl"] footer.style-5 .items .text {
+  font-family: "Cairo", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Arabic footer bottom bar brand name */
+html[dir="rtl"] footer.style-5 .foot .rakmyat-wordmark--footer span {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Arabic footer copyright line */
+html[dir="rtl"] footer.style-5 .foot small.small {
+  font-family: "Tajawal", sans-serif;
+  font-size: 0.875rem;
+}
+
+/* Arabic info column: category label and brand name */
+html[dir="rtl"] footer.style-5 .items .rakmyat-info-category {
+  font-family: "Cairo", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] footer.style-5 .items .rakmyat-info-brand {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* Top promo bar: Tajawal for Arabic */
+html[dir="rtl"] .top-navbar {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 600;
+}
+
+/* Section eyebrow labels: Cairo SemiBold */
+html[dir="rtl"] .section-head h6,
+html[dir="rtl"] .section-head .color-main {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+/* Pricing cards */
+html[dir="rtl"] .pricing.style-5 .item .price,
+html[dir="rtl"] .pricing.style-5 .item .title {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+/* Team/community card names */
+html[dir="rtl"] .community.style-5 .content .commun-card .inf h3,
+html[dir="rtl"] .team-card .info h4 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+/* Inquiry/contact form labels: Tajawal SemiBold */
+html[dir="rtl"] .inquiry-label,
+html[dir="rtl"] .inquiry-heading h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+/* Breadcrumb: Cairo */
+html[dir="rtl"] .inner-header.style-5 .content .links {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+/* Tag chips and small labels */
+html[dir="rtl"] .project-detail .project-technologies .tags li,
+html[dir="rtl"] .portfolio.style-1 .portfolio-card .info > small.color-main {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+
+/* English locale: ensure Inter weight is bold for nav too */
+html[lang="en"] .navbar.style-5 .navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+/* line-height improvement for Arabic paragraphs in cards */
+html[dir="rtl"] .about.style-5 .content > .container > .row > .col-lg-4 > p,
+html[dir="rtl"] .about.style-5 .content .inf > p {
+  line-height: 2;
+}
+
+/* Better Arabic letter-spacing reset on ALL elements */
+html[dir="rtl"] * {
+  letter-spacing: 0 !important;
+}
+
+/* ============================================================
+   Heading hierarchy: retagged headings keep their previous look
+   ============================================================ */
+
+/* Service details: page title is the h1 now (was h2) */
+.inner-header.style-5 .content h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .inner-header.style-5 .content h1 {
+    font-size: 30px;
+  }
+}
+
+html[dir="rtl"] .inner-header.style-5 .content h1 {
+  font-weight: 700;
+}
+
+/* Service details: sidebar "related" heading (was h5) */
+.services-details-page.style-5 .side-links .links-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #9993;
+}
+
+/* Service details: "Project" eyebrow inside the callout (was h6) */
+.services-details-page.style-5 .side-links .banner1 .title .banner-eyebrow {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-blue5);
+  margin: 0 0 10px;
+}
+
+html[dir="rtl"] .services-details-page.style-5 .side-links .banner1 .title .banner-eyebrow {
+  font-family: "Cairo", sans-serif;
+}
+
+/* Bootstrap .h3/.h4/.h5 utilities set line-height 1.2; keep the theme's 1.4 */
+.services-details-page.style-5 .h3,
+.services-details-page.style-5 .h4,
+.services-details-page.style-5 .h5,
+.single-project.style-5 .project-technologies .h5,
+.single-project.style-5 .next-prog .h5 {
+  line-height: 1.4;
+}
+
+/* Project detail: metadata values (were h6) */
+.single-project.style-5 .about-app.style-5 .about-cards .about-card .about-card-value {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 0;
+}
+
+html[dir="rtl"] .single-project.style-5 .about-app.style-5 .about-cards .about-card .about-card-value {
+  font-family: "Cairo", sans-serif;
+}
+
+/* About: capability titles (were h5) */
+.choose-us.style-6 .info ul li .inf h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/* Home page blog section */
+@media (max-width: 991.98px) {
+  .home-blog-section .home-blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .home-blog-section .home-blog-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+html[dir="rtl"] .home-blog-section .home-blog-grid {
+  direction: rtl;
 }
