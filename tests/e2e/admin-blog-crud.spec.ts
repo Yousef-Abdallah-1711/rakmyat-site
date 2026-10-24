@@ -24,6 +24,11 @@ async function loginAsAdmin(page: Page, request: APIRequestContext) {
   await page.context().addCookies([{ name: SESSION_COOKIE_NAME, value: cachedSessionCookie, url: BASE_URL }]);
 }
 
+// Headers for direct API calls; call only after loginAsAdmin() has cached the session cookie.
+function sessionHeaders() {
+  return { Origin: BASE_URL, Cookie: `${SESSION_COOKIE_NAME}=${cachedSessionCookie}`, "Content-Type": "application/json" };
+}
+
 test("blog post create, reopen, edit, and delete through the admin routes", async ({ page, request }) => {
   await loginAsAdmin(page, request);
   await page.goto("/admin/blog");
@@ -105,5 +110,74 @@ test("unauthenticated visitors are redirected from the new and edit post routes"
     await expect(page).toHaveURL(/\/admin\/login$/);
   } finally {
     await context.close();
+  }
+});
+
+test("draft autosave creates the post after a pause and moves the URL to its edit route", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  await page.goto("/admin/blog/posts/new");
+  await expect(page.getByRole("heading", { name: "Create blog post" })).toBeVisible();
+
+  const stamp = Date.now();
+  await page.getByLabel(/^Slug/).fill(`autosave-playwright-${stamp}`);
+  await page.getByLabel(/Title \(English\)/).fill(`Autosave Test EN ${stamp}`);
+  await page.getByLabel(/Title \(Arabic\)/).fill(`اختبار الحفظ التلقائي ${stamp}`);
+
+  // Nothing was clicked: the debounced autosave alone should create the draft and switch to edit mode.
+  await page.waitForURL(EDIT_URL, { timeout: 15_000 });
+  await expect(page.getByText(/Draft autosaved/)).toBeVisible();
+
+  const id = new URL(page.url()).pathname.match(/\/posts\/([0-9a-f-]{36})\/edit$/i)?.[1];
+  expect(id, "autosave should leave the post id in the URL").toBeTruthy();
+  const removed = await request.delete(`/api/admin/blog/posts/${id}`, { headers: sessionHeaders() });
+  expect(removed.status()).toBe(200);
+});
+
+test("category management page loads", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  await page.goto("/admin/blog/categories");
+  await expect(page.getByRole("heading", { name: /categor/i }).first()).toBeVisible();
+});
+
+test("tag management page loads", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  await page.goto("/admin/blog/tags");
+  await expect(page.getByRole("heading", { name: /tag/i }).first()).toBeVisible();
+});
+
+test("media library page loads for authenticated users", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  await page.goto("/admin/media");
+  await expect(page.getByRole("heading", { name: /media/i }).first()).toBeVisible();
+});
+
+test("XSS in blog body is sanitized on create and on update", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  const stamp = Date.now();
+  const xssBody = '<p>Safe text</p><script>alert("xss")</script><p onclick="steal()">After</p><img src="x" onerror="alert(1)">';
+
+  const createRes = await request.post("/api/admin/blog/posts", {
+    headers: sessionHeaders(),
+    data: { slug: `xss-test-${stamp}`, title_en: "XSS Test", title_ar: "اختبار", body_en: xssBody },
+  });
+  expect(createRes.status()).toBe(201);
+  const created = (await createRes.json()) as { post: { id: string; body_en: string } };
+  try {
+    expect(created.post.body_en).not.toContain("<script");
+    expect(created.post.body_en).not.toContain("onclick");
+    expect(created.post.body_en).not.toContain("onerror");
+    expect(created.post.body_en).toContain("Safe text");
+
+    const patchRes = await request.patch(`/api/admin/blog/posts/${created.post.id}`, {
+      headers: sessionHeaders(),
+      data: { body_en: '<p>Patched</p><iframe src="https://evil.example/x"></iframe>' },
+    });
+    expect(patchRes.status()).toBe(200);
+    const patched = (await patchRes.json()) as { post: { body_en: string } };
+    expect(patched.post.body_en).toContain("Patched");
+    expect(patched.post.body_en).not.toContain("<iframe");
+    expect(patched.post.body_en).not.toContain("evil.example");
+  } finally {
+    await request.delete(`/api/admin/blog/posts/${created.post.id}`, { headers: sessionHeaders() });
   }
 });

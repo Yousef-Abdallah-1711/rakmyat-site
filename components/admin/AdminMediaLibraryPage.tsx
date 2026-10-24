@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 type MediaFile = { url: string; name: string; size: number; type: "image" | "video"; created_at: string };
 type SortKey = "date" | "name" | "size";
 
-const MAX_BYTES = 50 * 1024 * 1024;
+// File size limit is validated server-side at 50 MB.
 const IMAGE_ACCEPT: Record<string, string[]> = {
   "image/jpeg": [".jpg", ".jpeg"],
   "image/png": [".png"],
@@ -44,7 +44,7 @@ function uploadWithProgress(file: File, onProgress: (pct: number) => void): Prom
     xhr.upload.onprogress = (e) => { if (e.lengthComputable) onProgress(Math.round((e.loaded / e.total) * 100)); };
     xhr.onload = () => {
       let payload: { url?: string; name?: string; size?: number; type?: "image" | "video"; error?: string } = {};
-      try { payload = JSON.parse(xhr.responseText) as typeof payload; } catch {}
+      try { payload = JSON.parse(xhr.responseText) as typeof payload; } catch { /* ignore parse error */ }
       if (xhr.status >= 200 && xhr.status < 300 && payload.url && payload.name && payload.type) {
         resolve({ url: payload.url, name: payload.name, size: payload.size ?? file.size, type: payload.type, created_at: new Date().toISOString() });
       } else {

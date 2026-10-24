@@ -213,6 +213,10 @@
   padding: 0.3rem 0.6rem;
 }
 
+.autosaveStatus { font-size: 0.78rem; color: var(--rakmyat-muted); }
+.autosaveSaved { color: #16a34a; }
+.autosaveError { color: var(--rakmyat-error); }
+
 @media (max-width: 720px) {
   .form {
     grid-template-columns: 1fr;

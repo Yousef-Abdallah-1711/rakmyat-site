@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { getAdminSession, requireSameOrigin } from "@/lib/server/security";
 import { getDatabase } from "@/lib/server/db";
@@ -38,6 +39,9 @@ export async function POST(request: Request) {
     const rows = await sql`INSERT INTO blog_tags (slug, name_en, name_ar)
       VALUES (${body.data.slug}, ${body.data.name_en}, ${body.data.name_ar})
       RETURNING id, slug, name_en, name_ar, created_at`;
+    // Write is committed; the blog index lists tags in its filters.
+    revalidatePath("/en/blog");
+    revalidatePath("/ar/blog");
     return NextResponse.json({ tag: rows[0] }, { status: 201, headers: noStore });
   } catch (error) {
     if (postgresErrorCode(error) === "23505") return NextResponse.json({ error: "slug_taken" }, { status: 409, headers: noStore });

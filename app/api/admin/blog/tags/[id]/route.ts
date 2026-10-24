@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { blogIdSchema } from "@/lib/blog-schema";
 import { getAdminSession, requireSameOrigin } from "@/lib/server/security";
@@ -8,6 +9,13 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 const noStore = { "Cache-Control": "private, no-store, max-age=0", Vary: "Cookie" };
 const MAX_BODY_BYTES = 16 * 1024;
+
+// Refreshes the blog index and every post page: the pattern matches all [locale]/blog/[slug] pages.
+function revalidateBlogPages() {
+  revalidatePath("/en/blog");
+  revalidatePath("/ar/blog");
+  revalidatePath("/[locale]/blog/[slug]", "page");
+}
 
 // Slugs are immutable once created, so the strict schema rejects a `slug` key outright.
 const updateSchema = z.strictObject({
@@ -30,6 +38,8 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
     const rows = await sql`UPDATE blog_tags SET ${sql(body.data)} WHERE id = ${id}::uuid
       RETURNING id, slug, name_en, name_ar, created_at`;
     if (!rows.length) return NextResponse.json({ error: "not_found" }, { status: 404, headers: noStore });
+    // Write is committed; post pages and the index both render the tag name.
+    revalidateBlogPages();
     return NextResponse.json({ tag: rows[0] }, { headers: noStore });
   } catch {
     console.error("admin_blog_tag_update_failed");
@@ -53,6 +63,8 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ i
       return true;
     });
     if (!deleted) return NextResponse.json({ error: "not_found" }, { status: 404, headers: noStore });
+    // Write is committed; the tag was removed from posts, so index and post pages are refreshed.
+    revalidateBlogPages();
     return NextResponse.json({ deleted: true }, { headers: noStore });
   } catch {
     console.error("admin_blog_tag_delete_failed");

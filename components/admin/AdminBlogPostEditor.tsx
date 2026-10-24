@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import styles from "./AdminBlog.module.css";
 import { MediaLibrary } from "./MediaLibrary";
 import { RichTextEditor } from "./RichTextEditor";
@@ -105,6 +105,15 @@ function statusPayload(form: Form) {
     : { status: form.status };
 }
 
+type AutosaveStatus = "idle" | "pending" | "saving" | "saved" | "error";
+const AUTOSAVE_DELAY_MS = 3000;
+
+// Autosave only touches drafts: a new post, or a stored draft whose form status is still draft.
+// Publishing and edits to live posts always go through the explicit Save button.
+function canAutosave(form: Form, isNew: boolean, persistedStatus: Status | null) {
+  return form.status === "draft" && (isNew || persistedStatus === "draft");
+}
+
 function errorText(code: string | undefined, fields?: string[]) {
   const base = errorMessages[code ?? ""] ?? "Could not save. Check database configuration and try again. · تعذر الحفظ. تحقق من إعداد قاعدة البيانات.";
   return fields?.length ? `${base} (${fields.join(", ")})` : base;
@@ -124,6 +133,17 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
   const [postTypes, setPostTypes] = useState<Option[]>([]);
   const [tags, setTags] = useState<Option[]>([]);
   const [lookupError, setLookupError] = useState("");
+  const [autosaveStatus, setAutosaveStatus] = useState<AutosaveStatus>("idle");
+  const autosaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autosaveResetRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autosaveAbortRef = useRef<AbortController | null>(null);
+  // True while an autosave POST is in flight; a create is never aborted, so this blocks a second create.
+  const autosaveCreatingRef = useRef(false);
+  // JSON of the form as last stored; autosave runs only when the form differs from it.
+  const lastSavedFormRef = useRef<string>("");
+  // Status as stored on the server, used to decide whether autosave may touch the post.
+  const persistedStatusRef = useRef<Status | null>(null);
+  const mountedRef = useRef(false);
 
   // Category, post type, and tag options for the dropdowns and tag checkboxes.
   useEffect(() => {
@@ -169,6 +189,9 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
         if (!response.ok) throw new Error("load_failed");
         const payload = (await response.json()) as { post: Post };
         if (!active) return;
+        // The loaded values are the saved baseline, so loading alone does not trigger an autosave.
+        lastSavedFormRef.current = JSON.stringify(formFromPost(payload.post));
+        persistedStatusRef.current = payload.post.status;
         setForm(formFromPost(payload.post));
         setSlugTouched(true);
         setLoadState("ready");
@@ -178,6 +201,81 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       });
     return () => { active = false; };
   }, [postId, router]);
+
+  // Draft autosave: AUTOSAVE_DELAY_MS after the last change, when the form is valid, changed, and a draft.
+  // A new post is created once; later autosaves PATCH the id that the create returned.
+  useEffect(() => {
+    if (loadState !== "ready" || saving) return;
+    const formJson = JSON.stringify(form);
+    const isNew = editId === null;
+    if (formJson === lastSavedFormRef.current || !canAutosave(form, isNew, persistedStatusRef.current) || validateForm(form)) {
+      setAutosaveStatus((status) => (status === "pending" ? "idle" : status));
+      return;
+    }
+
+    setAutosaveStatus("pending");
+    autosaveTimerRef.current = setTimeout(async () => {
+      autosaveTimerRef.current = null;
+      // A create is still in flight; when it finishes it updates editId, which re-runs this effect.
+      if (autosaveCreatingRef.current) return;
+
+      const controller = new AbortController();
+      if (isNew) {
+        // Creates are not aborted: the server may already have inserted the row.
+        autosaveCreatingRef.current = true;
+      } else {
+        // A newer PATCH supersedes an older one that is still in flight.
+        autosaveAbortRef.current?.abort();
+        autosaveAbortRef.current = controller;
+      }
+      setAutosaveStatus("saving");
+      try {
+        const response = await fetch(isNew ? "/api/admin/blog/posts" : `/api/admin/blog/posts/${editId}`, {
+          method: isNew ? "POST" : "PATCH",
+          headers: jsonHeaders,
+          body: JSON.stringify(commonPayload(form)),
+          signal: isNew ? undefined : controller.signal,
+        });
+        if (response.status === 401) { window.location.replace("/admin/login"); return; }
+        const result = (await response.json().catch(() => ({}))) as { post?: Post };
+        if (!response.ok || !result.post) { setAutosaveStatus("error"); return; }
+
+        if (isNew && mountedRef.current) {
+          // Switch to edit mode and move the URL to the new post without remounting the form.
+          window.history.replaceState(null, "", `/admin/blog/posts/${result.post.id}/edit`);
+          setEditId(result.post.id);
+        }
+        persistedStatusRef.current = "draft";
+        lastSavedFormRef.current = formJson;
+        setAutosaveStatus("saved");
+        if (autosaveResetRef.current) clearTimeout(autosaveResetRef.current);
+        autosaveResetRef.current = setTimeout(() => {
+          setAutosaveStatus((status) => (status === "saved" ? "idle" : status));
+        }, AUTOSAVE_DELAY_MS);
+      } catch {
+        // An aborted PATCH was superseded by a newer autosave or a manual save; that run owns the status.
+        if (controller.signal.aborted) return;
+        setAutosaveStatus("error");
+      } finally {
+        if (isNew) autosaveCreatingRef.current = false;
+      }
+    }, AUTOSAVE_DELAY_MS);
+
+    return () => {
+      if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current);
+      autosaveTimerRef.current = null;
+    };
+  }, [form, saving, loadState, editId]);
+
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+      if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current);
+      if (autosaveResetRef.current) clearTimeout(autosaveResetRef.current);
+      autosaveAbortRef.current?.abort();
+    };
+  }, []);
 
   function goBack() {
     if (onBack) onBack();
@@ -209,6 +307,13 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
     setSavedMessage("");
     const problem = validateForm(form);
     if (problem) { setFormError(problem); return; }
+    if (autosaveCreatingRef.current) {
+      setFormError("Autosave is still creating this draft. Try again in a moment. · الحفظ التلقائي ما زال ينشئ المسودة. حاول بعد لحظات.");
+      return;
+    }
+    // The manual save covers whatever an in-flight autosave PATCH would have written.
+    autosaveAbortRef.current?.abort();
+    setAutosaveStatus("idle");
     setSaving(true);
     try {
       const isNew = editId === null;
@@ -231,6 +336,8 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
           const followUp = await fetch(`/api/admin/blog/posts/${post.id}`, { method: "PATCH", headers: jsonHeaders, body: JSON.stringify(statusPayload(form)) });
           const followUpResult = (await followUp.json().catch(() => ({}))) as { post?: Post; error?: string };
           if (!followUp.ok || !followUpResult.post) {
+            lastSavedFormRef.current = JSON.stringify(formFromPost(post));
+            persistedStatusRef.current = post.status;
             setForm(formFromPost(post));
             setSlugTouched(true);
             setFormError(`${"The post was saved as a draft, but its status could not be changed. · تم حفظ المنشور كمسودة لكن تعذر تغيير حالته."} ${errorText(followUpResult.error)}`);
@@ -240,6 +347,8 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
         }
       }
       setEditId(post.id);
+      lastSavedFormRef.current = JSON.stringify(formFromPost(post));
+      persistedStatusRef.current = post.status;
       setForm(formFromPost(post));
       setSlugTouched(true);
       setSavedMessage("Saved. · تم الحفظ.");
@@ -388,6 +497,11 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       <div className={styles.actions}>
         <div className={styles.actionGroup}>
           <button type="submit" disabled={saving}>{saving ? "Saving… · جاري الحفظ…" : "Save · حفظ"}</button>
+          {/* aria-live rather than role="status": the Saved. message already owns that role. */}
+          {autosaveStatus === "pending" && <span className={styles.autosaveStatus} aria-live="polite">Unsaved changes… · تغييرات غير محفوظة…</span>}
+          {autosaveStatus === "saving" && <span className={styles.autosaveStatus} aria-live="polite">Autosaving… · جاري الحفظ التلقائي…</span>}
+          {autosaveStatus === "saved" && <span className={`${styles.autosaveStatus} ${styles.autosaveSaved}`} aria-live="polite">Draft autosaved ✓ · تم حفظ المسودة تلقائيًا</span>}
+          {autosaveStatus === "error" && <span className={`${styles.autosaveStatus} ${styles.autosaveError}`} aria-live="polite">Autosave failed · فشل الحفظ التلقائي</span>}
           <button type="button" onClick={goBack} disabled={saving}>Back · رجوع</button>
         </div>
         {!isNew && <button type="button" className={styles.danger} onClick={() => void deletePost()} disabled={saving}>Delete · حذف</button>}

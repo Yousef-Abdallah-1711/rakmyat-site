@@ -87,7 +87,7 @@ export function ProjectScreenshotFrame({
   );
 }
 
-function ScreenshotVisual({ src, alt, locale, title, variant, priority, group, slug }: ScreenshotVisualProps) {
+function ScreenshotVisual({ src, alt, locale, title, variant, priority, group: _group, slug }: ScreenshotVisualProps) {
   const image = (
     <span className="project-visual-image-area">
       <Image src={src} alt={alt} fill sizes={imageSizes(variant)} quality={84} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} />
