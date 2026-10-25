@@ -136,6 +136,19 @@ exit 92
     const failedDb = join(destination, "rakmyat-20300101T000000Z.db.dump.gpg.FAILED");
     assert.equal((await readFile(failedDb, "utf8")).trim(), "synthetic custom archive");
     assert.deepEqual(await readdir(destination), ["rakmyat-20300101T000000Z.db.dump.gpg.FAILED"]);
+
+    const refusedDb = join(destination, "rakmyat-20300101T000000Z.db.dump.gpg");
+    await writeFile(refusedDb, "preserve-existing-backup");
+    const refused = runBash(backupScript, {
+      ...process.env,
+      PATH: `${bin}:${process.env.PATH ?? ""}`,
+      BACKUP_GPG_RECIPIENT: "test@example.invalid",
+      BACKUP_DESTINATION: destination,
+      MEDIA_ROOT: media,
+    });
+    assert.equal(refused.status, 2, refused.stderr);
+    assert.match(refused.stderr, /Refusing to overwrite existing backup output/);
+    assert.equal(await readFile(refusedDb, "utf8"), "preserve-existing-backup");
   } finally {
     await rm(work, { recursive: true, force: true });
   }
