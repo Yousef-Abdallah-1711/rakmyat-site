@@ -205,6 +205,43 @@ test("unknown post id shows a not-found message with a way back", async ({ page,
   await expect(page.getByRole("link", { name: /Back to posts/ })).toBeVisible();
 });
 
+test("trashed published blog posts return 404 on their public URL", async ({ page, request }) => {
+  test.skip(!process.env.TEST_ADMIN_DATABASE_URL, "requires the explicitly configured disposable PostgreSQL test database");
+  const testDb = new URL(process.env.TEST_ADMIN_DATABASE_URL!);
+  const appDb = process.env.DATABASE_URL ? new URL(process.env.DATABASE_URL) : null;
+  expect(testDb.hostname).toMatch(/^(localhost|127\.0\.0\.1)$/);
+  expect(decodeURIComponent(testDb.pathname.slice(1))).toBe("rakmyat_f16_test");
+  expect(appDb?.hostname).toMatch(/^(localhost|127\.0\.0\.1)$/);
+  expect(decodeURIComponent(appDb!.pathname.slice(1))).toBe("rakmyat_f16_test");
+
+  await loginAsAdmin(page, request);
+  const stamp = Date.now();
+  const slug = `trashed-published-${stamp}`;
+  let postId: string | undefined;
+  try {
+    const created = await request.post("/api/admin/blog/posts", {
+      headers: sessionHeaders(),
+      data: { slug, title_en: "Trashed published test", title_ar: "اختبار منشور محذوف" },
+    });
+    expect(created.status()).toBe(201);
+    const createdPost = (await created.json() as { post: { id: string; revision: number } }).post;
+    postId = createdPost.id;
+
+    const published = await request.patch(`/api/admin/blog/posts/${postId}`, {
+      headers: { ...sessionHeaders(), "If-Match": `"${createdPost.revision}"` },
+      data: { status: "published" },
+    });
+    expect(published.status()).toBe(200);
+    expect((await request.get(`/en/blog/${slug}`)).status()).toBe(200);
+
+    const trashed = await request.delete(`/api/admin/blog/posts/${postId}`, { headers: sessionHeaders() });
+    expect(trashed.status()).toBe(200);
+    expect((await request.get(`/en/blog/${slug}`)).status()).toBe(404);
+  } finally {
+    if (postId) await request.delete(`/api/admin/blog/posts/${postId}`, { headers: sessionHeaders() });
+  }
+});
+
 test("unauthenticated visitors are redirected from the new and edit post routes", async ({ browser }) => {
   const context = await browser.newContext();
   const page = await context.newPage();
