@@ -1,4 +1,5 @@
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
+import postgres from "postgres";
 
 // localhost, not 127.0.0.1: requireSameOrigin() rejects 127.0.0.1 origins on this dev server.
 const BASE_URL = "http://localhost:5175";
@@ -28,6 +29,58 @@ async function loginAsAdmin(page: Page, request: APIRequestContext) {
 function sessionHeaders() {
   return { Origin: BASE_URL, Cookie: `${SESSION_COOKIE_NAME}=${cachedSessionCookie}`, "Content-Type": "application/json" };
 }
+
+test("F-16: readback failure returns 503 and rolls back the create transaction", async ({ page, request }) => {
+  test.skip(!process.env.TEST_ADMIN_DATABASE_URL, "requires an explicitly configured disposable PostgreSQL test database");
+
+  const adminUrl = process.env.TEST_ADMIN_DATABASE_URL!;
+  const appUrl = process.env.DATABASE_URL;
+  const adminConnection = new URL(adminUrl);
+  const appConnection = appUrl ? new URL(appUrl) : null;
+  expect(adminConnection.hostname, "fault injection must target localhost").toMatch(/^(localhost|127\.0\.0\.1)$/);
+  expect(decodeURIComponent(adminConnection.pathname.slice(1)), "fault injection is limited to its named disposable database").toBe("rakmyat_f16_test");
+  expect(appConnection?.hostname, "the application must use the same local disposable database").toMatch(/^(localhost|127\.0\.0\.1)$/);
+  expect(decodeURIComponent(appConnection!.pathname.slice(1))).toBe("rakmyat_f16_test");
+
+  await loginAsAdmin(page, request);
+  const sql = postgres(adminUrl, { max: 1, prepare: false });
+  const triggerName = "f16_readback_delete_after_insert";
+  const functionName = "f16_readback_delete_after_insert_fn";
+  const tableName = "f16_readback_probe";
+  const stamp = Date.now();
+  const slug = `f16-readback-${stamp}`;
+
+  try {
+    await sql.unsafe(`DROP TRIGGER IF EXISTS ${triggerName} ON blog_posts`);
+    await sql.unsafe(`DROP FUNCTION IF EXISTS ${functionName}()`);
+    await sql.unsafe(`DROP TABLE IF EXISTS ${tableName}`);
+    await sql.unsafe(`CREATE TABLE ${tableName} (slug text PRIMARY KEY)`);
+    await sql.unsafe(`CREATE FUNCTION ${functionName}() RETURNS trigger LANGUAGE plpgsql AS $$
+      BEGIN
+        IF NEW.slug LIKE 'f16-readback-%' THEN
+          INSERT INTO ${tableName} (slug) VALUES (NEW.slug);
+          DELETE FROM blog_posts WHERE id = NEW.id;
+        END IF;
+        RETURN NULL;
+      END
+    $$`);
+    await sql.unsafe(`CREATE TRIGGER ${triggerName} AFTER INSERT ON blog_posts FOR EACH ROW EXECUTE FUNCTION ${functionName}()`);
+
+    const response = await request.post("/api/admin/blog/posts", {
+      headers: sessionHeaders(),
+      data: { slug, title_en: "F-16 readback probe", title_ar: "اختبار القراءة" },
+    });
+    expect(response.status()).toBe(503);
+    expect(await sql`SELECT slug FROM blog_posts WHERE slug = ${slug}`).toHaveLength(0);
+    expect(await sql`SELECT slug FROM ${sql(tableName)} WHERE slug = ${slug}`).toHaveLength(0);
+  } finally {
+    await sql.unsafe(`DROP TRIGGER IF EXISTS ${triggerName} ON blog_posts`);
+    await sql.unsafe(`DROP FUNCTION IF EXISTS ${functionName}()`);
+    await sql.unsafe(`DROP TABLE IF EXISTS ${tableName}`);
+    await sql`DELETE FROM blog_posts WHERE slug = ${slug}`;
+    await sql.end({ timeout: 5 });
+  }
+});
 
 function chunkedMultipartVideo(fileSize: number, boundary: string) {
   const encoder = new TextEncoder();
