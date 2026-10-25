@@ -21,3 +21,11 @@ build
 Dockerfile*
 docker-compose*.yml
 compose*.yaml
+
+# scripts/migrate.ts applies every file in db/migrations/ to whatever database
+# it's pointed at. This one is explicitly SIMULATION DATA ONLY (see its own
+# header) — useful for local/dev testing of pagination and search, never for
+# a database migrate.ts might run against in production. Keeping it out of the
+# image (rather than deleting it from the repo) is what lets dev/staging still
+# use it deliberately via `npm run db:migrate` outside Docker.
+db/migrations/0005_blog_seed_1000.sql

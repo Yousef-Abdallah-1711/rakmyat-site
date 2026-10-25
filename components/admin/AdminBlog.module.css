@@ -186,6 +186,17 @@
 
 .taxonomySection {
   display: grid;
+  /* Without an explicit track size, the implicit `auto` column sizes itself to
+     the grid item's min-content width — and a grid/flex item's min-width
+     defaults to auto (its content's intrinsic size), not 0. The Card inside
+     contains a wide <table>; even though .tableWrap has overflow-x:auto, that
+     only matters once the Card itself is width-constrained. Without this, the
+     table's natural width "blows out" the grid track, and with it the Card,
+     past the viewport on mobile (confirmed 375/414px overflow on both the
+     categories and tags admin pages, which share this layout). minmax(0, 1fr)
+     gives the track a real max (1fr) and lets it shrink to 0, so the Card is
+     finally bound by the viewport and .tableWrap's own scrollbar takes over. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   margin-bottom: 2.5rem;
 }
