@@ -13,7 +13,7 @@ type Post = {
   body_en: string; body_ar: string; cover_image_url: string | null; category_id: string | null; post_type_id: string | null;
   author_name: string; status: Status; locale_primary: "en" | "ar";
   seo_title_en: string | null; seo_title_ar: string | null; seo_description_en: string | null; seo_description_ar: string | null;
-  published_at: string | null; created_at: string; updated_at: string;
+  published_at: string | null; created_at: string; updated_at: string; revision: number; deleted_at: string | null;
   category_name_en?: string; category_name_ar?: string; post_type_name_en?: string; post_type_name_ar?: string;
   tags?: Option[];
 };
@@ -45,6 +45,10 @@ const maxBodyLength = 60000;
 const jsonHeaders = { "Content-Type": "application/json" };
 const errorMessages: Record<string, string> = {
   slug_taken: "This slug is already used by another post. · هذا الرابط المختصر مستخدم بالفعل.",
+  stale_revision: "This post changed elsewhere. Reload it before saving. · تغير المنشور في مكان آخر. أعد تحميله قبل الحفظ.",
+  precondition_required: "Reload this post before saving. · أعد تحميل المنشور قبل الحفظ.",
+  post_trashed: "Restore this post before editing. · استعد المنشور قبل التعديل.",
+  idempotency_conflict: "This save key was already used with different content. · مفتاح الحفظ مستخدم لمحتوى مختلف.",
   invalid_reference: "A selected category, post type, or tag no longer exists. · أحد الخيارات المختارة لم يعد موجودًا.",
   payload_too_large: "The post content is too large. · محتوى المنشور كبير جدًا.",
   invalid_fields: "Some fields are invalid. · بعض الحقول غير صالحة.",
@@ -124,6 +128,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
   const [editId, setEditId] = useState<string | null>(postId);
   const [loadState, setLoadState] = useState<LoadState>(postId ? "loading" : "ready");
   const [form, setForm] = useState<Form>(emptyForm);
+  const [trashed, setTrashed] = useState(false);
   const [slugTouched, setSlugTouched] = useState(false);
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState("");
@@ -137,6 +142,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
   const autosaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const autosaveResetRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const autosaveAbortRef = useRef<AbortController | null>(null);
+  const revisionRef = useRef(1);
   // True while an autosave POST is in flight; a create is never aborted, so this blocks a second create.
   const autosaveCreatingRef = useRef(false);
   // JSON of the form as last stored; autosave runs only when the form differs from it.
@@ -192,6 +198,8 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
         // The loaded values are the saved baseline, so loading alone does not trigger an autosave.
         lastSavedFormRef.current = JSON.stringify(formFromPost(payload.post));
         persistedStatusRef.current = payload.post.status;
+        revisionRef.current = payload.post.revision;
+        setTrashed(Boolean(payload.post.deleted_at));
         setForm(formFromPost(payload.post));
         setSlugTouched(true);
         setLoadState("ready");
@@ -208,7 +216,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
     if (loadState !== "ready" || saving) return;
     const formJson = JSON.stringify(form);
     const isNew = editId === null;
-    if (formJson === lastSavedFormRef.current || !canAutosave(form, isNew, persistedStatusRef.current) || validateForm(form)) {
+    if (trashed || formJson === lastSavedFormRef.current || !canAutosave(form, isNew, persistedStatusRef.current) || validateForm(form)) {
       setAutosaveStatus((status) => (status === "pending" ? "idle" : status));
       return;
     }
@@ -232,7 +240,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       try {
         const response = await fetch(isNew ? "/api/admin/blog/posts" : `/api/admin/blog/posts/${editId}`, {
           method: isNew ? "POST" : "PATCH",
-          headers: jsonHeaders,
+          headers: isNew ? jsonHeaders : { ...jsonHeaders, "If-Match": String(revisionRef.current) },
           body: JSON.stringify(commonPayload(form)),
           signal: isNew ? undefined : controller.signal,
         });
@@ -245,6 +253,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
           window.history.replaceState(null, "", `/admin/blog/posts/${result.post.id}/edit`);
           setEditId(result.post.id);
         }
+        revisionRef.current = result.post.revision;
         persistedStatusRef.current = "draft";
         lastSavedFormRef.current = formJson;
         setAutosaveStatus("saved");
@@ -265,7 +274,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current);
       autosaveTimerRef.current = null;
     };
-  }, [form, saving, loadState, editId]);
+  }, [form, saving, loadState, editId, trashed]);
 
   useEffect(() => {
     mountedRef.current = true;
@@ -319,7 +328,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       const isNew = editId === null;
       const response = await fetch(isNew ? "/api/admin/blog/posts" : `/api/admin/blog/posts/${editId}`, {
         method: isNew ? "POST" : "PATCH",
-        headers: jsonHeaders,
+        headers: isNew ? jsonHeaders : { ...jsonHeaders, "If-Match": String(revisionRef.current) },
         body: JSON.stringify(isNew ? commonPayload(form) : { ...commonPayload(form), ...statusPayload(form) }),
       });
       if (response.status === 401) { router.replace("/admin/login"); return; }
@@ -330,10 +339,11 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
       if (isNew) {
         // The post now exists: switch to edit mode and move the URL to its edit route without remounting the form.
         setEditId(post.id);
+        revisionRef.current = post.revision;
         window.history.replaceState(null, "", `/admin/blog/posts/${post.id}/edit`);
         if (form.status !== "draft") {
           // The create endpoint always stores drafts; apply the chosen status in a follow-up update.
-          const followUp = await fetch(`/api/admin/blog/posts/${post.id}`, { method: "PATCH", headers: jsonHeaders, body: JSON.stringify(statusPayload(form)) });
+          const followUp = await fetch(`/api/admin/blog/posts/${post.id}`, { method: "PATCH", headers: { ...jsonHeaders, "If-Match": String(revisionRef.current) }, body: JSON.stringify(statusPayload(form)) });
           const followUpResult = (await followUp.json().catch(() => ({}))) as { post?: Post; error?: string };
           if (!followUp.ok || !followUpResult.post) {
             lastSavedFormRef.current = JSON.stringify(formFromPost(post));
@@ -344,9 +354,12 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
             return;
           }
           post = followUpResult.post;
+          revisionRef.current = post.revision;
         }
       }
       setEditId(post.id);
+      revisionRef.current = post.revision;
+      setTrashed(Boolean(post.deleted_at));
       lastSavedFormRef.current = JSON.stringify(formFromPost(post));
       persistedStatusRef.current = post.status;
       setForm(formFromPost(post));
@@ -362,7 +375,7 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
 
   async function deletePost() {
     if (!editId) return;
-    if (!window.confirm("Delete this post permanently? This cannot be undone. · هل تريد حذف هذا المنشور نهائيًا؟ لا يمكن التراجع.")) return;
+    if (!window.confirm("Move this post to trash? Its slug will stay reserved and you can restore it later. · نقل المنشور إلى سلة المحذوفات؟ سيظل رابطه محجوزًا ويمكنك استعادته لاحقًا.")) return;
     setSaving(true);
     try {
       const response = await fetch(`/api/admin/blog/posts/${editId}`, { method: "DELETE" });
@@ -375,6 +388,23 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
     } finally {
       setSaving(false);
     }
+  }
+
+  async function restorePost() {
+    if (!editId) return;
+    setSaving(true);
+    try {
+      const response = await fetch(`/api/admin/blog/posts/${editId}/restore`, { method: "POST", headers: { Origin: window.location.origin } });
+      if (response.status === 401) { router.replace("/admin/login"); return; }
+      if (!response.ok) { setFormError("Could not restore this post. · تعذر استعادة المنشور."); return; }
+      const result = (await response.json()) as { post: Post };
+      revisionRef.current = result.post.revision;
+      setTrashed(false);
+      setForm(formFromPost(result.post));
+      lastSavedFormRef.current = JSON.stringify(formFromPost(result.post));
+      setSavedMessage("Post restored. · تمت استعادة المنشور.");
+    } catch { setFormError(errorText("network")); }
+    finally { setSaving(false); }
   }
 
   const isNew = editId === null;
@@ -496,7 +526,8 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
 
       <div className={styles.actions}>
         <div className={styles.actionGroup}>
-          <button type="submit" disabled={saving}>{saving ? "Saving… · جاري الحفظ…" : "Save · حفظ"}</button>
+        {trashed && <p role="status" className={styles.full}>This post is in trash. Restore it before editing. · المنشور في سلة المحذوفات. استعده قبل التعديل.</p>}
+        <button type="submit" disabled={saving || trashed}>{saving ? "Saving… · جاري الحفظ…" : "Save · حفظ"}</button>
           {/* aria-live rather than role="status": the Saved. message already owns that role. */}
           {autosaveStatus === "pending" && <span className={styles.autosaveStatus} aria-live="polite">Unsaved changes… · تغييرات غير محفوظة…</span>}
           {autosaveStatus === "saving" && <span className={styles.autosaveStatus} aria-live="polite">Autosaving… · جاري الحفظ التلقائي…</span>}
@@ -504,7 +535,9 @@ export function AdminBlogPostEditor({ postId = null, onSaved, onBack }: AdminBlo
           {autosaveStatus === "error" && <span className={`${styles.autosaveStatus} ${styles.autosaveError}`} aria-live="polite">Autosave failed · فشل الحفظ التلقائي</span>}
           <button type="button" onClick={goBack} disabled={saving}>Back · رجوع</button>
         </div>
-        {!isNew && <button type="button" className={styles.danger} onClick={() => void deletePost()} disabled={saving}>Delete · حذف</button>}
+        {!isNew && (trashed
+          ? <button type="button" onClick={() => void restorePost()} disabled={saving}>Restore · استعادة</button>
+          : <button type="button" className={styles.danger} onClick={() => void deletePost()} disabled={saving}>Move to trash · نقل إلى المهملات</button>)}
       </div>
     </form>
     <MediaLibrary

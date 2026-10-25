@@ -1,9 +1,11 @@
 import "server-only";
 import { cache } from "react";
+import type { TransactionSql } from "postgres";
 import { getDatabase } from "@/lib/server/db";
 import type { BlogCategory, BlogPost, BlogPostSummary, BlogTag } from "@/lib/blog-schema";
 
 type Sql = ReturnType<typeof getDatabase>;
+type SqlExecutor = Sql | TransactionSql;
 type Row = Record<string, unknown>;
 
 export const PUBLIC_LIST_LIMIT = 100;
@@ -69,6 +71,8 @@ function mapSummary(row: Row): BlogPostSummary {
     published_at: nullableIso(row.published_at),
     created_at: iso(row.created_at),
     updated_at: iso(row.updated_at),
+    revision: Number(row.revision ?? 1),
+    deleted_at: nullableIso(row.deleted_at),
     reading_minutes_en: Math.max(1, Number(row.reading_minutes_en ?? 1)),
     reading_minutes_ar: Math.max(1, Number(row.reading_minutes_ar ?? 1)),
     category_name_en: nullableStr(row.category_name_en) ?? undefined,
@@ -88,18 +92,18 @@ function mapPost(row: Row, tags: BlogTag[]): BlogPost {
 }
 
 /** Columns and joins shared by every post read; callers append their own WHERE clause. */
-function summarySelect(sql: Sql) {
+function summarySelect(sql: SqlExecutor) {
   return sql`p.id, p.slug, p.title_en, p.title_ar, p.excerpt_en, p.excerpt_ar, p.cover_image_url,
     p.category_id, p.post_type_id, p.author_name, p.status, p.locale_primary,
     p.seo_title_en, p.seo_title_ar, p.seo_description_en, p.seo_description_ar,
-    p.published_at, p.created_at, p.updated_at,
+    p.published_at, p.created_at, p.updated_at, p.revision, p.deleted_at,
     c.name_en AS category_name_en, c.name_ar AS category_name_ar,
     t.name_en AS post_type_name_en, t.name_ar AS post_type_name_ar,
     GREATEST(1, ROUND(cardinality(regexp_split_to_array(trim(p.body_en), '[[:space:]]+'))::numeric / 200))::int AS reading_minutes_en,
     GREATEST(1, ROUND(cardinality(regexp_split_to_array(trim(p.body_ar), '[[:space:]]+'))::numeric / 200))::int AS reading_minutes_ar`;
 }
 
-async function loadPostTags(sql: Sql, postId: string): Promise<BlogTag[]> {
+async function loadPostTags(sql: SqlExecutor, postId: string): Promise<BlogTag[]> {
   const rows = await sql`SELECT tg.id, tg.slug, tg.name_en, tg.name_ar, tg.created_at
     FROM blog_tags tg JOIN blog_post_tags pt ON pt.tag_id = tg.id
     WHERE pt.post_id = ${postId}::uuid ORDER BY tg.name_en`;
@@ -113,7 +117,7 @@ export const listPublishedBlogPosts = cache(async (): Promise<BlogPostSummary[]>
     FROM blog_posts p
     LEFT JOIN blog_categories c ON c.id = p.category_id
     LEFT JOIN blog_post_types t ON t.id = p.post_type_id
-    WHERE p.status = 'published' AND p.published_at <= now()
+    WHERE p.deleted_at IS NULL AND p.status = 'published' AND p.published_at <= now()
     ORDER BY p.published_at DESC, p.id DESC
     LIMIT ${PUBLIC_LIST_LIMIT}`;
   return rows.map((row) => mapSummary(row as Row));
@@ -143,7 +147,7 @@ export type PublicBlogPostsPage = {
 /** Public filter rules. Every user value is bound as a parameter; nothing is interpolated into SQL text. */
 function publicFilters(sql: Sql, query: PublicBlogPostsQuery) {
   const search = query.q ? likePattern(query.q) : null;
-  return sql`p.status = 'published' AND p.published_at <= now()
+  return sql`p.deleted_at IS NULL AND p.status = 'published' AND p.published_at <= now()
     AND (${query.category}::text IS NULL OR c.slug = ${query.category}::text)
     AND (${query.tag}::text IS NULL OR EXISTS (
       SELECT 1 FROM blog_post_tags pt JOIN blog_tags tg ON tg.id = pt.tag_id
@@ -204,7 +208,7 @@ export const getPublishedBlogPost = cache(async (slug: string): Promise<BlogPost
     FROM blog_posts p
     LEFT JOIN blog_categories c ON c.id = p.category_id
     LEFT JOIN blog_post_types t ON t.id = p.post_type_id
-    WHERE p.slug = ${slug} AND p.status = 'published' AND p.published_at <= now()
+    WHERE p.slug = ${slug} AND p.deleted_at IS NULL AND p.status = 'published' AND p.published_at <= now()
     LIMIT 1`;
   if (!rows.length) return null;
   const row = rows[0] as Row;
@@ -219,7 +223,7 @@ export async function listRelatedBlogPosts(postId: string, categoryId: string | 
     FROM blog_posts p
     LEFT JOIN blog_categories c ON c.id = p.category_id
     LEFT JOIN blog_post_types t ON t.id = p.post_type_id
-    WHERE p.status = 'published' AND p.published_at <= now() AND p.id <> ${postId}::uuid
+    WHERE p.deleted_at IS NULL AND p.status = 'published' AND p.published_at <= now() AND p.id <> ${postId}::uuid
     ORDER BY COALESCE(p.category_id = ${categoryId}::uuid, false) DESC, p.published_at DESC
     LIMIT ${limit}`;
   return rows.map((row) => mapSummary(row as Row));
@@ -229,14 +233,14 @@ export async function listRelatedBlogPosts(postId: string, categoryId: string | 
 export async function listPublishedBlogSlugs(): Promise<{ slug: string; updated_at: string }[]> {
   const sql = getDatabase();
   const rows = await sql`SELECT slug, updated_at FROM blog_posts
-    WHERE status = 'published' AND published_at <= now()
+    WHERE deleted_at IS NULL AND status = 'published' AND published_at <= now()
     ORDER BY published_at DESC, id DESC LIMIT 5000`;
   return rows.map((row) => ({ slug: str(row.slug), updated_at: iso(row.updated_at) }));
 }
 
 /** Admin detail: any status, including drafts and archived posts. */
-export async function getBlogPostForAdmin(id: string): Promise<BlogPost | null> {
-  const sql = getDatabase();
+export async function getBlogPostForAdmin(id: string, executor: SqlExecutor = getDatabase()): Promise<BlogPost | null> {
+  const sql = executor;
   const rows = await sql`SELECT ${summarySelect(sql)}, p.body_en, p.body_ar
     FROM blog_posts p
     LEFT JOIN blog_categories c ON c.id = p.category_id

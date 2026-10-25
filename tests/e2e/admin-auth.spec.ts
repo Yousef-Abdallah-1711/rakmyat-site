@@ -137,13 +137,13 @@ test("Test 8: blog post creation through the admin UI", async ({ page, request }
 
   await page.getByRole("button", { name: /^Back/ }).first().click();
   await page.getByLabel(/^Search/).fill(slug);
-  const row = page.getByRole("button", { name: new RegExp(titleEn) });
+  const row = page.getByRole("button", { name: new RegExp(slug) });
   await expect(row).toBeVisible();
 
-  // Remove the test post so repeated runs leave the dev database clean.
+  // Trash the test post so repeated runs leave the disposable database clean.
   await row.click();
   page.once("dialog", (dialog) => void dialog.accept());
-  await page.getByRole("button", { name: /^Delete/ }).click();
+  await page.getByRole("button", { name: /^Move to trash/ }).click();
   await expect(page.getByRole("status")).toContainText("Post deleted.");
 });
 

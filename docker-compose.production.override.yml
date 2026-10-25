@@ -7,14 +7,13 @@ services:
   web:
     ports:
       - "127.0.0.1:3020:3000"
-    # The media-library upload route writes to public/uploads on local disk; the
-    # "web" service's root filesystem is otherwise read_only, so this bind mount
-    # gives it one durable, writable path that survives container rebuilds.
+    # The media route writes to /data/uploads; this bind mount preserves the
+    # existing host media directory across application image rebuilds.
     # nginx serves /uploads/ directly from this same host path (see the vhost) —
     # Next's standalone server only recognizes public/ files present at boot, so
     # routing uploads through Next would 404 any file added after container start.
     volumes:
-      - /home/rakmyat/data/uploads:/app/public/uploads
+      - /home/rakmyat/data/uploads:/data/uploads
     # Next also wants to write ISR route-cache metadata here; the base compose file
     # only makes /tmp and .next/cache writable, so add this one too (list override,
     # not merge, so both original entries are repeated here).

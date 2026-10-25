@@ -10,10 +10,10 @@ type Status = "draft" | "published" | "archived";
 type Option = { id: string; slug: string; name_en: string; name_ar: string };
 type ListPost = {
   id: string; slug: string; title_en: string; title_ar: string; status: Status; locale_primary: "en" | "ar"; author_name: string;
-  category_id: string | null; post_type_id: string | null; published_at: string | null; created_at: string; updated_at: string;
+  category_id: string | null; post_type_id: string | null; published_at: string | null; created_at: string; updated_at: string; revision: number; deleted_at: string | null;
   category_name_en?: string; category_name_ar?: string; post_type_name_en?: string; post_type_name_ar?: string;
 };
-type ListPayload = { posts: ListPost[]; metrics: { total: number; published: number; drafts: number }; page: number; pageSize: number; total: number; totalPages: number };
+type ListPayload = { posts: ListPost[]; metrics: { total: number; published: number; drafts: number; trashed: number }; page: number; pageSize: number; total: number; totalPages: number };
 
 const statuses: [Status, string][] = [["draft", "Draft · مسودة"], ["published", "Published · منشور"], ["archived", "Archived · مؤرشف"]];
 const statusLabel: Record<Status, string> = { draft: "Draft · مسودة", published: "Published · منشور", archived: "Archived · مؤرشف" };
@@ -95,6 +95,7 @@ export function AdminBlog() {
         <article><span>All posts</span><strong>{data?.metrics.total ?? "—"}</strong></article>
         <article><span>Published</span><strong>{data?.metrics.published ?? "—"}</strong></article>
         <article><span>Drafts</span><strong>{data?.metrics.drafts ?? "—"}</strong></article>
+        <article><span>Trash</span><strong>{data?.metrics.trashed ?? "—"}</strong></article>
       </div>
 
       <div className="admin-filters">
@@ -102,6 +103,7 @@ export function AdminBlog() {
         <label>Status · الحالة<select value={statusFilter} onChange={(event) => { setPage(1); setStatusFilter(event.target.value); }}>
           <option value="all">All statuses · الكل</option>
           {statuses.map(([key, label]) => <option key={key} value={key}>{label}</option>)}
+          <option value="trashed">Trash · المهملات</option>
         </select></label>
         <label>Category · التصنيف<select value={categoryFilter} onChange={(event) => { setPage(1); setCategoryFilter(event.target.value); }}>
           <option value="all">All categories · الكل</option>

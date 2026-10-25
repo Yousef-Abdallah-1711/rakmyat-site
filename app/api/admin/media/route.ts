@@ -4,6 +4,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 import { getAdminSession, requireSameOrigin } from "@/lib/server/security";
+import { mediaRoot, readRequestBodyBounded } from "@/lib/media-storage";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -11,8 +12,9 @@ export const dynamic = "force-dynamic";
 type MediaKind = "image" | "video";
 
 const MAX_BYTES = 50 * 1024 * 1024;
+const MAX_REQUEST_BYTES = MAX_BYTES + 1024 * 1024;
 const noStore = { "Cache-Control": "private, no-store, max-age=0", Vary: "Cookie" };
-const UPLOAD_ROOT = path.join(process.cwd(), "public", "uploads");
+const UPLOAD_ROOT = mediaRoot();
 const DIRS: Record<MediaKind, string> = {
   image: path.join(UPLOAD_ROOT, "images"),
   video: path.join(UPLOAD_ROOT, "videos"),
@@ -53,14 +55,20 @@ function matchesSignature(bytes: Uint8Array, mime: string) {
 }
 
 export async function POST(request: Request) {
+  if (!await requireSameOrigin(request)) return json({ error: "origin_rejected" }, 403);
   if (!await getAdminSession()) return json({ error: "unauthorized" }, 401);
-  const declaredLength = Number(request.headers.get("content-length") ?? "0");
-  if (declaredLength > MAX_BYTES + 1024 * 1024) return json({ error: "file_too_large" }, 413);
+  const body = await readRequestBodyBounded(request, MAX_REQUEST_BYTES);
+  if (!body) return json({ error: "file_too_large" }, 413);
 
   let form: FormData;
   try {
-    form = await request.formData();
-  } catch {
+    const contentType = request.headers.get("content-type");
+    if (!contentType?.toLowerCase().startsWith("multipart/form-data;")) return json({ error: "invalid_form" }, 400);
+    const arrayBuffer = new ArrayBuffer(body.byteLength);
+    new Uint8Array(arrayBuffer).set(body);
+    form = await new Response(arrayBuffer, { headers: { "Content-Type": contentType } }).formData();
+  } catch (error) {
+    console.error("admin_media_form_parse_failed", error instanceof Error ? error.message : "unknown_error");
     return json({ error: "invalid_form" }, 400);
   }
   const file = form.get("file");
@@ -110,7 +118,7 @@ export async function POST(request: Request) {
 async function listKind(kind: MediaKind) {
   let entries: string[];
   try {
-    entries = await fs.readdir(DIRS[kind]);
+    entries = await fs.readdir(/* turbopackIgnore: true */ DIRS[kind]);
   } catch {
     return [];
   }

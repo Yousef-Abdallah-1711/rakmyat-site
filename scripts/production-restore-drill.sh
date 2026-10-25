@@ -20,5 +20,5 @@ if [[ "$empty" != "t" ]]; then
 fi
 # The target database must be empty and separately provisioned. No live target is dropped.
 gpg --batch --quiet --decrypt "$BACKUP_FILE" \
-  | "${compose[@]}" exec -T postgres pg_restore --exit-on-error --no-owner --username "$bootstrap_user" --dbname "$RESTORE_DATABASE_NAME" -
+  | "${compose[@]}" exec -T postgres pg_restore --exit-on-error --no-owner --username "$bootstrap_user" --dbname "$RESTORE_DATABASE_NAME"
 printf 'Restore drill completed into pre-existing disposable database %s.\n' "$RESTORE_DATABASE_NAME"

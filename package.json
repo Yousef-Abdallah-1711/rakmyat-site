@@ -8,7 +8,7 @@
     "start": "next start --hostname 127.0.0.1 --port 5175",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit --incremental false --project tsconfig.typecheck.json",
-    "test": "node --import tsx --test",
+    "test": "node --import tsx --test tests/*.test.ts",
     "db:migrate": "node --experimental-strip-types scripts/migrate.ts",
     "admin:create": "node --experimental-strip-types scripts/create-admin.ts",
     "inquiries:retry-email": "tsx scripts/retry-inquiry-notifications.ts",

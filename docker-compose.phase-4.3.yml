@@ -82,6 +82,7 @@ services:
       HOSTNAME: 0.0.0.0
       PORT: "3000"
       DATABASE_URL_FILE: /run/secrets/database_url
+      MEDIA_ROOT: /data/uploads
       DATABASE_SSL: "false"
       RATE_LIMIT_SECRET_FILE: /run/secrets/rate_limit_secret
       SMTP_HOST: mailpit
@@ -103,6 +104,8 @@ services:
       - rate_limit_secret
       - mailpit_smtp_password
       - outbox_worker_secret
+    volumes:
+      - media_uploads:/data/uploads
     expose:
       - "3000"
     networks:
@@ -228,6 +231,8 @@ secrets:
 volumes:
   postgres_data:
     name: rakmyat_phase43_postgres_data
+  media_uploads:
+    name: rakmyat_phase43_media_uploads
   mailpit_data:
     name: rakmyat_phase43_mailpit_data
   caddy_data:

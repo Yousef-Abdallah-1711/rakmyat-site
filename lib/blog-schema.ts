@@ -52,6 +52,8 @@ export type BlogPost = {
   published_at: string | null;
   created_at: string;
   updated_at: string;
+  revision: number;
+  deleted_at: string | null;
   // Estimated read time per locale, computed in SQL from the body (200 words per minute, minimum 1).
   reading_minutes_en: number;
   reading_minutes_ar: number;

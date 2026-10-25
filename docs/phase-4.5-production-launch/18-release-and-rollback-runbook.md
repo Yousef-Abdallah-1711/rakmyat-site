@@ -1,6 +1,8 @@
 # Release and rollback runbook
 
-Do not deploy this current dirty worktree. The release identifier for this preparation is `phase45-local-20261020-512c18c3` (branch/HEAD plus local worktree; it is not a commit or immutable production image). Before release, review all pre-existing Phase 3–4 changes, create an owner-approved clean release commit or signed source archive, record its checksum, and build/tag the immutable image from that exact source.
+> VPS handover update (2026-10-25): the prior 2026-10-20 release-preparation report is historical. The production checkout is at `6ce64a7`, and the running image is not commit-traceable. The reported Phase 1 commit `9f24f04` was not recoverable; recovered implementation work is isolated on `codex/blog-phase1`. Use the final handover for the exact local and remote source refs. No production deployment has been performed from this branch.
+
+Do not deploy this preparation branch until the owner-approved release gate is complete. The release identifier `phase45-local-20261020-512c18c3` belongs to the historical preparation and is not a commit or immutable production image. Before release, review all pre-existing Phase 3–4 changes, select the approved release commit, record its checksum, and build/tag the immutable image from that exact source.
 
 1. Obtain the approvals in `19-owner-approval-gates.md`; confirm domain, host, DB, secrets, admin policy, monitoring and legal signoff.
 2. Run production preflight; verify secret access and a recent encrypted backup. Do not echo environment or secret contents.
@@ -10,3 +12,7 @@ Do not deploy this current dirty worktree. The release identifier for this prepa
 6. Monitor logs/alerts and inquiry/outbox state. Enable indexing only after separate owner approval.
 
 Rollback: stop routing to the candidate, restore the previous immutable image tag, and retain the database. Do not reverse a schema migration automatically. If data compatibility is uncertain, use the approved backup restore plan into a replacement database and require owner approval before cutover. Record who authorized each operation, timestamp, image digest, migration ID and outcome. This procedure has not been rehearsed on a production provider.
+
+For the current media path, the application writes under `/data/uploads`. Production Compose uses a named volume; the VPS override binds the existing `/home/rakmyat/data/uploads` directory at that path. Preserve that host directory when changing the override. The upload handler accepts files up to 50 MiB and caps the multipart request at 51 MiB; Next.js `proxyClientMaxBodySize` and bundled Caddy `request_body` are set to 54 MiB. Host Nginx currently serves `/uploads/` directly from that directory and has a global 64 MiB request-body limit. Before release, verify the `/api/admin/media` request path still reaches the application without a lower per-location limit. Nginx is host-managed and is not changed by Compose deployment.
+
+Media URLs use random filenames and the application serving route emits `Cache-Control: public, max-age=31536000, immutable`. Deleting a file does not purge browser/CDN caches. The VPS Nginx `/uploads/` location currently sets a seven-day public cache instead; changing that host config or configuring CDN invalidation requires a separate operator-reviewed change. Prefer a cache purge when available; otherwise preserve versioned URLs and wait for the configured cache lifetime before assuming a deletion is no longer visible.

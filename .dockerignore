@@ -28,4 +28,4 @@ compose*.yaml
 # a database migrate.ts might run against in production. Keeping it out of the
 # image (rather than deleting it from the repo) is what lets dev/staging still
 # use it deliberately via `npm run db:migrate` outside Docker.
-db/migrations/0005_blog_seed_1000.sql
+db/dev-seeds/

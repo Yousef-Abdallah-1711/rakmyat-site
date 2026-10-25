@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
+import { revalidateBlogPaths } from "@/lib/server/blog-revalidation";
 import { blogPostCreateSchema, blogPostStatuses } from "@/lib/blog-schema";
 import { getAdminSession, requireSameOrigin } from "@/lib/server/security";
 import { getDatabase } from "@/lib/server/db";
 import { getBlogPostForAdmin, likePattern, postgresErrorCode, readJsonBody } from "@/lib/server/blog";
 import { sanitizeBody } from "@/lib/sanitize-html";
 import { z } from "zod";
+import { createHash } from "node:crypto";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 const noStore = { "Cache-Control": "private, no-store, max-age=0", Vary: "Cookie" };
@@ -21,17 +22,19 @@ export async function GET(request: Request) {
     const category = url.searchParams.get("category") ?? "all";
     const q = url.searchParams.get("q")?.trim().slice(0, 120) ?? "";
     const requestedPage = url.searchParams.get("page") ?? "1";
-    if (status !== "all" && !blogPostStatuses.includes(status as typeof blogPostStatuses[number])) return NextResponse.json({ error: "invalid_status" }, { status: 400, headers: noStore });
+    if (status !== "all" && status !== "trashed" && !blogPostStatuses.includes(status as typeof blogPostStatuses[number])) return NextResponse.json({ error: "invalid_status" }, { status: 400, headers: noStore });
     if (category !== "all" && !uuidSchema.safeParse(category).success) return NextResponse.json({ error: "invalid_category" }, { status: 400, headers: noStore });
     if (!/^\d+$/.test(requestedPage) || Number(requestedPage) < 1 || Number(requestedPage) > 100000) return NextResponse.json({ error: "invalid_page" }, { status: 400, headers: noStore });
 
-    const statusFilter = status === "all" ? null : status;
+    const statusFilter = status === "all" || status === "trashed" ? null : status;
+    const deletedFilter = status === "trashed";
     const categoryFilter = category === "all" ? null : category;
     const search = q === "" ? null : likePattern(q);
     const sql = getDatabase();
 
     const countRows = await sql`SELECT count(*)::int AS total FROM blog_posts p
-      WHERE (${statusFilter}::text IS NULL OR p.status = ${statusFilter}::text)
+      WHERE (${deletedFilter}::boolean IS NULL OR (p.deleted_at IS NOT NULL) = ${deletedFilter}::boolean)
+      AND (${statusFilter}::text IS NULL OR p.status = ${statusFilter}::text)
       AND (${categoryFilter}::uuid IS NULL OR p.category_id = ${categoryFilter}::uuid)
       AND (${search}::text IS NULL OR p.title_en ILIKE ${search}::text OR p.title_ar ILIKE ${search}::text OR p.slug ILIKE ${search}::text)`;
     const total = Number(countRows[0]?.total ?? 0);
@@ -40,20 +43,22 @@ export async function GET(request: Request) {
     const offset = (page - 1) * PAGE_SIZE;
 
     const rows = await sql`SELECT p.id, p.slug, p.title_en, p.title_ar, p.status, p.locale_primary, p.author_name,
-        p.category_id, p.post_type_id, p.published_at, p.created_at, p.updated_at,
+        p.category_id, p.post_type_id, p.published_at, p.created_at, p.updated_at, p.revision, p.deleted_at,
         c.name_en AS category_name_en, c.name_ar AS category_name_ar,
         t.name_en AS post_type_name_en, t.name_ar AS post_type_name_ar
       FROM blog_posts p
       LEFT JOIN blog_categories c ON c.id = p.category_id
       LEFT JOIN blog_post_types t ON t.id = p.post_type_id
-      WHERE (${statusFilter}::text IS NULL OR p.status = ${statusFilter}::text)
+      WHERE (${deletedFilter}::boolean IS NULL OR (p.deleted_at IS NOT NULL) = ${deletedFilter}::boolean)
+      AND (${statusFilter}::text IS NULL OR p.status = ${statusFilter}::text)
       AND (${categoryFilter}::uuid IS NULL OR p.category_id = ${categoryFilter}::uuid)
       AND (${search}::text IS NULL OR p.title_en ILIKE ${search}::text OR p.title_ar ILIKE ${search}::text OR p.slug ILIKE ${search}::text)
       ORDER BY p.updated_at DESC, p.id DESC LIMIT ${PAGE_SIZE} OFFSET ${offset}`;
 
-    const metrics = await sql`SELECT count(*)::int AS total,
-        count(*) FILTER (WHERE status = 'published')::int AS published,
-        count(*) FILTER (WHERE status = 'draft')::int AS drafts
+    const metrics = await sql`SELECT count(*) FILTER (WHERE deleted_at IS NULL)::int AS total,
+        count(*) FILTER (WHERE deleted_at IS NULL AND status = 'published')::int AS published,
+        count(*) FILTER (WHERE deleted_at IS NULL AND status = 'draft')::int AS drafts,
+        count(*) FILTER (WHERE deleted_at IS NOT NULL)::int AS trashed
       FROM blog_posts`;
 
     return NextResponse.json({ posts: rows, metrics: metrics[0], page, pageSize: PAGE_SIZE, total, totalPages }, { headers: noStore });
@@ -73,12 +78,29 @@ export async function POST(request: Request) {
     if (!body.success) return NextResponse.json({ error: "invalid_fields", fields: [...new Set(body.error.issues.map((issue) => String(issue.path[0] ?? "body")))] }, { status: 422, headers: noStore });
 
     const data = body.data;
+    const idempotencyKey = request.headers.get("idempotency-key")?.trim() ?? "";
+    if (idempotencyKey.length > 200 || [...idempotencyKey].some((character) => character.charCodeAt(0) <= 31 || character.charCodeAt(0) === 127)) return NextResponse.json({ error: "invalid_idempotency_key" }, { status: 400, headers: noStore });
     // Rich-text bodies are sanitized before storage; legacy plain-text bodies pass through unchanged.
     const cleanBodyEn = sanitizeBody(data.body_en ?? "");
     const cleanBodyAr = sanitizeBody(data.body_ar ?? "");
     const tagIds = [...new Set(data.tag_ids ?? [])];
     const sql = getDatabase();
-    const id = await sql.begin(async (tx) => {
+    const keyHash = idempotencyKey ? createHash("sha256").update(idempotencyKey).digest("hex") : null;
+    const requestHash = createHash("sha256").update(JSON.stringify({ ...data, body_en: cleanBodyEn, body_ar: cleanBodyAr, tag_ids: tagIds })).digest("hex");
+    const created = await sql.begin(async (tx) => {
+      if (keyHash) {
+        const claimed = await tx`INSERT INTO blog_post_idempotency (key_hash, request_hash)
+          VALUES (${keyHash}, ${requestHash}) ON CONFLICT (key_hash) DO NOTHING RETURNING key_hash`;
+        if (!claimed.length) {
+          const existing = await tx`SELECT request_hash, post_id FROM blog_post_idempotency WHERE key_hash = ${keyHash} FOR UPDATE`;
+          if (!existing.length) throw new Error("idempotency_record_missing");
+          if (String(existing[0].request_hash) !== requestHash) return { kind: "conflict" as const };
+          if (!existing[0].post_id) throw new Error("idempotency_record_incomplete");
+          const post = await getBlogPostForAdmin(String(existing[0].post_id), tx);
+          if (!post) throw new Error("idempotency_post_missing");
+          return { kind: "replay" as const, post };
+        }
+      }
       // New posts always start as drafts; status and publish time are only set through PATCH.
       const inserted = await tx`INSERT INTO blog_posts ${tx({
         slug: data.slug,
@@ -104,13 +126,15 @@ export async function POST(request: Request) {
       for (const tagId of tagIds) {
         await tx`INSERT INTO blog_post_tags (post_id, tag_id) VALUES (${postId}::uuid, ${tagId}::uuid)`;
       }
-      return postId;
+      if (keyHash) await tx`UPDATE blog_post_idempotency SET post_id = ${postId}::uuid WHERE key_hash = ${keyHash}`;
+      const post = await getBlogPostForAdmin(postId, tx);
+      if (!post) throw new Error("created_post_readback_missing");
+      return { kind: "created" as const, post };
     });
+    if (created.kind === "conflict") return NextResponse.json({ error: "idempotency_conflict" }, { status: 409, headers: noStore });
     // Write is committed; refresh the cached blog index for both locales.
-    revalidatePath("/en/blog");
-    revalidatePath("/ar/blog");
-    const post = await getBlogPostForAdmin(id);
-    return NextResponse.json({ post }, { status: 201, headers: noStore });
+    revalidateBlogPaths([created.post.slug]);
+    return NextResponse.json({ post: created.post }, { status: created.kind === "created" ? 201 : 200, headers: noStore });
   } catch (error) {
     const code = postgresErrorCode(error);
     if (code === "23505") return NextResponse.json({ error: "slug_taken" }, { status: 409, headers: noStore });

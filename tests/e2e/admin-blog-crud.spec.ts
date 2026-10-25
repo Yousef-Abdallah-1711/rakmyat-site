@@ -29,7 +29,30 @@ function sessionHeaders() {
   return { Origin: BASE_URL, Cookie: `${SESSION_COOKIE_NAME}=${cachedSessionCookie}`, "Content-Type": "application/json" };
 }
 
-test("blog post create, reopen, edit, and delete through the admin routes", async ({ page, request }) => {
+function chunkedMultipartVideo(fileSize: number, boundary: string) {
+  const encoder = new TextEncoder();
+  async function* chunks() {
+    yield encoder.encode(`--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="upload-test.mp4"\r\nContent-Type: video/mp4\r\n\r\n`);
+    let offset = 0;
+    while (offset < fileSize) {
+      const chunk = new Uint8Array(Math.min(1024 * 1024, fileSize - offset));
+      if (offset === 0) chunk.set([0, 0, 0, 24, 0x66, 0x74, 0x79, 0x70]); // MP4 ftyp signature
+      yield chunk;
+      offset += chunk.byteLength;
+    }
+    yield encoder.encode(`\r\n--${boundary}--\r\n`);
+  }
+  const iterator = chunks();
+  return new ReadableStream<Uint8Array>({
+    async pull(controller) {
+      const next = await iterator.next();
+      if (next.done) controller.close();
+      else controller.enqueue(next.value);
+    },
+  });
+}
+
+test("blog post create, reopen, edit, trash, and restore through the admin routes", async ({ page, request }) => {
   await loginAsAdmin(page, request);
   await page.goto("/admin/blog");
   await expect(page.getByRole("heading", { name: /Blog posts/ })).toBeVisible();
@@ -82,15 +105,44 @@ test("blog post create, reopen, edit, and delete through the admin routes", asyn
 
   // Remove the test post so repeated runs leave the dev database clean.
   page.once("dialog", (dialog) => void dialog.accept());
-  await page.getByRole("button", { name: /^Delete/ }).click();
+  await page.getByRole("button", { name: /^Move to trash/ }).click();
   await expect(page).toHaveURL(/\/admin\/blog$/);
   await expect(page.getByRole("status")).toContainText("Post deleted.");
+  const trashed = await request.get(`/api/admin/blog/posts?status=trashed&q=${slug}`, { headers: sessionHeaders() });
+  expect(trashed.status()).toBe(200);
+  const trashedPayload = (await trashed.json()) as { posts: { id: string; slug: string; deleted_at: string | null }[] };
+  expect(trashedPayload.posts).toHaveLength(1);
+  expect(trashedPayload.posts[0].slug).toBe(slug);
+  expect(trashedPayload.posts[0].deleted_at).toBeTruthy();
+  const duplicate = await request.post("/api/admin/blog/posts", { headers: sessionHeaders(), data: { slug, title_en: "Duplicate", title_ar: "مكرر" } });
+  expect(duplicate.status()).toBe(409); // The trashed slug remains reserved.
+  const restored = await request.post(`/api/admin/blog/posts/${trashedPayload.posts[0].id}/restore`, { headers: sessionHeaders() });
+  expect(restored.status()).toBe(200);
+  expect((await restored.json() as { post: { deleted_at: string | null } }).post.deleted_at).toBeNull();
 });
 
 test("malformed post id redirects to the list", async ({ page, request }) => {
   await loginAsAdmin(page, request);
   await page.goto("/admin/blog/posts/not-a-uuid/edit");
   await expect(page).toHaveURL(/\/admin\/blog$/);
+});
+
+test("admin create replays an idempotency key and rejects reuse with different content", async ({ page, request }) => {
+  await loginAsAdmin(page, request);
+  const stamp = Date.now();
+  const key = `admin-create-${stamp}`;
+  const data = { slug: `idempotency-${stamp}`, title_en: "Idempotent", title_ar: "متكرر" };
+  const headers = { ...sessionHeaders(), "Idempotency-Key": key };
+  const first = await request.post("/api/admin/blog/posts", { headers, data });
+  const replay = await request.post("/api/admin/blog/posts", { headers, data });
+  expect(first.status()).toBe(201);
+  expect(replay.status()).toBe(200);
+  const firstPost = (await first.json() as { post: { id: string } }).post;
+  const replayPost = (await replay.json() as { post: { id: string } }).post;
+  expect(replayPost.id).toBe(firstPost.id);
+  const mismatch = await request.post("/api/admin/blog/posts", { headers, data: { ...data, title_en: "Different" } });
+  expect(mismatch.status()).toBe(409);
+  await request.delete(`/api/admin/blog/posts/${firstPost.id}`, { headers: sessionHeaders() });
 });
 
 test("unknown post id shows a not-found message with a way back", async ({ page, request }) => {
@@ -151,6 +203,49 @@ test("media library page loads for authenticated users", async ({ page, request 
   await expect(page.getByRole("heading", { name: /media/i }).first()).toBeVisible();
 });
 
+test("media upload accepts a 12 MiB video and rejects an oversized chunked body", async ({ page, request }) => {
+  test.setTimeout(90_000);
+  await loginAsAdmin(page, request);
+  const boundary = `playwright-${Date.now()}`;
+  const headers = { Origin: BASE_URL, Cookie: `${SESSION_COOKIE_NAME}=${cachedSessionCookie}` };
+  let uploadedUrl: string | undefined;
+  try {
+    const fileBytes = new Uint8Array(12 * 1024 * 1024);
+    fileBytes.set([0, 0, 0, 24, 0x66, 0x74, 0x79, 0x70]); // MP4 ftyp signature
+    const form = new FormData();
+    form.set("file", new File([fileBytes], "upload-test.mp4", { type: "video/mp4" }));
+    const accepted = await fetch(`${BASE_URL}/api/admin/media`, {
+      method: "POST",
+      headers,
+      body: form,
+    });
+    const acceptedBody = await accepted.text();
+    expect(accepted.status, acceptedBody).toBe(201);
+    const payload = JSON.parse(acceptedBody) as { url: string; size: number };
+    uploadedUrl = payload.url;
+    expect(payload.size).toBeGreaterThan(10 * 1024 * 1024);
+
+    const media = await fetch(`${BASE_URL}${payload.url}`);
+    expect(media.status).toBe(200);
+    expect(media.headers.get("cache-control")).toBe("public, max-age=31536000, immutable");
+    expect(media.headers.get("content-type")).toBe("video/mp4");
+    expect((await media.arrayBuffer()).byteLength).toBe(payload.size);
+
+    const oversized = await fetch(`${BASE_URL}/api/admin/media`, {
+      method: "POST",
+      headers: { ...headers, "Content-Type": `multipart/form-data; boundary=${boundary}-oversized` },
+      body: chunkedMultipartVideo(52 * 1024 * 1024, `${boundary}-oversized`),
+      duplex: "half",
+    } as RequestInit & { duplex: "half" });
+    expect(oversized.status).toBe(413);
+  } finally {
+    if (uploadedUrl) {
+      const removed = await request.delete(`/api/admin/media?url=${encodeURIComponent(uploadedUrl)}`, { headers: sessionHeaders() });
+      expect(removed.status()).toBe(200);
+    }
+  }
+});
+
 test("XSS in blog body is sanitized on create and on update", async ({ page, request }) => {
   await loginAsAdmin(page, request);
   const stamp = Date.now();
@@ -161,7 +256,7 @@ test("XSS in blog body is sanitized on create and on update", async ({ page, req
     data: { slug: `xss-test-${stamp}`, title_en: "XSS Test", title_ar: "اختبار", body_en: xssBody },
   });
   expect(createRes.status()).toBe(201);
-  const created = (await createRes.json()) as { post: { id: string; body_en: string } };
+  const created = (await createRes.json()) as { post: { id: string; body_en: string; revision: number } };
   try {
     expect(created.post.body_en).not.toContain("<script");
     expect(created.post.body_en).not.toContain("onclick");
@@ -169,7 +264,7 @@ test("XSS in blog body is sanitized on create and on update", async ({ page, req
     expect(created.post.body_en).toContain("Safe text");
 
     const patchRes = await request.patch(`/api/admin/blog/posts/${created.post.id}`, {
-      headers: sessionHeaders(),
+      headers: { ...sessionHeaders(), "If-Match": String(created.post.revision) },
       data: { body_en: '<p>Patched</p><iframe src="https://evil.example/x"></iframe>' },
     });
     expect(patchRes.status()).toBe(200);

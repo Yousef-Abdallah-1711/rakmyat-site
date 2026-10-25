@@ -33,6 +33,7 @@ services:
         max-file: "5"
 
   migrate:
+    image: ${RAKMYAT_MIGRATOR_IMAGE:-rakmyat-migrator:release-candidate}
     build:
       context: .
       dockerfile: Dockerfile
@@ -67,6 +68,7 @@ services:
       HOSTNAME: 0.0.0.0
       PORT: "3000"
       DATABASE_URL_FILE: /run/secrets/app_database_url
+      MEDIA_ROOT: /data/uploads
       DATABASE_SSL: ${DATABASE_SSL:-false}
       RATE_LIMIT_SECRET_FILE: /run/secrets/rate_limit_secret
       SMTP_HOST: ${SMTP_HOST:-smtp.hostinger.com}
@@ -86,6 +88,8 @@ services:
       OUTBOX_WORKER_SECRET_FILE: /run/secrets/outbox_worker_secret
       OUTBOX_MAX_ATTEMPTS: "5"
     secrets: [app_database_url, rate_limit_secret, smtp_password, outbox_worker_secret]
+    volumes:
+      - production_media:/data/uploads
     expose: ["3000"]
     networks: [database, application, ingress, smtp_egress]
     depends_on:
@@ -216,6 +220,8 @@ secrets:
 volumes:
   production_postgres_data:
     name: rakmyat_production_postgres_data
+  production_media:
+    name: rakmyat_production_media
   production_caddy_data:
     name: rakmyat_production_caddy_data
   production_caddy_config:
