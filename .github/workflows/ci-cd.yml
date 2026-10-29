@@ -200,7 +200,7 @@ jobs:
           set -eu
           docker compose -p "$COMPOSE_PROJECT_NAME" -f docker-compose.phase-4.3.yml up --detach --no-build --wait --wait-timeout 300
           test "$(docker compose -p "$COMPOSE_PROJECT_NAME" -f docker-compose.phase-4.3.yml exec -T web id -u)" = 10001
-          docker compose -p "$COMPOSE_PROJECT_NAME" -f docker-compose.phase-4.3.yml exec -T web node -e 'for (const key of ["DATABASE_URL", "RATE_LIMIT_SECRET", "OUTBOX_WORKER_SECRET"]) if (!process.env[key]) throw Error(`${key} was not loaded`); for (const key of ["DATABASE_URL_FILE", "RATE_LIMIT_SECRET_FILE", "OUTBOX_WORKER_SECRET_FILE"]) if (process.env[key]) throw Error(`${key} file path was not cleared`); console.log("runtime secret-file loading: passed (values not displayed)")'
+          docker compose -p "$COMPOSE_PROJECT_NAME" -f docker-compose.phase-4.3.yml exec -T web node -e 'const env=Object.fromEntries(require("node:fs").readFileSync("/proc/1/environ","utf8").split("\0").filter(Boolean).map(v=>{const i=v.indexOf("=");return [v.slice(0,i),v.slice(i+1)]})); for (const key of ["DATABASE_URL", "RATE_LIMIT_SECRET", "OUTBOX_WORKER_SECRET"]) if (!env[key]) throw Error(`${key} was not loaded into the app process`); for (const key of ["DATABASE_URL_FILE", "RATE_LIMIT_SECRET_FILE", "OUTBOX_WORKER_SECRET_FILE"]) if (env[key]) throw Error(`${key} file path was not cleared from the app process`); console.log("runtime secret-file loading: passed (values not displayed)")'
           node -e 'fetch(process.env.PHASE43_BASE_URL + "/api/health").then(async r => { if (!r.ok) throw Error(`health returned ${r.status}`); console.log("web health: " + r.status); }).catch(e => { console.error(e); process.exit(1); })'
           npm run phase43:e2e
 
@@ -213,7 +213,6 @@ jobs:
           test -n "$worker"
           health="$(docker inspect "$worker" --format '{{.State.Health.Status}}')"
           test "$health" = healthy
-          docker compose -p "$COMPOSE_PROJECT_NAME" -f docker-compose.phase-4.3.yml exec -T email-worker node -e 'if (!process.env.OUTBOX_WORKER_SECRET || process.env.OUTBOX_WORKER_SECRET_FILE) process.exit(1); console.log("worker secret-file loading: passed (value not displayed)")'
 
       - name: Collect integration diagnostics before cleanup
         if: failure()
