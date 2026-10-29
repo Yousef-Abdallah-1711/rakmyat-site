@@ -6,6 +6,9 @@ test.describe("shared navigation — mobile menu", () => {
     test(`${locale}: mobile menu opens, closes on Escape, and locks background scroll`, async ({ page }) => {
       await page.setViewportSize({ width: 390, height: 844 });
       await page.goto(localizedUrl(locale, ""));
+      // The server-rendered control is present before React hydrates it. Wait
+      // for the route's scripts to settle so this click exercises the handler.
+      await page.waitForLoadState("networkidle");
 
       const toggle = page.locator(".navbar-toggler");
       await expect(toggle).toHaveAttribute("aria-expanded", "false");

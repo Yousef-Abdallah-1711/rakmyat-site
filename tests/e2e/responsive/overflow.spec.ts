@@ -42,6 +42,9 @@ test.describe("overflow — content routes, core viewport subset", () => {
   for (const locale of locales) {
     for (const route of contentRoutes.filter((r) => r.name !== "home")) {
       test(`${route.name} (${locale}) has no horizontal overflow across core viewports`, async ({ page }) => {
+        // Five independent navigations plus scroll-through checks can exceed
+        // the short default used by single-page interaction tests on WebKit CI.
+        test.setTimeout(90_000);
         const failures: string[] = [];
         for (const viewport of coreViewports) {
            

@@ -11,8 +11,8 @@ UPSTREAM_FILE="${RAKMYAT_NGINX_UPSTREAM_FILE:-/etc/nginx/conf.d/rakmyat-upstream
 LOCK_FILE="/var/lock/rakmyat-production-deploy.lock"
 IMAGE="${1:-}"
 
-if [[ ! "$IMAGE" =~ ^ghcr\.io/yousef-abdallah-1711/rakmyat-site:[a-f0-9]{40}$ ]]; then
-  echo "Pass an immutable Rakmyat GHCR image tagged with a full commit SHA." >&2
+if [[ ! "$IMAGE" =~ ^ghcr\.io/yousef-abdallah-1711/rakmyat-site:[a-f0-9]{40}$ && ! "$IMAGE" =~ ^ghcr\.io/yousef-abdallah-1711/rakmyat-site@sha256:[a-f0-9]{64}$ ]]; then
+  echo "Pass an immutable Rakmyat GHCR image tagged with a full commit SHA or pinned by sha256 digest." >&2
   exit 2
 fi
 if [[ ! -f "$COMPOSE_FILE" || ! -f "$COMPOSE_OVERRIDE" || ! -f "$ENV_FILE" || ! -f "$UPSTREAM_FILE" ]]; then

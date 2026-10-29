@@ -52,9 +52,11 @@ test.describe("image loading — representative routes", () => {
 
   test("services-details (ar, 1440px) — rocket decoration does not overlap heading text (regression guard for session-1 fix)", async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto("/ar/services/details");
-    const heading = page.locator(".inner-header h2");
-    const rocket = page.locator(".inner-header .side-img");
+    await page.goto("/ar/services/details", { waitUntil: "domcontentloaded" });
+    const heading = page.locator(".inner-header .content h1");
+    const rocket = page.locator(".inner-header .content .side-img");
+    await expect(heading).toBeVisible();
+    await page.evaluate(() => document.fonts.ready);
     const headingBox = await heading.boundingBox();
     const rocketBox = await rocket.boundingBox();
     expect(headingBox && rocketBox).toBeTruthy();
