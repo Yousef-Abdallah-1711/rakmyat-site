@@ -9,10 +9,12 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG NEXT_PUBLIC_SITE_URL=
 ARG ROBOTS_INDEXING_ENABLED=false
-ARG NEXT_DEPLOYMENT_ID=
+ARG NEXT_DEPLOYMENT_ID
 ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} \
     ROBOTS_INDEXING_ENABLED=${ROBOTS_INDEXING_ENABLED} \
     NEXT_DEPLOYMENT_ID=${NEXT_DEPLOYMENT_ID}
+RUN test -n "$NEXT_DEPLOYMENT_ID" \
+    && case "$ROBOTS_INDEXING_ENABLED" in true|false) ;; *) exit 1 ;; esac
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
 RUN npm run build
@@ -29,7 +31,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/scripts ./scripts
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/dotenv ./node_modules/dotenv
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/postgres ./node_modules/postgres
 COPY --chown=nextjs:nodejs docker/runtime-entrypoint.sh ./docker/runtime-entrypoint.sh
-RUN chmod 0555 ./docker/runtime-entrypoint.sh && mkdir -p /tmp && chown nextjs:nodejs /tmp
+RUN chmod 0555 ./docker/runtime-entrypoint.sh \
+    && mkdir -p /tmp ./public/uploads \
+    && chown -R nextjs:nodejs /tmp ./public/uploads
 USER nextjs
 EXPOSE 3000
 ENTRYPOINT ["./docker/runtime-entrypoint.sh"]

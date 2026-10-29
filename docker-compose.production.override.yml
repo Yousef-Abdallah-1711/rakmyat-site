@@ -1,28 +1,19 @@
 name: rakmyat-production
 
-# Host-specific override: this server's own nginx already owns ports 80/443
-# for all vhosts, so the bundled Caddy "edge" service is disabled and the
-# app is exposed on localhost only; nginx reverse-proxies to it instead.
+# Host-installed nginx owns public ports 80/443. Preserve the VPS uploads
+# directory already used by production when either app slot is replaced.
 services:
-  web:
-    ports:
-      - "127.0.0.1:3020:3000"
-    # The media route writes to /data/uploads; this bind mount preserves the
-    # existing host media directory across application image rebuilds.
-    # nginx serves /uploads/ directly from this same host path (see the vhost) —
-    # Next's standalone server only recognizes public/ files present at boot, so
-    # routing uploads through Next would 404 any file added after container start.
+  web-blue:
     volumes:
       - /home/rakmyat/data/uploads:/data/uploads
-    # Next also wants to write ISR route-cache metadata here; the base compose file
-    # only makes /tmp and .next/cache writable, so add this one too (list override,
-    # not merge, so both original entries are repeated here).
     tmpfs:
       - "/tmp:rw,noexec,nosuid,size=96m"
       - "/app/.next/cache:rw,noexec,nosuid,size=256m,uid=10001,gid=10001"
       - "/app/.next/server/route-cache:rw,noexec,nosuid,size=64m,uid=10001,gid=10001"
-
-  edge:
-    deploy:
-      replicas: 0
-    ports: []
+  web-green:
+    volumes:
+      - /home/rakmyat/data/uploads:/data/uploads
+    tmpfs:
+      - "/tmp:rw,noexec,nosuid,size=96m"
+      - "/app/.next/cache:rw,noexec,nosuid,size=256m,uid=10001,gid=10001"
+      - "/app/.next/server/route-cache:rw,noexec,nosuid,size=64m,uid=10001,gid=10001"

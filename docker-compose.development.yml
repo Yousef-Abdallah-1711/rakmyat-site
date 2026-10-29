@@ -1,0 +1,140 @@
+name: rakmyat-development
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: rakmyat_dev
+      POSTGRES_USER: rakmyat_dev
+      POSTGRES_PASSWORD: rakmyat_dev_only
+    ports:
+      - "127.0.0.1:${DEV_POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - development_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rakmyat_dev -d rakmyat_dev"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  mailpit:
+    image: axllent/mailpit:v1.31.5
+    restart: unless-stopped
+    environment:
+      MP_SMTP_AUTH_ACCEPT_ANY: "true"
+      MP_SMTP_AUTH_ALLOW_INSECURE: "true"
+      MP_MAX_MESSAGES: "1000"
+    ports:
+      - "127.0.0.1:${DEV_MAILPIT_UI_PORT:-18025}:8025"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:8025/ || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      DATABASE_URL: postgres://rakmyat_dev:rakmyat_dev_only@postgres:5432/rakmyat_dev
+      DATABASE_SSL: "false"
+    volumes:
+      - .:/app
+      - development_node_modules:/app/node_modules
+      - development_next_cache:/app/.next
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    init: true
+    command: ["npm", "run", "dev:docker"]
+    environment:
+      NODE_ENV: development
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      DATABASE_URL: postgres://rakmyat_dev:rakmyat_dev_only@postgres:5432/rakmyat_dev
+      DATABASE_SSL: "false"
+      RATE_LIMIT_SECRET: rakmyat-local-development-rate-limit-secret
+      OUTBOX_WORKER_SECRET: rakmyat-local-development-outbox-worker-secret
+      OUTBOX_MAX_ATTEMPTS: "5"
+      SMTP_HOST: mailpit
+      SMTP_PORT: "1025"
+      SMTP_SECURE: "false"
+      SMTP_USER: local-development
+      SMTP_PASS: local-development
+      SMTP_FROM: info@rakmyat.online
+      INQUIRY_NOTIFICATION_TO: local@example.invalid
+      TRUSTED_CLIENT_IP_HEADER: ""
+      CONTACT_ALLOWED_ORIGINS: "http://localhost:${DEV_WEB_PORT:-5175},http://127.0.0.1:${DEV_WEB_PORT:-5175}"
+      INQUIRY_RATE_LIMIT_15M_MAX: "8"
+      INQUIRY_RATE_LIMIT_24H_MAX: "30"
+      ADMIN_IP_ALLOWLIST: 127.0.0.1,localhost
+      NEXT_PUBLIC_SITE_URL: "http://localhost:${DEV_WEB_PORT:-5175}"
+      ROBOTS_INDEXING_ENABLED: "false"
+    ports:
+      - "127.0.0.1:${DEV_WEB_PORT:-5175}:3000"
+    volumes:
+      - .:/app
+      - development_node_modules:/app/node_modules
+      - development_next_cache:/app/.next
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      mailpit:
+        condition: service_healthy
+
+  email-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    init: true
+    command: ["node", "scripts/outbox-worker.mjs"]
+    environment:
+      OUTBOX_WORKER_URL: http://app:3000/api/internal/outbox
+      OUTBOX_WORKER_SECRET: rakmyat-local-development-outbox-worker-secret
+      OUTBOX_WORKER_INTERVAL_MS: "10000"
+    volumes:
+      - .:/app
+      - development_node_modules:/app/node_modules
+    depends_on:
+      app:
+        condition: service_started
+      mailpit:
+        condition: service_healthy
+
+  admin-provision:
+    profiles: ["tools"]
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    stdin_open: true
+    tty: true
+    command: ["npm", "run", "admin:create"]
+    environment:
+      DATABASE_URL: postgres://rakmyat_dev:rakmyat_dev_only@postgres:5432/rakmyat_dev
+      DATABASE_SSL: "false"
+    volumes:
+      - .:/app
+      - development_node_modules:/app/node_modules
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  development_postgres_data:
+    name: rakmyat_development_postgres_data
+  development_node_modules:
+    name: rakmyat_development_node_modules
+  development_next_cache:
+    name: rakmyat_development_next_cache

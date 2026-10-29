@@ -18,7 +18,11 @@ if ($values.TRUSTED_CLIENT_IP_HEADER -ne "x-real-ip") { throw "The production pr
 if ($values.SMTP_HOST -ne "smtp.hostinger.com" -or $values.SMTP_PORT -ne "465" -or $values.SMTP_SECURE -ne "true") { throw "SMTP must use the approved Hostinger implicit-TLS endpoint on port 465." }
 if ($values.SMTP_USER -ne "info@rakmyat.online" -or $values.SMTP_FROM -ne "info@rakmyat.online") { throw "SMTP authentication and sender must use the configured Rakmyat mailbox." }
 if ($values.INQUIRY_NOTIFICATION_TO -notmatch '^[^\s@]+@[^\s@]+\.[^\s@]+$') { throw "Set a valid owner-approved inquiry notification recipient." }
-if (-not $values.NEXT_DEPLOYMENT_ID -or $values.NEXT_DEPLOYMENT_ID -match 'replace-with-unique|example|placeholder') { throw "Set a unique NEXT_DEPLOYMENT_ID for this release before building." }
+if ($values.ACTIVE_SLOT -notin @("blue", "green")) { throw "ACTIVE_SLOT must be blue or green." }
+$imageNames = @("RAKMYAT_IMAGE_BLUE", "RAKMYAT_IMAGE_GREEN", "RAKMYAT_IMAGE_MIGRATION", "RAKMYAT_IMAGE_WORKER", "RAKMYAT_IMAGE_ADMIN")
+foreach ($name in $imageNames) {
+  if ($values[$name] -notmatch '^ghcr\.io/yousef-abdallah-1711/rakmyat-site:[a-f0-9]{40}$') { throw "$name must be the immutable GHCR image tag for a full commit SHA." }
+}
 if (-not $values.NEXT_PUBLIC_SITE_URL) { throw "Set the HTTPS site origin after the hostname is approved." }
 try { $origin = [Uri]$values.NEXT_PUBLIC_SITE_URL } catch { throw "NEXT_PUBLIC_SITE_URL must be a valid HTTPS origin." }
 if ($origin.Scheme -ne "https" -or $origin.Host -ne $values.PRODUCTION_HOSTNAME -or $origin.AbsolutePath -ne "/") { throw "Site origin must be HTTPS and match PRODUCTION_HOSTNAME exactly." }

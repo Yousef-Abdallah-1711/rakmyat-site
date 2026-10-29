@@ -1,0 +1,211 @@
+name: Rakmyat CI and image release
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rakmyat-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate application
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Responsive browser suite
+        run: |
+          set -eu
+          npx playwright install --with-deps chromium firefox webkit
+          npm run dev > "$RUNNER_TEMP/rakmyat-next-dev.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          ready=0
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:5175/en >/dev/null; then ready=1; break; fi
+            sleep 2
+          done
+          if [ "$ready" -ne 1 ]; then
+            cat "$RUNNER_TEMP/rakmyat-next-dev.log"
+            echo "Next.js dev server did not become ready." >&2
+            exit 1
+          fi
+          npm run responsive:e2e
+
+      - name: Create disposable integration secrets
+        run: |
+          set -eu
+          umask 077
+          mkdir -p .phase43-secrets
+          db_password="$(openssl rand -hex 24)"
+          printf '%s' "$db_password" > .phase43-secrets/postgres_password
+          printf 'postgres://rakmyat_staging:%s@postgres:5432/rakmyat_phase43' "$db_password" > .phase43-secrets/database_url
+          openssl rand -hex 32 > .phase43-secrets/rate_limit_secret
+          printf '%s' 'mailpit-ci-only' > .phase43-secrets/mailpit_smtp_password
+          openssl rand -hex 32 > .phase43-secrets/outbox_worker_secret
+
+      - name: Run backend Docker integration suite
+        run: |
+          set -eu
+          docker compose -f docker-compose.phase-4.3.yml up --detach --build --wait --wait-timeout 240
+          npm run phase43:e2e
+        env:
+          PHASE43_BASE_URL: http://127.0.0.1:5212
+
+      - name: Stop disposable integration stack
+        if: always()
+        run: docker compose -f docker-compose.phase-4.3.yml down --volumes --remove-orphans
+
+      - name: Build Next.js app
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://rakmyat.online
+          ROBOTS_INDEXING_ENABLED: 'false'
+          NEXT_DEPLOYMENT_ID: ci-${{ github.sha }}
+
+      - name: Validate production Compose configuration
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: docker compose --env-file deployment/production.env.example -f docker-compose.production.yml -f docker-compose.production.override.yml config --quiet
+
+  publish-image:
+    name: Publish immutable production image
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    concurrency:
+      group: rakmyat-production-image
+      cancel-in-progress: false
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Validate production build settings
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://rakmyat.online' }}
+          ROBOTS_INDEXING_ENABLED: ${{ vars.ROBOTS_INDEXING_ENABLED || 'true' }}
+        run: |
+          set -eu
+          if [ -z "$NEXT_PUBLIC_SITE_URL" ]; then
+            echo "Set the GitHub Actions variable NEXT_PUBLIC_SITE_URL before publishing." >&2
+            exit 1
+          fi
+          case "$NEXT_PUBLIC_SITE_URL" in
+            https://rakmyat.online|https://rakmyat.online/) ;;
+            *) echo "NEXT_PUBLIC_SITE_URL must be the approved https://rakmyat.online origin." >&2; exit 1 ;;
+          esac
+          if [ "$ROBOTS_INDEXING_ENABLED" != "true" ] && [ "$ROBOTS_INDEXING_ENABLED" != "false" ]; then
+            echo "Set ROBOTS_INDEXING_ENABLED to true or false in GitHub Actions variables." >&2
+            exit 1
+          fi
+
+      - name: Log in to GitHub Container Registry
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "$GH_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+
+      - name: Build and publish image
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://rakmyat.online' }}
+          ROBOTS_INDEXING_ENABLED: ${{ vars.ROBOTS_INDEXING_ENABLED || 'true' }}
+        run: |
+          set -eu
+          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          docker buildx build \
+            --platform linux/amd64 \
+            --file Dockerfile \
+            --build-arg "NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL" \
+            --build-arg "ROBOTS_INDEXING_ENABLED=$ROBOTS_INDEXING_ENABLED" \
+            --build-arg "NEXT_DEPLOYMENT_ID=${GITHUB_SHA}" \
+            --tag "$image:$GITHUB_SHA" \
+            --label "org.opencontainers.image.revision=$GITHUB_SHA" \
+            --label "org.opencontainers.image.source=https://github.com/$GITHUB_REPOSITORY" \
+            --push \
+            .
+
+  deploy-production:
+    name: Blue-green deploy to VPS
+    needs: publish-image
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.PRODUCTION_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://rakmyat.online
+    permissions:
+      contents: read
+      packages: read
+    concurrency:
+      group: rakmyat-production-deploy
+      cancel-in-progress: false
+    steps:
+      - name: Check out deployment configuration
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install pinned VPS SSH credentials
+        env:
+          VPS_SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          set -eu
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+          printf '%s\n' "$VPS_SSH_PRIVATE_KEY" > "$HOME/.ssh/rakmyat_deploy"
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/rakmyat_deploy" "$HOME/.ssh/known_hosts"
+
+      - name: Upload Compose release configuration
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+        run: |
+          set -eu
+          ssh -i "$HOME/.ssh/rakmyat_deploy" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            "$VPS_USER@$VPS_HOST" "mkdir -p /opt/rakmyat/deployment /opt/rakmyat/docker/production"
+          scp -i "$HOME/.ssh/rakmyat_deploy" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            docker-compose.production.yml "$VPS_USER@$VPS_HOST:/opt/rakmyat/docker-compose.production.yml"
+          scp -i "$HOME/.ssh/rakmyat_deploy" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            docker-compose.production.override.yml "$VPS_USER@$VPS_HOST:/opt/rakmyat/docker-compose.production.override.yml"
+          scp -i "$HOME/.ssh/rakmyat_deploy" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            docker/production/10-create-roles.sh "$VPS_USER@$VPS_HOST:/opt/rakmyat/docker/production/10-create-roles.sh"
+
+      - name: Deploy immutable image and switch nginx upstream
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+        run: |
+          set -eu
+          image="ghcr.io/${GITHUB_REPOSITORY,,}:$GITHUB_SHA"
+          ssh -i "$HOME/.ssh/rakmyat_deploy" -o BatchMode=yes -o StrictHostKeyChecking=yes \
+            "$VPS_USER@$VPS_HOST" "sudo -n /usr/local/sbin/rakmyat-deploy '$image'"

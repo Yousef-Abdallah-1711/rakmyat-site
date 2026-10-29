@@ -122,6 +122,22 @@ npm.cmd run db:migrate   # applies 0001-0003, including the blog tables
 npm.cmd run dev
 ```
 
+### Run the development stack in Docker
+
+`Dockerfile.dev` is for hot-reload development; `Dockerfile` is the production-only multi-stage image. The development Compose stack provides an isolated PostgreSQL database and Mailpit without using the production services or the host PostgreSQL port:
+
+```powershell
+docker compose -f docker-compose.development.yml up --build
+```
+
+Open `http://localhost:5175` and the local email inbox at `http://localhost:18025`. Migrations run when the stack starts. To create the first local admin account, run this in another terminal:
+
+```powershell
+docker compose -f docker-compose.development.yml --profile tools run --rm admin-provision
+```
+
+Stop the stack with `docker compose -f docker-compose.development.yml down`. PostgreSQL data remains in its named volume. Removing that volume requires the explicit destructive `down --volumes` command.
+
 The dev server listens at `http://127.0.0.1:5175/`. Use `http://localhost:5175/` for admin sign-in and admin pages: session cookies are scoped to the exact host, so keep one host for the whole session.
 
 ```powershell
@@ -140,9 +156,9 @@ Migration note: `0003_blog.sql` is the blog migration. It has no `.down.sql` fil
 
 ## Deployment
 
-A production Dockerfile and `docker-compose.production.yml` build the app, run migrations, and start the outbox worker alongside the web process. See `deployment/` and `docker/` for environment-specific compose overrides, plus `docs/` for phase-by-phase production hardening notes (caching, load testing, final readiness review).
+`Dockerfile` builds the standalone, non-root production image. GitHub Actions validates pull requests, publishes a commit-SHA-tagged image to GHCR after a push to `main`, and can deploy it to the VPS using the blue-green script in `deployment/`. The production Compose stack is designed for the existing host-installed nginx: nginx proxies to the active app slot on localhost port 3101 or 3102. Only one slot receives public traffic; the other stays available for rollback. Production uploads use a persistent named volume.
 
-Uploaded media is written to `public/uploads/` inside the running container. No volume for that path is defined in the compose files found in this repo, so uploads do not survive container replacement until one is added. See [Known Issues](docs/KNOWN-ISSUES.md).
+Production rollout is gated until the VPS has its secrets, database, nginx upstream, read-only GHCR pull access, and GitHub production environment configured. See [Deployment](docs/DEPLOYMENT.md) for the exact prerequisites and release flow. This setup has not been applied to the live server.
 
 ## Documentation
 

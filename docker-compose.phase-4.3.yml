@@ -30,6 +30,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ""
+        ROBOTS_INDEXING_ENABLED: "false"
+        NEXT_DEPLOYMENT_ID: phase43-staging
     restart: "no"
     environment:
       DATABASE_URL_FILE: /run/secrets/database_url
@@ -76,6 +80,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ""
+        ROBOTS_INDEXING_ENABLED: "false"
+        NEXT_DEPLOYMENT_ID: phase43-staging
     restart: unless-stopped
     environment:
       NODE_ENV: production
@@ -135,6 +143,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ""
+        ROBOTS_INDEXING_ENABLED: "false"
+        NEXT_DEPLOYMENT_ID: phase43-staging
     restart: unless-stopped
     init: true
     command: ["node", "scripts/outbox-worker.mjs"]
@@ -197,6 +209,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ""
+        ROBOTS_INDEXING_ENABLED: "false"
+        NEXT_DEPLOYMENT_ID: phase43-staging
     stdin_open: true
     tty: true
     environment:
