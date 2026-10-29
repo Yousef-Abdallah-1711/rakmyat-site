@@ -22,16 +22,30 @@ export default defineConfig({
   // each time). workers:2 plus one retry absorbs that without going fully serial.
   workers: 2,
   retries: 1,
-  reporter: "list",
-  timeout: 30_000,
+  timeout: 45_000,
+  globalTimeout: 35 * 60_000,
+  expect: { timeout: 8_000 },
+  reporter: [
+    ["list"],
+    ["html", { outputFolder: "playwright-report", open: "never" }],
+  ],
   use: {
     ...devices["Desktop Chrome"],
     baseURL: process.env.RESPONSIVE_BASE_URL || "http://127.0.0.1:5175",
     trace: "retain-on-failure",
+    screenshot: "only-on-failure",
   },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
     { name: "firefox", use: { ...devices["Desktop Firefox"] } },
     { name: "webkit", use: { ...devices["Desktop Safari"] } },
   ],
+  webServer: {
+    command: "npm run dev",
+    url: `${process.env.RESPONSIVE_BASE_URL || "http://127.0.0.1:5175"}/en`,
+    timeout: 120_000,
+    reuseExistingServer: !process.env.CI,
+    stdout: "pipe",
+    stderr: "pipe",
+  },
 });

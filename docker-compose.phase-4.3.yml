@@ -27,6 +27,7 @@ services:
     stop_grace_period: 30s
 
   migrate:
+    image: ${RAKMYAT_CI_IMAGE:-rakmyat-phase43:local}
     build:
       context: .
       dockerfile: Dockerfile
@@ -77,6 +78,7 @@ services:
     stop_grace_period: 10s
 
   web:
+    image: ${RAKMYAT_CI_IMAGE:-rakmyat-phase43:local}
     build:
       context: .
       dockerfile: Dockerfile
@@ -140,6 +142,7 @@ services:
     stop_grace_period: 20s
 
   email-worker:
+    image: ${RAKMYAT_CI_IMAGE:-rakmyat-phase43:local}
     build:
       context: .
       dockerfile: Dockerfile
@@ -206,6 +209,7 @@ services:
 
   admin-provision:
     profiles: ["tools"]
+    image: ${RAKMYAT_CI_IMAGE:-rakmyat-phase43:local}
     build:
       context: .
       dockerfile: Dockerfile
@@ -246,21 +250,14 @@ secrets:
 
 volumes:
   postgres_data:
-    name: rakmyat_phase43_postgres_data
   media_uploads:
-    name: rakmyat_phase43_media_uploads
   mailpit_data:
-    name: rakmyat_phase43_mailpit_data
   caddy_data:
-    name: rakmyat_phase43_caddy_data
   caddy_config:
-    name: rakmyat_phase43_caddy_config
 
 networks:
   private:
-    name: rakmyat_phase43_private
     driver: bridge
     internal: true
   edge_gateway:
-    name: rakmyat_phase43_edge
     driver: bridge
