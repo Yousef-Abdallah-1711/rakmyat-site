@@ -185,6 +185,8 @@ jobs:
           openssl rand -hex 32 > .phase43-secrets/rate_limit_secret
           printf '%s' 'mailpit-ci-only' > .phase43-secrets/mailpit_smtp_password
           openssl rand -hex 32 > .phase43-secrets/outbox_worker_secret
+          # File-backed Compose secrets are bind-mounted; the app runs as UID 10001.
+          chmod 0444 .phase43-secrets/*
 
       - name: Install Chromium for backend browser tests
         run: npx playwright install --with-deps chromium
