@@ -15,10 +15,11 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # PR and manual validation are deliberately noindex. A main release must set
-  # explicit repository variables and pass the production-indexing approval check.
-  NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://rakmyat.online' }}
-  ROBOTS_INDEXING_ENABLED: ${{ vars.ROBOTS_INDEXING_ENABLED || 'false' }}
+  # Only an actual main push receives production release settings. PR, manual,
+  # and other branch validation stays on a non-production origin and noindex,
+  # even when production release variables are configured at repository scope.
+  NEXT_PUBLIC_SITE_URL: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.NEXT_PUBLIC_SITE_URL || 'https://example.invalid' }}
+  ROBOTS_INDEXING_ENABLED: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.ROBOTS_INDEXING_ENABLED || 'false' }}
   NEXT_DEPLOYMENT_ID: ${{ github.sha }}
 
 jobs:
